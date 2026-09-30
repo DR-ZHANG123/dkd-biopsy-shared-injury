@@ -1,0 +1,26 @@
+{
+  "stage": "21_robustness/A1_share/pca",
+  "time": "2026-09-29T22:51:56",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/11_injury/injury_scores.tsv": "e8a831de4aa49370b46f5caa56bea281"
+  },
+  "outputs": {
+    "results/21_robustness/A1_share/pca/transcriptome_pca.tsv": "c466b4fc48ecd517b7fcc686157da30c"
+  },
+  "extra": {
+    "n_perm": 1000
+  }
+}

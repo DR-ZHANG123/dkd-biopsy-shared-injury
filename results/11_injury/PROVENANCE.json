@@ -1,0 +1,34 @@
+{
+  "stage": "11_injury",
+  "time": "2026-09-28T16:10:56",
+  "seed": 20260928,
+  "config_sha": "2cbd50218e3454c7",
+  "git_commit": "f8448a1e170c540e3b38d3be8e930986551abb41",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/processed/samples.tsv": "3316ca923606450d6136e3bd0351e28d"
+  },
+  "outputs": {
+    "results/11_injury/axis_GLOM_ERCB_GLOM_H1.tsv": "bdb6bc972a166bdc88a5a68c4b21bad5",
+    "results/11_injury/axis_GLOM_ERCB_GLOM_H7.tsv": "9f0dc05996e8b0bec11f7e476ae77c90",
+    "results/11_injury/axis_GLOM_GSE96804-GPL17586.tsv": "d99c8a82f2ffe9ac610c21b9404cf6b4",
+    "results/11_injury/axis_GLOM_GSE30528-GPL571CEL.tsv": "d99c8a82f2ffe9ac610c21b9404cf6b4",
+    "results/11_injury/axis_TUB_ERCB_TUB_H1.tsv": "cf1d5f2ec01cbfc111a8aea98172e338",
+    "results/11_injury/axis_TUB_ERCB_TUB_H7.tsv": "09ddae64b7f0c579e5bd5d42c3f719bb",
+    "results/11_injury/axis_TUB_GSE30529-GPL571CEL.tsv": "3b37c4f0b3558ae6a4e3380e3b61f7b0",
+    "results/11_injury/axis_TUB_GSE142025-RNAseq.tsv": "3b37c4f0b3558ae6a4e3380e3b61f7b0",
+    "results/11_injury/injury_scores.tsv": "e8a831de4aa49370b46f5caa56bea281",
+    "results/11_injury/shift_decomposition.tsv": "612edfcf6268183f2a3584e24ea81f66",
+    "results/11_injury/axis_concordance.tsv": "a3fd0609c152ac79c6aed72dca303a52"
+  },
+  "extra": {}
+}

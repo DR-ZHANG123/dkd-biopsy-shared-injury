@@ -1,0 +1,5 @@
+gene_symbol	probe_set	direction	source_rank_or_stat	symbol_raw	gene_title
+CPA3	205624_at	up (correlated with scarring; sheet labelled Mast cell associated transcripts)	file_row=1	CPA3	mast cell carboxypeptidase A3
+TPSB2	207134_x_at	up (correlated with scarring; sheet labelled Mast cell associated transcripts)	file_row=2	TPSB2	mast cell tryptase beta 2
+TPSAB1	205683_x_at	up (correlated with scarring; sheet labelled Mast cell associated transcripts)	file_row=3	TPSAB1	mast cell tryptase alfa/beta 1
+FCER1A	211734_s_at	up (correlated with scarring; sheet labelled Mast cell associated transcripts)	file_row=4	FCER1A	Receptor for Fc fragment of IgE, high affinity I

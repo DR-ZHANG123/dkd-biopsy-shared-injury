@@ -1,0 +1,83 @@
+{
+  "stage": "18_interpret/enrich",
+  "time": "2026-09-29T11:27:42",
+  "seed": 20260928,
+  "config_sha": "b03749c0404aa7a0",
+  "git_commit": "1c66716a574febb809630b8f0eebb8726652aca7",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/18_interpret/weights/gene_effects.tsv.gz": "4382fe2b8395ba8a4bdf3ffa18bf06fd",
+    "metadata/published_dkd_signatures.tsv": "e37146c0bae7eca66f19e36ffe91cf71",
+    "data/external/genesets/MSigDB_Hallmark_2020.txt": "a07e950680738a6ce60aedac9b96f8c9",
+    "data/external/genesets/Reactome_2022.txt": "faeaf930a151f179ee18e4efc6ce3866",
+    "data/external/genesets/GO_Biological_Process_2023.txt": "1d0c46f1bbf5b371001ccf19dc4bb3e7",
+    "data/external/genesets/KEGG_2021_Human.txt": "c3551d68425f44f23284d36d7f26d7f1",
+    "data/external/genesets/DisGeNET.txt": "7fe1bd9e47bf9665663dce020f4620cb",
+    "data/external/genesets/Jensen_DISEASES.txt": "8d1b90983c32c601d002ed9819adb393"
+  },
+  "outputs": {
+    "results/18_interpret/enrich/ora.tsv": "2d684813beb4295120bb439547044c17",
+    "results/18_interpret/enrich/ranked.tsv": "0e6042b31b16885b883c04a2040aa6fc",
+    "results/18_interpret/enrich/dkd_key_known_vs_novel.tsv": "566cbaa8aefa26ecda1782c993fcc1cf"
+  },
+  "extra": {
+    "genesets": [
+      {
+        "library": "MSigDB_Hallmark_2020",
+        "url": "https://maayanlab.cloud/Enrichr/geneSetLibrary?mode=text&libraryName=MSigDB_Hallmark_2020",
+        "downloaded": "2026-09-29",
+        "md5": "a07e950680738a6ce60aedac9b96f8c9",
+        "n_bytes": 44235
+      },
+      {
+        "library": "Reactome_2022",
+        "url": "https://maayanlab.cloud/Enrichr/geneSetLibrary?mode=text&libraryName=Reactome_2022",
+        "downloaded": "2026-09-29",
+        "md5": "faeaf930a151f179ee18e4efc6ce3866",
+        "n_bytes": 778913
+      },
+      {
+        "library": "GO_Biological_Process_2023",
+        "url": "https://maayanlab.cloud/Enrichr/geneSetLibrary?mode=text&libraryName=GO_Biological_Process_2023",
+        "downloaded": "2026-09-29",
+        "md5": "1d0c46f1bbf5b371001ccf19dc4bb3e7",
+        "n_bytes": 1374880
+      },
+      {
+        "library": "KEGG_2021_Human",
+        "url": "https://maayanlab.cloud/Enrichr/geneSetLibrary?mode=text&libraryName=KEGG_2021_Human",
+        "downloaded": "2026-09-29",
+        "md5": "c3551d68425f44f23284d36d7f26d7f1",
+        "n_bytes": 209631
+      },
+      {
+        "library": "DisGeNET",
+        "url": "https://maayanlab.cloud/Enrichr/geneSetLibrary?mode=text&libraryName=DisGeNET",
+        "downloaded": "2026-09-29",
+        "md5": "7fe1bd9e47bf9665663dce020f4620cb",
+        "n_bytes": 3920418
+      },
+      {
+        "library": "Jensen_DISEASES",
+        "url": "https://maayanlab.cloud/Enrichr/geneSetLibrary?mode=text&libraryName=Jensen_DISEASES",
+        "downloaded": "2026-09-29",
+        "md5": "8d1b90983c32c601d002ed9819adb393",
+        "n_bytes": 352903
+      }
+    ],
+    "known_sets_sizes": {
+      "DisGeNET:Diabetic Nephropathy": 447,
+      "DisGeNET:Microalbuminuric diabetic nephropathy": 4,
+      "published_signatures(stage12)": 455
+    }
+  }
+}

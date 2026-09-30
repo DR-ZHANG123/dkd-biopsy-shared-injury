@@ -1,0 +1,26 @@
+gene_symbol	probe_set	direction	source_rank_or_stat	symbol_raw	gene_title
+CD2	205831_at	cell_type_associated (CD8+ CTL)	file_row=1	CD2	CD2 antigen (p50), sheep red blood cell receptor
+CD3D	213539_at	cell_type_associated (CD8+ CTL)	file_row=2	CD3D	CD3D antigen, delta polypeptide (TiT3 complex)
+CD8A	205758_at	cell_type_associated (CD8+ CTL)	file_row=3	CD8A	CD8 antigen, alpha polypeptide (p32)
+CST7	210140_at	cell_type_associated (CD8+ CTL)	file_row=4	CST7	cystatin F (leukocystatin)
+CXCR6	206974_at	cell_type_associated (CD8+ CTL)	file_row=5	CXCR6	chemokine (C-X-C motif) receptor 6
+GNLY	37145_at	cell_type_associated (CD8+ CTL)	file_row=6	GNLY	granulysin
+GZMA	205488_at	cell_type_associated (CD8+ CTL)	file_row=7	GZMA	granzyme A (granzyme 1, cytotoxic T-lymphocyte-associated serine esterase 3)
+GZMB	210164_at	cell_type_associated (CD8+ CTL)	file_row=8	GZMB	granzyme B (granzyme 2, cytotoxic T-lymphocyte-associated serine esterase 1)
+GZMK	206666_at	cell_type_associated (CD8+ CTL)	file_row=9	GZMK	granzyme K (serine protease, granzyme 3; tryptase II)
+H963	207651_at	cell_type_associated (CD8+ CTL)	file_row=10	H963	platelet activating receptor homolog
+HOP	211597_s_at	cell_type_associated (CD8+ CTL)	file_row=11	HOP	homeodomain-only protein
+IFNG	210354_at	cell_type_associated (CD8+ CTL)	file_row=12	IFNG	interferon, gamma
+IL2RB	205291_at	cell_type_associated (CD8+ CTL)	file_row=13	IL2RB	interleukin 2 receptor, beta
+ITK	211339_s_at	cell_type_associated (CD8+ CTL)	file_row=14	ITK	IL2-inducible T-cell kinase
+KIAA0101	202503_s_at	cell_type_associated (CD8+ CTL)	file_row=15	KIAA0101	KIAA0101 gene product
+KLRK1	205821_at	cell_type_associated (CD8+ CTL)	file_row=16	KLRK1	killer cell lectin-like receptor subfamily K, member 1
+LCK	204891_s_at	cell_type_associated (CD8+ CTL)	file_row=17	LCK	lymphocyte-specific protein tyrosine kinase
+NELL2	203413_at	cell_type_associated (CD8+ CTL)	file_row=18	NELL2	NEL-like 2 (chicken)
+NKG7	213915_at	cell_type_associated (CD8+ CTL)	file_row=19	NKG7	natural killer cell group 7 sequence
+NUSAP1	218039_at	cell_type_associated (CD8+ CTL)	file_row=20	NUSAP1	nucleolar and spindle associated protein 1
+PRF1	214617_at	cell_type_associated (CD8+ CTL)	file_row=21	PRF1	perforin 1 (pore forming protein)
+RRM2	209773_s_at	cell_type_associated (CD8+ CTL)	file_row=22	RRM2	ribonucleotide reductase M2 polypeptide
+STAT4	206118_at	cell_type_associated (CD8+ CTL)	file_row=23	STAT4	signal transducer and activator of transcription 4
+TRA@	209671_x_at	cell_type_associated (CD8+ CTL)	file_row=24	TRA@	Homo sapiens cDNA clone MGC:71411 IMAGE:4853814, complete cds
+TRGV9	216920_s_at	cell_type_associated (CD8+ CTL)	file_row=25	TRGV9	T cell receptor gamma locus

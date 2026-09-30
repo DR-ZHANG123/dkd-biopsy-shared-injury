@@ -1,0 +1,52 @@
+{
+  "stage": "19_shared_program/core",
+  "time": "2026-09-29T14:45:05",
+  "seed": 20260928,
+  "config_sha": "b049df3edc9f381b",
+  "git_commit": "2dc61f83f207acb2a5b9e1b97c3f6966542bde80",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/processed/samples.tsv": "3316ca923606450d6136e3bd0351e28d",
+    "data/processed/cohorts.tsv": "728162c74b2d65874dbcb087c13a56bc"
+  },
+  "outputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/19_shared_program/core/meta_GLOM.tsv.gz": "6c13c7cd8f67153eb9c715da4b3fe744",
+    "results/19_shared_program/core/meta_TUB.tsv.gz": "926a1a27510b2770f4d3ee2037072fe3",
+    "results/19_shared_program/core/sources.tsv": "20b723c7179ef37eda15a5c488bcd146",
+    "results/19_shared_program/core/stability.tsv": "18882a1c8d31aaf2b39b18ab01316cf5",
+    "results/19_shared_program/core/disease_concordance.tsv": "836a390d4ed299b1deed6a61a71001b8",
+    "results/19_shared_program/core/disease_vs_control_effects.tsv.gz": "dffd9780a0bc204c1894c7bdbd0237e0"
+  },
+  "extra": {
+    "core_thresholds": {
+      "fdr": 0.01,
+      "min_abs_g": 0.8,
+      "sign_frac": 1.0,
+      "loo_max_p": 0.05,
+      "loo_min_abs_g": 0.5
+    },
+    "sources": {
+      "GLOM": [
+        "ERCB_GLOM_H1",
+        "ERCB_GLOM_H7",
+        "GSE108109-GPL19983",
+        "GSE93798-GPL22945"
+      ],
+      "TUB": [
+        "ERCB_TUB_H1",
+        "ERCB_TUB_H7",
+        "GSE108112-GPL19983"
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+dataset	score	n_up	n_down
+snRNA	scp_full	600	307
+snRNA	scp_no_driver	473	269
+snRNA	scp_no_rfprog	573	292
+scRNA	scp_full	600	307
+scRNA	scp_no_driver	473	269
+scRNA	scp_no_rfprog	573	292

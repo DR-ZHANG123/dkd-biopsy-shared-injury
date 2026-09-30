@@ -1,0 +1,57 @@
+{
+  "stage": "03_labels",
+  "time": "2026-09-28T15:49:18",
+  "seed": 20260928,
+  "config_sha": "e2a427f30a98d1c4",
+  "git_commit": "d4b0b032bf900f3708a13618e99427b528588bb1",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/interim/GSE104948-GPL22945_meta.tsv": "16d9b8aac26b09b6f9fe8c9f93b3c1d6",
+    "data/interim/GSE104948-GPL24120_meta.tsv": "8bb323a1b859c2634fd7492a4ec418d2",
+    "data/interim/GSE104954-GPL22945_meta.tsv": "7aa3b41811de159b6e6d2314d1e70d7f",
+    "data/interim/GSE104954-GPL24120_meta.tsv": "7ba694f86c135f9c3825c7bd655023af",
+    "data/interim/GSE108109-GPL19983_meta.tsv": "1536fd52ce175e957e4955ad2bcabfc5",
+    "data/interim/GSE108112-GPL19983_meta.tsv": "790389d868f0c9fe5a4f8809e6f8dca3",
+    "data/interim/GSE115857-GPL14951_meta.tsv": "95f7d1f2f1983f1c1bf1f551c537de8a",
+    "data/interim/GSE133288-GPL19983_meta.tsv": "80c2b3d6ec8489a0dfc7696a17274f55",
+    "data/interim/GSE142025-RNAseq_meta.tsv": "fb1026561aadfac5190219f78793bd3d",
+    "data/interim/GSE175759-RNAseq_meta.tsv": "ce1e2553255f9c66276de3e255004294",
+    "data/interim/GSE182380-RNAseq_meta.tsv": "95097345b83a0bae9ad5534d2a9ffd9b",
+    "data/interim/GSE200818-GPL19983_meta.tsv": "9113b94e16a18a94839c42489b485913",
+    "data/interim/GSE30528-GPL571CEL_meta.tsv": "a397e114f0077f31cc5778b19156f911",
+    "data/interim/GSE30529-GPL571CEL_meta.tsv": "019781417d2c92acf76865e6cee77f58",
+    "data/interim/GSE32591-GPL14663_meta.tsv": "50e2b3e04bbf2fabe2e289c832184dfa",
+    "data/interim/GSE37460-GPL11670_meta.tsv": "377d07d8df98df8f2671ceb3934dbc25",
+    "data/interim/GSE37460-GPL14663_meta.tsv": "d436d2d681dc72321cd6a97fe983e22b",
+    "data/interim/GSE47183-GPL11670_meta.tsv": "361762b0389e4f4a9fce8699e1b0d87d",
+    "data/interim/GSE47183-GPL14663_meta.tsv": "4f61a555aaa1d6f6a6b26d71279c2b4b",
+    "data/interim/GSE69438-GPL11670_meta.tsv": "0a36ea2553f2e95c7e0259f8f3378ce8",
+    "data/interim/GSE93798-GPL22945_meta.tsv": "1414c4582f57f5d9a66278d8cb2dad4e",
+    "data/interim/GSE96804-GPL17586_meta.tsv": "ab37d30762860897de4719114a0e650a",
+    "data/interim/GSE99339-GPL19109_meta.tsv": "6097822d626edd124edc4a9357d73a4b",
+    "data/interim/GSE99339-GPL19184_meta.tsv": "ba1e2c523830ca92465a38f9cd34dc97",
+    "metadata/data_sources.tsv": "c594c54487e055ea00c98cf824909745"
+  },
+  "outputs": {
+    "results/03_labels/sample_labels.tsv": "dab0de1ec465b90c0ad172479aa0ab19",
+    "results/03_labels/label_counts.tsv": "a778dfe6b07bb97b36f4294906f7c1af",
+    "results/03_labels/label_conflicts.tsv": "1fd720eeaa58227080cf0ff18d68a9f6"
+  },
+  "extra": {
+    "n_samples": 2179,
+    "n_unknown": 0,
+    "n_dup_groups_with_label_conflict": 4,
+    "conflict_patterns": {
+      "FSGS|MCD": 4
+    }
+  }
+}

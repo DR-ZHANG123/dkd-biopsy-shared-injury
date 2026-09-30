@@ -1,0 +1,101 @@
+{
+  "stage": "21_robustness/A6_split",
+  "time": "2026-09-29T22:56:17",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/19_shared_program/kpmp/core_procurement.tsv": "0fe483b7c3b1b9e6edd380ac2883dac8",
+    "results/20_repair_state/decomp/shapley_donor.tsv.gz": "bea06402089c0a3c10afe10e6ecb22a5",
+    "results/20_repair_state/donors/donor_table.tsv": "c2c0147b8777427406bee5600cb0986d"
+  },
+  "outputs": {
+    "results/21_robustness/A6_split/shapley_contrast.tsv": "f736327837ed8ed62de8b5435f098a65",
+    "results/21_robustness/A6_split/pt_tal_shares.tsv": "29b87927d5f51cd63f41c4fc9d06c995",
+    "results/21_robustness/A6_split/egfr_shapley.tsv": "49b0d1a57af6a60fa739761433323f0d",
+    "results/21_robustness/A6_split/shapley_donor_scRNA.tsv.gz": "c8ad109e6162c40143448c1639f4af25",
+    "results/21_robustness/A6_split/shapley_donor_snRNA.tsv.gz": "91ddb4940e64e328f402fc755df42307"
+  },
+  "extra": {
+    "blocks": {
+      "composition": [
+        "p"
+      ],
+      "adaptive_fraction": [
+        "q_aPT",
+        "q_aTAL"
+      ],
+      "failed_repair_fraction": [
+        "q_frPT",
+        "q_frTAL"
+      ],
+      "PT_TAL_other_state_mix": [
+        "q_PT_other",
+        "q_TAL_other"
+      ],
+      "other_lineage_state_mix": [
+        "q_rest"
+      ],
+      "PT_TAL_normal_cell_profile": [
+        "M_PT_normal",
+        "M_TAL_normal"
+      ],
+      "adaptive_cell_profile": [
+        "M_aPT",
+        "M_aTAL"
+      ],
+      "failed_repair_cell_profile": [
+        "M_frPT",
+        "M_frTAL"
+      ],
+      "PT_TAL_other_altered_profile": [
+        "M_PT_other_alt",
+        "M_TAL_other_alt"
+      ],
+      "other_lineage_profile": [
+        "M_rest"
+      ],
+      "adaptive_total": [
+        "q_aPT",
+        "q_aTAL",
+        "M_aPT",
+        "M_aTAL"
+      ],
+      "failed_repair_total": [
+        "q_frPT",
+        "q_frTAL",
+        "M_frPT",
+        "M_frTAL"
+      ],
+      "aPT_total": [
+        "q_aPT",
+        "M_aPT"
+      ],
+      "frPT_total": [
+        "q_frPT",
+        "M_frPT"
+      ],
+      "aTAL_total": [
+        "q_aTAL",
+        "M_aTAL"
+      ],
+      "frTAL_total": [
+        "q_frTAL",
+        "M_frTAL"
+      ]
+    },
+    "n_boot": 1000,
+    "n_perm": 1000
+  }
+}

@@ -1,0 +1,27 @@
+gene_symbol	probe_set	direction	source_rank_or_stat	symbol_raw	gene_title
+CLECSF12	241098_at	cell_type_associated (alternatively activated macrophage)	file_row=1	CLECSF12	Homo sapiens transcribed sequences
+ARG1	206177_s_at	cell_type_associated (alternatively activated macrophage)	file_row=3	ARG1	arginase, liver
+ARG1	231662_at	cell_type_associated (alternatively activated macrophage)	file_row=4	ARG1	arginase, liver
+ARG1	231663_s_at	cell_type_associated (alternatively activated macrophage)	file_row=5	ARG1	arginase, liver
+ARG1	231665_at	cell_type_associated (alternatively activated macrophage)	file_row=6	ARG1	arginase, liver
+CD163	203645_s_at	cell_type_associated (alternatively activated macrophage)	file_row=7	CD163	CD163 antigen
+CD163	215049_x_at	cell_type_associated (alternatively activated macrophage)	file_row=8	CD163	CD163 antigen
+CD163	216233_at	cell_type_associated (alternatively activated macrophage)	file_row=9	CD163	CD163 antigen
+CLECSF12	1554406_a_at	cell_type_associated (alternatively activated macrophage)	file_row=10	CLECSF12	C-type (calcium dependent, carbohydrate-recognition domain) lectin, superfamily member 12
+CLECSF12	1555213_a_at	cell_type_associated (alternatively activated macrophage)	file_row=11	CLECSF12	C-type (calcium dependent, carbohydrate-recognition domain) lectin, superfamily member 12
+CLECSF12	1555214_a_at	cell_type_associated (alternatively activated macrophage)	file_row=12	CLECSF12	C-type (calcium dependent, carbohydrate-recognition domain) lectin, superfamily member 12
+CLECSF12	1555756_a_at	cell_type_associated (alternatively activated macrophage)	file_row=13	CLECSF12	C-type (calcium dependent, carbohydrate-recognition domain) lectin, superfamily member 12
+CLECSF12	221698_s_at	cell_type_associated (alternatively activated macrophage)	file_row=14	CLECSF12	C-type (calcium dependent, carbohydrate-recognition domain) lectin, superfamily member 12
+CLECSF13	206682_at	cell_type_associated (alternatively activated macrophage)	file_row=15	CLECSF13	C-type (calcium dependent, carbohydrate-recognition domain) lectin, superfamily member 13 (macrophage-derived)
+M160	223655_at	cell_type_associated (alternatively activated macrophage)	file_row=16	M160	scavenger receptor cysteine-rich type 1 protein M160
+MMP12	204580_at	cell_type_associated (alternatively activated macrophage)	file_row=17	MMP12	matrix metalloproteinase 12 (macrophage elastase)
+MMP9	203936_s_at	cell_type_associated (alternatively activated macrophage)	file_row=18	MMP9	matrix metalloproteinase 9 (gelatinase B, 92kDa gelatinase, 92kDa type IV collagenase)
+MRC1	204438_at	cell_type_associated (alternatively activated macrophage)	file_row=19	MRC1	mannose receptor, C type 1
+RNASE3	206851_at	cell_type_associated (alternatively activated macrophage)	file_row=20	RNASE3	ribonuclease, RNase A family, 3 (eosinophil cationic protein)
+THBS1	201107_s_at	cell_type_associated (alternatively activated macrophage)	file_row=21	THBS1	thrombospondin 1
+THBS1	201108_s_at	cell_type_associated (alternatively activated macrophage)	file_row=22	THBS1	thrombospondin 1
+THBS1	201109_s_at	cell_type_associated (alternatively activated macrophage)	file_row=23	THBS1	thrombospondin 1
+THBS1	201110_s_at	cell_type_associated (alternatively activated macrophage)	file_row=24	THBS1	thrombospondin 1
+THBS1	215775_at	cell_type_associated (alternatively activated macrophage)	file_row=25	THBS1	thrombospondin 1
+THBS1	235086_at	cell_type_associated (alternatively activated macrophage)	file_row=26	THBS1	thrombospondin 1
+THBS1	239336_at	cell_type_associated (alternatively activated macrophage)	file_row=27	THBS1	thrombospondin 1

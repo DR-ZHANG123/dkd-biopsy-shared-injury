@@ -1,0 +1,15 @@
+dataset	group	n_donors
+snRNA	REF	52
+snRNA	CKD	56
+snRNA	DKD	29
+snRNA	OTHER_CKD	27
+snRNA	REF_perc	9
+snRNA	CKD_perc	56
+snRNA	REF_surg	43
+scRNA	REF	38
+scRNA	CKD	41
+scRNA	DKD	19
+scRNA	OTHER_CKD	22
+scRNA	REF_perc	0
+scRNA	CKD_perc	41
+scRNA	REF_surg	38

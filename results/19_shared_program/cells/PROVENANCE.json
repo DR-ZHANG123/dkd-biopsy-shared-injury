@@ -1,0 +1,31 @@
+{
+  "stage": "19_shared_program/cells",
+  "time": "2026-09-29T14:45:42",
+  "seed": 20260928,
+  "config_sha": "b049df3edc9f381b",
+  "git_commit": "2dc61f83f207acb2a5b9e1b97c3f6966542bde80",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/14_kpmp/markers_kpmp.tsv": "c35e8573b2c932f9d0a337877981afeb",
+    "results/16_deconv/run/all/theta_type.tsv": "2d71a89eff5b522ae7cb7e8a7cfc6331"
+  },
+  "outputs": {
+    "results/19_shared_program/cells/core_localisation.tsv": "e9b8c555b42730860a4367017d595b02",
+    "results/19_shared_program/cells/core_top_type_enrichment.tsv": "52bfbae99949eaa58166cc5364f62f37",
+    "results/19_shared_program/cells/marker_program_z.tsv": "03e3cd87df820ba512d08c0d41d2d03d",
+    "results/19_shared_program/cells/composition_r2.tsv": "7aa7f932ad2aef23bf5e5e75b3c57cb3",
+    "results/19_shared_program/cells/composition_celltype_rho.tsv": "2a3fbbffa22731b075e4d80f35f3ec56",
+    "results/19_shared_program/cells/stage16_axis_r2_summary.tsv": "93c96e5d313da3c1e5e9681c98147d30"
+  },
+  "extra": {}
+}

@@ -1,0 +1,27 @@
+{
+  "stage": "15_model/final_dkd",
+  "time": "2026-09-29T01:16:30",
+  "seed": 20260928,
+  "config_sha": "7f8b333a83db1fa2",
+  "git_commit": "1b8686d4600e2ea6bc31c86f8d7e0a7ec2b8174a",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/15_model/FROZEN_DESIGN.json": "43de0f4116cc07d64f19d15dd19c50d6"
+  },
+  "outputs": {
+    "results/15_model/final_dkd/predictions.tsv": "d0728b553e05958fc1288b640eff4c6b",
+    "results/15_model/final_dkd/metrics.tsv": "a3e69b7b77fa73fdd700a0166cfda920"
+  },
+  "extra": {
+    "frozen": "2026-09-29T01:06:51"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "20_repair_state/donors",
+  "time": "2026-09-29T15:54:12",
+  "seed": 20260928,
+  "config_sha": "8efb02bebfeb6666",
+  "git_commit": "e0ae2e2f585882a8f14e15bcf21e42cec1daaf18",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/20_repair_state/programs/fractions.tsv.gz": "9cc337f098ac27cb92304396997c7706",
+    "results/19_shared_program/kpmp/decomp_scores.tsv.gz": "adb386f0dbb45365a25c1311a9da031a"
+  },
+  "outputs": {
+    "results/20_repair_state/donors/donor_table.tsv": "c2c0147b8777427406bee5600cb0986d",
+    "results/20_repair_state/donors/category_tests.tsv": "d256e56ef65590b6fcab3e7ed79df3a1",
+    "results/20_repair_state/donors/correlations.tsv": "df4ddb711e6aee0dd98e76633dc78522"
+  },
+  "extra": {
+    "n_perm": 1000,
+    "min_cells": 20
+  }
+}

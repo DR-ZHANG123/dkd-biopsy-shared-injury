@@ -1,0 +1,124 @@
+{
+  "stage": "17_independent/candidates",
+  "time": "2026-09-29T11:28:20",
+  "seed": 20260928,
+  "config_sha": "b03749c0404aa7a0",
+  "git_commit": "1c66716a574febb809630b8f0eebb8726652aca7",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/raw/kpmp_lmd/checksums.tsv": "fd9042a7fbad9889a1865e498be836f1",
+    "results/00_download/indep_candidates_checksums.tsv": "92919c3c9788bda151affafad15f6ca0",
+    "data/interim/GSE104948-GPL22945_expr.parquet": "b96bdc289dbb2456a88d01d99595820b",
+    "data/interim/GSE104948-GPL24120_expr.parquet": "071e96a7a9311e35868083e48febc5b0",
+    "data/interim/GSE104954-GPL22945_expr.parquet": "435a31af7d9c227c15320549eebaef23",
+    "data/interim/GSE104954-GPL24120_expr.parquet": "7e913aecc159799b5171b8c99272cb1d",
+    "data/interim/GSE108109-GPL19983_expr.parquet": "712bbd618719318121de457a7d97a0a4",
+    "data/interim/GSE108112-GPL19983_expr.parquet": "d327735e6a37087921caf1c0dec9dc05",
+    "data/interim/GSE115857-GPL14951_expr.parquet": "e0683dfcd917f48d441e92d624ac5934",
+    "data/interim/GSE133288-GPL19983_expr.parquet": "de12806a8173843fa66f602d836e86c1",
+    "data/interim/GSE142025-RNAseq_expr.parquet": "9412dd89d7fae5799977aac125ca6cea",
+    "data/interim/GSE175759-RNAseq_expr.parquet": "474b03546532ffa340cffc97c0abc043",
+    "data/interim/GSE182380-RNAseq_expr.parquet": "bc0d6c50191a126a1171f0c3b19b627b",
+    "data/interim/GSE200818-GPL19983_expr.parquet": "cc00be8c30f287b95ea9033e300c03fe",
+    "data/interim/GSE30528-GPL571CEL_expr.parquet": "bbc2c87f17bf4d58605452df084a1b0b",
+    "data/interim/GSE30529-GPL571CEL_expr.parquet": "a015a507d85304704d93c86e20bb9973",
+    "data/interim/GSE32591-GPL14663_expr.parquet": "88585e015fd90edff451538b8d156ba5",
+    "data/interim/GSE37460-GPL11670_expr.parquet": "5de6e752bd9913a42b29c7d3ba50906c",
+    "data/interim/GSE37460-GPL14663_expr.parquet": "61e87b94a81cb44daccc1aa44a96baaa",
+    "data/interim/GSE47183-GPL11670_expr.parquet": "ddcab48985fc96bb7723e8e70ad5b4ee",
+    "data/interim/GSE47183-GPL14663_expr.parquet": "64c07894bf6900f493dd5b2883b56518",
+    "data/interim/GSE69438-GPL11670_expr.parquet": "addf45f78c787c72ac33c6fff82e7080",
+    "data/interim/GSE93798-GPL22945_expr.parquet": "24afd53e8c663145ee59a9f78e9001f7",
+    "data/interim/GSE96804-GPL17586_expr.parquet": "f618c0d5adfe994e6f4f6f8c4b45595a",
+    "data/interim/GSE99339-GPL19109_expr.parquet": "6ef600098d79f0ff48cba19cae845174",
+    "data/interim/GSE99339-GPL19184_expr.parquet": "2f47ce398f7614ae4a17edd44bc22d59"
+  },
+  "outputs": {
+    "results/17_independent/candidates/candidate_samples.tsv": "5eaecb9a7586542c139d11ca0762a80d",
+    "results/17_independent/candidates/composition.tsv": "391cb2fe88af33653c3510946c44d8ce",
+    "results/17_independent/candidates/feasibility.tsv": "103a7d3b3e8077c412612bbb1d4359df",
+    "results/17_independent/candidates/overlap_pairs.tsv": "eab5c0f251b25b4206db8c7a9aaf43c8",
+    "results/17_independent/candidates/overlap_summary.tsv": "d0272266e59db8f0784d3f36faecc129"
+  },
+  "extra": {
+    "min_test_pos": 5,
+    "min_test_neg": 5,
+    "feasibility": [
+      {
+        "cohort": "GSE162830",
+        "compartment": "GLOM",
+        "n_dkd": 18,
+        "n_other_ckd": 5,
+        "n_ckd_undetermined": 0,
+        "n_control": 9,
+        "n_aki": 0,
+        "primary_ok": true,
+        "secondary_ok": true
+      },
+      {
+        "cohort": "GSE166239",
+        "compartment": "WHOLE",
+        "n_dkd": 6,
+        "n_other_ckd": 6,
+        "n_ckd_undetermined": 0,
+        "n_control": 6,
+        "n_aki": 0,
+        "primary_ok": true,
+        "secondary_ok": true
+      },
+      {
+        "cohort": "GSE45980",
+        "compartment": "WHOLE",
+        "n_dkd": 5,
+        "n_other_ckd": 38,
+        "n_ckd_undetermined": 0,
+        "n_control": 0,
+        "n_aki": 0,
+        "primary_ok": true,
+        "secondary_ok": false
+      },
+      {
+        "cohort": "KPMP",
+        "compartment": "GLOM",
+        "n_dkd": 4,
+        "n_other_ckd": 1,
+        "n_ckd_undetermined": 4,
+        "n_control": 9,
+        "n_aki": 5,
+        "primary_ok": false,
+        "secondary_ok": false
+      },
+      {
+        "cohort": "KPMP",
+        "compartment": "TUB",
+        "n_dkd": 3,
+        "n_other_ckd": 1,
+        "n_ckd_undetermined": 4,
+        "n_control": 6,
+        "n_aki": 8,
+        "primary_ok": false,
+        "secondary_ok": false
+      },
+      {
+        "cohort": "KPMP",
+        "compartment": "WHOLE",
+        "n_dkd": 9,
+        "n_other_ckd": 7,
+        "n_ckd_undetermined": 5,
+        "n_control": 9,
+        "n_aki": 10,
+        "primary_ok": true,
+        "secondary_ok": true
+      }
+    ]
+  }
+}

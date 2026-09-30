@@ -1,0 +1,44 @@
+{
+  "stage": "19_shared_program/kpmp",
+  "time": "2026-09-29T14:48:03",
+  "seed": 20260928,
+  "config_sha": "b049df3edc9f381b",
+  "git_commit": "2dc61f83f207acb2a5b9e1b97c3f6966542bde80",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "data/processed/kpmp/snRNA/source.json": "2e4c8e2bd82a425d9d957fd4d7b1b2e7",
+    "data/processed/kpmp/scRNA/source.json": "7c7ccedbaf00add45c8bd6353e3006ae"
+  },
+  "outputs": {
+    "results/19_shared_program/kpmp/gene_type_de.tsv.gz": "5c95fc4e24550d2ef78733faa2cd8f2e",
+    "results/19_shared_program/kpmp/set_direction.tsv": "b9ab858d4cb9492c41a1a6017419534b",
+    "results/19_shared_program/kpmp/abundance.tsv": "43f20a4ba2eeb77b23af40c5259b4876",
+    "results/19_shared_program/kpmp/decomp_scores.tsv.gz": "adb386f0dbb45365a25c1311a9da031a",
+    "results/19_shared_program/kpmp/decomp_tests.tsv": "3b38d771509649b2abb225e17703d962",
+    "results/19_shared_program/kpmp/egfr.tsv": "be5214aaf3d9aacc596a50a99a4d67db",
+    "results/19_shared_program/kpmp/procurement.tsv.gz": "81267eb0dbf528e4eccc5dd9832e2b8b",
+    "results/19_shared_program/kpmp/groups.tsv": "13df6f74f45b84093be9cbebbbbb889e",
+    "results/19_shared_program/kpmp/gene_class.tsv": "847f1d275d7549d2189eb4c0d7134590",
+    "results/19_shared_program/kpmp/core_procurement.tsv": "0fe483b7c3b1b9e6edd380ac2883dac8"
+  },
+  "extra": {
+    "contrasts": [
+      "CKD_vs_REF",
+      "CKD_perc_vs_REF_perc",
+      "DKD_vs_REF",
+      "OTHER_CKD_vs_REF",
+      "REF_surg_vs_REF_perc"
+    ],
+    "n_perm": 1000
+  }
+}

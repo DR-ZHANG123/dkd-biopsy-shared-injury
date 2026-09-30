@@ -1,0 +1,764 @@
+seed: 20260928
+paths: {raw: data/raw, interim: data/interim, processed: data/processed, results: results, models: models}
+old_project_raw: upstream/data_raw          # 同项目旧版已下载的 CEL/series matrix（只读）
+old_project_processed: upstream/data_processed
+overlap: {corr_threshold: 0.98, resid_pcs: 10, resid_min: 0.5, resid_min_within: 0.8, sex_margin: 0.3, min_common_genes: 2000}
+genes: {n_nodes: 5000, min_platform_coverage: 1.0}
+cohorts:
+  # ERCB：同一批 CEL 以不同 CDF 重复存放于以下 series；按芯片批次分 cohort（HG-U133A = H1–H5 批，U133 Plus 2.0 = H7 批）
+  ercb_series: [GSE104948, GSE104954, GSE99339, GSE47183, GSE37460, GSE32591]
+  ercb_platform_batch: {GPL24120: H1, GPL19184: H1, GPL14663: H1, GPL22945: H7, GPL19109: H7, GPL11670: H7}
+  single_series_cohorts: [GSE30528-GPL571CEL, GSE30529-GPL571CEL, GSE96804-GPL17586]
+  external: {GSE175759-RNAseq: TUB, GSE142025-RNAseq: TUB}   # 值 = 用哪个区室的评估 cohort 训练
+  t2_negatives: [IgAN, FSGS, MCD, FSGS_MCD, MN, LN, HT, RPGN]
+  min_class_n: 5
+  external_min_class_n: 3        # 外部测试 cohort 低于 min_class_n 时仅作描述性报告
+graphs:
+  string_version: "12.0"
+  string_min_score: 700
+  coexpr_k: 10
+  coexpr_controls_only: true
+  coexpr_datasets: [GSE131882, GSE209781]   # 旧版目录 data_processed/scrna/<id>_annotated.h5ad（只读）
+  sc_donor_col: sample
+  sc_group_col: group
+  sc_celltype_col: cell_type
+  sc_control_value: Control
+  coexpr_exclude_celltypes: [LowQuality]
+  coexpr_n_hvg: 2000                 # 对照细胞上重算 PCA 所用 HVG
+  coexpr_n_pcs: 30
+  coexpr_cells_per_metacell: 30      # 供体×细胞类型内 KMeans(PCA) 聚合
+  coexpr_max_metacells_per_group: 40 # 防止大细胞类型（PT）主导相关
+  coexpr_min_cells_per_group: 15
+  coexpr_min_metacell_frac: 0.01     # 两个数据集都需在 ≥ 该比例 metacell 中检出
+  rewire_n_seeds: 5
+  rewire_swap_factor: 10             # 成功交换次数 = factor × 边数
+model: {layers: 3, hidden: 64, heads: 4, dropout: 0.1, embed_dim: 64}
+pretrain:
+  mask_frac: 0.15
+  drop_frac: [0.2, 0.4]
+  epochs: 200
+  batch_size: 32
+  lr: 3.0e-4
+  weight_decay: 1.0e-2
+  val_frac: 0.1
+probe: {C_grid: [0.001, 0.01, 0.1, 1.0, 10.0], seeds: 10}
+eval: {n_boot: 2000, label_fracs: [0.25, 0.5, 1.0], noninferiority_margin: 0.05}
+iteration: {max_design_rounds: 5}
+# ---- 模型线（stage 06–09）新增参数；以下键均为新增，不改上方已有值 ----
+tasks:                                   # 下游任务的正/负类（diagnosis 取值，来自 stage 03 映射）
+  T1: {pos: [DKD], neg: [CONTROL]}
+  T2: {pos: [DKD], neg: [IgAN, FSGS, FSGS_MCD, MCD, MN, LN, HT, RPGN]}
+corpus:                                  # 每个 fold 的预训练 / PCA 语料取哪些区室（按 fold 的 compartment）
+  GLOM: [GLOM, WHOLE]
+  TUB: [TUB, WHOLE]
+  WHOLE: [GLOM, TUB, WHOLE]
+pretrain_run:
+  variants: [full, noedge, rewired, ppi_only, coexpr_only]
+  seeds: [0]                             # 编码器预训练种子（可扩展）
+  patience: 20                           # 早停：验证损失不降的 epoch 数
+  min_epochs: 10
+  warmup_epochs: 5
+  grad_clip: 1.0
+  amp_dtype: bf16
+  recon_weight: 10.0
+  vicreg_weight: 0.04
+  proj_dim: 256                          # VICReg expander 维度（只用于预训练，不进入下游 embedding）
+  eval_batch_size: 64
+  dataloader_seed_offset: 1000
+baselines:
+  lasso_C_grid: [0.01, 0.0316, 0.1, 0.316, 1.0, 3.16, 10.0]
+  pca_components: 64
+  standardize: true
+  max_iter: 5000
+inner_cv: {min_cohorts: 2, fallback_kfold: 5}   # inner CV：训练队列 ≥2 且各留出队列可用时 leave-one-cohort-out，否则分层 k 折
+eval_ext: {min_per_class: 2}   # label-efficiency 抽样时每 cohort 每类至少保留的样本数（inner CV 需要 ≥2）
+supervised:                              # B5（不预训练，直接监督）与 RRG-full-ft（全参微调）
+  enable_finetune: true
+  epochs: 100
+  patience: 15
+  batch_size: 16
+  lr_scratch: 1.0e-3
+  lr_finetune_encoder: 3.0e-5
+  lr_finetune_head: 1.0e-3
+  weight_decay: 1.0e-2
+  val_frac: 0.2                          # 训练 cohort 内分层留出，用于早停与 Youden 阈值
+compare:
+  pairs:                                 # (A, B)：报告 A − B 的 ΔAUROC
+    - [RRG-full, B1-rankLASSO]
+    - [RRG-full, B2-PCA]
+    - [RRG-full, B3-noedge]
+    - [RRG-full, B4-rewired]
+    - [RRG-full, B5-scratch]
+    - [RRG-full, B6-ppi]
+    - [RRG-full, B6-coexpr]
+    - [RRG-full-ft, B1-rankLASSO]
+    - [B2-PCA, B1-rankLASSO]
+  rnaseq_technology_regex: "(?i)rna-?seq"
+model_ext: {readout: hybrid, readout_channels: 2, rewire_mode: induced, global_context: true}   # readout ∈ attention（方案原设）/ genewise / hybrid；rewire_mode ∈ induced（在诱导子图上保度数重连）/ file（stage 05 文件）；理由见 01_execution_log
+injury:
+  min_controls: 5
+  min_disease: 10
+  min_source_frac: 0.5
+  top_k: 200
+  n_strata: 4
+  n_random_sets: 1000
+  compartments:
+    GLOM: {eval: [ERCB_GLOM_H1, ERCB_GLOM_H7, GSE96804-GPL17586, GSE30528-GPL571CEL],
+           source: [ERCB_GLOM_H1, ERCB_GLOM_H7, GSE108109-GPL19983, GSE93798-GPL22945]}
+    TUB:  {eval: [ERCB_TUB_H1, ERCB_TUB_H7, GSE30529-GPL571CEL, GSE142025-RNAseq],
+           source: [ERCB_TUB_H1, ERCB_TUB_H7, GSE108112-GPL19983, GSE175759-RNAseq]}
+celltype:
+  keep: [PT, PT_injured, LOH, DCT, CNT_PC, IC, PODO, PEC, ENDO, ENDO_PT, STROMA, PERI, BCELL, TCELL, NK, MAC, MAST, NEUTRO]
+  min_cells: 20
+  min_log2cpm: 4.0
+  n_markers: 50
+  min_group: 5
+  n_perm: 1000
+  n_top_validate: 300
+  units:
+    GLOM: [ERCB_GLOM_H1, ERCB_GLOM_H7, GSE108109-GPL19983, GSE93798-GPL22945, GSE96804-GPL17586]
+    TUB: [ERCB_TUB_H1, ERCB_TUB_H7, GSE108112-GPL19983, GSE133288-GPL19983, GSE182380-RNAseq, GSE175759-RNAseq, GSE142025-RNAseq]
+# ---- stage 15：病种身份表示学习（RRG-ID，贡献 2）；以下键均为新增 ----
+model2:
+  units:
+    GLOM: [ERCB_GLOM_H1, ERCB_GLOM_H7, GSE108109-GPL19983, GSE93798-GPL22945, GSE96804-GPL17586, GSE30528-GPL571CEL]
+    TUB: [ERCB_TUB_H1, ERCB_TUB_H7, GSE108112-GPL19983, GSE133288-GPL19983, GSE182380-RNAseq, GSE200818-GPL19983,
+          GSE69438-GPL11670, GSE115857-GPL14951, GSE30529-GPL571CEL]
+  never_use: [GSE142025-RNAseq, GSE175759-RNAseq]      # 外部测试队列：不进训练也不进 dev 评估
+  consortia:
+    ERCB: [ERCB_GLOM_H1, ERCB_GLOM_H7, ERCB_TUB_H1, ERCB_TUB_H7]
+    NEPTUNE: [GSE108109-GPL19983, GSE108112-GPL19983, GSE133288-GPL19983, GSE182380-RNAseq, GSE200818-GPL19983]
+  labels:
+    head: [DKD, FSGS, MCD, MN, RPGN, IgAN, LN, HT]
+    neg_only: [FSGS_MCD, OTHER]
+    control: [CONTROL]
+    exclude: [TMD]
+  eval:
+    min_test_pos: 5
+    min_test_neg: 5
+    min_train_pos: 5
+    e2_diseases: [FSGS, MCD, MN, RPGN]
+    e3_folds: 5
+    igan_analog: {compartment: GLOM, test_unit: ERCB_GLOM_H1, disease: IgAN}
+    e4:                           # 耦合模拟（见 m2_data._e4_folds）：d–对照队列 = 含对照的 NEPTUNE series
+      diseases: [FSGS, MCD, MN, RPGN]
+      d_cohort: {GLOM: GSE108109-GPL19983, TUB: GSE108112-GPL19983}
+  features_cache: data/interim/m2_features.parquet
+  markers:                        # 细胞类型程序种子（stage 14 KPMP 健康参考；marker_source: stage13 为旧标志对照）
+    kpmp_file: results/14_kpmp/markers_kpmp.tsv
+    kpmp_references: [snRNA, scRNA, snRNA_endosplit, scRNA_endosplit]
+    kpmp_drop: [ENDO]
+  baseline_max_genes: 5000        # 对照 LASSO/L2/cPCA：按训练集方差取 top 基因（全宇宙 inner CV 太慢）
+  baseline_center_level: stratum
+  cpca_k: 20
+  cpca_alphas: [1.0, 10.0, 100.0]
+  n_jobs: 48
+  defaults:                       # RRG-ID 冻结候选（dev 非 DKD 任务选定，理由见 notes/01_execution_log.md stage 15）
+    marker_source: kpmp           # 程序种子：KPMP 健康参考标志（stage 14）
+    graph: none                   # 基因图扩散在 dev 上无增益（coexpr / STRING / 重连 ≈ 无图），冻结为最简
+    rewire_seed: 0
+    diffuse_hops: 2
+    diffuse_beta: 0.5
+    program_size: 100
+    use_programs: true
+    learn_gates: false            # 可学门控 / 自由程序在 dev 上过拟合，冻结为固定程序
+    gate_l2: 1.0e-3
+    n_free: 0
+    free_l1: 1.0e-4
+    z_dim: 16
+    z_mlp: false
+    gene_resid: true              # 基因级残差 head：程序之外的病种信号
+    resid_l2: 1.0e-3
+    resid_standardize: false
+    lambda_supcon: 0.0            # 加权 SupCon 在 dev 上一致变差，不纳入
+    lambda_hsic: 1.0
+    hsic_mode: conditional        # z ⟂ 共享轴 | 病种
+    hsic_on: z
+    gamma: 0.0                    # 共享轴匹配权重在 dev 上无增益，不纳入
+    match_bw: 0.5
+    use_controls: true
+    control_weight: 1.0
+    compare_level: mixed          # stratum 内成对 + 全体合并成对
+    pool_weight: 1.0
+    pos_scope: any
+    supcon_center: stratum
+    tau: 0.2
+    wd: 1.0e-3
+    lr: 1.0e-2
+    epochs: 300
+    n_seeds: 5
+  methods:                        # 主方法与消融（相对 defaults 的覆盖）
+    RRG-ID: {}
+    RRG-ID-noHSIC: {lambda_hsic: 0.0}
+    RRG-ID-noProg: {use_programs: false, lambda_hsic: 0.0}
+    RRG-ID-stratumOnly: {compare_level: stratum}
+    RRG-ID-pooledOnly: {compare_level: all}
+    RRG-ID-noCtrl: {use_controls: false}
+    RRG-ID+coexpr: {graph: coexpr}
+    RRG-ID+rewired: {graph: rewired}
+    RRG-ID+STRING: {graph: ppi}
+    RRG-ID+match: {gamma: 0.5}
+    RRG-ID+SupCon: {lambda_supcon: 0.5, pos_scope: within}
+  baselines: [B2-PCA, B-rankLASSO, B-L2, B-L2-unitcenter, B-L2-ucmix, B-cPCA, B-prog-L2, B-injury]
+  freeze:
+    file: results/15_model/FROZEN_DESIGN.json
+    # 内容 = 主方法完整解析配置 + 对照/消融列表 + 代码文件 sha256 + config_sha；由 15_freeze.py 生成，作者 git 提交后才可跑 15_final_dkd.py
+  dev_defaults:                   # 设计迭代期（dev_variants）使用的默认配置，保留以复现迭代记录
+    graph: coexpr                 # coexpr / ppi / none / rewired
+    marker_source: stage13        # 迭代前期用 stage 13 标志；R5-* 起显式指定 kpmp
+    rewire_seed: 0
+    diffuse_hops: 2
+    diffuse_beta: 0.5
+    program_size: 100
+    learn_gates: true
+    gate_l2: 1.0e-3
+    n_free: 4
+    free_l1: 1.0e-4
+    z_dim: 16
+    z_mlp: false
+    lambda_supcon: 0.5
+    lambda_hsic: 1.0
+    gamma: 1.0                    # 匹配强度：0 = 不按共享轴匹配，1 = 完全按核权重
+    match_bw: 0.5                 # 核带宽 = match_bw × stratum 内 a 的 SD
+    use_controls: true
+    control_weight: 1.0
+    compare_level: stratum        # stratum = 单元 × series；unit = 单元
+    supcon_center: stratum
+    tau: 0.2
+    wd: 1.0e-3
+    lr: 1.0e-2
+    epochs: 300
+    n_seeds: 5
+  # 设计迭代用变体（只在 dev 非 DKD 任务上比较；冻结时把选中的配置写进 methods）
+  dev_variants:
+    R2-rank: {lambda_supcon: 0.0, lambda_hsic: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2}
+    R2-rank-r3: {lambda_supcon: 0.0, lambda_hsic: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-3}
+    R2-rank-r1: {lambda_supcon: 0.0, lambda_hsic: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-1}
+    R2-rank-pooled: {lambda_supcon: 0.0, lambda_hsic: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, compare_level: all}
+    R2-rank-unit: {lambda_supcon: 0.0, lambda_hsic: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, compare_level: unit}
+    R2-full: {gene_resid: true, resid_l2: 1.0e-2, gamma: 0.5, hsic_mode: conditional}
+    R2-cond: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional}
+    R2-match: {lambda_supcon: 0.0, lambda_hsic: 0.0, gamma: 0.5, gene_resid: true, resid_l2: 1.0e-2}
+    R2-sc: {lambda_hsic: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2}
+    R2-sc-within: {lambda_hsic: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, pos_scope: within}
+    R2-rank-free16: {lambda_supcon: 0.0, lambda_hsic: 0.0, gamma: 0.0, n_free: 16}
+    R2-geneonly: {lambda_supcon: 0.0, lambda_hsic: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, z_dim: 1, learn_gates: false, n_free: 0, wd: 10.0}
+    R3-cond-r3: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-3, hsic_mode: conditional}
+    R3-cond-h3: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional, lambda_hsic: 3.0}
+    R3-cond-fixed: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional, learn_gates: false, n_free: 0}
+    R3-cond-match: {lambda_supcon: 0.0, gamma: 0.5, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional}
+    R3-cond-scw: {lambda_supcon: 0.5, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional, pos_scope: within}
+    R3-cond-noctrl: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional, use_controls: false}
+    R3-cond-unit: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional, compare_level: unit}
+    R3-cond-e100: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional, epochs: 100}
+    R3-cond-marg: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: marginal}
+    R3-cond-nograph: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional, graph: none}
+    R3-condh: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-2, hsic_mode: conditional, hsic_on: h}
+    R3-condh-r3: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, resid_l2: 1.0e-3, hsic_mode: conditional, hsic_on: h}
+    R5-cond-r3: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, marker_source: kpmp}
+    R5-cond-r3-s13: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, marker_source: stage13}
+    R5-cond-std: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, resid_standardize: true, marker_source: kpmp}
+    R5-cond-std-r2: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-2, resid_standardize: true, marker_source: kpmp}
+    R5-mix: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, compare_level: mixed, pool_weight: 0.5, marker_source: kpmp}
+    R5-mix1: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, compare_level: mixed, pool_weight: 1.0, marker_source: kpmp}
+    R5-mix-std: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, resid_standardize: true, compare_level: mixed, pool_weight: 0.5, marker_source: kpmp}
+    R5-mix-std1: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, resid_standardize: true, compare_level: mixed, pool_weight: 1.0, marker_source: kpmp}
+    R5-pool-std: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, resid_standardize: true, compare_level: all, marker_source: kpmp}
+    R5-mix-std-h: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, resid_standardize: true, compare_level: mixed, pool_weight: 0.5, hsic_on: h, marker_source: kpmp}
+    R5-mix-std-nohsic: {lambda_supcon: 0.0, gamma: 0.0, gene_resid: true, lambda_hsic: 0.0, resid_l2: 1.0e-3, resid_standardize: true, compare_level: mixed, pool_weight: 0.5, marker_source: kpmp}
+    R5-mix-std-match: {lambda_supcon: 0.0, gamma: 0.5, gene_resid: true, hsic_mode: conditional, resid_l2: 1.0e-3, resid_standardize: true, compare_level: mixed, pool_weight: 0.5, marker_source: kpmp}
+shared_axis_tests:
+  n_split: 50
+  split_units: [ERCB_GLOM_H1, ERCB_GLOM_H7, ERCB_TUB_H1, ERCB_TUB_H7]
+  min_r_dd: 0.2
+  ratio_pairs:
+    - [GSE30529-GPL571CEL, ERCB_TUB_H1]
+    - [GSE30529-GPL571CEL, ERCB_TUB_H7]
+    - [ERCB_TUB_H1, ERCB_TUB_H7]
+    - [ERCB_TUB_H7, ERCB_TUB_H1]
+    - [GSE30528-GPL571CEL, ERCB_GLOM_H1]
+    - [GSE30528-GPL571CEL, ERCB_GLOM_H7]
+    - [GSE96804-GPL17586, ERCB_GLOM_H1]
+    - [GSE96804-GPL17586, ERCB_GLOM_H7]
+    - [ERCB_GLOM_H1, ERCB_GLOM_H7]
+    - [ERCB_GLOM_H7, ERCB_GLOM_H1]
+    - [GSE142025-RNAseq, ERCB_TUB_H1]
+    - [GSE142025-RNAseq, ERCB_TUB_H7]
+  egfr_unit: GSE175759-RNAseq
+  egfr_axis_sources: [ERCB_TUB_H1, ERCB_TUB_H7, GSE108112-GPL19983]
+  egfr_marker_genes: [EGF, LCN2, HAVCR1, VCAM1, COL1A1, UMOD]
+kpmp:                                    # stage 14：KPMP 参照与细胞类型结论的独立验证（CELLxGENE KPMP atlas v2.0）
+  datasets:                              # 计数取 raw/X（整数 UMI），基因名取 var 的 feature_name；两个数据集的 obs 列名不同，分组条件逐数据集给出
+    snRNA:
+      file: data/raw/kpmp/06b8d9c2-0bde-48bd-88d9-730993fc95e2.h5ad
+      dataset_id: 7ff0197b-d175-49bf-b4fa-150fe0995d93
+      meta_cols: [ConditionCategory, Conditions.Subtype, AdjudicationCategory, TissueCollection, region, Age, sex, diabetes_history, hypertension, "Baseline eGFR (ml/min/1.73m2) (Binned)", assay]
+      cell_filter: {region: [Cortex, Cortex/Medulla]}     # 活检基本是皮质；去掉髓质 / 乳头标本，避免参照与活检的取材区域不一致
+      groups:                            # 条件：列 → 允许值；同一组内各条件取交集
+        REF: {ConditionCategory: [Healthy Reference]}
+        DKD: {ConditionCategory: [Chronic Kidney Disease], AdjudicationCategory: [Diabetic Kidney Disease]}
+        OTHER_CKD: {ConditionCategory: [Chronic Kidney Disease], AdjudicationCategory: [Hypertensive Kidney Disease, Other]}
+        HKD: {ConditionCategory: [Chronic Kidney Disease], AdjudicationCategory: [Hypertensive Kidney Disease]}
+        AKI: {ConditionCategory: [Acute Kidney Injury], AdjudicationCategory: [Acute Tubular Injury, Acute Interstitial Nephritis]}
+        REF_BIOPSY: {ConditionCategory: [Healthy Reference], TissueCollection: [Percutaneous Needle Biopsy, Transplant Pre-perfusion Biopsy, Intra-operative Biopsy]}
+    scRNA:
+      file: data/raw/kpmp/255ce81a-eb4e-48ff-9f18-e50455ccb24d.h5ad
+      dataset_id: 91f31e05-56d8-46fc-b408-d90c9228a81b
+      meta_cols: [EnrollmentCategory, ConditionCategory, AdjudicationCategory, Tissue.Type, Age, sex, diabetes_history, hypertension_history]
+      cell_filter: {}
+      groups:
+        REF: {EnrollmentCategory: [Healthy Reference Tissue]}
+        DKD: {EnrollmentCategory: [Chronic Kidney Disease], AdjudicationCategory: [Diabetic Kidney Disease]}
+        OTHER_CKD: {EnrollmentCategory: [Chronic Kidney Disease], AdjudicationCategory: [Hypertensive Kidney Disease, Other]}
+        HKD: {EnrollmentCategory: [Chronic Kidney Disease], AdjudicationCategory: [Hypertensive Kidney Disease]}
+        AKI: {EnrollmentCategory: [Acute Kidney Injury], AdjudicationCategory: [Acute Tubular Injury, Acute Interstitial Nephritis]}
+        REF_BIOPSY: {EnrollmentCategory: [Healthy Reference Tissue], Tissue.Type: [Transplant Pre-perfusion Biopsy, Intra-operative Biopsy]}
+  primary: snRNA                         # 主分析；scRNA 为独立复现（解离偏倚方向不同）
+  pseudobulk_cache: data/processed/kpmp  # 供体 × 细粒度细胞类型 计数缓存（大文件不进 SSD 项目目录）
+  gene_col: feature_name
+  donor_col: donor_id
+  fine_col: SubclassLevel2
+  coarse_col: SubclassLevel1
+  marker_group: REF                      # 标志基因只用该组供体
+  contrasts: [[DKD, OTHER_CKD], [DKD, HKD], [DKD, REF], [DKD, REF_BIOPSY], [DKD, AKI], [OTHER_CKD, REF]]
+  map_to_stage13:                        # KPMP SubclassLevel2 → stage 13 细胞类型键（与旧参照可比）；未列出的 fine 类型不参与（写 unmapped 表）
+    PT: [PT-S1/S2, PT-S2/S3, PT-S1, PT-S2, PT-S3]
+    PT_injured: [aPT, dPT, frPT, cycPT]
+    LOH: [DTL1, DTL2, DTL3, aDTL, dDTL, ATL, aATL, dATL, C-TAL, M-TAL, C/M-TAL, aTAL, dTAL, dM-TAL, dC-TAL, frTAL, cycTAL, MD]
+    DCT: [DCT, aDCT, dDCT]
+    CNT_PC: [CNT, CNT-PC, aCNT, aCNT-PC, dCNT, C-PC, M-PC, dM-PC, CCD-PC, OMCD-PC, aCCD-PC, aOMCD-PC, dCCD-PC, IMCD, dIMCD, dDN]
+    IC: [IC-A, IC-B, aIC-A, C-IC-A, M-IC-A, dC-IC-A, dM-IC-A, tPC-IC]
+    PODO: [POD, dPOD]
+    PEC: [PEC]
+    ENDO: [EC-GC, aEC-GC, dEC-GC, EC-AA, EC-EA, dEC-EA]                   # 肾小球 / 入出球小动脉内皮
+    ENDO_PT: [EC-PTC, aEC-PTC, dEC-PTC, angEC-PTC, infEC-PTC, EC-AVR, dEC-AVR, infEC-AVR, EC-DVR, aEC-DVR, EC-PCV, EC-V]   # 管周毛细血管 / 直小血管内皮
+    MES: [MC]                            # 系膜细胞（旧参照无此类，仅作新增报告）
+    STROMA: [FIB, M-FIB, dFIB, dM-FIB, infFIB, pvFIB, MYOF]
+    PERI: [VSMC, VSMC/P, dVSMC, REN]
+    BCELL: [B, B naive, B memory, B activated, PL]
+    TCELL: [T, cycT, Naive Th, Th-memory, Th17, T-REG, T-CXCR4+, CD8+ TEM, CD8+ TEMRA, CD8+ TRM, CD8+ T-CYT, CD8+ T-STR, MAIT]
+    NK: [NK, CD16+ NK, CD16- NK, ILC3]
+    MAC: [resMAC, moMAC, moMAC-INF, cycMAC, MON, moMAC-C3+, moMAC-CXCL10+, moMAC-HBEGF+, moMAC-LUCAT1+, moFAM, resMAC-HLAIIhi, resMAC-LYVE1+, cMON, ncMON]
+    DC: [DC, cDC1, cDC2, mDC, pDC]
+    MAST: [MAST]
+    NEUTRO: [N]
+  glom_fine:                             # 肾小球内丰度（分母 = 这四类之和，抵消活检取到的肾小球数差异）
+    PODO: [POD, dPOD]
+    PEC: [PEC]
+    ENDO_GC: [EC-GC, aEC-GC, dEC-GC]
+    MES: [MC]
+  fine_validate: [POD, dPOD, EC-GC, dEC-GC, EC-PTC, dEC-PTC, MC, MAST, resMAC, moMAC]   # 另在细粒度上做差异 / 方向验证
+  min_cells: 20                          # 供体 × 细胞类型 pseudobulk 的最少细胞数
+  min_donors: 3                          # 每组至少有效供体数（否则该 细胞类型 × 对比 跳过）
+  min_log2cpm: 4.0                       # 标志基因在本细胞类型参照供体均值 log2CPM 下限（与 stage 13 同）
+  n_markers: 50
+  marker_resamples: 200                  # 参照供体随机二分次数（稳定性）
+  marker_stability: 0.8                  # 标志须在 ≥ 该比例的半样本中排进 top-2n
+  n_perm: 1000                           # 富集的基因置换 & 验证的供体标签置换
+  n_top_validate: 300                    # 与 stage 13 同：bulk DKD_vs_PAT_adj 顶部基因数
+  lfc_min: 0.25                          # 方向一致率只计 |log2FC| > 该值的基因（与 stage 13 同）
+  min_expr_log2cpm: 1.0                  # 细胞类型内表达下限（验证中基因入选）
+  min_glom_cells: 20                     # 肾小球内丰度：供体肾小球细胞总数下限
+  n_boot: 2000                           # 丰度效应量 bootstrap CI
+  marker_min_cells: {MAST: 5, MES: 10}   # 稀有类型构建标志时的 供体×类型 最少细胞数（其余用 min_cells）
+  endo_split:                            # 另建一套参照：把 ENDO 拆成肾小球毛细血管内皮与入 / 出球小动脉内皮
+    ENDO_GC: [EC-GC, aEC-GC, dEC-GC]
+    ENDO_ART: [EC-AA, EC-EA, dEC-EA]
+  tissue:                                # KPMP 全组织 pseudobulk 上复刻 stage 13 的 DKD vs 其他 CKD（含外部共享轴调整）
+    patients: [DKD, OTHER_CKD]
+    min_detect_frac: 0.5                 # 基因须在 ≥ 该比例的供体中计数 > 0
+    axis_compartments: [TUB, GLOM]       # 共享轴 = stage 13 bulk SHARED（g_mean），与 KPMP 完全独立
+    axis_top_k: 200                      # 同 injury.top_k
+# ---- stage 16：细胞类型分辨反卷积（BayesPrism；可行性研究）；以下键均为新增 ----
+deconv:
+  out_dir: data/processed/deconv          # 参照 / 混合物 / BayesPrism 原始输出（大文件）
+  references:                             # 参照集：KPMP atlas v2（stage 14 pseudobulk 缓存：供体 × SubclassLevel2）
+    snRNA: {dataset: snRNA, drop_state_regex: null}
+    scRNA: {dataset: scRNA, drop_state_regex: null}
+    snRNA_noD: {dataset: snRNA, drop_state_regex: "^d[A-Z]"}   # 去掉 KPMP「退行性」状态（d 前缀：低基因数 / 高环境 RNA）
+    scRNA_noD: {dataset: scRNA, drop_state_regex: "^d[A-Z]"}
+  primary: scRNA                          # 主参照（pilot：snRNA 核转录谱在状态层与全细胞 bulk 不匹配，见 notes/01_execution_log.md stage 16）；snRNA 为敏感性
+  min_cells_row: 5                        # 供体 × 状态 行的最少细胞数
+  min_state_rows: 3                       # 状态至少出现在该数目的供体行中，否则丢弃该状态
+  exclude_fine: [ERY, PapE, SC/NEU, Ad]   # 不属于活检皮质实质的类别
+  ref_compartment: {GLOM: GLOM, TUB: TUB, WHOLE: TUB}   # bulk 样本区室 → 用哪套参照
+  types:                                  # 细胞类型（谱系）→ 状态（= KPMP SubclassLevel2；snRNA 与 scRNA 名称并集）
+    # 相近亚群（如肾小球 / 管周 / 小动脉内皮，系膜 / 血管平滑肌）作为同一谱系下的状态：BayesPrism 的类型层 θ 稳健，
+    # 亚群份额在状态层读取（例如 EC-GC 占肾小球 bulk 的比例 = θ_state 的 EC-GC 系列之和）
+    common: &common
+      EC: [EC-GC, aEC-GC, dEC-GC, EC-AA, EC-EA, dEC-EA, EC-PTC, aEC-PTC, dEC-PTC, angEC-PTC, infEC-PTC, EC-AVR, dEC-AVR,
+           infEC-AVR, EC-DVR, aEC-DVR, EC-PCV, EC-V, EC-LYM, cycEC]
+      FIB: [FIB, M-FIB, dFIB, dM-FIB, infFIB, pvFIB, MYOF]
+      MYE: [resMAC, moMAC, moMAC-INF, cycMAC, MON, cMON, ncMON, moMAC-C3+, moMAC-CXCL10+, moMAC-HBEGF+, moMAC-LUCAT1+, moFAM, resMAC-HLAIIhi, resMAC-LYVE1+, DC, cDC1, cDC2, mDC, pDC, MAST, N]
+      TNK: [T, cycT, Naive Th, Th-memory, Th17, T-REG, T-CXCR4+, CD8+ TEM, CD8+ TEMRA, CD8+ TRM, CD8+ T-CYT, CD8+ T-STR, MAIT, NK, CD16+ NK, CD16- NK, ILC3]
+      BPL: [B, B naive, B memory, B activated, PL]
+      PT: [PT-S1, PT-S2, PT-S3, PT-S1/S2, PT-S2/S3, aPT, dPT, frPT, cycPT]
+    GLOM:                                 # 肾小球 bulk：肾小球细胞分开建模；肾小管污染按粗类吸收
+      <<: *common
+      PODO: [POD, dPOD]
+      PEC: [PEC]
+      MES_VSMC: [MC, VSMC, VSMC/P, dVSMC, REN]
+      DIST: [DTL1, DTL2, DTL3, dDTL, ATL, aATL, aDTL, dATL, C-TAL, C/M-TAL, M-TAL, dM-TAL, aTAL, dC-TAL, dTAL, frTAL, cycTAL, MD,
+             DCT, aDCT, dDCT, CNT, aCNT, dCNT, CNT-PC, aCNT-PC, dDN, C-PC, M-PC, dM-PC, CCD-PC, aCCD-PC, dCCD-PC, OMCD-PC, aOMCD-PC,
+             IMCD, dIMCD, C-IC-A, M-IC-A, dC-IC-A, dM-IC-A, IC-A, aIC-A, IC-B, tPC-IC]
+    TUB:                                  # 肾小管间质 bulk：各段小管分开；肾小球上皮 / 系膜污染按粗类吸收
+      <<: *common
+      DTL_ATL: [DTL1, DTL2, DTL3, dDTL, ATL, aATL, aDTL, dATL]
+      TAL: [C-TAL, C/M-TAL, M-TAL, dM-TAL, aTAL, dC-TAL, dTAL, frTAL, cycTAL, MD]
+      DCT: [DCT, aDCT, dDCT]
+      CNT: [CNT, aCNT, dCNT, CNT-PC, aCNT-PC, dDN]
+      PC: [C-PC, M-PC, dM-PC, CCD-PC, aCCD-PC, dCCD-PC, OMCD-PC, aOMCD-PC, IMCD, dIMCD]
+      IC: [C-IC-A, M-IC-A, dC-IC-A, dM-IC-A, IC-A, aIC-A, IC-B, tPC-IC]
+      VSMC: [VSMC, VSMC/P, dVSMC, REN]
+      GLOM: [POD, dPOD, PEC, MC]
+  gene_groups: [Rb, Mrp, other_Rb, chrM, MALAT1, chrX, chrY]   # BayesPrism cleanup.genes 剔除
+  protein_coding_only: true
+  marker: {pval_max: 0.01, lfc_min: 0.1, cell_count_cutoff: 3, pseudo_count: 0.1}
+  mixture:
+    target_total: 1000000                   # 线性化后每样本缩放到该总量再取整（Gibbs 需整数计数）
+    array_bg_quantile: null               # 芯片：线性值减去样本内该分位（null = 不减背景）
+  bp:
+    n_cores: 64
+    outlier_cut: 0.01
+    outlier_fraction: 0.1
+    chain_length: 1000
+    burn_in: 500
+    thinning: 2
+    seed: 20260928
+  features:
+    eps: 0.001                            # CLR / logit 的下限
+    z_min_share: 0.3                      # 类型 k「拥有」基因 g：参照中 k 的 CPM 占全部类型 CPM 之和的比例下限
+    z_min_genes: 20                       # 拥有基因少于该数的类型不产生 Z 特征
+  eval:                                   # stage 16d：dev 非 DKD 任务（stage 15 的 fold / cell / 协变量 / 指标原样复用）
+    run_tag: all                          # 使用 results/16_deconv/run/<run_tag>/ 的 θ
+    families: [E1, E2, E4]
+    baseline: B-L2
+    methods:                              # 方法名 → 特征块
+      B-L2: [RANK]
+      D-COMP: [COMP]
+      D-SF: [SF]
+      D-COMP+SF: [COMP, SF]
+      D-Z: [Z]
+      D-COMP+Z: [COMP, Z]
+      D-COMP+SF+Z: [COMP, SF, Z]
+      B-L2+COMP: [RANK, COMP]
+      B-L2+COMP+SF: [RANK, COMP, SF]
+      D-RANK_Z: [RANK_Z]                  # 同基因集对照（Z 覆盖的基因上的组织平均秩）
+      D-RESID: [RESID]                    # 组成残差秩
+      D-COMP+RESID: [COMP, RESID]
+      D-COMP|uc: ["COMP|uc"]              # 单元中心化（无标签批次校正）
+      D-Z|uc: ["Z|uc"]
+      D-COMP+Z|uc: ["COMP|uc", "Z|uc"]
+      B-L2|uc: ["RANK|uc"]
+    pairs:                                # 额外配对比较（A − B）
+      - [D-Z, D-RANK_Z]                   # 同基因集：细胞内状态表示 vs 组织平均
+      - [D-COMP+Z, D-Z]
+      - [D-COMP+Z, D-COMP]
+      - [D-RESID, B-L2]
+  plausibility:                           # stage 16c
+    marker_file: results/14_kpmp/markers_kpmp.tsv
+    marker_reference: snRNA
+    marker_map:                           # KPMP 标志集（stage 14 键）→ 本 stage 的类型（区室不同则分别给出）
+      PODO: {GLOM: PODO, TUB: GLOM}
+      MES: {GLOM: MES_VSMC, TUB: GLOM}
+      PEC: {GLOM: PEC, TUB: GLOM}
+      PT: PT
+      LOH: {GLOM: DIST, TUB: TAL}
+      DCT: {GLOM: DIST, TUB: DCT}
+      CNT_PC: {GLOM: DIST, TUB: PC}
+      IC: {GLOM: DIST, TUB: IC}
+      STROMA: FIB
+      PERI: {GLOM: MES_VSMC, TUB: VSMC}
+      ENDO_PT: EC
+      MAC: MYE
+      TCELL: TNK
+      BCELL: BPL
+    glom_epithelial: [PODO, PEC]
+    tub_epithelial: [PT, DTL_ATL, TAL, DCT, CNT, PC, IC]
+    ec_gc_states: [EC-GC, aEC-GC, dEC-GC]
+    min_unit_n: 15
+    cv_reps: 10
+    random_set_size: 50                   # R² 对照：随机基因集（每集基因数）平均秩
+  pilot:
+    - {series: GSE175759-RNAseq, compartment: TUB}
+    - {series: GSE142025-RNAseq, compartment: WHOLE}
+    - {series: GSE47183-GPL14663, compartment: GLOM}
+    - {series: GSE104954-GPL24120, compartment: TUB}
+# ---- stage 16b：快速 Python 反卷积（Scaden 式 MLP 集成 + 标志 NNLS 对照；与 stage 16 BayesPrism 独立并行）；以下键均为新增 ----
+deconv_fast:
+  reference: snRNA                        # KPMP atlas v2 供体 × SubclassLevel2 pseudobulk 缓存（stage 14）
+  donor_groups: [REF, DKD, OTHER_CKD, HKD, AKI]   # 参照供体 = 健康 + 疾病（stage 14 分组定义）
+  holdout_frac: 0.2                       # 按分组分层留出供体：只用于比例误差评估，不进模拟训练
+  min_cells: 10                           # 供体 × 细胞类型 行的最少细胞数（不足则该供体该类型从其他训练供体借）
+  borrow_prob: 0.3                        # 每个细胞类型以该概率换用另一供体的谱（跨供体状态多样性）
+  genes: {max_missing: 0.0, min_ref_log2cpm: 1.0, domain_max_absdiff: 0.2, marker_min_log2cpm: 5.0}   # 基因：bulk 全覆盖 ∩ 参照表达 ∩ 秩域偏差过滤（见 lib/deconv_fast_ref）
+  types:                                  # 细胞类型 → KPMP SubclassLevel2；每个区室一套
+    GLOM:
+      PODO: [POD, dPOD]
+      PEC: [PEC]
+      EC_GC: [EC-GC, aEC-GC, dEC-GC]
+      MES: [MC]
+      EC_OTHER: [EC-AA, EC-EA, dEC-EA, EC-PTC, aEC-PTC, dEC-PTC, angEC-PTC, infEC-PTC, EC-AVR, dEC-AVR, infEC-AVR, EC-DVR, aEC-DVR, EC-PCV, EC-V, EC-LYM, cycEC]
+      VSMC: [VSMC, VSMC/P, dVSMC, REN]
+      FIB: [FIB, M-FIB, dFIB, dM-FIB, infFIB, pvFIB, MYOF]
+      MYE: [resMAC, moMAC, moMAC-INF, cycMAC, MON, DC, MAST, N]
+      LYM: [T, cycT, NK, B, PL]
+      PT: [PT-S1, PT-S2, PT-S3, aPT, dPT, frPT, cycPT]
+      DIST: [DTL1, DTL2, DTL3, dDTL, ATL, aDTL, dATL, C-TAL, C/M-TAL, M-TAL, dM-TAL, aTAL, dC-TAL, frTAL, cycTAL, MD, DCT, aDCT, dDCT, CNT, aCNT, dCNT, C-PC, M-PC, dM-PC, IMCD, dIMCD, C-IC-A, M-IC-A, dC-IC-A, dM-IC-A, IC-B, tPC-IC]
+    TUB:
+      PT: [PT-S1, PT-S2, PT-S3, aPT, dPT, frPT, cycPT]
+      LOH: [DTL1, DTL2, DTL3, dDTL, ATL, aDTL, dATL, C-TAL, C/M-TAL, M-TAL, dM-TAL, aTAL, dC-TAL, frTAL, cycTAL, MD]
+      DCT: [DCT, aDCT, dDCT]
+      CNT: [CNT, aCNT, dCNT]
+      PC: [C-PC, M-PC, dM-PC, IMCD, dIMCD]
+      IC: [C-IC-A, M-IC-A, dC-IC-A, dM-IC-A, IC-B, tPC-IC]
+      EC: [EC-AA, EC-EA, dEC-EA, EC-PTC, aEC-PTC, dEC-PTC, angEC-PTC, infEC-PTC, EC-AVR, dEC-AVR, infEC-AVR, EC-DVR, aEC-DVR, EC-PCV, EC-V, EC-LYM, cycEC]
+      VSMC: [VSMC, VSMC/P, dVSMC, REN]
+      FIB: [FIB, M-FIB, dFIB, dM-FIB, infFIB, pvFIB, MYOF]
+      MYE: [resMAC, moMAC, moMAC-INF, cycMAC, MON, DC, MAST, N]
+      LYM: [T, cycT, NK, B, PL]
+      GLOM: [POD, dPOD, PEC, EC-GC, aEC-GC, dEC-GC, MC]
+  prior:                                  # Dirichlet 模拟：一半样本围绕区室先验均值（浓度对数均匀），一半为稀疏宽先验
+    GLOM: {PODO: 0.20, PEC: 0.06, EC_GC: 0.28, MES: 0.18, EC_OTHER: 0.04, VSMC: 0.03, FIB: 0.03, MYE: 0.03, LYM: 0.02, PT: 0.08, DIST: 0.05}
+    TUB: null                             # null = 训练供体的皮质 snRNA 平均组成
+    conc: [2.0, 60.0]
+    sparse_alpha: 0.3
+    frac_prior: 0.5
+  sim:
+    n_train: 60000
+    n_val: 4000
+    n_holdout: 4000
+    cells_per_mix: [300, 3000]            # 每个混合物抽的细胞数（多项式）
+    depth: [2000000.0, 20000000.0]                 # 泊松测序深度
+    platforms_per_batch: 8                # 每个 batch 新抽的随机「平台」数：逐基因乘性偏倚 sd ~ U(platform_sd)，不固定平台集合
+    platform_sd: [0.2, 1.0]
+    sample_sd: [0.05, 0.3]
+    floor_log2: [-1.0, 6.0]               # 芯片背景：log2(CPM·偏倚 + 2^floor)
+  mlp: {hidden: [512, 256, 128], dropout: 0.1, lr: 1.0e-3, wd: 1.0e-5, epochs: 30, batch: 256, n_models: 3}
+  nnls: {n_markers: 30}
+  state: {n_markers: 30, n_block: 100}          # n_block：基因级分配状态 STATE_AG 每类型的特异基因块大小
+  eval: {families: [E1, E2, E4], baseline_run: r5, baseline: B-L2, n_boot: 2000, r2_cv_folds: 5}
+# ---- stage 18：冻结 RRG-ID 的解释与关键细胞程序 / 关键基因验证；以下键均为新增，不改冻结设计 ----
+interpret:
+  device: cuda:0
+  models_dir: models/18_interpret         # 每个 (fold, seed) 的线性等效权重 npz（不进 git）
+  e1_all_units: true                      # E1：区室内每个含病人的单元各留出一次（与 stage 15 E1 同构、DKD 留在训练集）
+  top_k: 100                              # 基因 Top-k 重合 / 频率所用 k
+  prog_top_k: 5                           # 程序 Top-k 重合所用 k
+  min_topk_freq: 0.6                      # 关键基因：在 ≥ 该比例的 E1 fold 中进入 top_k（|标准化总效应|）
+  min_sign_consistency: 0.9               # 关键基因 / 程序：全部 E1 fold × 种子模型中与共识同号的比例下限
+  prog_enrich_fdr: 0.05                   # 关键程序：标志基因上标准化总效应的富集 z（BH-FDR）上限
+  key_max_genes: 50                       # 每 head 最多报告的关键基因数（按 |全数据共识效应| 排序）
+  sig_sizes: [20, 50, 100]                # 用于验证链的 top-k 基因集（带模型符号）
+  n_random_sets: 1000                     # 随机基因集零分布（同 stage 12 口径）
+  n_perm: 1000                            # 供体 / 样本标签置换
+  diag_variants:                          # 诊断（非冻结设计）：程序通路为何不被使用；只在 FULL 上训练
+    noHSIC: {lambda_hsic: 0.0}
+    noResid: {gene_resid: false}          # 强制全部信号经程序通路（dev 未评估此变体；仅作解释对照）
+  kpmp_datasets: [snRNA, scRNA]           # snRNA 主、scRNA 复现
+  kpmp_contrasts: [DKD_vs_REF, DKD_vs_HKD, DKD_vs_OTHER_CKD]
+  spec_min_log2cpm: 1.0                   # 细胞类型定位：参考供体均值 log2CPM 低于此视为未表达
+  gse142025: {series: GSE142025-RNAseq, early: Early_DN, late: Advanced_DN}
+  genesets:                               # Enrichr 文本库（下载后本地缓存 + md5；背景 = 基因宇宙）
+    url: "https://maayanlab.cloud/Enrichr/geneSetLibrary?mode=text&libraryName="
+    libraries: [MSigDB_Hallmark_2020, Reactome_2022, GO_Biological_Process_2023, KEGG_2021_Human]
+    disease_libraries: [DisGeNET, Jensen_DISEASES]
+    disease_terms_regex: "(?i)diabetic nephropath|diabetic kidney"
+    chrom_library: Chromosome_Location_hg19   # 性染色体基因标记（chrY 与 XIST：性别构成混杂的提示）
+    cache: data/external/genesets
+    min_size: 10
+    max_size: 500
+    fdr: 0.05
+# ---- stage 19：泛 CKD 共享疾病–对照程序（SCP）与病种特异残差；以下键均为新增，不改冻结段 ----
+shared_program:
+  sources:                                # 带对照的来源单元（非 DKD 病人 vs 对照）；独立队列一律不作来源
+    GLOM: [ERCB_GLOM_H1, ERCB_GLOM_H7, GSE108109-GPL19983, GSE93798-GPL22945]
+    TUB: [ERCB_TUB_H1, ERCB_TUB_H7, GSE108112-GPL19983]
+  never_source: [GSE175759-RNAseq, GSE142025-RNAseq, GSE115857-GPL14951, GSE162830, KPMP, GSE166239]
+  min_group: 5                            # 单元内病人 / 对照最少样本数；逐病种 vs 对照一致率同阈值
+  core:                                   # 核心基因阈值（只看来源单元；在查看任何独立数据前固定）
+    fdr: 0.01                             # DL 随机效应 z 检验 BH-FDR
+    min_abs_g: 0.8                        # |合并 Hedges g|
+    sign_frac: 1.0                        # 与合并方向同号的来源比例
+    loo_max_p: 0.05                       # 留一来源：剩余来源的合并 P
+    loo_min_abs_g: 0.5                    # 留一来源：剩余来源的 |合并 g|（且同号）
+  n_representative: 15                    # 每方向报告的代表基因数（按 |g_re|）
+  dkd_check_units:                        # DKD 外部检验：DKD vs 对照 效应与 SCP（去掉该单元后重估）的一致性
+    GLOM: [ERCB_GLOM_H1, ERCB_GLOM_H7, GSE30528-GPL571CEL, GSE96804-GPL17586]
+    TUB: [ERCB_TUB_H1, ERCB_TUB_H7, GSE30529-GPL571CEL, GSE142025-RNAseq]
+  composition:                            # 2b：BayesPrism 组成（stage 16 run/all）
+    run_tag: all
+    references: [scRNA, snRNA]            # scRNA 为 stage 16 主参照
+    units:
+      GLOM: [ERCB_GLOM_H1, ERCB_GLOM_H7, GSE108109-GPL19983, GSE93798-GPL22945, GSE30528-GPL571CEL, GSE96804-GPL17586]
+      TUB: [ERCB_TUB_H1, ERCB_TUB_H7, GSE108112-GPL19983, GSE30529-GPL571CEL, GSE133288-GPL19983, GSE182380-RNAseq,
+            GSE175759-RNAseq, GSE142025-RNAseq, GSE115857-GPL14951]
+    ref_compartment: {GLOM: GLOM, TUB: TUB}   # 单元区室 → θ 的区室键（WHOLE 单元在 θ 表中为 WHOLE，按 TUB 类型集）
+    eps: 0.001
+    cv_folds: 5
+    cv_reps: 10
+    min_unit_n: 15
+  kpmp:                                   # 2c：KPMP 供体 pseudobulk（stage 14 缓存；细胞类型口径 = kpmp.map_to_stage13）
+    datasets: [snRNA, scRNA]              # snRNA 主（有 eGFR 与健康经皮活检）、scRNA 复现
+    ckd_groups: [DKD, OTHER_CKD]          # CKD = DKD ∪ HKD ∪ Other（stage 14 分组）
+    procurement_col: {snRNA: TissueCollection, scRNA: Tissue.Type}
+    percutaneous: Percutaneous Needle Biopsy
+    lfc_min: 0.25                         # 「细胞内状态改变」：同号且 |log2FC| > 该值且置换 P < state_max_p
+    state_max_p: 0.05
+    comp_min_top_share: 0.5               # 「组成型」基因：参考中最高表达类型的线性份额下限（细胞类型特异）
+    min_expr_log2cpm: 1.0
+    n_perm: 1000
+    proc_min_abs_g: 0.8                   # 取材敏感：健康供体 手术取材 vs 经皮活检 的 |g| 下限，且方向模拟「对照」
+    ieg: [FOS, FOSB, JUN, JUNB, JUND, EGR1, EGR2, EGR3, ATF3, NR4A1, NR4A2, NR4A3, DUSP1, DUSP6, ZFP36, ZFP36L1,
+          IER2, IER3, IER5, KLF2, KLF4, KLF6, PPP1R15A, CCN1, CCN2, BTG2, GADD45B, GADD45G, SOCS3, CEBPD, MYC,
+          HSPA1A, HSPA1B, DNAJB1, RHOB, CSRNP1, MAFF, NFKBIA, SIK1, TRIB1, KLF10, EGR4, FOSL1, FOSL2, SGK1]
+  replicate:                              # 3：独立数据（不参与任何选择）；区室 = 用哪套 SCP 核心
+    cohorts:
+      GSE162830: {source: indep, core: GLOM, positive: [DKD, ING]}
+      KPMP: {source: indep, core: TUB, positive: [DKD, HT, OTHER]}
+      GSE166239: {source: indep, core: TUB, positive: [DKD, HT]}
+      GSE175759-RNAseq: {source: interim, core: TUB, positive: [IgAN, MCD, MN, DKD, LN, FSGS]}
+      GSE142025-RNAseq: {source: interim, core: TUB, positive: [DKD]}
+      GSE115857-GPL14951: {source: interim, core: TUB, positive: [IgAN, MCD, MN, FSGS]}
+    also_dkd_control: [GSE30528-GPL571CEL, GSE96804-GPL17586, GSE30529-GPL571CEL]   # 未作来源的 DKD–对照队列（补充）
+    n_random_sets: 1000
+    n_boot: 2000
+  residual:                               # 4：病种特异残差（病人内回归掉 SCP 分数后 病种 vs 其余病人）
+    units:
+      GLOM: [ERCB_GLOM_H1, ERCB_GLOM_H7, GSE108109-GPL19983]
+      TUB: [ERCB_TUB_H1, ERCB_TUB_H7, GSE108112-GPL19983, GSE133288-GPL19983, GSE182380-RNAseq]
+    diseases: [DKD, LN, RPGN, MN, FSGS, MCD, IgAN, HT]
+    min_group: 5
+    sig_n: 50                             # 独立检验用签名：每方向 top-n（按 |g_re|，要求单元间同号）
+    n_top_report: 20
+    n_perm: 1000                          # 细胞程序富集（基因置换）
+    tests:                                # 独立数据中能检验的对比：[队列, 病种签名区室, 阳性, 阴性]
+      - [GSE175759-RNAseq, TUB, IgAN, [MCD, MN, DKD, LN, FSGS]]
+      - [GSE175759-RNAseq, TUB, MCD, [IgAN, MN, DKD, LN, FSGS]]
+      - [GSE175759-RNAseq, TUB, MN, [IgAN, MCD, DKD, LN, FSGS]]
+      - [GSE175759-RNAseq, TUB, LN, [IgAN, MCD, MN, DKD, FSGS]]
+      - [GSE175759-RNAseq, TUB, DKD, [IgAN, MCD, MN, LN, FSGS]]
+      - [GSE175759-RNAseq, TUB, FSGS, [IgAN, MCD, MN, DKD, LN]]
+      - [GSE115857-GPL14951, TUB, IgAN, [MCD, MN, FSGS]]
+      - [GSE115857-GPL14951, TUB, MCD, [IgAN, MN, FSGS]]
+      - [GSE115857-GPL14951, TUB, MN, [IgAN, MCD, FSGS]]
+      - [GSE162830, GLOM, DKD, [ING]]
+      - [KPMP, TUB, DKD, [HT, OTHER]]
+      - [KPMP, TUB, HT, [DKD, OTHER]]
+      - [GSE166239, TUB, DKD, [HT]]
+      - [GSE166239, TUB, HT, [DKD]]
+    min_test_n: 3                         # 独立检验每组最少样本（< 5 标记为描述性）
+    replicate_pct: 0.95                   # 「复现」：AUROC 高于同大小随机签名的该百分位（且组数 ≥ 5）
+# ---- stage 20：SCP 细胞内状态成分与 KPMP 适应不良 / 修复失败小管状态（生物学解释，非方法比较）；以下键均为新增 ----
+repair_state:
+  datasets: [snRNA, scRNA]                # snRNA 主（皮质、有 eGFR）；scRNA 复现（解离偏倚：全细胞、应激 / 状态占比方向不同）
+  compartment: TUB                        # 使用的 SCP 核心（71% 细胞内状态成分来自 TUB 核心）；GLOM 仅作补充
+  lineages:                               # 谱系 → 状态 → KPMP SubclassLevel2（两个数据集的名称并集；缺失的名称自动忽略）
+    PT:
+      normal: [PT-S1, PT-S2, PT-S3, PT-S1/S2, PT-S2/S3]
+      aPT: [aPT]                          # adaptive / maladaptive（KPMP 定义）
+      frPT: [frPT]                        # failed-repair（atlas v2）
+      dPT: [dPT]                          # degenerative
+      cycPT: [cycPT]                      # cycling
+    TAL:
+      normal: [C-TAL, M-TAL, C/M-TAL]     # MD 不计入 TAL 状态分析（独立细胞类型）
+      aTAL: [aTAL]
+      frTAL: [frTAL]
+      dTAL: [dC-TAL, dM-TAL, dTAL]
+      cycTAL: [cycTAL]
+  repair_states: {PT: [aPT, frPT], TAL: [aTAL, frTAL]}   # 「适应不良 / 修复失败」主定义 = adaptive ∪ failed-repair
+  categories:                             # 供体病理类别（供体水平唯一取值）；CKD = DKD ∪ HKD ∪ OTHER（与 stage 19 同口径）
+    snRNA:
+      REF: {ConditionCategory: [Healthy Reference]}
+      DKD: {ConditionCategory: [Chronic Kidney Disease], AdjudicationCategory: [Diabetic Kidney Disease]}
+      HKD: {ConditionCategory: [Chronic Kidney Disease], AdjudicationCategory: [Hypertensive Kidney Disease]}
+      OTHER: {ConditionCategory: [Chronic Kidney Disease], AdjudicationCategory: [Other]}
+      CKD_unadj: {ConditionCategory: [Chronic Kidney Disease], AdjudicationCategory: [Cannot be determined, Not available]}
+      AKI: {ConditionCategory: [Acute Kidney Injury]}
+      DM_R: {ConditionCategory: [Diabetes Mellitus - Resilient]}
+    scRNA:
+      REF: {EnrollmentCategory: [Healthy Reference Tissue]}
+      DKD: {EnrollmentCategory: [Chronic Kidney Disease], AdjudicationCategory: [Diabetic Kidney Disease]}
+      HKD: {EnrollmentCategory: [Chronic Kidney Disease], AdjudicationCategory: [Hypertensive Kidney Disease]}
+      OTHER: {EnrollmentCategory: [Chronic Kidney Disease], AdjudicationCategory: [Other]}
+      CKD_unadj: {EnrollmentCategory: [Chronic Kidney Disease], AdjudicationCategory: [Cannot be determined, Unknown]}
+      AKI: {EnrollmentCategory: [Acute Kidney Injury]}
+      DM_R: {EnrollmentCategory: [Diabetes Mellitus - Resilient]}
+  ckd: [DKD, HKD, OTHER]
+  min_cells: 20                           # 供体 × 状态 pseudobulk 最少细胞数（同 kpmp.min_cells）
+  min_donors: 5                           # 配对状态程序 / 组间检验每组最少供体
+  program:                                # 1：状态程序（供体内配对：状态 vs 同供体正常细胞；不读疾病标签）
+    min_log2cpm: 1.0                      # 基因在两者之一的供体均值 log2CPM 下限
+    fdr: 0.05                             # 配对 t 检验 BH-FDR
+    lfc: 1.0                              # |平均 log2FC| 下限
+    rep_lfc: 0.5                          # scRNA 复现：同号且 |log2FC| ≥ 该值
+    n_top: 100                            # 打分用程序：每方向按 d_z 取 top-n（FDR 与 lfc 同时满足）
+  n_perm: 1000                            # 供体标签置换 / 符号翻转
+  n_boot: 1000                            # 供体 bootstrap（Shapley 份额 CI）
+  n_random_sets: 1000                     # 表达量分层匹配的随机基因集
+  n_expr_bins: 10
+  bulk:                                   # 4：bulk（BayesPrism 状态层 θ，stage 16 run/all；主参照 scRNA）
+    theta_run: all
+    reference: scRNA
+    units: [ERCB_TUB_H1, ERCB_TUB_H7, GSE108112-GPL19983, GSE30529-GPL571CEL, GSE133288-GPL19983, GSE182380-RNAseq,
+            GSE175759-RNAseq, GSE142025-RNAseq, GSE115857-GPL14951]
+    diseases: [DKD, LN, RPGN, MN, FSGS, MCD, IgAN, HT]
+    min_group: 5
+    eps: 0.001                            # logit 份额截断
+    clinical_cohorts: [GSE175759-RNAseq, GSE142025-RNAseq, GSE115857-GPL14951, KPMP, GSE166239]   # 只作检验
+# ---- stage 21：稳健性补充分析（A1–A8）；只写 results/21_robustness，不改任何已有 stage 的输出；以下键均为新增 ----
+robustness21:
+  n_perm: 1000                            # 样本标签置换 / 旋转次数（A1、A5）
+  n_rot: 1000
+  n_boot: 1000                            # 患者 / 供体 bootstrap
+  de_fdr: 0.05                            # A1：单元内疾病 vs 对照 显著基因（Welch t on ranks，BH）
+  min_group: 3                            # A1：与 stage 11 shift_share 相同的最小组
+  proc_min_abs_g: 0.8                     # A3：全基因取材敏感 = |g(健康手术 vs 健康经皮, snRNA)| ≥ 该值且方向模拟对照（同 stage 19c）
+  gene_variants: [full, no_proc, no_ieg, no_proc_ieg]
+  ratio_thresholds: [0.0, 0.1, 0.15, 0.2, 0.25, 0.3]   # A5：min_r_dd 敏感性
+  injection:                              # A4：真实 ERCB 病人中的已知信号注入
+    units: {TUB: ERCB_TUB_H1, GLOM: ERCB_GLOM_H1}
+    n_pseudo: 20                          # 伪病种人数（random / severity_linked 两种抽取）
+    n_genes: 50                           # 注入基因数
+    deltas: [0.25, 0.5, 1.0, 1.5]         # 注入效应（病人间 SD 单位）
+    n_rep: 100
+    n_null_sets: 200                      # 调整 AUROC 的随机签名零分布
+    severity_link_g: null                 # null = 取该单元真实 DKD 相对其余病人的 SCP 分数差（stage 19e）
+    detect_power: 0.8
+  shapley_gpu: {device: "cuda:0", batch: 32}
+  a7_programs: [PT:rfPT, PT:aPT, PT:frPT, TAL:rfTAL]
+# ---- stage 22：第三轮补充分析（S1–S3）；只写 results/22_sensitivity，不改任何已有 stage 的输出；以下键均为新增 ----
+sensitivity22:
+  n_perm: 1000                            # S1：Spearman / 偏 Spearman 的置换次数（同 stage 20d）
+  n_boot: 2000                            # S1：供体 bootstrap；S2：患者 bootstrap（按组分层，同 stage 19d）
+  s1:
+    dataset: snRNA
+    states: [PT:frPT, TAL:frTAL, PT:aPT, TAL:aTAL, PT:rfPT, TAL:rfTAL]
+    subsets:                              # 供体子集（KPMP 类别）；AKI 排除前后并列
+      all_categorised: [REF, DKD, HKD, OTHER, AKI, DM_R, CKD_unadj]
+      all_categorised_noAKI: [REF, DKD, HKD, OTHER, DM_R, CKD_unadj]
+      REF+CKD: [REF, DKD, HKD, OTHER]
+      CKD: [DKD, HKD, OTHER]
+      AKI: [AKI]
+    min_donors: 10
+  s2:
+    gene_set: full                        # 主分析基因集（stage 19d）
+    contrasts: [patients_vs_control, DKD_vs_control]
+  s3:
+    reference: scRNA                      # 与 stage 16 主参照相同（scRNA_TUB）
+    normal_pt: [PT-S1/S2, PT-S2/S3, PT-S1, PT-S2, PT-S3]
+    injured_pt: [aPT, frPT]
+    n_holdout: 10                         # 留出供体（aPT、frPT 各 ≥20 个细胞，正常 PT ≥50 个）；参照只用其余供体
+    min_cells_state: 20
+    min_cells_normal: 50
+    shares: [0.0, 0.05, 0.1, 0.2, 0.3, 0.4]    # 已知 aPT+frPT 占 PT 读数的份额
+    apt_to_frpt: [2, 1]                   # aPT : frPT（KPMP DKD 供体中约 2:1）
+    depth: 20000000
+    ercb_genes_from: GSE104954-GPL22945   # ERCB 小管间质芯片测到的基因（限制基因覆盖的场景）
+    modes:                                # 测量场景：seq = 泊松计数；array = log2(CPM·2^偏倚 + 2^floor) + 噪声 → 2^x（与 stage 16 芯片线性化相同）
+      seq_all: {kind: seq, genes: all}
+      seq_ercb: {kind: seq, genes: ercb}
+      array_ercb: {kind: array, genes: ercb, bias_sd: 0.5, floor_log2: 3.0, noise_sd: 0.1}
+      array_ercb_strong: {kind: array, genes: ercb, bias_sd: 1.0, floor_log2: 5.0, noise_sd: 0.2}
+    n_cores: 32
+    out_dir: data/processed/deconv/sensitivity22

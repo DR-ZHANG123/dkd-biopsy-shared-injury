@@ -1,0 +1,36 @@
+{
+  "stage": "21_robustness/A5_ratio",
+  "time": "2026-09-29T22:42:57",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/11b_shared_axis/specificity_ratio.tsv": "7668f7df001424d6b5f4b2188626d444"
+  },
+  "outputs": {
+    "results/21_robustness/A5_ratio/ratio_ci.tsv": "fbfb1e56aca3f828532d091df3863530",
+    "results/21_robustness/A5_ratio/ratio_summary.tsv": "a416d8675f1b8699656a8e078c0ceeeb",
+    "results/21_robustness/A5_ratio/threshold_history.tsv": "2f0e2d69f2393070bfd227fc5c9f3ced"
+  },
+  "extra": {
+    "n_boot": 1000,
+    "thresholds": [
+      0.0,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ]
+  }
+}

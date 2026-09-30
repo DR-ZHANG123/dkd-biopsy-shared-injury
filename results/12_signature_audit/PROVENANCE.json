@@ -1,0 +1,27 @@
+{
+  "stage": "12_signature_audit",
+  "time": "2026-09-28T16:42:56",
+  "seed": 20260928,
+  "config_sha": "a92af9a831887e2f",
+  "git_commit": "bd2f7e3c4e666e74ccd02c0c5692edf195196f63",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/11_injury/injury_scores.tsv": "e8a831de4aa49370b46f5caa56bea281",
+    "metadata/published_dkd_signatures.tsv": "e37146c0bae7eca66f19e36ffe91cf71"
+  },
+  "outputs": {
+    "results/12_signature_audit/signature_metrics.tsv": "fa5545567d969baf2e9d94fac7621b90"
+  },
+  "extra": {
+    "n_signatures": 180
+  }
+}

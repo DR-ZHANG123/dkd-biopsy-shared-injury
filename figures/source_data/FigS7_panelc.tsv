@@ -1,0 +1,5 @@
+compartment	dataset	composition	opposite_state	state	state+composition	unresolved
+GLOM	snRNA	71	143	296	12	850
+GLOM	scRNA	36	161	297	16	861
+TUB	snRNA	29	78	192	5	596
+TUB	scRNA	23	113	201	4	556

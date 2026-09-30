@@ -1,0 +1,34 @@
+{
+  "stage": "20_repair_state/concord",
+  "time": "2026-09-29T15:51:43",
+  "seed": 20260928,
+  "config_sha": "8efb02bebfeb6666",
+  "git_commit": "e0ae2e2f585882a8f14e15bcf21e42cec1daaf18",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/19_shared_program/core/meta_TUB.tsv.gz": "926a1a27510b2770f4d3ee2037072fe3",
+    "results/20_repair_state/programs/programs.tsv.gz": "7bafffb0991f8ddeb4cd541aee90f153",
+    "results/20_repair_state/programs/fractions.tsv.gz": "9cc337f098ac27cb92304396997c7706"
+  },
+  "outputs": {
+    "results/20_repair_state/concord/concordance.tsv": "923f89dd904531b092fa7cc35919ee8b",
+    "results/20_repair_state/concord/lineage_de.tsv.gz": "d18f3970ceac78348291f85968452e7a",
+    "results/20_repair_state/concord/bulk_overlap.tsv": "8c79078b5f23c61a36a658a022392501",
+    "results/20_repair_state/concord/regression.tsv": "55e2f5f3c01c2053f262e302b39f7425",
+    "results/20_repair_state/concord/donor_lineage_scores.tsv": "d15550f07176faeb686bad19405a6d11"
+  },
+  "extra": {
+    "n_perm": 1000,
+    "compartment": "TUB"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "stage": "18_interpret/validate",
+  "time": "2026-09-29T11:26:57",
+  "seed": 20260928,
+  "config_sha": "b03749c0404aa7a0",
+  "git_commit": "1c66716a574febb809630b8f0eebb8726652aca7",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/18_interpret/weights/key_genes.tsv": "4d1901055d4ef0595fc37a121f40f053",
+    "results/15_model/final_dkd/predictions.tsv": "d0728b553e05958fc1288b640eff4c6b",
+    "results/11_injury/injury_scores.tsv": "e8a831de4aa49370b46f5caa56bea281",
+    "results/12_signature_audit/signature_metrics.tsv": "fa5545567d969baf2e9d94fac7621b90"
+  },
+  "outputs": {
+    "results/18_interpret/validate/heldout_gene_tests.tsv": "50bff09a98db0f6fdb83f7022bc2c9ac",
+    "results/18_interpret/validate/heldout_set_tests.tsv": "827a8218dc32de177cc219be0cb4b535",
+    "results/18_interpret/validate/heldout_key_genes.tsv": "d98e39a46b3d903d5c37dfaf9bfa529a",
+    "results/18_interpret/validate/heldout_key_genes_meta.tsv": "be197e64177928769ee1bbc9af07a860",
+    "results/18_interpret/validate/signature_audit.tsv": "6131aa4e7dc18815177663b89ee65592",
+    "results/18_interpret/validate/published_replication.tsv": "83464bcf9f875ca484dba02f07297ccb",
+    "results/18_interpret/validate/gse142025_progression.tsv": "687d273b5954da145ba81a697095d1dd",
+    "results/18_interpret/validate/gse142025_scores.tsv": "c43c063f7a8d21044b1989847ffc8dfc"
+  },
+  "extra": {
+    "n_perm": 1000,
+    "sig_sizes": [
+      20,
+      50,
+      100
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "stage": "18_interpret/diag",
+  "time": "2026-09-29T11:30:05",
+  "seed": 20260928,
+  "config_sha": "b03749c0404aa7a0",
+  "git_commit": "1c66716a574febb809630b8f0eebb8726652aca7",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/18_interpret/weights/program_total_effects.tsv": "e328b6554d498e64e1b9249ba91cb6f4"
+  },
+  "outputs": {
+    "results/18_interpret/diag/variant_summary.tsv": "9d9020c0294f8a156622aa92993db6ad",
+    "results/18_interpret/diag/variant_program_weights.tsv": "8de12763b6d1cd4f0e6aa04352acbfa5"
+  },
+  "extra": {
+    "variants": {
+      "noHSIC": {
+        "lambda_hsic": 0.0
+      },
+      "noResid": {
+        "gene_resid": false
+      }
+    }
+  }
+}

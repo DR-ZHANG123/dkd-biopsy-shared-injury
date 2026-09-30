@@ -1,0 +1,6 @@
+comparator	metric	delta	lo	hi	p_one_sided
+B-L2	adj_auroc	0.0629666	-0.0102557	0.147021	0.0535
+B2-PCA	adj_auroc	0.0728552	0.00559764	0.141931	0.0155
+B-cPCA	adj_auroc	0.0398769	-0.0178721	0.103316	0.0935
+B-rankLASSO	adj_auroc	0.167256	0.0343558	0.307665	0.0075
+B-L2-unitcenter	adj_auroc	0.158666	0.0752073	0.241337	0

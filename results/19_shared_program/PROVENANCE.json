@@ -1,0 +1,55 @@
+{
+  "stage": "19_shared_program",
+  "time": "2026-09-29T14:49:14",
+  "seed": 20260928,
+  "config_sha": "b049df3edc9f381b",
+  "git_commit": "2dc61f83f207acb2a5b9e1b97c3f6966542bde80",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/PROVENANCE.json": "c5d9667d4ea57c3cf4173fdecb344443",
+    "results/19_shared_program/cells/PROVENANCE.json": "590b844433cfe6db64369844254ddd34",
+    "results/19_shared_program/kpmp/PROVENANCE.json": "cc376a06932591110994384efe9f365a",
+    "results/19_shared_program/replicate/PROVENANCE.json": "780d1f58513b94298cdd0ad1e35dae7f",
+    "results/19_shared_program/residual/PROVENANCE.json": "46c167d7756eef82638497b405f163db"
+  },
+  "outputs": {
+    "results/19_shared_program/figdata/fig1_core_volcano.tsv.gz": "c2b8d5346f2b9cc464c5353a8ba2d502",
+    "results/19_shared_program/figdata/fig1_core_forest.tsv": "2789060d5b14eb2408e1a437012f3b16",
+    "results/19_shared_program/figdata/fig1_disease_concordance.tsv": "53d963b437705a1873dba15350d49091",
+    "results/19_shared_program/figdata/fig2_core_localisation.tsv": "c71d318a477ce03d10409da003bed268",
+    "results/19_shared_program/figdata/fig2_marker_program_z.tsv": "9987681059621033cba3be5b536ddf27",
+    "results/19_shared_program/figdata/fig2_composition_r2.tsv": "4376ca1ecac57fe0de3c8666b09fbf21",
+    "results/19_shared_program/figdata/fig2_kpmp_decomposition.tsv": "5f51f3c8835ff222fd6c9178c78ce9e2",
+    "results/19_shared_program/figdata/fig2_kpmp_gene_class.tsv": "145ba96106c28c1c39ac49a7fecf1fa3",
+    "results/19_shared_program/figdata/fig2_kpmp_abundance.tsv": "74bf3ad2786b00e4699a2de4c8798daf",
+    "results/19_shared_program/figdata/fig2_kpmp_set_direction.tsv": "58328f6df80b732686c1032de38a7a77",
+    "results/19_shared_program/figdata/fig3_replication_auroc.tsv": "0864bf65b51a24209f9c8d0b0fc5c8b3",
+    "results/19_shared_program/figdata/fig3_clinical.tsv": "12c2b6b41b0be51c310fc699d15ddba4",
+    "results/19_shared_program/figdata/fig3_kpmp_egfr_scatter.tsv": "13d3565119c7fde7e716d84346c3b7dc",
+    "results/19_shared_program/figdata/fig3_scores.tsv": "aa15e254614e3a4ffc20cce6e65bae6e",
+    "results/19_shared_program/figdata/fig4_residual_programs.tsv": "abe0c69ae9f8fb3557fad3dd1421c25b",
+    "results/19_shared_program/figdata/fig4_residual_top_genes.tsv": "b8d3c3aa141e1a1393f71ca1fc60c2df",
+    "results/19_shared_program/figdata/fig4_residual_tests.tsv": "dbf9cb830aada175a87c0682e3a2450c",
+    "results/19_shared_program/figdata/fig4_disease_scp_shift.tsv": "d8e6166b6ab3b2b2995098e6d28471ef",
+    "results/19_shared_program/figdata/key_numbers.tsv": "87387ea2a05d8a091af2556fbe68ed12"
+  },
+  "extra": {
+    "substages": [
+      "core",
+      "cells",
+      "kpmp",
+      "replicate",
+      "residual"
+    ],
+    "config_section": "shared_program"
+  }
+}

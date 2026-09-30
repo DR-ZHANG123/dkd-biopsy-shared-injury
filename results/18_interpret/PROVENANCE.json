@@ -1,0 +1,57 @@
+{
+  "stage": "18_interpret",
+  "time": "2026-09-29T11:43:11",
+  "seed": 20260928,
+  "config_sha": "401c0bcc46949688",
+  "git_commit": "d90767322ed5ce3051599bece57f2baf4f0835c6",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/15_model/FROZEN_DESIGN.json": "43de0f4116cc07d64f19d15dd19c50d6",
+    "results/18_interpret/diag/PROVENANCE.json": "5af6ba315404ee980c37db059456f140",
+    "results/18_interpret/enrich/PROVENANCE.json": "42264301a4388887eddcd3360b6cdc86",
+    "results/18_interpret/kpmp/PROVENANCE.json": "908ce457dfab2740d51b6e29fcd4fceb",
+    "results/18_interpret/programs/PROVENANCE.json": "ff9f085556d55e375786cb30c3a39c65",
+    "results/18_interpret/train_GLOM/PROVENANCE.json": "3681b2308c276a28e87f884c01f1d63d",
+    "results/18_interpret/train_TUB/PROVENANCE.json": "c0c42cd8ff5fb9437690bdeed70cf83e",
+    "results/18_interpret/validate/PROVENANCE.json": "62c408e9e6185c2b637668295efc356e",
+    "results/18_interpret/weights/PROVENANCE.json": "ae72f0f0dc7de8f7ad13a309933ddd6e"
+  },
+  "outputs": {
+    "results/18_interpret/summary/dkd_key_gene_evidence.tsv": "12109259934dbbed6651f16d16462c02",
+    "results/18_interpret/summary/atlas_heads.tsv": "932b8f7bd8b22e5f711d2d30db6fe3d6",
+    "results/18_interpret/summary/atlas_top_genes.tsv": "0758387913eebe980d3f89723d70379d",
+    "results/18_interpret/summary/kpmp_set_direction_summary.tsv": "dc3d18fcb6cf554b5d82317d90b9ef04"
+  },
+  "extra": {
+    "substages": {
+      "diag": "2026-09-29T11:30:05",
+      "enrich": "2026-09-29T11:27:42",
+      "kpmp": "2026-09-29T11:40:48",
+      "programs": "2026-09-29T11:25:09",
+      "train_GLOM": "2026-09-29T11:42:48",
+      "train_TUB": "2026-09-29T11:42:54",
+      "validate": "2026-09-29T11:26:57",
+      "weights": "2026-09-29T11:24:25"
+    },
+    "scripts": [
+      "scripts/stages/18_interpret_diag.py",
+      "scripts/stages/18_interpret_enrich.py",
+      "scripts/stages/18_interpret_kpmp.py",
+      "scripts/stages/18_interpret_programs.py",
+      "scripts/stages/18_interpret_summary.py",
+      "scripts/stages/18_interpret_train.py",
+      "scripts/stages/18_interpret_validate.py",
+      "scripts/stages/18_interpret_weights.py"
+    ],
+    "note": "RRG-ID frozen design retrained on all labelled patients (FULL) + every E1 fold; weights in models/18_interpret"
+  }
+}

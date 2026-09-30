@@ -1,0 +1,76 @@
+{
+  "stage": "16b_deconv_fast",
+  "time": "2026-09-28T22:54:39",
+  "seed": 20260928,
+  "config_sha": "552e48e439c29c6c",
+  "git_commit": "99a1c01642906550079190927750a214a69b5bc9",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/processed/kpmp/snRNA/counts.npz": "7c738a61117e7b481295ce4ae8c1c668",
+    "data/processed/kpmp/snRNA/rows.tsv": "aad018456b0b34718143ce7e0583c8cf",
+    "data/interim/m2_features.parquet": "ce10e9d185ba026ad388f36b3a7d0a66"
+  },
+  "outputs": {
+    "results/16b_deconv_fast/donor_split.tsv": "882048b85bbdfb29c3be0fc4a7684e00",
+    "results/16b_deconv_fast/genes_GLOM.tsv": "a95110019cd7ffcc7c234b7160025818",
+    "results/16b_deconv_fast/genes_TUB.tsv": "4f154acefc5bf1128cd1d0951addcda5",
+    "results/16b_deconv_fast/markers_GLOM.tsv": "380c2589a0b91f658faa7cd777ae0c13",
+    "results/16b_deconv_fast/markers_TUB.tsv": "ea858327664fb1197ad14381a5d7957d",
+    "results/16b_deconv_fast/plausibility.tsv": "6c231e9c97960f8a89c113f6e1c97179",
+    "results/16b_deconv_fast/prop_error.tsv": "3470f206bbf4dd111c335c9a7ca071fe",
+    "results/16b_deconv_fast/props_GLOM_mlp.tsv": "a61140d75da6576369577875385be16e",
+    "results/16b_deconv_fast/props_GLOM_nnls.tsv": "965f3c5df19181a856d4a71f1d6f10d4",
+    "results/16b_deconv_fast/props_TUB_mlp.tsv": "b9aeeaaa21ad34d4549d3c18491da769",
+    "results/16b_deconv_fast/props_TUB_nnls.tsv": "32d98a4cc8cb178974f02d56e569845b",
+    "results/16b_deconv_fast/stateA_GLOM.tsv": "b01be8fce436c84379e056bd5f4f6938",
+    "results/16b_deconv_fast/stateA_TUB.tsv": "e96afcbb9a90ddf70bd11f28341355de"
+  },
+  "extra": {
+    "part": "16b-1 composition/state",
+    "comps": {
+      "GLOM": {
+        "n_genes": 6185,
+        "types": [
+          "PODO",
+          "PEC",
+          "EC_GC",
+          "MES",
+          "EC_OTHER",
+          "VSMC",
+          "FIB",
+          "MYE",
+          "LYM",
+          "PT",
+          "DIST"
+        ]
+      },
+      "TUB": {
+        "n_genes": 6181,
+        "types": [
+          "PT",
+          "LOH",
+          "DCT",
+          "CNT",
+          "PC",
+          "IC",
+          "EC",
+          "VSMC",
+          "FIB",
+          "MYE",
+          "LYM",
+          "GLOM"
+        ]
+      }
+    },
+    "device": "cuda:0"
+  }
+}

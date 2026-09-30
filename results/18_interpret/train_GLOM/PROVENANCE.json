@@ -1,0 +1,80 @@
+{
+  "stage": "18_interpret/train_GLOM",
+  "time": "2026-09-29T11:42:48",
+  "seed": 20260928,
+  "config_sha": "401c0bcc46949688",
+  "git_commit": "d90767322ed5ce3051599bece57f2baf4f0835c6",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/15_model/FROZEN_DESIGN.json": "43de0f4116cc07d64f19d15dd19c50d6",
+    "data/interim/m2_features.parquet": "ce10e9d185ba026ad388f36b3a7d0a66",
+    "results/15_model/final_dkd/predictions.tsv": "d0728b553e05958fc1288b640eff4c6b"
+  },
+  "outputs": {
+    "models/18_interpret/E1_GLOM_ERCB_GLOM_H1.npz": "2810492477f6077d3d822fdefcc1767e",
+    "models/18_interpret/E1_GLOM_ERCB_GLOM_H7.npz": "60c41d6df55b5937cbcf596945e3cc94",
+    "models/18_interpret/E1_GLOM_GSE108109-GPL19983.npz": "abac6773d770f2f51bdb5d9c7cf6e652",
+    "models/18_interpret/E1_GLOM_GSE30528-GPL571CEL.npz": "990d06c16e7242ee98905b4ead1c8ae5",
+    "models/18_interpret/E1_GLOM_GSE93798-GPL22945.npz": "fd6b1346113512166f4fc9124204fa62",
+    "models/18_interpret/E1_GLOM_GSE96804-GPL17586.npz": "4000f7e3512e45b6c984482992d4b251",
+    "models/18_interpret/FULL_GLOM.npz": "d5b928f03b5faaa52d2da703504356ec",
+    "models/18_interpret/E1_GLOM_ERCB_GLOM_H1.reproduction.tsv": "87c12f0f273fe6c80af8a7a7656de860",
+    "models/18_interpret/E1_GLOM_ERCB_GLOM_H7.reproduction.tsv": "c5be3bbb638e9b586bc8c996a896a1f2"
+  },
+  "extra": {
+    "design": {
+      "marker_source": "kpmp",
+      "graph": "none",
+      "rewire_seed": 0,
+      "diffuse_hops": 2,
+      "diffuse_beta": 0.5,
+      "program_size": 100,
+      "use_programs": true,
+      "learn_gates": false,
+      "gate_l2": 0.001,
+      "n_free": 0,
+      "free_l1": 0.0001,
+      "z_dim": 16,
+      "z_mlp": false,
+      "gene_resid": true,
+      "resid_l2": 0.001,
+      "resid_standardize": false,
+      "lambda_supcon": 0.0,
+      "lambda_hsic": 1.0,
+      "hsic_mode": "conditional",
+      "hsic_on": "z",
+      "gamma": 0.0,
+      "match_bw": 0.5,
+      "use_controls": true,
+      "control_weight": 1.0,
+      "compare_level": "mixed",
+      "pool_weight": 1.0,
+      "pos_scope": "any",
+      "supcon_center": "stratum",
+      "tau": 0.2,
+      "wd": 0.001,
+      "lr": 0.01,
+      "epochs": 300,
+      "n_seeds": 5
+    },
+    "folds": [
+      "FULL_GLOM",
+      "E1_GLOM_ERCB_GLOM_H1",
+      "E1_GLOM_ERCB_GLOM_H7",
+      "E1_GLOM_GSE108109-GPL19983",
+      "E1_GLOM_GSE93798-GPL22945",
+      "E1_GLOM_GSE96804-GPL17586",
+      "E1_GLOM_GSE30528-GPL571CEL"
+    ],
+    "final_dkd_reproduction_max_abs_diff": 4.768371586472142e-08
+  }
+}

@@ -1,0 +1,299 @@
+dataset	group	variable	value	n_donors	n_cells
+snRNA	REF	ALL	ALL	52	376593
+snRNA	REF	ConditionCategory	Healthy Reference	52	376593
+snRNA	REF	Conditions.Subtype	Healthy Reference Tissue	29	272723
+snRNA	REF	Conditions.Subtype	Healthy Reference Tissue - Stone	5	20051
+snRNA	REF	Conditions.Subtype	Living Donor Healthy Reference Tissue (KPMP)	18	83819
+snRNA	REF	AdjudicationCategory	Not available	52	376593
+snRNA	REF	TissueCollection	Deceased Donor Nephrectomy	5	79445
+snRNA	REF	TissueCollection	Intra-operative Biopsy	5	20051
+snRNA	REF	TissueCollection	Nephrectomy	15	160047
+snRNA	REF	TissueCollection	Percutaneous Needle Biopsy	9	33231
+snRNA	REF	TissueCollection	Transplant Pre-perfusion Biopsy	18	83819
+snRNA	REF	region	Cortex	40	311355
+snRNA	REF	region	Cortex/Medulla	12	65238
+snRNA	REF	Age	20-29	3	11437
+snRNA	REF	Age	30-39	9	37204
+snRNA	REF	Age	40-49	15	95574
+snRNA	REF	Age	50-59	13	147619
+snRNA	REF	Age	60-69	8	48445
+snRNA	REF	Age	70-79	2	18086
+snRNA	REF	Age	90-99	2	18228
+snRNA	REF	sex	female	22	164765
+snRNA	REF	sex	male	30	211828
+snRNA	REF	diabetes_history	No	47	352612
+snRNA	REF	diabetes_history	Not available	4	19512
+snRNA	REF	diabetes_history	Yes	1	4469
+snRNA	REF	hypertension	No	33	226456
+snRNA	REF	hypertension	Not available	4	13956
+snRNA	REF	hypertension	Yes	15	136181
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	100-109 ml/min/1.73m2	8	81560
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	110-119 ml/min/1.73m2	8	24282
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	120-129 ml/min/1.73m2	1	4409
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	130-139 ml/min/1.73m2	1	3036
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	150-159 ml/min/1.73m2	1	824
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	170-179 ml/min/1.73m2	1	3039
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	50-59 ml/min/1.73m2	1	9738
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	60-69 ml/min/1.73m2	2	45771
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	70-79 ml/min/1.73m2	5	37814
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	80-89 ml/min/1.73m2	8	52147
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	90-99 ml/min/1.73m2	11	97969
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	>60 ml/min/1.73m2	2	6764
+snRNA	REF	Baseline eGFR (ml/min/1.73m2) (Binned)	Not available	3	9240
+snRNA	REF	assay	10x 3' v3	26	172820
+snRNA	REF	assay	10x multiome	26	203773
+snRNA	DKD	ALL	ALL	29	89045
+snRNA	DKD	ConditionCategory	Chronic Kidney Disease	29	89045
+snRNA	DKD	Conditions.Subtype	Diabetic Kidney Disease	28	87917
+snRNA	DKD	Conditions.Subtype	Hypertensive Chronic Kidney Disease	1	1128
+snRNA	DKD	AdjudicationCategory	Diabetic Kidney Disease	29	89045
+snRNA	DKD	TissueCollection	Percutaneous Needle Biopsy	29	89045
+snRNA	DKD	region	Cortex	23	74410
+snRNA	DKD	region	Cortex/Medulla	6	14635
+snRNA	DKD	Age	30-39	3	8970
+snRNA	DKD	Age	40-49	4	17097
+snRNA	DKD	Age	50-59	5	6158
+snRNA	DKD	Age	60-69	13	42196
+snRNA	DKD	Age	70-79	4	14624
+snRNA	DKD	sex	female	11	43126
+snRNA	DKD	sex	male	18	45919
+snRNA	DKD	diabetes_history	Yes	29	89045
+snRNA	DKD	hypertension	Yes	29	89045
+snRNA	DKD	Baseline eGFR (ml/min/1.73m2) (Binned)	110-119 ml/min/1.73m2	2	10974
+snRNA	DKD	Baseline eGFR (ml/min/1.73m2) (Binned)	120-129 ml/min/1.73m2	1	4725
+snRNA	DKD	Baseline eGFR (ml/min/1.73m2) (Binned)	20-29 ml/min/1.73m2	1	2116
+snRNA	DKD	Baseline eGFR (ml/min/1.73m2) (Binned)	30-39 ml/min/1.73m2	7	25024
+snRNA	DKD	Baseline eGFR (ml/min/1.73m2) (Binned)	40-49 ml/min/1.73m2	8	19760
+snRNA	DKD	Baseline eGFR (ml/min/1.73m2) (Binned)	50-59 ml/min/1.73m2	7	20486
+snRNA	DKD	Baseline eGFR (ml/min/1.73m2) (Binned)	60-69 ml/min/1.73m2	1	4294
+snRNA	DKD	Baseline eGFR (ml/min/1.73m2) (Binned)	80-89 ml/min/1.73m2	2	1666
+snRNA	DKD	assay	10x 3' v3	14	46352
+snRNA	DKD	assay	10x multiome	15	42693
+snRNA	OTHER_CKD	ALL	ALL	27	103394
+snRNA	OTHER_CKD	ConditionCategory	Chronic Kidney Disease	27	103394
+snRNA	OTHER_CKD	Conditions.Subtype	Diabetic Kidney Disease	12	34196
+snRNA	OTHER_CKD	Conditions.Subtype	Hypertensive Chronic Kidney Disease	15	69198
+snRNA	OTHER_CKD	AdjudicationCategory	Hypertensive Kidney Disease	23	83884
+snRNA	OTHER_CKD	AdjudicationCategory	Other	4	19510
+snRNA	OTHER_CKD	TissueCollection	Percutaneous Needle Biopsy	27	103394
+snRNA	OTHER_CKD	region	Cortex	20	70302
+snRNA	OTHER_CKD	region	Cortex/Medulla	7	33092
+snRNA	OTHER_CKD	Age	30-39	1	3665
+snRNA	OTHER_CKD	Age	40-49	2	7636
+snRNA	OTHER_CKD	Age	50-59	5	17704
+snRNA	OTHER_CKD	Age	60-69	13	42594
+snRNA	OTHER_CKD	Age	70-79	6	31795
+snRNA	OTHER_CKD	sex	female	13	63188
+snRNA	OTHER_CKD	sex	male	14	40206
+snRNA	OTHER_CKD	diabetes_history	No	12	62057
+snRNA	OTHER_CKD	diabetes_history	Yes	15	41337
+snRNA	OTHER_CKD	hypertension	Yes	27	103394
+snRNA	OTHER_CKD	Baseline eGFR (ml/min/1.73m2) (Binned)	100-109 ml/min/1.73m2	1	1484
+snRNA	OTHER_CKD	Baseline eGFR (ml/min/1.73m2) (Binned)	20-29 ml/min/1.73m2	1	113
+snRNA	OTHER_CKD	Baseline eGFR (ml/min/1.73m2) (Binned)	30-39 ml/min/1.73m2	7	16255
+snRNA	OTHER_CKD	Baseline eGFR (ml/min/1.73m2) (Binned)	40-49 ml/min/1.73m2	9	43367
+snRNA	OTHER_CKD	Baseline eGFR (ml/min/1.73m2) (Binned)	50-59 ml/min/1.73m2	7	31196
+snRNA	OTHER_CKD	Baseline eGFR (ml/min/1.73m2) (Binned)	60-69 ml/min/1.73m2	2	10979
+snRNA	OTHER_CKD	assay	10x 3' v3	12	49734
+snRNA	OTHER_CKD	assay	10x multiome	15	53660
+snRNA	HKD	ALL	ALL	23	83884
+snRNA	HKD	ConditionCategory	Chronic Kidney Disease	23	83884
+snRNA	HKD	Conditions.Subtype	Diabetic Kidney Disease	9	19536
+snRNA	HKD	Conditions.Subtype	Hypertensive Chronic Kidney Disease	14	64348
+snRNA	HKD	AdjudicationCategory	Hypertensive Kidney Disease	23	83884
+snRNA	HKD	TissueCollection	Percutaneous Needle Biopsy	23	83884
+snRNA	HKD	region	Cortex	16	50792
+snRNA	HKD	region	Cortex/Medulla	7	33092
+snRNA	HKD	Age	40-49	1	2786
+snRNA	HKD	Age	50-59	4	12838
+snRNA	HKD	Age	60-69	13	42594
+snRNA	HKD	Age	70-79	5	25666
+snRNA	HKD	sex	female	9	43678
+snRNA	HKD	sex	male	14	40206
+snRNA	HKD	diabetes_history	No	11	57207
+snRNA	HKD	diabetes_history	Yes	12	26677
+snRNA	HKD	hypertension	Yes	23	83884
+snRNA	HKD	Baseline eGFR (ml/min/1.73m2) (Binned)	100-109 ml/min/1.73m2	1	1484
+snRNA	HKD	Baseline eGFR (ml/min/1.73m2) (Binned)	20-29 ml/min/1.73m2	1	113
+snRNA	HKD	Baseline eGFR (ml/min/1.73m2) (Binned)	30-39 ml/min/1.73m2	6	11389
+snRNA	HKD	Baseline eGFR (ml/min/1.73m2) (Binned)	40-49 ml/min/1.73m2	8	39702
+snRNA	HKD	Baseline eGFR (ml/min/1.73m2) (Binned)	50-59 ml/min/1.73m2	7	31196
+snRNA	HKD	assay	10x 3' v3	9	35074
+snRNA	HKD	assay	10x multiome	14	48810
+snRNA	AKI	ALL	ALL	25	80211
+snRNA	AKI	ConditionCategory	Acute Kidney Injury	25	80211
+snRNA	AKI	Conditions.Subtype	Acute Kidney Injury	25	80211
+snRNA	AKI	AdjudicationCategory	Acute Interstitial Nephritis	7	15175
+snRNA	AKI	AdjudicationCategory	Acute Tubular Injury	18	65036
+snRNA	AKI	TissueCollection	Percutaneous Needle Biopsy	25	80211
+snRNA	AKI	region	Cortex	21	64821
+snRNA	AKI	region	Cortex/Medulla	4	15390
+snRNA	AKI	Age	20-29	2	8144
+snRNA	AKI	Age	30-39	7	26196
+snRNA	AKI	Age	40-49	3	3626
+snRNA	AKI	Age	50-59	5	22923
+snRNA	AKI	Age	60-69	4	9575
+snRNA	AKI	Age	70-79	4	9747
+snRNA	AKI	sex	female	6	18442
+snRNA	AKI	sex	male	19	61769
+snRNA	AKI	diabetes_history	No	17	61343
+snRNA	AKI	diabetes_history	Not available	2	2746
+snRNA	AKI	diabetes_history	Yes	6	16122
+snRNA	AKI	hypertension	No	14	46287
+snRNA	AKI	hypertension	Yes	11	33924
+snRNA	AKI	Baseline eGFR (ml/min/1.73m2) (Binned)	100-109 ml/min/1.73m2	1	2678
+snRNA	AKI	Baseline eGFR (ml/min/1.73m2) (Binned)	110-119 ml/min/1.73m2	1	131
+snRNA	AKI	Baseline eGFR (ml/min/1.73m2) (Binned)	120-129 ml/min/1.73m2	2	8321
+snRNA	AKI	Baseline eGFR (ml/min/1.73m2) (Binned)	50-59 ml/min/1.73m2	3	9945
+snRNA	AKI	Baseline eGFR (ml/min/1.73m2) (Binned)	60-69 ml/min/1.73m2	5	15658
+snRNA	AKI	Baseline eGFR (ml/min/1.73m2) (Binned)	70-79 ml/min/1.73m2	8	31463
+snRNA	AKI	Baseline eGFR (ml/min/1.73m2) (Binned)	80-89 ml/min/1.73m2	4	11113
+snRNA	AKI	Baseline eGFR (ml/min/1.73m2) (Binned)	90-99 ml/min/1.73m2	1	902
+snRNA	AKI	assay	10x 3' v3	11	44202
+snRNA	AKI	assay	10x multiome	14	36009
+snRNA	REF_BIOPSY	ALL	ALL	32	137101
+snRNA	REF_BIOPSY	ConditionCategory	Healthy Reference	32	137101
+snRNA	REF_BIOPSY	Conditions.Subtype	Healthy Reference Tissue	9	33231
+snRNA	REF_BIOPSY	Conditions.Subtype	Healthy Reference Tissue - Stone	5	20051
+snRNA	REF_BIOPSY	Conditions.Subtype	Living Donor Healthy Reference Tissue (KPMP)	18	83819
+snRNA	REF_BIOPSY	AdjudicationCategory	Not available	32	137101
+snRNA	REF_BIOPSY	TissueCollection	Intra-operative Biopsy	5	20051
+snRNA	REF_BIOPSY	TissueCollection	Percutaneous Needle Biopsy	9	33231
+snRNA	REF_BIOPSY	TissueCollection	Transplant Pre-perfusion Biopsy	18	83819
+snRNA	REF_BIOPSY	region	Cortex	26	116763
+snRNA	REF_BIOPSY	region	Cortex/Medulla	6	20338
+snRNA	REF_BIOPSY	Age	20-29	2	9125
+snRNA	REF_BIOPSY	Age	30-39	9	37204
+snRNA	REF_BIOPSY	Age	40-49	12	53045
+snRNA	REF_BIOPSY	Age	50-59	5	24596
+snRNA	REF_BIOPSY	Age	60-69	3	10384
+snRNA	REF_BIOPSY	Age	70-79	1	2747
+snRNA	REF_BIOPSY	sex	female	16	80729
+snRNA	REF_BIOPSY	sex	male	16	56372
+snRNA	REF_BIOPSY	diabetes_history	No	28	123392
+snRNA	REF_BIOPSY	diabetes_history	Not available	3	9240
+snRNA	REF_BIOPSY	diabetes_history	Yes	1	4469
+snRNA	REF_BIOPSY	hypertension	No	25	113155
+snRNA	REF_BIOPSY	hypertension	Not available	4	13956
+snRNA	REF_BIOPSY	hypertension	Yes	3	9990
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	100-109 ml/min/1.73m2	5	23881
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	110-119 ml/min/1.73m2	8	24282
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	120-129 ml/min/1.73m2	1	4409
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	130-139 ml/min/1.73m2	1	3036
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	150-159 ml/min/1.73m2	1	824
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	170-179 ml/min/1.73m2	1	3039
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	60-69 ml/min/1.73m2	1	6095
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	70-79 ml/min/1.73m2	1	3608
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	80-89 ml/min/1.73m2	2	12388
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	90-99 ml/min/1.73m2	7	41583
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	>60 ml/min/1.73m2	1	4716
+snRNA	REF_BIOPSY	Baseline eGFR (ml/min/1.73m2) (Binned)	Not available	3	9240
+snRNA	REF_BIOPSY	assay	10x 3' v3	22	92166
+snRNA	REF_BIOPSY	assay	10x multiome	10	44935
+scRNA	REF	ALL	ALL	38	91691
+scRNA	REF	EnrollmentCategory	Healthy Reference Tissue	38	91691
+scRNA	REF	ConditionCategory	Healthy Reference	28	48970
+scRNA	REF	ConditionCategory	Reference	10	42721
+scRNA	REF	AdjudicationCategory	Unknown	38	91691
+scRNA	REF	Tissue.Type	Intra-operative Biopsy	5	8029
+scRNA	REF	Tissue.Type	Nephrectomy	5	34692
+scRNA	REF	Tissue.Type	Transplant Pre-perfusion Biopsy	28	48970
+scRNA	REF	Age	20-29	2	3249
+scRNA	REF	Age	30-39	10	15685
+scRNA	REF	Age	40-49	10	18913
+scRNA	REF	Age	50-59	12	43227
+scRNA	REF	Age	60-69	1	609
+scRNA	REF	Age	70-79	3	10008
+scRNA	REF	sex	female	22	48149
+scRNA	REF	sex	male	16	43542
+scRNA	REF	diabetes_history	No	15	31468
+scRNA	REF	diabetes_history	Not available	23	60223
+scRNA	REF	hypertension_history	No	13	29105
+scRNA	REF	hypertension_history	Not available	23	60223
+scRNA	REF	hypertension_history	Yes	2	2363
+scRNA	DKD	ALL	ALL	19	59099
+scRNA	DKD	EnrollmentCategory	Chronic Kidney Disease	19	59099
+scRNA	DKD	ConditionCategory	Chronic Kidney Disease	19	59099
+scRNA	DKD	AdjudicationCategory	Diabetic Kidney Disease	19	59099
+scRNA	DKD	Tissue.Type	Percutaneous Needle Biopsy	19	59099
+scRNA	DKD	Age	30-39	3	10772
+scRNA	DKD	Age	40-49	1	988
+scRNA	DKD	Age	50-59	4	14932
+scRNA	DKD	Age	60-69	8	24645
+scRNA	DKD	Age	70-79	3	7762
+scRNA	DKD	sex	female	11	32365
+scRNA	DKD	sex	male	8	26734
+scRNA	DKD	diabetes_history	Yes	19	59099
+scRNA	DKD	hypertension_history	Yes	19	59099
+scRNA	OTHER_CKD	ALL	ALL	22	61141
+scRNA	OTHER_CKD	EnrollmentCategory	Chronic Kidney Disease	22	61141
+scRNA	OTHER_CKD	ConditionCategory	Chronic Kidney Disease	22	61141
+scRNA	OTHER_CKD	AdjudicationCategory	Hypertensive Kidney Disease	17	46185
+scRNA	OTHER_CKD	AdjudicationCategory	Other	5	14956
+scRNA	OTHER_CKD	Tissue.Type	Percutaneous Needle Biopsy	22	61141
+scRNA	OTHER_CKD	Age	30-39	2	4713
+scRNA	OTHER_CKD	Age	40-49	3	6713
+scRNA	OTHER_CKD	Age	50-59	2	8206
+scRNA	OTHER_CKD	Age	60-69	9	21897
+scRNA	OTHER_CKD	Age	70-79	5	12135
+scRNA	OTHER_CKD	Age	80-89	1	7477
+scRNA	OTHER_CKD	sex	female	10	32060
+scRNA	OTHER_CKD	sex	male	12	29081
+scRNA	OTHER_CKD	diabetes_history	No	6	25048
+scRNA	OTHER_CKD	diabetes_history	Yes	16	36093
+scRNA	OTHER_CKD	hypertension_history	Yes	22	61141
+scRNA	HKD	ALL	ALL	17	46185
+scRNA	HKD	EnrollmentCategory	Chronic Kidney Disease	17	46185
+scRNA	HKD	ConditionCategory	Chronic Kidney Disease	17	46185
+scRNA	HKD	AdjudicationCategory	Hypertensive Kidney Disease	17	46185
+scRNA	HKD	Tissue.Type	Percutaneous Needle Biopsy	17	46185
+scRNA	HKD	Age	30-39	1	1602
+scRNA	HKD	Age	40-49	3	6713
+scRNA	HKD	Age	50-59	1	963
+scRNA	HKD	Age	60-69	7	20310
+scRNA	HKD	Age	70-79	4	9120
+scRNA	HKD	Age	80-89	1	7477
+scRNA	HKD	sex	female	7	18691
+scRNA	HKD	sex	male	10	27494
+scRNA	HKD	diabetes_history	No	6	25048
+scRNA	HKD	diabetes_history	Yes	11	21137
+scRNA	HKD	hypertension_history	Yes	17	46185
+scRNA	AKI	ALL	ALL	12	56622
+scRNA	AKI	EnrollmentCategory	Acute Kidney Injury	12	56622
+scRNA	AKI	ConditionCategory	Acute Kidney Injury	12	56622
+scRNA	AKI	AdjudicationCategory	Acute Interstitial Nephritis	3	18804
+scRNA	AKI	AdjudicationCategory	Acute Tubular Injury	9	37818
+scRNA	AKI	Tissue.Type	Percutaneous Needle Biopsy	12	56622
+scRNA	AKI	Age	20-29	2	4705
+scRNA	AKI	Age	30-39	4	22836
+scRNA	AKI	Age	40-49	1	1897
+scRNA	AKI	Age	50-59	2	9971
+scRNA	AKI	Age	60-69	1	9503
+scRNA	AKI	Age	70-79	2	7710
+scRNA	AKI	sex	female	2	3194
+scRNA	AKI	sex	male	10	53428
+scRNA	AKI	diabetes_history	Don't know	1	6413
+scRNA	AKI	diabetes_history	No	9	43699
+scRNA	AKI	diabetes_history	Yes	2	6510
+scRNA	AKI	hypertension_history	No	8	33181
+scRNA	AKI	hypertension_history	Yes	4	23441
+scRNA	REF_BIOPSY	ALL	ALL	33	56999
+scRNA	REF_BIOPSY	EnrollmentCategory	Healthy Reference Tissue	33	56999
+scRNA	REF_BIOPSY	ConditionCategory	Healthy Reference	28	48970
+scRNA	REF_BIOPSY	ConditionCategory	Reference	5	8029
+scRNA	REF_BIOPSY	AdjudicationCategory	Unknown	33	56999
+scRNA	REF_BIOPSY	Tissue.Type	Intra-operative Biopsy	5	8029
+scRNA	REF_BIOPSY	Tissue.Type	Transplant Pre-perfusion Biopsy	28	48970
+scRNA	REF_BIOPSY	Age	20-29	2	3249
+scRNA	REF_BIOPSY	Age	30-39	10	15685
+scRNA	REF_BIOPSY	Age	40-49	10	18913
+scRNA	REF_BIOPSY	Age	50-59	8	14434
+scRNA	REF_BIOPSY	Age	60-69	1	609
+scRNA	REF_BIOPSY	Age	70-79	2	4109
+scRNA	REF_BIOPSY	sex	female	21	42846
+scRNA	REF_BIOPSY	sex	male	12	14153
+scRNA	REF_BIOPSY	diabetes_history	No	15	31468
+scRNA	REF_BIOPSY	diabetes_history	Not available	18	25531
+scRNA	REF_BIOPSY	hypertension_history	No	13	29105
+scRNA	REF_BIOPSY	hypertension_history	Not available	18	25531
+scRNA	REF_BIOPSY	hypertension_history	Yes	2	2363

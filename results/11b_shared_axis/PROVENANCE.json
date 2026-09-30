@@ -1,0 +1,26 @@
+{
+  "stage": "11b_shared_axis",
+  "time": "2026-09-28T17:20:24",
+  "seed": 20260928,
+  "config_sha": "3b65aa2a9cc80c83",
+  "git_commit": "bd2f7e3c4e666e74ccd02c0c5692edf195196f63",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/processed/samples.tsv": "3316ca923606450d6136e3bd0351e28d"
+  },
+  "outputs": {
+    "results/11b_shared_axis/split_controls.tsv": "d092edd15f86f327e0a5f5c162dc8cbf",
+    "results/11b_shared_axis/specificity_ratio.tsv": "7668f7df001424d6b5f4b2188626d444",
+    "results/11b_shared_axis/egfr_check.tsv": "69cc6dd4f3f8317bb9413b005fb79f03"
+  },
+  "extra": {}
+}

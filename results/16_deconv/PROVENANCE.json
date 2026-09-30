@@ -1,0 +1,39 @@
+{
+  "stage": "16_deconv",
+  "time": "2026-09-29T01:04:14",
+  "seed": 20260928,
+  "config_sha": "7f8b333a83db1fa2",
+  "git_commit": "730b779f6c890905288ff95d71a6e3dcb3b2356b",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/16_deconv/plausibility/all/key_checks.tsv": "1aaa28c3ded837f20a552a5e528bc51b",
+    "results/16_deconv/plausibility/all/axis_r2.tsv": "44685531c4bb76c2d108ca2a3eb263c3",
+    "results/16_deconv/eval/snRNA/vs_BL2.tsv": "af09fa4a1ab0e21d1ae585d6f868cf41",
+    "results/16_deconv/eval/scRNA/vs_BL2.tsv": "8b60740e3c72da2729b25d86f8b8de57"
+  },
+  "outputs": {
+    "results/16_deconv/feature_set_comparison.tsv": "efdcba9a1e3e0b0089e5962e03a03ac7",
+    "results/16_deconv/plausibility_key.tsv": "27bc318a6ea6fa903acf8e0cec0ba00c",
+    "results/16_deconv/axis_r2_summary.tsv": "9eb8e04bad869930c0384ae3334d6494"
+  },
+  "extra": {
+    "primary_reference": "scRNA",
+    "run_tag": "all",
+    "stages": [
+      "16_deconv_prepare.py",
+      "16_deconv_run.py (+16_deconv_bayesprism.R)",
+      "16_deconv_plausibility.py",
+      "16_deconv_eval.py",
+      "16_deconv_summarize.py"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "registered_at": "2026-09-29",
+  "question": "Do the DKD key genes extracted from the frozen RRG-ID (stage 18, trained without any of these cohorts) replicate in the three independent cohorts?",
+  "gene_sets": {
+    "GLOM_key50": "results/18_interpret/summary/dkd_key_gene_evidence.tsv, compartment GLOM, all 50 genes, sign = sign(e_full), sex-chromosome genes removed",
+    "TUB_key50": "same for TUB",
+    "multi_chain": "genes passing >=2 validation chains in stage 18 (GLOM: COLEC12 LUM ASPN CHGA ADH1B ITIH2 PLA2G4A C1orf115; TUB: ACKR1 ADH1C AGR2 VCAN NPHS2 CLIC5 LPL RRM2)"
+  },
+  "score": "signed mean within-sample percentile rank over genes present",
+  "cohorts": {"GSE162830": "GLOM sets", "KPMP_section": "TUB sets", "GSE166239": "TUB sets"},
+  "contrasts": ["DKD vs other CKD (as in PLAN.json)", "DKD vs healthy reference"],
+  "nulls": ["1000 random gene sets of equal size and equal up/down split", "177 published DKD signatures scored identically (stage 12 orientation)"],
+  "report": "AUROC, percentile vs random, rank among published signatures; every set x cohort x contrast reported once"
+}

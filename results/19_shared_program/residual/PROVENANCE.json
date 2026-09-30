@@ -1,0 +1,49 @@
+{
+  "stage": "19_shared_program/residual",
+  "time": "2026-09-29T14:49:07",
+  "seed": 20260928,
+  "config_sha": "b049df3edc9f381b",
+  "git_commit": "2dc61f83f207acb2a5b9e1b97c3f6966542bde80",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/14_kpmp/markers_kpmp.tsv": "c35e8573b2c932f9d0a337877981afeb",
+    "results/13_celltype/gene_effects_meta.tsv.gz": "63fdbf4923c1178be3e518635b46b4c2",
+    "results/18_interpret/weights/gene_effects.tsv.gz": "4382fe2b8395ba8a4bdf3ffa18bf06fd"
+  },
+  "outputs": {
+    "results/19_shared_program/residual/residual_meta.tsv.gz": "dee3ffa52eab6398e559cd385727ddbd",
+    "results/19_shared_program/residual/top_genes.tsv": "26e0e96581744169cf7a34ebb070746f",
+    "results/19_shared_program/residual/signatures.tsv": "262bb593b4a7bae9ba41559c9c9d201a",
+    "results/19_shared_program/residual/cell_programs.tsv": "292ae3c53947987d59051eacebcdba0f",
+    "results/19_shared_program/residual/consistency.tsv": "fb128aa29d95f572615bd1e1a0a9f64b",
+    "results/19_shared_program/residual/independent_tests.tsv": "c5416f1ea0d82885927f64bfa5875467",
+    "results/19_shared_program/residual/disease_scp_shift.tsv": "02ac2548bb13b0b2715fbe3bd4efa0e3"
+  },
+  "extra": {
+    "units": {
+      "GLOM": [
+        "ERCB_GLOM_H1",
+        "ERCB_GLOM_H7",
+        "GSE108109-GPL19983"
+      ],
+      "TUB": [
+        "ERCB_TUB_H1",
+        "ERCB_TUB_H7",
+        "GSE108112-GPL19983",
+        "GSE133288-GPL19983",
+        "GSE182380-RNAseq"
+      ]
+    },
+    "sig_n": 50
+  }
+}

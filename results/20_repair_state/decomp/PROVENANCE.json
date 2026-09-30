@@ -1,0 +1,58 @@
+{
+  "stage": "20_repair_state/decomp",
+  "time": "2026-09-29T16:37:09",
+  "seed": 20260928,
+  "config_sha": "8efb02bebfeb6666",
+  "git_commit": "e0ae2e2f585882a8f14e15bcf21e42cec1daaf18",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/19_shared_program/core/meta_TUB.tsv.gz": "926a1a27510b2770f4d3ee2037072fe3"
+  },
+  "outputs": {
+    "results/20_repair_state/decomp/shapley_donor.tsv.gz": "bea06402089c0a3c10afe10e6ecb22a5",
+    "results/20_repair_state/decomp/shapley_contrast.tsv": "6f5647f62eb9e07aac6961897f4b3d8f",
+    "results/20_repair_state/decomp/shapley_core_genes.tsv.gz": "adb72db125178d4c992ab14c31775be6",
+    "results/20_repair_state/decomp/sanity.tsv": "c4736231154d0fc72e51b4ad501207d6"
+  },
+  "extra": {
+    "blocks": {
+      "composition": [
+        "p"
+      ],
+      "repair_state_fraction": [
+        "q_PT",
+        "q_TAL"
+      ],
+      "other_lineage_state_mix": [
+        "q_rest"
+      ],
+      "PT_TAL_normal_cell_profile": [
+        "M_PT_normal",
+        "M_TAL_normal"
+      ],
+      "PT_TAL_repair_cell_profile": [
+        "M_PT_repair",
+        "M_TAL_repair"
+      ],
+      "PT_TAL_other_altered_profile": [
+        "M_PT_other_alt",
+        "M_TAL_other_alt"
+      ],
+      "other_lineage_profile": [
+        "M_rest"
+      ]
+    },
+    "n_boot": 1000,
+    "n_perm": 1000
+  }
+}

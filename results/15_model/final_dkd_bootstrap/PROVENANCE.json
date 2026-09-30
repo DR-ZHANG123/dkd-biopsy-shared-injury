@@ -1,0 +1,24 @@
+{
+  "stage": "15_model/final_dkd_bootstrap",
+  "time": "2026-09-29T14:57:00",
+  "seed": 20260928,
+  "config_sha": "b049df3edc9f381b",
+  "git_commit": "cad5a13470e68e6518302a3a1cbbabb6252956a7",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/15_model/final_dkd/predictions.tsv": "d0728b553e05958fc1288b640eff4c6b"
+  },
+  "outputs": {
+    "results/15_model/final_dkd/paired_bootstrap.tsv": "7a6f8877a7ee608bdc3b4802d4308d1c"
+  },
+  "extra": {}
+}

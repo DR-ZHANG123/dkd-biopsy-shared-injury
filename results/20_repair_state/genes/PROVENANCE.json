@@ -1,0 +1,65 @@
+{
+  "stage": "20_repair_state/genes",
+  "time": "2026-09-29T16:40:36",
+  "seed": 20260928,
+  "config_sha": "8efb02bebfeb6666",
+  "git_commit": "e0ae2e2f585882a8f14e15bcf21e42cec1daaf18",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/20_repair_state/programs/programs.tsv.gz": "7bafffb0991f8ddeb4cd541aee90f153",
+    "results/20_repair_state/concord/lineage_de.tsv.gz": "d18f3970ceac78348291f85968452e7a",
+    "results/20_repair_state/decomp/shapley_core_genes.tsv.gz": "adb72db125178d4c992ab14c31775be6"
+  },
+  "outputs": {
+    "results/20_repair_state/genes/driver_calls.tsv": "4517c89b869376fba16717b5cdde57ba",
+    "results/20_repair_state/genes/key_genes.tsv": "7350f0a1e6c2f6e4dc2fa85de0a28fa5",
+    "results/20_repair_state/genes/state_expression.tsv.gz": "ba457f910612bb173e7b1d94a6ea54d9",
+    "results/20_repair_state/genes/independent_gene_effects.tsv.gz": "c5291e24485b42186f3ac1d5883c02f1"
+  },
+  "extra": {
+    "driver_states": {
+      "PT": [
+        "aPT",
+        "frPT"
+      ],
+      "TAL": [
+        "aTAL",
+        "frTAL"
+      ]
+    },
+    "watch": [
+      "VCAM1",
+      "HAVCR1",
+      "PROM1",
+      "CDH6",
+      "CD24",
+      "SPP1",
+      "LCN2",
+      "CCL2",
+      "ITGB8",
+      "DCDC2",
+      "SOX9",
+      "CD44",
+      "TPM1",
+      "KIRREL1",
+      "ITGB6",
+      "MET",
+      "CLDN4",
+      "UMOD",
+      "SLC12A1",
+      "EGF",
+      "LRP2",
+      "SLC34A1"
+    ]
+  }
+}

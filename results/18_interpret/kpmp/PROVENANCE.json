@@ -1,0 +1,35 @@
+{
+  "stage": "18_interpret/kpmp",
+  "time": "2026-09-29T11:40:48",
+  "seed": 20260928,
+  "config_sha": "b03749c0404aa7a0",
+  "git_commit": "d90767322ed5ce3051599bece57f2baf4f0835c6",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/18_interpret/weights/gene_effects.tsv.gz": "4382fe2b8395ba8a4bdf3ffa18bf06fd",
+    "results/14_kpmp/de_kpmp.tsv.gz": "082d9e1ce2c99a240a53fde026109c79",
+    "data/processed/kpmp/snRNA/source.json": "2e4c8e2bd82a425d9d957fd4d7b1b2e7",
+    "data/processed/kpmp/scRNA/source.json": "7c7ccedbaf00add45c8bd6353e3006ae"
+  },
+  "outputs": {
+    "results/18_interpret/kpmp/localisation.tsv": "9791938881145a9acee02b522cd30eae",
+    "results/18_interpret/kpmp/ref_expression.tsv": "a678ea4150b0b1999a0741e1bcbf903b",
+    "results/18_interpret/kpmp/gene_direction.tsv": "11dec90a93312bdf1f476e6b21ef1daa",
+    "results/18_interpret/kpmp/set_direction.tsv": "f36ae90ef0acad54277fcf6ae6dada0d",
+    "results/18_interpret/kpmp/egfr_sets.tsv": "c17c1b7e2769281a909f93878d64ba45",
+    "results/18_interpret/kpmp/egfr_genes.tsv": "2704832b91c030604d8e1b41af92e897"
+  },
+  "extra": {
+    "n_perm": 1000,
+    "celltype_mapping": "kpmp.map_to_stage13 (coarse)"
+  }
+}

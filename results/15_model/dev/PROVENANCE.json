@@ -1,0 +1,58 @@
+{
+  "stage": "15_model/dev",
+  "time": "2026-09-29T01:06:05",
+  "seed": 20260928,
+  "config_sha": "7f8b333a83db1fa2",
+  "git_commit": "a302a3d411fa9e26669e2e941dcf8bc5ba2c1ee1",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/processed/samples.tsv": "3316ca923606450d6136e3bd0351e28d",
+    "results/13_celltype/celltype_markers.tsv": "f68050176ce0798dd773e5ee271b4f86",
+    "results/05_graphs/edges_coexpr.tsv": "053644e3950e788d92b2d76558e43a35",
+    "results/05_graphs/edges_ppi.tsv": "43ea48e8663ccad6fe0b5a4d4ac81dd7"
+  },
+  "outputs": {
+    "results/15_model/dev/dev_metrics.tsv": "4596444784c21c7b1ef7d119a7548ee9",
+    "results/15_model/dev/dev_summary.tsv": "90d07ce8ee9d04488467b696bddfaa74",
+    "results/15_model/dev/ablation_summary.tsv": "3ce379b7ac1c6ef4758ac3d50a908294"
+  },
+  "extra": {
+    "methods": [
+      "B-L2",
+      "B-L2-ucmix",
+      "B-L2-unitcenter",
+      "B-cPCA",
+      "B-injury",
+      "B-prog-L2",
+      "B-rankLASSO",
+      "B2-PCA",
+      "RRG-ID",
+      "RRG-ID+STRING",
+      "RRG-ID+SupCon",
+      "RRG-ID+coexpr",
+      "RRG-ID+match",
+      "RRG-ID+rewired",
+      "RRG-ID-noCtrl",
+      "RRG-ID-noHSIC",
+      "RRG-ID-noProg",
+      "RRG-ID-pooledOnly",
+      "RRG-ID-stratumOnly"
+    ],
+    "families": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "n_cells": 2033
+  }
+}

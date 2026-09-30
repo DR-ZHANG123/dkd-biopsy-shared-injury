@@ -1,0 +1,6 @@
+gene_symbol	probe_set	direction	source_rank_or_stat	symbol_raw	gene_title
+NELL2	203413_at	cell_type_associated (effector T cell burden)	file_row=1	NELL2	protein kinase C-binding protein NELL2
+CXCR6	206974_at	cell_type_associated (effector T cell burden)	file_row=2	CXCR6	chemokine (C-X-C motif) receptor 6
+GPR171	207651_at	cell_type_associated (effector T cell burden)	file_row=3	GPR171	G-protein coupled receptor H963, platelet activating receptor homolog
+TCRA	209671_x_at	cell_type_associated (effector T cell burden)	file_row=4	TCRA	Human T-cell receptor active alpha-chain
+CD3D	213539_at	cell_type_associated (effector T cell burden)	file_row=5	CD3D	CD3D antigen, delta polypeptide (TiT3 complex)

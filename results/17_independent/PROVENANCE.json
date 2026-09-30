@@ -1,0 +1,60 @@
+{
+  "stage": "17_independent",
+  "time": "2026-09-29T11:36:48",
+  "seed": 20260928,
+  "config_sha": "b03749c0404aa7a0",
+  "git_commit": "1ab2135dda0fba301cf75950da541577ac881524",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/15_model/FROZEN_DESIGN.json": "43de0f4116cc07d64f19d15dd19c50d6",
+    "results/17_independent/PLAN.json": "585ca6af281bd8e7211a226c604a1df0",
+    "results/17_independent/candidates/candidate_samples.tsv": "5eaecb9a7586542c139d11ca0762a80d",
+    "results/17_independent/candidates/overlap_pairs.tsv": "eab5c0f251b25b4206db8c7a9aaf43c8",
+    "data/interim/indep/GSE162830_expr.parquet": "4de9d3ad63de580aceb4920aa4ec0bfb",
+    "data/interim/indep/GSE166239_expr.parquet": "adda50ebdb9ca342c4e2194895a2caec",
+    "data/interim/indep/GSE45980_expr.parquet": "2af2e6a28ed43f56074795371ba68d42",
+    "data/interim/indep/KPMP_expr.parquet": "ff308d6848f47e722bc95dc6c92e5091"
+  },
+  "outputs": {
+    "results/17_independent/predictions.tsv": "10f6e2f3de2095511019b7297cf3c78e",
+    "results/17_independent/metrics.tsv": "de58d7b61643180c1623f01e08bae809",
+    "results/17_independent/paired_bootstrap_deltas.tsv": "f5f8aed9c0f66578ca8c26988a0a1993",
+    "results/17_independent/training_summary.tsv": "8ce8167447a96bedfed1658d03b875ce",
+    "results/17_independent/test_samples.tsv": "52ad89de0d5a9a4809f5a513e61a0826"
+  },
+  "extra": {
+    "frozen": "2026-09-29T01:06:51",
+    "plan_commit": "1ab2135",
+    "freeze_check": "lib.freeze.check_frozen",
+    "n_boot": 2000,
+    "training": [
+      {
+        "model": "GLOM",
+        "n_train": 451,
+        "n_train_dropped_dup": 0,
+        "n_train_dkd": 62,
+        "heads": "DKD,FSGS,MCD,MN,RPGN,IgAN,LN,HT",
+        "axis_sources": "ERCB_GLOM_H1,ERCB_GLOM_H7,GSE108109-GPL19983,GSE93798-GPL22945",
+        "test_cohorts": "GSE162830"
+      },
+      {
+        "model": "TUB",
+        "n_train": 876,
+        "n_train_dropped_dup": 0,
+        "n_train_dkd": 28,
+        "heads": "DKD,FSGS,MCD,MN,RPGN,IgAN,LN,HT",
+        "axis_sources": "ERCB_TUB_H1,ERCB_TUB_H7,GSE108112-GPL19983,GSE175759-RNAseq",
+        "test_cohorts": "KPMP,GSE166239"
+      }
+    ]
+  }
+}

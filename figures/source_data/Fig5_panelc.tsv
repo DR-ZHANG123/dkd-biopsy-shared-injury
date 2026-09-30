@@ -1,0 +1,24 @@
+cohort	core	gene_set	primary	test	n	spearman	p	null_median	pct_vs_random	n_advanced	n_early	auroc	null_q95	pct_more_extreme_than_random	label	y
+KPMP	TUB	full	True	proteinuria_cat_patients	13	0.669898	0.0122425	-0.00676665	0.98					0.98	Proteinuria, KPMP sections	-0.22
+KPMP	TUB	no_procurement	True	proteinuria_cat_patients	13	0.669898	0.0122425	-0.00676665	0.99					0.99	Proteinuria, KPMP sections	0
+KPMP	TUB	no_ieg	True	proteinuria_cat_patients	13	0.703732	0.00726655	-0.00676665	0.99					0.99	Proteinuria, KPMP sections	0.22
+GSE166239	TUB	full	True	proteinuria_patients	12	0.46585	0.126919	0.0140105	0.906					0.906	Proteinuria, GSE166239	0.78
+GSE166239	TUB	no_procurement	True	proteinuria_patients	12	0.46585	0.126919	-0.0105079	0.919					0.919	Proteinuria, GSE166239	1
+GSE166239	TUB	no_ieg	True	proteinuria_patients	12	0.46585	0.126919	-0.0140105	0.911					0.911	Proteinuria, GSE166239	1.22
+GSE142025-RNAseq	TUB	full	True	advanced_vs_early_DN	27			0.492063	0.9985	21	6	0.992063	0.896825	0.9985	Advanced vs early DKD, GSE142025	1.78
+GSE142025-RNAseq	TUB	no_procurement	True	advanced_vs_early_DN	27			0.52381	0.999	21	6	1	0.912698	0.999	Advanced vs early DKD, GSE142025	2
+GSE142025-RNAseq	TUB	no_ieg	True	advanced_vs_early_DN	27			0.492063	0.996	21	6	0.992063	0.913095	0.996	Advanced vs early DKD, GSE142025	2.22
+GSE115857-GPL14951	TUB	full	True	iga_grade_G1_G3	55	0.295687	0.0283962	-0.00325059	0.976					0.976	IgAN grade, GSE115857	2.78
+GSE115857-GPL14951	TUB	no_procurement	True	iga_grade_G1_G3	55	0.308376	0.0219876	-0.00211484	0.985					0.985	IgAN grade, GSE115857	3
+GSE115857-GPL14951	TUB	no_ieg	True	iga_grade_G1_G3	55	0.340803	0.0108923	-0.00352474	0.985					0.985	IgAN grade, GSE115857	3.22
+KPMP_snRNA_donors	TUB	full	True	egfr_bin_CKD	56	-0.490834	0.000122693	0.00621911						0.999	eGFR, KPMP snRNA CKD donors	3.78
+KPMP_snRNA_donors	TUB	full	True	egfr_bin_DKD	29	-0.677313	5.44551e-05	-0.00606097						0.999	eGFR, KPMP snRNA DKD donors	4.78
+GSE175759-RNAseq	TUB	full	True	egfr_patients	65	-0.215414	0.0848312	-0.000600981	0.067					0.933	eGFR, GSE175759	5.78
+GSE175759-RNAseq	TUB	no_procurement	True	egfr_patients	65	-0.244785	0.0493867	-0.000644689	0.057					0.943	eGFR, GSE175759	6
+GSE175759-RNAseq	TUB	no_ieg	True	egfr_patients	65	-0.229597	0.0657957	0.00317974	0.04					0.96	eGFR, GSE175759	6.22
+KPMP	TUB	full	True	egfr_bin_patients	16	0.0163825	0.951982	0.0126592	0.507					0.493	eGFR, KPMP sections	6.78
+KPMP	TUB	no_procurement	True	egfr_bin_patients	16	0.0104253	0.969433	-0.00595729	0.517					0.483	eGFR, KPMP sections	7
+KPMP	TUB	no_ieg	True	egfr_bin_patients	16	0.0178719	0.947622	0.00744661	0.513					0.487	eGFR, KPMP sections	7.22
+GSE166239	TUB	full	True	egfr_patients	12	0.230769	0.470532	0.00699301	0.789					0.211	eGFR, GSE166239	7.78
+GSE166239	TUB	no_procurement	True	egfr_patients	12	0.230769	0.470532	0.013986	0.788					0.212	eGFR, GSE166239	8
+GSE166239	TUB	no_ieg	True	egfr_patients	12	0.0699301	0.829024	-0.027972	0.631					0.369	eGFR, GSE166239	8.22

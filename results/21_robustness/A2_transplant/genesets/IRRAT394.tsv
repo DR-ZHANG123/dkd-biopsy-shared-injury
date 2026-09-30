@@ -1,0 +1,396 @@
+gene_symbol	probe_set	direction	source_rank_or_stat	symbol_raw	gene_title
+ITGB6	208083_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=1;FC_AKI_vs_control=7.88;P=0.000932	ITGB6	integrin, beta 6
+SERPINA3	202376_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=2;FC_AKI_vs_control=6.12;P=0.000518	SERPINA3	serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 3
+MT-ND6	1553575_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=3;FC_AKI_vs_control=5.62;P=0.0033	MT-ND6	NADH dehydrogenase, subunit 6 (complex I)
+OLFM4	212768_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=4;FC_AKI_vs_control=5.5;P=0.000896	OLFM4	olfactomedin 4
+PTX3	206157_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=5;FC_AKI_vs_control=5.26;P=0.00177	PTX3	pentraxin 3, long
+LCN2	212531_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=6;FC_AKI_vs_control=4.26;P=0.00405	LCN2	lipocalin 2
+VCAN	215646_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=7;FC_AKI_vs_control=4.13;P=0.00408	VCAN	versican
+LTF	202018_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=8;FC_AKI_vs_control=4.12;P=0.0318	LTF	lactotransferrin
+SLPI	203021_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=9;FC_AKI_vs_control=4.05;P=0.0129	SLPI	secretory leukocyte peptidase inhibitor
+ADAMTS1	222486_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=10;FC_AKI_vs_control=4.03;P=0.000329	ADAMTS1	ADAM metallopeptidase with thrombospondin type 1 motif, 1
+MEGF11	1552439_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=11;FC_AKI_vs_control=3.82;P=0.000714	MEGF11	multiple EGF-like-domains 11
+CDH6	210602_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=12;FC_AKI_vs_control=3.74;P=0.000408	CDH6	cadherin 6, type 2, K-cadherin (fetal kidney)
+PI15	229947_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=13;FC_AKI_vs_control=3.62;P=0.00843	PI15	peptidase inhibitor 15
+FCGR3A	204006_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=14;FC_AKI_vs_control=3.39;P=0.00241	FCGR3A	Fc fragment of IgG, low affinity IIIa, receptor (CD16a)
+NNMT	202238_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=15;FC_AKI_vs_control=3.29;P=0.00492	NNMT	nicotinamide N-methyltransferase
+S100A8	202917_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=16;FC_AKI_vs_control=3.2;P=0.00369	S100A8	S100 calcium binding protein A8
+SOD2	215223_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=17;FC_AKI_vs_control=3.17;P=0.000516	SOD2	superoxide dismutase 2, mitochondrial
+ITGB3	204627_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=18;FC_AKI_vs_control=3.04;P=0.00619	ITGB3	integrin, beta 3 (platelet glycoprotein IIIa, antigen CD61)
+NFKBIZ	223217_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=19;FC_AKI_vs_control=2.99;P=0.00397	NFKBIZ	nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor, zeta
+AKAP12	231067_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=20;FC_AKI_vs_control=2.97;P=0.00681	AKAP12	A kinase (PRKA) anchor protein 12
+VMP1	224917_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=21;FC_AKI_vs_control=2.94;P=0.00256	VMP1/ mir-21	likely ortholog of rat vacuole membrane protein 1/ microRNA 21
+MIR21	224917_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=21;FC_AKI_vs_control=2.94;P=0.00256	VMP1/ mir-21	likely ortholog of rat vacuole membrane protein 1/ microRNA 21
+ADAM9	1555326_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=22;FC_AKI_vs_control=2.93;P=0.00891	ADAM9	ADAM metallopeptidase domain 9
+PTPRC	207238_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=23;FC_AKI_vs_control=2.9;P=0.0021	PTPRC	protein tyrosine phosphatase, receptor type, C
+FOS	209189_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=24;FC_AKI_vs_control=2.89;P=8.30E-05	FOS	FBJ murine osteosarcoma viral oncogene homolog
+OSMR	205729_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=25;FC_AKI_vs_control=2.82;P=0.000797	OSMR	oncostatin M receptor
+C9orf71	1553809_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=26;FC_AKI_vs_control=2.82;P=0.00485	C9orf71	chromosome 9 open reading frame 71
+EGR1	227404_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=27;FC_AKI_vs_control=2.79;P=0.00858	EGR1	early growth response 1
+CTSS	202902_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=28;FC_AKI_vs_control=2.7;P=0.0206	CTSS	cathepsin S
+RARRES1	206392_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=29;FC_AKI_vs_control=2.68;P=0.0251	RARRES1	retinoic acid receptor responder (tazarotene induced) 1
+EVI2A	204774_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=30;FC_AKI_vs_control=2.66;P=0.00821	EVI2A	ecotropic viral integration site 2A
+UGT1A6	232654_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=31;FC_AKI_vs_control=2.63;P=0.00112	UGT1A6	UDP glucuronosyltransferase 1 family, polypeptide A6
+CCL2	216598_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=32;FC_AKI_vs_control=2.61;P=0.0254	CCL2	chemokine (C-C motif) ligand 2
+GDF15	221577_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=33;FC_AKI_vs_control=2.58;P=0.000964	GDF15	growth differentiation factor 15
+UGCG	221765_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=34;FC_AKI_vs_control=2.57;P=0.00485	UGCG	UDP-glucose ceramide glucosyltransferase
+GLIPR1	226142_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=35;FC_AKI_vs_control=2.57;P=0.0105	GLIPR1	GLI pathogenesis-related 1
+LAPTM5	201720_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=36;FC_AKI_vs_control=2.56;P=0.0101	LAPTM5	lysosomal protein transmembrane 5
+MS4A4A	1555728_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=37;FC_AKI_vs_control=2.53;P=0.00772	MS4A4A	membrane-spanning 4-domains, subfamily A, member 4
+CXCL2	209774_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=38;FC_AKI_vs_control=2.53;P=0.0181	CXCL2	chemokine (C-X-C motif) ligand 2
+TMEM49	1569003_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=39;FC_AKI_vs_control=2.52;P=0.00205	TMEM49	transmembrane protein 49
+C1S	1555229_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=40;FC_AKI_vs_control=2.51;P=0.00681	C1S	complement component 1, s subcomponent
+HSP90B1	216450_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=41;FC_AKI_vs_control=2.45;P=0.00172	HSP90B1	heat shock protein 90kDa beta (Grp94), member 1
+ITGB1	1553530_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=42;FC_AKI_vs_control=2.45;P=0.0129	ITGB1	integrin, beta 1 (fibronectin receptor, beta polypeptide, antigen CD29 includes MDF2, MSK12)
+C2CD4A	241031_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=43;FC_AKI_vs_control=2.44;P=0.00551	C2CD4A	C2 calcium-dependent domain containing 4A
+CPD	201942_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=44;FC_AKI_vs_control=2.39;P=0.000792	CPD	carboxypeptidase D
+MT1M	217546_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=45;FC_AKI_vs_control=2.38;P=0.0283	MT1M	metallothionein 1M
+EVI2B	211742_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=46;FC_AKI_vs_control=2.38;P=0.0167	EVI2B	ecotropic viral integration site 2B
+ATP13A3	219558_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=47;FC_AKI_vs_control=2.37;P=0.000704	ATP13A3	ATPase type 13A3
+AHNAK	235281_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=48;FC_AKI_vs_control=2.36;P=0.00403	AHNAK	AHNAK nucleoprotein
+IL6ST	204864_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=49;FC_AKI_vs_control=2.36;P=0.00112	IL6ST	interleukin 6 signal transducer (gp130, oncostatin M receptor)
+CFI	1555564_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=50;FC_AKI_vs_control=2.35;P=0.00202	CFI	complement factor I
+STEAP4	225987_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=51;FC_AKI_vs_control=2.35;P=0.0225	STEAP4	STEAP family member 4
+ACTR2	1558015_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=52;FC_AKI_vs_control=2.35;P=0.00376	ACTR2	ARP2 actin-related protein 2 homolog (yeast)
+WDR72	1563874_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=53;FC_AKI_vs_control=2.34;P=0.00779	WDR72	WD repeat domain 72
+MNDA	204959_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=54;FC_AKI_vs_control=2.32;P=0.0025	MNDA	myeloid cell nuclear differentiation antigen
+ITGB2	1555349_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=55;FC_AKI_vs_control=2.31;P=0.0325	ITGB2	integrin, beta 2 (complement component 3 receptor 3 and 4 subunit)
+PPP1CB	228222_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=56;FC_AKI_vs_control=2.29;P=0.00407	PPP1CB	protein phosphatase 1, catalytic subunit, beta isozyme
+TIMP1	201666_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=57;FC_AKI_vs_control=2.29;P=0.0024	TIMP1	TIMP metallopeptidase inhibitor 1
+COPA	214336_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=58;FC_AKI_vs_control=2.28;P=0.0011	COPA	coatomer protein complex, subunit alpha
+CTNNA1	1558214_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=59;FC_AKI_vs_control=2.28;P=0.000377	CTNNA1	catenin (cadherin-associated protein), alpha 1, 102kDa
+RASD1	223467_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=60;FC_AKI_vs_control=2.27;P=0.0066	RASD1	RAS, dexamethasone-induced 1
+CD163	215049_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=61;FC_AKI_vs_control=2.26;P=0.0481	CD163	CD163 molecule
+LY96	206584_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=62;FC_AKI_vs_control=2.25;P=0.0101	LY96	lymphocyte antigen 96
+SPTBN1	200671_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=63;FC_AKI_vs_control=2.23;P=0.00237	SPTBN1	spectrin, beta, non-erythrocytic 1
+FAS	215719_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=64;FC_AKI_vs_control=2.23;P=0.0415	FAS	Fas (TNF receptor superfamily, member 6)
+EZR	208621_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=65;FC_AKI_vs_control=2.23;P=0.000167	EZR	ezrin
+SELE	206211_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=66;FC_AKI_vs_control=2.23;P=0.0155	SELE	selectin E
+EIF4A2	1555996_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=67;FC_AKI_vs_control=2.22;P=0.0135	EIF4A2	eukaryotic translation initiation factor 4A2
+TFPI	209676_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=68;FC_AKI_vs_control=2.2;P=0.0246	TFPI	tissue factor pathway inhibitor (lipoprotein-associated coagulation inhibitor)
+SCN3A	210432_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=69;FC_AKI_vs_control=2.18;P=0.0213	SCN3A	sodium channel, voltage-gated, type III, alpha subunit
+FAM132B	229622_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=70;FC_AKI_vs_control=2.18;P=0.0379	FAM132B	family with sequence similarity 132, member B
+SRGN	201858_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=71;FC_AKI_vs_control=2.16;P=0.00204	SRGN	serglycin
+DDX3X	201211_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=72;FC_AKI_vs_control=2.16;P=0.00509	DDX3X	DEAD (Asp-Glu-Ala-Asp) box polypeptide 3, X-linked
+RRM2	201890_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=73;FC_AKI_vs_control=2.16;P=0.00875	RRM2	ribonucleotide reductase M2
+BCLAF1	201101_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=74;FC_AKI_vs_control=2.16;P=0.00297	BCLAF1	BCL2-associated transcription factor 1
+NAMPT	1555167_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=75;FC_AKI_vs_control=2.15;P=0.00522	NAMPT	nicotinamide phosphoribosyltransferase
+MCL1	200796_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=76;FC_AKI_vs_control=2.15;P=0.000857	MCL1	myeloid cell leukemia sequence 1 (BCL2-related)
+HLA-DQA1	212671_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=77;FC_AKI_vs_control=2.14;P=0.0275	HLA-DQA1	major histocompatibility complex, class II, DQ alpha 1
+HIPK3	210148_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=78;FC_AKI_vs_control=2.14;P=0.0475	HIPK3	homeodomain interacting protein kinase 3
+SOCS3	227697_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=79;FC_AKI_vs_control=2.14;P=0.0479	SOCS3	suppressor of cytokine signaling 3
+NCKAP1	217465_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=80;FC_AKI_vs_control=2.13;P=0.000797	NCKAP1	NCK-associated protein 1
+DHX9	212105_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=81;FC_AKI_vs_control=2.13;P=0.000129	DHX9	DEAH (Asp-Glu-Ala-His) box polypeptide 9
+CFB	202357_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=82;FC_AKI_vs_control=2.13;P=0.0049	CFB	complement factor B
+SUPT16H	233827_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=83;FC_AKI_vs_control=2.12;P=0.00132	SUPT16H	suppressor of Ty 16 homolog (S. cerevisiae)
+VPS35	222387_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=84;FC_AKI_vs_control=2.12;P=0.00249	VPS35	vacuolar protein sorting 35 homolog (S. cerevisiae)
+ABCD3	1554878_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=85;FC_AKI_vs_control=2.11;P=0.035	ABCD3	ATP-binding cassette, sub-family D (ALD), member 3
+COL4A1	211981_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=86;FC_AKI_vs_control=2.1;P=0.0022	COL4A1	collagen, type IV, alpha 1
+NEAT1	234989_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=87;FC_AKI_vs_control=2.1;P=0.0162	NEAT1	nuclear paraspeckle assembly transcript 1 (non-protein coding)
+SERPINA1	230318_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=88;FC_AKI_vs_control=2.1;P=0.0011	SERPINA1	serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 1
+S100A9	203535_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=89;FC_AKI_vs_control=2.09;P=0.000574	S100A9	S100 calcium binding protein A9
+TRAM1	201399_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=90;FC_AKI_vs_control=2.09;P=0.0126	TRAM1	translocation associated membrane protein 1
+TAC1	206552_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=91;FC_AKI_vs_control=2.08;P=0.0181	TAC1	tachykinin, precursor 1
+MET	211599_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=92;FC_AKI_vs_control=2.07;P=0.000277	MET	met proto-oncogene (hepatocyte growth factor receptor)
+CLDN1	222549_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=93;FC_AKI_vs_control=2.06;P=0.0209	CLDN1	claudin 1
+CSTA	204971_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=94;FC_AKI_vs_control=2.06;P=0.0209	CSTA	cystatin A (stefin A)
+ARL4C	202206_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=95;FC_AKI_vs_control=2.04;P=0.0155	ARL4C	ADP-ribosylation factor-like 4C
+ADAM10	202604_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=96;FC_AKI_vs_control=2.03;P=0.011	ADAM10	ADAM metallopeptidase domain 10
+ANLN	222608_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=97;FC_AKI_vs_control=2.03;P=0.00444	ANLN	anillin, actin binding protein
+YWHAZ	200641_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=98;FC_AKI_vs_control=2.03;P=0.0131	YWHAZ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, zeta polypeptide
+QPCT	205174_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=99;FC_AKI_vs_control=2.02;P=0.0234	QPCT	glutaminyl-peptide cyclotransferase
+CD86	210895_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=100;FC_AKI_vs_control=2.02;P=0.0026	CD86	CD86 molecule
+CDC42	208727_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=101;FC_AKI_vs_control=2.01;P=0.0405	CDC42	cell division cycle 42 (GTP binding protein, 25kDa)
+FCGR2C	211395_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=102;FC_AKI_vs_control=2.01;P=0.000356	FCGR2C	Fc fragment of IgG, low affinity IIc, receptor for (CD32) (gene/pseudogene)
+CCL20	205476_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=103;FC_AKI_vs_control=2.0;P=0.0442	CCL20	chemokine (C-C motif) ligand 20
+SFN	33323_r_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=104;FC_AKI_vs_control=2.0;P=0.00631	SFN	stratifin
+GPC4	204983_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=105;FC_AKI_vs_control=2.0;P=0.00669	GPC4	glypican 4
+NRP1	212298_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=106;FC_AKI_vs_control=2.0;P=0.0284	NRP1	neuropilin 1
+SLC39A14	1555434_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=107;FC_AKI_vs_control=1.99;P=0.000126	SLC39A14	solute carrier family 39 (zinc transporter), member 14
+MS4A6A	224356_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=108;FC_AKI_vs_control=1.98;P=0.0108	MS4A6A	membrane-spanning 4-domains, subfamily A, member 6A
+HKDC1	220585_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=109;FC_AKI_vs_control=1.98;P=0.000493	HKDC1	hexokinase domain containing 1
+TMEM30A	232591_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=110;FC_AKI_vs_control=1.98;P=0.0181	TMEM30A	transmembrane protein 30A
+CLC	206207_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=111;FC_AKI_vs_control=1.97;P=0.000516	CLC	Charcot-Leyden crystal protein
+GCNT3	219508_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=112;FC_AKI_vs_control=1.97;P=0.00477	GCNT3	glucosaminyl (N-acetyl) transferase 3, mucin type
+PLTP	202075_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=113;FC_AKI_vs_control=1.97;P=0.0203	PLTP	phospholipid transfer protein
+CDC42SE2	1552613_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=114;FC_AKI_vs_control=1.96;P=0.000968	CDC42SE2	CDC42 small effector 2
+IQGAP1	213446_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=115;FC_AKI_vs_control=1.96;P=3.97E-05	IQGAP1	IQ motif containing GTPase activating protein 1
+CD74	1567628_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=116;FC_AKI_vs_control=1.96;P=0.0121	CD74	CD74 molecule, major histocompatibility complex, class II invariant chain
+VSIG4	204787_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=117;FC_AKI_vs_control=1.95;P=0.0348	VSIG4	V-set and immunoglobulin domain containing 4
+GPR65	214467_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=118;FC_AKI_vs_control=1.95;P=0.02	GPR65	G protein-coupled receptor 65
+EPRS	200841_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=119;FC_AKI_vs_control=1.94;P=0.000239	EPRS	glutamyl-prolyl-tRNA synthetase
+TTC37	1554029_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=120;FC_AKI_vs_control=1.94;P=0.00365	TTC37	tetratricopeptide repeat domain 37
+FAP	209955_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=121;FC_AKI_vs_control=1.94;P=0.0482	FAP	fibroblast activation protein, alpha
+JAK1	1552611_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=122;FC_AKI_vs_control=1.94;P=1.31E-05	JAK1	Janus kinase 1
+CDK1	210559_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=123;FC_AKI_vs_control=1.93;P=0.00176	CDK1	cyclin-dependent kinase 1
+SLC44A4	1555203_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=124;FC_AKI_vs_control=1.93;P=0.00484	SLC44A4	solute carrier family 44, member 4
+F13A1	203305_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=125;FC_AKI_vs_control=1.92;P=0.0308	F13A1	coagulation factor XIII, A1 polypeptide
+CDV3	213548_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=126;FC_AKI_vs_control=1.92;P=0.00089	CDV3	CDV3 homolog (mouse)
+PRUNE2	212806_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=127;FC_AKI_vs_control=1.92;P=0.0209	PRUNE2	prune homolog 2 (Drosophila)
+GM2A	215891_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=128;FC_AKI_vs_control=1.92;P=0.0248	GM2A	GM2 ganglioside activator
+SORT1	212797_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=129;FC_AKI_vs_control=1.91;P=0.00525	SORT1	sortilin 1
+SPP1	1568574_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=130;FC_AKI_vs_control=1.91;P=0.0273	SPP1	secreted phosphoprotein 1
+PIGR	204213_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=131;FC_AKI_vs_control=1.9;P=0.0078	PIGR	polymeric immunoglobulin receptor
+MT1F	213629_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=132;FC_AKI_vs_control=1.9;P=0.0135	MT1F	metallothionein 1F
+CD44	217523_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=133;FC_AKI_vs_control=1.89;P=0.00464	CD44	CD44 molecule (Indian blood group)
+CALU	214845_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=134;FC_AKI_vs_control=1.89;P=0.00107	CALU	calumenin
+KIAA0101	202503_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=135;FC_AKI_vs_control=1.89;P=0.0373	KIAA0101	KIAA0101
+ANKRD10	227260_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=136;FC_AKI_vs_control=1.88;P=0.0485	ANKRD10	ankyrin repeat domain 10
+COL4A2	211966_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=137;FC_AKI_vs_control=1.88;P=0.00914	COL4A2	collagen, type IV, alpha 2
+FGA	205650_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=138;FC_AKI_vs_control=1.88;P=0.00155	FGA	fibrinogen alpha chain
+IL13RA1	210904_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=139;FC_AKI_vs_control=1.88;P=0.000263	IL13RA1	interleukin 13 receptor, alpha 1
+PBK	219148_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=140;FC_AKI_vs_control=1.87;P=0.0327	PBK	PDZ binding kinase
+AOX1	205082_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=141;FC_AKI_vs_control=1.87;P=0.0339	AOX1	aldehyde oxidase 1
+SLC1A1	206396_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=142;FC_AKI_vs_control=1.87;P=0.00217	SLC1A1	solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter, system Xag), member 1
+PDLIM5	211681_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=143;FC_AKI_vs_control=1.87;P=0.00129	PDLIM5	PDZ and LIM domain 5
+LRRN4	1553171_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=144;FC_AKI_vs_control=1.86;P=0.0322	LRRN4	leucine rich repeat neuronal 4
+THBS1	201107_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=145;FC_AKI_vs_control=1.86;P=1.63E-05	THBS1	thrombospondin 1
+IL8	202859_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=146;FC_AKI_vs_control=1.86;P=0.0193	IL8	interleukin 8
+PON2	210830_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=147;FC_AKI_vs_control=1.86;P=0.0263	PON2	paraoxonase 2
+SERPINE1	202628_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=148;FC_AKI_vs_control=1.86;P=0.0387	SERPINE1	serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1
+CANX	208853_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=149;FC_AKI_vs_control=1.85;P=0.011	CANX	calnexin
+APOBEC3B	206632_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=150;FC_AKI_vs_control=1.85;P=0.0121	APOBEC3B	apolipoprotein B mRNA editing enzyme, catalytic polypeptide-like 3B
+ARNTL	210971_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=151;FC_AKI_vs_control=1.85;P=0.00731	ARNTL	aryl hydrocarbon receptor nuclear translocator-like
+RHOB	1553962_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=152;FC_AKI_vs_control=1.85;P=0.043	RHOB	ras homolog gene family, member B
+ABCC3	209641_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=153;FC_AKI_vs_control=1.84;P=0.0157	ABCC3	ATP-binding cassette, sub-family C (CFTR/MRP), member 3
+AMACR	209424_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=154;FC_AKI_vs_control=1.84;P=0.0027	AMACR	alpha-methylacyl-CoA racemase
+MS4A7	223344_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=155;FC_AKI_vs_control=1.84;P=0.0109	MS4A7	membrane-spanning 4-domains, subfamily A, member 7
+WDR1	210935_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=156;FC_AKI_vs_control=1.84;P=0.000327	WDR1	WD repeat domain 1
+FOSL2	228188_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=157;FC_AKI_vs_control=1.84;P=0.0292	FOSL2	FOS-like antigen 2
+IFI16	208965_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=158;FC_AKI_vs_control=1.84;P=0.0437	IFI16	interferon, gamma-inducible protein 16
+FN1	214701_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=159;FC_AKI_vs_control=1.84;P=0.0026	FN1	fibronectin 1
+TPM1	206116_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=160;FC_AKI_vs_control=1.84;P=0.00986	TPM1	tropomyosin 1 (alpha)
+GNA13	206917_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=161;FC_AKI_vs_control=1.84;P=0.00475	GNA13	guanine nucleotide binding protein (G protein), alpha 13
+ACLY	210337_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=162;FC_AKI_vs_control=1.84;P=0.00056	ACLY	ATP citrate lyase
+PPFIBP1	203736_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=163;FC_AKI_vs_control=1.82;P=0.041	PPFIBP1	PTPRF interacting protein, binding protein 1 (liprin beta 1)
+MUC13	222712_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=164;FC_AKI_vs_control=1.82;P=0.0281	MUC13	mucin 13, cell surface associated
+EMB	226789_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=165;FC_AKI_vs_control=1.81;P=0.0137	EMB	embigin
+IL32	203828_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=166;FC_AKI_vs_control=1.81;P=0.0258	IL32	interleukin 32
+GTF2I	210892_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=167;FC_AKI_vs_control=1.81;P=0.00132	GTF2I	general transcription factor IIi
+LOC100128501	229296_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=168;FC_AKI_vs_control=1.81;P=0.0197	LOC100128501	
+RAB2A	221960_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=169;FC_AKI_vs_control=1.81;P=0.00111	RAB2A	RAB2A, member RAS oncogene family
+SMC3	209257_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=170;FC_AKI_vs_control=1.81;P=0.00742	SMC3	structural maintenance of chromosomes 3
+MYC	202431_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=171;FC_AKI_vs_control=1.8;P=0.0371	MYC	v-myc myelocytomatosis viral oncogene homolog (avian)
+FAM76B	1553749_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=172;FC_AKI_vs_control=1.8;P=0.00785	FAM76B	family with sequence similarity 76, member B
+DOCK2	213160_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=173;FC_AKI_vs_control=1.8;P=0.0235	DOCK2	dedicator of cytokinesis 2
+LCP1	208885_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=174;FC_AKI_vs_control=1.79;P=0.0256	LCP1	lymphocyte cytosolic protein 1 (L-plastin)
+COCH	1554241_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=175;FC_AKI_vs_control=1.79;P=0.00883	COCH	coagulation factor C homolog, cochlin (Limulus polyphemus)
+MT1X	208581_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=176;FC_AKI_vs_control=1.79;P=0.0274	MT1X	metallothionein 1X
+MALT1	208309_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=177;FC_AKI_vs_control=1.79;P=0.0176	MALT1	mucosa associated lymphoid tissue lymphoma translocation gene 1
+SCYL2	221220_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=178;FC_AKI_vs_control=1.79;P=0.0336	SCYL2	SCY1-like 2 (S. cerevisiae)
+PHLDB2	238419_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=179;FC_AKI_vs_control=1.77;P=0.0011	PHLDB2	pleckstrin homology-like domain, family B, member 2
+SLC16A1	202236_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=180;FC_AKI_vs_control=1.77;P=0.0286	SLC16A1	solute carrier family 16, member 1 (monocarboxylic acid transporter 1)
+TSPAN1	209114_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=181;FC_AKI_vs_control=1.77;P=0.000859	TSPAN1	tetraspanin 1
+FPR3	214560_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=182;FC_AKI_vs_control=1.76;P=0.0137	FPR3	formyl peptide receptor 3
+LEPR	211354_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=183;FC_AKI_vs_control=1.76;P=0.00376	LEPR	leptin receptor
+KIF20A	218755_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=184;FC_AKI_vs_control=1.76;P=0.00684	KIF20A	kinesin family member 20A
+CTSC	225647_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=185;FC_AKI_vs_control=1.76;P=0.00127	CTSC	cathepsin C
+PTPN12	216915_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=186;FC_AKI_vs_control=1.76;P=0.0197	PTPN12	protein tyrosine phosphatase, non-receptor type 12
+PNN	1567213_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=187;FC_AKI_vs_control=1.75;P=0.0225	PNN	pinin, desmosome associated protein
+CLIC4	201559_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=188;FC_AKI_vs_control=1.75;P=0.0234	CLIC4	chloride intracellular channel 4
+GSN	214040_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=189;FC_AKI_vs_control=1.75;P=0.00295	GSN	gelsolin
+HLA-DRA	210982_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=190;FC_AKI_vs_control=1.75;P=0.00945	HLA-DRA	major histocompatibility complex, class II, DR alpha
+PIK3AP1	1554508_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=191;FC_AKI_vs_control=1.75;P=0.000466	PIK3AP1	phosphoinositide-3-kinase adaptor protein 1
+SEC23IP	216392_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=192;FC_AKI_vs_control=1.75;P=0.0106	SEC23IP	SEC23 interacting protein
+ICAM1	202638_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=193;FC_AKI_vs_control=1.75;P=0.0235	ICAM1	intercellular adhesion molecule 1
+TMED2	204426_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=194;FC_AKI_vs_control=1.75;P=0.0373	TMED2	transmembrane emp24 domain trafficking protein 2
+CYR61	210764_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=195;FC_AKI_vs_control=1.74;P=0.0454	CYR61	cysteine-rich, angiogenic inducer, 61
+RNF19A	220483_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=196;FC_AKI_vs_control=1.74;P=0.000632	RNF19A	ring finger protein 19A
+LGALS8	210732_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=197;FC_AKI_vs_control=1.74;P=0.000481	LGALS8	lectin, galactoside-binding, soluble, 8
+TPR	215220_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=198;FC_AKI_vs_control=1.74;P=0.0018	TPR	translocated promoter region (to activated MET oncogene)
+KITLG	207029_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=199;FC_AKI_vs_control=1.74;P=0.00365	KITLG	KIT ligand
+OGFRL1	238469_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=200;FC_AKI_vs_control=1.73;P=0.00855	OGFRL1	opioid growth factor receptor-like 1
+SYNCRIP	209024_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=201;FC_AKI_vs_control=1.73;P=0.00984	SYNCRIP	synaptotagmin binding, cytoplasmic RNA interacting protein
+ABCC4	1555039_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=202;FC_AKI_vs_control=1.73;P=0.00217	ABCC4	ATP-binding cassette, sub-family C (CFTR/MRP), member 4
+HSPA4	211016_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=203;FC_AKI_vs_control=1.73;P=0.00489	HSPA4	heat shock 70kDa protein 4
+LRG1	228648_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=204;FC_AKI_vs_control=1.73;P=3.97E-05	LRG1	leucine-rich alpha-2-glycoprotein 1
+MPZL1	210087_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=205;FC_AKI_vs_control=1.73;P=0.000558	MPZL1	myelin protein zero-like 1
+LMAN1	203294_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=206;FC_AKI_vs_control=1.73;P=0.0228	LMAN1	lectin, mannose-binding, 1
+MT2A	212185_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=207;FC_AKI_vs_control=1.73;P=0.00954	MT2A	metallothionein 2A
+TTC3	208664_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=208;FC_AKI_vs_control=1.73;P=0.0437	TTC3	tetratricopeptide repeat domain 3
+IGSF6	206420_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=209;FC_AKI_vs_control=1.73;P=0.00659	IGSF6	immunoglobulin superfamily, member 6
+HSP90AB1	1557910_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=210;FC_AKI_vs_control=1.73;P=0.005	HSP90AB1	heat shock protein 90kDa alpha (cytosolic), class B member 1
+MT1E	216336_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=211;FC_AKI_vs_control=1.73;P=0.0172	MT1E	metallothionein 1E
+RAD21	200607_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=212;FC_AKI_vs_control=1.72;P=0.0131	RAD21	RAD21 homolog (S. pombe)
+SMARCA2	212257_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=213;FC_AKI_vs_control=1.72;P=0.00382	SMARCA2	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 2
+GPR56	206582_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=214;FC_AKI_vs_control=1.72;P=0.016	GPR56	G protein-coupled receptor 56
+SCARB2	201647_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=215;FC_AKI_vs_control=1.72;P=0.0403	SCARB2	scavenger receptor class B, member 2
+SNAP23	209131_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=216;FC_AKI_vs_control=1.72;P=0.0305	SNAP23	synaptosomal-associated protein, 23kDa
+GBP2	202748_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=217;FC_AKI_vs_control=1.71;P=0.00498	GBP2	guanylate binding protein 2, interferon-inducible
+ACSL4	1557418_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=218;FC_AKI_vs_control=1.71;P=0.00666	ACSL4	acyl-CoA synthetase long-chain family member 4
+CD46	207549_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=219;FC_AKI_vs_control=1.71;P=0.0202	CD46	CD46 molecule, complement regulatory protein
+LYPD1	212909_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=220;FC_AKI_vs_control=1.71;P=0.0202	LYPD1	LY6/PLAUR domain containing 1
+SEC23A	204344_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=221;FC_AKI_vs_control=1.71;P=0.0018	SEC23A	Sec23 homolog A (S. cerevisiae)
+CD37	204192_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=222;FC_AKI_vs_control=1.7;P=0.0417	CD37	CD37 molecule
+SEPT2	1554747_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=223;FC_AKI_vs_control=1.7;P=0.00619	SEPT2	septin 2
+CASP1	1552703_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=224;FC_AKI_vs_control=1.7;P=0.00811	CASP1	caspase 1, apoptosis-related cysteine peptidase (interleukin 1, beta, convertase)
+DDAH1	1553565_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=225;FC_AKI_vs_control=1.7;P=0.00349	DDAH1	dimethylarginine dimethylaminohydrolase 1
+P4HB	1564494_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=226;FC_AKI_vs_control=1.7;P=0.000695	P4HB	prolyl 4-hydroxylase, beta polypeptide
+TPX2	210052_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=227;FC_AKI_vs_control=1.7;P=0.000224	TPX2	TPX2, microtubule-associated, homolog (Xenopus laevis)
+GLS	203158_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=228;FC_AKI_vs_control=1.7;P=0.03	GLS	glutaminase
+HSPB8	221667_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=229;FC_AKI_vs_control=1.7;P=0.00801	HSPB8	heat shock 22kDa protein 8
+NR1H4	1554375_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=230;FC_AKI_vs_control=1.69;P=0.0159	NR1H4	nuclear receptor subfamily 1, group H, member 4
+KRT18	201596_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=231;FC_AKI_vs_control=1.69;P=0.00445	KRT18	keratin 18
+WFDC2	1552261_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=232;FC_AKI_vs_control=1.68;P=0.000516	WFDC2	WAP four-disulfide core domain 2
+GNS	203676_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=233;FC_AKI_vs_control=1.68;P=0.00383	GNS	glucosamine (N-acetyl)-6-sulfatase
+MT1H	206461_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=234;FC_AKI_vs_control=1.68;P=0.0344	MT1H	metallothionein 1H
+SAA1	214456_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=235;FC_AKI_vs_control=1.68;P=0.0131	SAA1	serum amyloid A1
+HSPA6	213418_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=236;FC_AKI_vs_control=1.68;P=0.0399	HSPA6	heat shock 70kDa protein 6 (HSP70B')
+TNFRSF12A	218368_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=237;FC_AKI_vs_control=1.68;P=0.00411	TNFRSF12A	tumor necrosis factor receptor superfamily, member 12A
+RNF144B	235549_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=238;FC_AKI_vs_control=1.68;P=0.0223	RNF144B	ring finger protein 144B
+CLEC7A	1555756_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=239;FC_AKI_vs_control=1.67;P=0.0186	CLEC7A	C-type lectin domain family 7, member A
+FNDC3A	215910_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=240;FC_AKI_vs_control=1.67;P=0.00804	FNDC3A	fibronectin type III domain containing 3A
+SLC39A6	1556551_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=241;FC_AKI_vs_control=1.67;P=0.0203	SLC39A6	solute carrier family 39 (zinc transporter), member 6
+FCGR1B	214511_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=242;FC_AKI_vs_control=1.67;P=0.0422	FCGR1B	Fc fragment of IgG, high affinity Ib, receptor (CD64)
+ZBTB38	1558733_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=243;FC_AKI_vs_control=1.67;P=0.00132	ZBTB38	zinc finger and BTB domain containing 38
+COL7A1	204136_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=244;FC_AKI_vs_control=1.67;P=0.00623	COL7A1	collagen, type VII, alpha 1
+TOP2A	201292_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=245;FC_AKI_vs_control=1.67;P=0.0323	TOP2A	topoisomerase (DNA) II alpha 170kDa
+FCGR3B	204007_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=246;FC_AKI_vs_control=1.67;P=0.0274	FCGR3B	Fc fragment of IgG, low affinity IIIb, receptor (CD16b)
+SERPINB8	206034_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=247;FC_AKI_vs_control=1.67;P=1.42E-05	SERPINB8	serpin peptidase inhibitor, clade B (ovalbumin), member 8
+SLMAP	224149_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=248;FC_AKI_vs_control=1.67;P=0.0202	SLMAP	sarcolemma associated protein
+CKLF	219161_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=249;FC_AKI_vs_control=1.67;P=0.0171	CKLF	chemokine-like factor
+TXNIP	201008_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=250;FC_AKI_vs_control=1.66;P=0.0349	TXNIP	thioredoxin interacting protein
+KIAA1033	215936_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=251;FC_AKI_vs_control=1.66;P=0.0473	KIAA1033	KIAA1033
+FCN1	205237_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=252;FC_AKI_vs_control=1.66;P=0.018	FCN1	ficolin (collagen/fibrinogen domain containing) 1
+TMEM87B	225412_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=253;FC_AKI_vs_control=1.66;P=0.0384	TMEM87B	transmembrane protein 87B
+HN1	217755_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=254;FC_AKI_vs_control=1.66;P=0.00098	HN1	hematological and neurological expressed 1
+SEC61A1	222385_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=255;FC_AKI_vs_control=1.66;P=0.0023	SEC61A1	Sec61 alpha 1 subunit (S. cerevisiae)
+S100A1	205334_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=256;FC_AKI_vs_control=1.66;P=0.0227	S100A1	S100 calcium binding protein A1
+MBNL2	205017_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=257;FC_AKI_vs_control=1.65;P=0.00129	MBNL2	muscleblind-like 2 (Drosophila)
+TMEM165	226825_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=258;FC_AKI_vs_control=1.65;P=0.000154	TMEM165	transmembrane protein 165
+ASPM	219918_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=259;FC_AKI_vs_control=1.65;P=0.00361	ASPM	asp (abnormal spindle) homolog, microcephaly associated (Drosophila)
+IL11	206924_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=260;FC_AKI_vs_control=1.65;P=0.0086	IL11	interleukin 11
+CCT2	201946_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=261;FC_AKI_vs_control=1.65;P=0.00134	CCT2	chaperonin containing TCP1, subunit 2 (beta)
+LIF	205266_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=262;FC_AKI_vs_control=1.64;P=0.00766	LIF	leukemia inhibitory factor (cholinergic differentiation factor)
+SCAMP1	1552978_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=263;FC_AKI_vs_control=1.64;P=0.0478	SCAMP1	secretory carrier membrane protein 1
+CD58	216942_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=264;FC_AKI_vs_control=1.64;P=0.0205	CD58	CD58 molecule
+MT1P2	211456_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=265;FC_AKI_vs_control=1.64;P=0.0165	MT1P2	metallothionein 1 pseudogene 2
+DLG1	217208_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=266;FC_AKI_vs_control=1.64;P=0.000696	DLG1	discs, large homolog 1 (Drosophila)
+CCDC88A	221078_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=267;FC_AKI_vs_control=1.64;P=0.000428	CCDC88A	coiled-coil domain containing 88A
+BZW1	200776_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=268;FC_AKI_vs_control=1.64;P=0.0212	BZW1	basic leucine zipper and W2 domains 1
+DUSP3	201538_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=269;FC_AKI_vs_control=1.64;P=0.00379	DUSP3	dual specificity phosphatase 3
+RGS18	223809_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=270;FC_AKI_vs_control=1.64;P=0.000672	RGS18	regulator of G-protein signaling 18
+MT1G	204745_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=271;FC_AKI_vs_control=1.64;P=0.0332	MT1G	metallothionein 1G
+MAP3K1	214786_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=272;FC_AKI_vs_control=1.63;P=0.0414	MAP3K1	mitogen-activated protein kinase kinase kinase 1
+TRIM38	203610_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=273;FC_AKI_vs_control=1.63;P=0.00266	TRIM38	tripartite motif-containing 38
+ATF2	205446_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=274;FC_AKI_vs_control=1.63;P=0.00989	ATF2	activating transcription factor 2
+PRKAR1A	200604_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=275;FC_AKI_vs_control=1.63;P=0.00384	PRKAR1A	protein kinase, cAMP-dependent, regulatory, type I, alpha (tissue specific extinguisher 1)
+HADHA	208629_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=276;FC_AKI_vs_control=1.63;P=0.000235	HADHA	hydroxyacyl-CoA dehydrogenase/3-ketoacyl-CoA thiolase/enoyl-CoA hydratase (trifunctional protein), alpha subunit
+EGFR	1565483_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=277;FC_AKI_vs_control=1.62;P=0.002	EGFR	epidermal growth factor receptor
+PPP2R1B	202884_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=278;FC_AKI_vs_control=1.62;P=0.004	PPP2R1B	protein phosphatase 2, regulatory subunit A, beta
+ENO1	217294_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=279;FC_AKI_vs_control=1.62;P=0.00431	ENO1	enolase 1, (alpha)
+MIA2	1553944_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=280;FC_AKI_vs_control=1.62;P=0.0181	MIA2	melanoma inhibitory activity 2
+TKT	208699_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=281;FC_AKI_vs_control=1.62;P=0.000493	TKT	transketolase
+FCGR1A	216950_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=282;FC_AKI_vs_control=1.61;P=0.00675	FCGR1A	Fc fragment of IgG, high affinity Ia, receptor (CD64)
+MACF1	208633_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=283;FC_AKI_vs_control=1.61;P=0.00743	MACF1	microtubule-actin crosslinking factor 1
+IGHD	213674_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=284;FC_AKI_vs_control=1.61;P=0.0223	IGHD	immunoglobulin heavy constant delta
+WDR6	233573_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=285;FC_AKI_vs_control=1.61;P=0.00373	WDR6	WD repeat domain 6
+ERLIN1	202444_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=286;FC_AKI_vs_control=1.61;P=0.00385	ERLIN1	ER lipid raft associated 1
+LBP	211652_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=287;FC_AKI_vs_control=1.61;P=0.00374	LBP	lipopolysaccharide binding protein
+ELF3	210827_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=288;FC_AKI_vs_control=1.6;P=0.0135	ELF3	E74-like factor 3 (ets domain transcription factor, epithelial-specific )
+TJP1	214168_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=289;FC_AKI_vs_control=1.6;P=0.0428	TJP1	tight junction protein 1 (zona occludens 1)
+RNASE2	206111_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=290;FC_AKI_vs_control=1.6;P=4.57E-05	RNASE2	ribonuclease, RNase A family, 2 (liver, eosinophil-derived neurotoxin)
+SF3B1	201070_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=291;FC_AKI_vs_control=1.6;P=0.00766	SF3B1	splicing factor 3b, subunit 1, 155kDa
+ATP6V1A	201971_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=292;FC_AKI_vs_control=1.6;P=0.0408	ATP6V1A	ATPase, H+ transporting, lysosomal 70kDa, V1 subunit A
+ASAH1	1555419_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=293;FC_AKI_vs_control=1.6;P=0.0385	ASAH1	N-acylsphingosine amidohydrolase (acid ceramidase) 1
+LXN	218729_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=294;FC_AKI_vs_control=1.6;P=0.04	LXN	latexin
+HECTD1	1557100_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=295;FC_AKI_vs_control=1.59;P=0.00801	HECTD1	HECT domain containing 1
+NUSAP1	219978_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=296;FC_AKI_vs_control=1.59;P=4.56E-05	NUSAP1	nucleolar and spindle associated protein 1
+GOPC	227214_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=297;FC_AKI_vs_control=1.59;P=0.00497	GOPC	golgi-associated PDZ and coiled-coil motif containing
+STX16	221638_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=298;FC_AKI_vs_control=1.59;P=0.0105	STX16	syntaxin 16
+CP	204846_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=299;FC_AKI_vs_control=1.59;P=0.00819	CP	ceruloplasmin (ferroxidase)
+EXOC6	233924_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=300;FC_AKI_vs_control=1.59;P=0.00295	EXOC6	exocyst complex component 6
+SAMHD1	204502_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=301;FC_AKI_vs_control=1.59;P=0.00288	SAMHD1	SAM domain and HD domain 1
+CLU	208791_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=302;FC_AKI_vs_control=1.59;P=0.0173	CLU	clusterin
+RAB5A	206113_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=303;FC_AKI_vs_control=1.58;P=0.0346	RAB5A	RAB5A, member RAS oncogene family
+CXCL1	204470_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=304;FC_AKI_vs_control=1.58;P=0.0261	CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)
+SSX2IP	203015_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=305;FC_AKI_vs_control=1.58;P=0.016	SSX2IP	synovial sarcoma, X breakpoint 2 interacting protein
+ERO1L	222646_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=306;FC_AKI_vs_control=1.58;P=0.0186	ERO1L	ERO1-like (S. cerevisiae)
+APLP2	214875_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=307;FC_AKI_vs_control=1.58;P=6.49E-05	APLP2	amyloid beta (A4) precursor-like protein 2
+LAMC2	202267_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=308;FC_AKI_vs_control=1.58;P=0.0326	LAMC2	laminin, gamma 2
+MAPK1	1552264_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=309;FC_AKI_vs_control=1.58;P=0.001	MAPK1	mitogen-activated protein kinase 1
+MAT2A	200769_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=310;FC_AKI_vs_control=1.57;P=0.043	MAT2A	methionine adenosyltransferase II, alpha
+KPNA2	211762_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=311;FC_AKI_vs_control=1.57;P=1.63E-05	KPNA2	karyopherin alpha 2 (RAG cohort 1, importin alpha 1)
+PECAM1	208983_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=312;FC_AKI_vs_control=1.57;P=0.00669	PECAM1	platelet/endothelial cell adhesion molecule
+PTBP2	1554614_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=313;FC_AKI_vs_control=1.57;P=0.025	PTBP2	polypyrimidine tract binding protein 2
+ESYT2	1555830_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=314;FC_AKI_vs_control=1.57;P=0.00508	ESYT2	extended synaptotagmin-like protein 2
+CDKN3	1555758_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=315;FC_AKI_vs_control=1.57;P=0.0209	CDKN3	cyclin-dependent kinase inhibitor 3
+CBFB	206788_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=316;FC_AKI_vs_control=1.57;P=0.00105	CBFB	core-binding factor, beta subunit
+PICALM	215236_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=317;FC_AKI_vs_control=1.57;P=0.0477	PICALM	phosphatidylinositol binding clathrin assembly protein
+RC3H2	238421_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=318;FC_AKI_vs_control=1.57;P=0.0299	RC3H2	ring finger and CCCH-type domains 2
+ARPC1B	201954_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=319;FC_AKI_vs_control=1.57;P=0.0268	ARPC1B	actin related protein 2/3 complex, subunit 1B, 41kDa
+CDC27	217881_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=320;FC_AKI_vs_control=1.57;P=0.0274	CDC27	cell division cycle 27 homolog (S. cerevisiae)
+LST1	215633_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=321;FC_AKI_vs_control=1.57;P=0.00143	LST1	leukocyte specific transcript 1
+MYF6	206372_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=322;FC_AKI_vs_control=1.57;P=0.0344	MYF6	myogenic factor 6 (herculin)
+MYBL1	213906_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=323;FC_AKI_vs_control=1.56;P=0.036	MYBL1	v-myb myeloblastosis viral oncogene homolog (avian)-like 1
+CCNA2	213226_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=324;FC_AKI_vs_control=1.56;P=0.0374	CCNA2	cyclin A2
+MAFF	205193_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=325;FC_AKI_vs_control=1.56;P=0.00172	MAFF	v-maf musculoaponeurotic fibrosarcoma oncogene homolog F (avian)
+LMNA	1554600_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=326;FC_AKI_vs_control=1.56;P=0.000854	LMNA	lamin A/C
+G3BP2	206383_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=327;FC_AKI_vs_control=1.56;P=0.00756	G3BP2	GTPase activating protein (SH3 domain) binding protein 2
+PRPF6	208879_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=328;FC_AKI_vs_control=1.56;P=0.00801	PRPF6	PRP6 pre-mRNA processing factor 6 homolog (S. cerevisiae)
+HLA-DQB1	211656_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=329;FC_AKI_vs_control=1.55;P=0.0387	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1
+MBNL1	1555594_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=330;FC_AKI_vs_control=1.55;P=0.00231	MBNL1	muscleblind-like (Drosophila)
+TRIB1	202241_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=331;FC_AKI_vs_control=1.55;P=0.0317	TRIB1	tribbles homolog 1 (Drosophila)
+TPP1	214196_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=332;FC_AKI_vs_control=1.55;P=0.0352	TPP1	tripeptidyl peptidase I
+DUSP1	201044_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=333;FC_AKI_vs_control=1.55;P=0.000157	DUSP1	dual specificity phosphatase 1
+HSPH1	208744_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=334;FC_AKI_vs_control=1.55;P=0.00619	HSPH1	heat shock 105kDa/110kDa protein 1
+SSR1	200889_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=335;FC_AKI_vs_control=1.55;P=0.00388	SSR1	signal sequence receptor, alpha
+ANGPTL4	223333_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=336;FC_AKI_vs_control=1.55;P=0.00317	ANGPTL4	angiopoietin-like 4
+ARHGDIB	1555812_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=337;FC_AKI_vs_control=1.55;P=0.0101	ARHGDIB	Rho GDP dissociation inhibitor (GDI) beta
+CALCRL	210815_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=338;FC_AKI_vs_control=1.55;P=0.0243	CALCRL	calcitonin receptor-like
+C5orf22	1552660_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=339;FC_AKI_vs_control=1.55;P=0.0373	C5orf22	chromosome 5 open reading frame 22
+KPNA4	209653_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=340;FC_AKI_vs_control=1.55;P=0.0477	KPNA4	karyopherin alpha 4 (importin alpha 3)
+DDX42	1559954_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=341;FC_AKI_vs_control=1.54;P=0.0155	DDX42	DEAD (Asp-Glu-Ala-Asp) box polypeptide 42
+ITGB8	211488_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=342;FC_AKI_vs_control=1.54;P=0.00437	ITGB8	integrin, beta 8
+KCNIP4	236783_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=343;FC_AKI_vs_control=1.54;P=0.015	KCNIP4	Kv channel interacting protein 4
+MSH6	211450_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=344;FC_AKI_vs_control=1.54;P=0.0463	MSH6	mutS homolog 6 (E. coli)
+NUDT21	213461_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=345;FC_AKI_vs_control=1.54;P=0.0399	NUDT21	nudix (nucleoside diphosphate linked moiety X)-type motif 21
+ANAPC5	208721_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=346;FC_AKI_vs_control=1.54;P=0.00147	ANAPC5	anaphase promoting complex subunit 5
+GEMC1	1569616_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=347;FC_AKI_vs_control=1.54;P=0.000718	GEMC1	geminin coiled-coil domain-containing protein 1
+CDC20	202870_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=348;FC_AKI_vs_control=1.54;P=0.00772	CDC20	cell division cycle 20 homolog (S. cerevisiae)
+GNG12	1555240_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=349;FC_AKI_vs_control=1.54;P=0.00112	GNG12	guanine nucleotide binding protein (G protein), gamma 12
+MKI67	212022_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=350;FC_AKI_vs_control=1.54;P=0.000213	MKI67	antigen identified by monoclonal antibody Ki-67
+IGF1R	243358_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=351;FC_AKI_vs_control=1.53;P=0.0132	IGF1R	insulin-like growth factor 1 receptor
+PTAFR	211661_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=352;FC_AKI_vs_control=1.53;P=0.000671	PTAFR	platelet-activating factor receptor
+ATP6V1C1	202873_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=353;FC_AKI_vs_control=1.53;P=0.0112	ATP6V1C1	ATPase, H+ transporting, lysosomal 42kDa, V1 subunit C1
+NAA50	222393_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=354;FC_AKI_vs_control=1.53;P=0.0474	NAA50	N(alpha)-acetyltransferase 50, NatE catalytic subunit
+UBE3C	1554794_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=355;FC_AKI_vs_control=1.53;P=0.00035	UBE3C	ubiquitin protein ligase E3C
+SRPR	200917_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=356;FC_AKI_vs_control=1.53;P=0.0168	SRPR	signal recognition particle receptor (docking protein)
+C1orf38	210785_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=357;FC_AKI_vs_control=1.53;P=0.0463	C1orf38	chromosome 1 open reading frame 38
+C2	203052_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=358;FC_AKI_vs_control=1.53;P=0.0404	C2	complement component 2
+ETS1	1555355_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=359;FC_AKI_vs_control=1.53;P=0.0191	ETS1	v-ets erythroblastosis virus E26 oncogene homolog 1 (avian)
+FKBP1A	210186_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=360;FC_AKI_vs_control=1.53;P=0.0372	FKBP1A	FK506 binding protein 1A, 12kDa
+MAP3K7	211536_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=361;FC_AKI_vs_control=1.53;P=0.0453	MAP3K7	mitogen-activated protein kinase kinase kinase 7
+NFE2L2	1567013_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=362;FC_AKI_vs_control=1.53;P=3.81E-05	NFE2L2	nuclear factor (erythroid-derived 2)-like 2
+TGM2	201042_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=363;FC_AKI_vs_control=1.53;P=0.0388	TGM2	transglutaminase 2 (C polypeptide, protein-glutamine-gamma-glutamyltransferase)
+TFRC	237215_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=364;FC_AKI_vs_control=1.53;P=0.00967	TFRC	transferrin receptor (p90, CD71)
+RHOA	1555814_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=365;FC_AKI_vs_control=1.52;P=0.00365	RHOA	ras homolog gene family, member A
+DSCR3	217309_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=366;FC_AKI_vs_control=1.52;P=0.00296	DSCR3	Down syndrome critical region gene 3
+FAM186B	224039_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=367;FC_AKI_vs_control=1.52;P=3.97E-05	FAM186B	family with sequence similarity 186, member B
+DNAJA4	1554333_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=368;FC_AKI_vs_control=1.52;P=0.00333	DNAJA4	DnaJ (Hsp40) homolog, subfamily A, member 4
+HBD	206834_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=369;FC_AKI_vs_control=1.52;P=0.037	HBD	hemoglobin, delta
+CD59	200983_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=370;FC_AKI_vs_control=1.52;P=0.00159	CD59	CD59 molecule, complement regulatory protein
+ZC3H11A	205787_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=371;FC_AKI_vs_control=1.52;P=0.0118	ZC3H11A	zinc finger CCCH-type containing 11A
+SAR1B	230397_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=372;FC_AKI_vs_control=1.51;P=0.00188	SAR1B	SAR1 homolog B (S. cerevisiae)
+TAB3	1552928_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=373;FC_AKI_vs_control=1.51;P=0.0332	TAB3	TGF-beta activated kinase 1/MAP3K7 binding protein 3
+USP10	209136_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=374;FC_AKI_vs_control=1.51;P=0.00455	USP10	ubiquitin specific peptidase 10
+BICC1	220580_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=375;FC_AKI_vs_control=1.51;P=0.0112	BICC1	bicaudal C homolog 1 (Drosophila)
+CALD1	201615_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=376;FC_AKI_vs_control=1.51;P=0.000258	CALD1	caldesmon 1
+HAVCR2	1555628_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=377;FC_AKI_vs_control=1.51;P=0.0299	HAVCR2	hepatitis A virus cellular receptor 2
+KBTBD2	223585_x_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=378;FC_AKI_vs_control=1.51;P=0.00808	KBTBD2	kelch repeat and BTB (POZ) domain containing 2
+SNX19	1554986_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=379;FC_AKI_vs_control=1.51;P=0.00237	SNX19	sorting nexin 19
+C22orf15	1558334_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=380;FC_AKI_vs_control=1.51;P=4.07E-06	C22orf15	chromosome 22 open reading frame 15
+GPCPD1	230492_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=381;FC_AKI_vs_control=1.51;P=0.0191	GPCPD1	glycerophosphocholine phosphodiesterase GDE1 homolog (S. cerevisiae)
+TGFBR2	207334_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=382;FC_AKI_vs_control=1.51;P=0.00713	TGFBR2	transforming growth factor, beta receptor II (70/80kDa)
+ZMYND11	1554159_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=383;FC_AKI_vs_control=1.51;P=0.0136	ZMYND11	zinc finger, MYND domain containing 11
+CD164	208653_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=384;FC_AKI_vs_control=1.51;P=0.0452	CD164	CD164 molecule, sialomucin
+WTAP	227621_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=385;FC_AKI_vs_control=1.51;P=0.000175	WTAP	Wilms tumor 1 associated protein
+SLCO2B1	203472_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=386;FC_AKI_vs_control=1.51;P=0.0363	SLCO2B1	solute carrier organic anion transporter family, member 2B1
+C14orf34	1555786_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=387;FC_AKI_vs_control=1.5;P=0.000747	C14orf34	chromosome 14 open reading frame 34
+GNB1	200744_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=388;FC_AKI_vs_control=1.5;P=0.000213	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1
+RASSF5	1554834_a_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=389;FC_AKI_vs_control=1.5;P=0.00327	RASSF5	Ras association (RalGDS/AF-6) domain family member 5
+TLR2	204924_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=390;FC_AKI_vs_control=1.5;P=0.0146	TLR2	toll-like receptor 2
+M6PR	200900_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=391;FC_AKI_vs_control=1.5;P=0.0247	M6PR	mannose-6-phosphate receptor (cation dependent)
+FAIM3	221602_s_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=392;FC_AKI_vs_control=1.5;P=0.0239	FAIM3	Fas apoptotic inhibitory molecule 3
+QSER1	244563_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=393;FC_AKI_vs_control=1.5;P=0.0434	QSER1	glutamine and serine rich 1
+UBASH3B	228359_at	up (early AKI biopsies vs 6-wk pristine protocol biopsies)	rank=394;FC_AKI_vs_control=1.5;P=8.34E-05	UBASH3B	ubiquitin associated and SH3 domain containing B

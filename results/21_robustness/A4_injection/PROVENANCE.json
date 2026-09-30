@@ -1,0 +1,47 @@
+{
+  "stage": "21_robustness/A4_injection",
+  "time": "2026-09-29T23:25:29",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/processed/samples.tsv": "3316ca923606450d6136e3bd0351e28d",
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/19_shared_program/residual/disease_scp_shift.tsv": "02ac2548bb13b0b2715fbe3bd4efa0e3"
+  },
+  "outputs": {
+    "results/21_robustness/A4_injection/reps.tsv.gz": "a367aefea83e515ca3cb3a7ccba5ca30",
+    "results/21_robustness/A4_injection/summary.tsv": "78406e254596028b2c057f81b770dddf",
+    "results/21_robustness/A4_injection/detectable.tsv": "b7cf52a13586b45c4bbd9f25090a210e"
+  },
+  "extra": {
+    "injection": {
+      "units": {
+        "TUB": "ERCB_TUB_H1",
+        "GLOM": "ERCB_GLOM_H1"
+      },
+      "n_pseudo": 20,
+      "n_genes": 50,
+      "deltas": [
+        0.25,
+        0.5,
+        1.0,
+        1.5
+      ],
+      "n_rep": 100,
+      "n_null_sets": 200,
+      "severity_link_g": null,
+      "detect_power": 0.8
+    }
+  }
+}

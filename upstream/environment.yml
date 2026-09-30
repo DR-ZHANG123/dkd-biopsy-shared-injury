@@ -1,0 +1,23 @@
+name: dkd_v3
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - python=3.10
+  - numpy=2.2
+  - pandas=2.3
+  - scipy=1.15
+  - scikit-learn=1.7
+  - statsmodels=0.14
+  - matplotlib=3.10
+  - seaborn=0.13
+  - scanpy=1.11
+  - anndata=0.11
+  - harmonypy=2.0
+  - python-igraph
+  - leidenalg
+  - pyyaml
+  - pip
+  - pip:
+      - torch==2.13.0
+      - xgboost>=3.0
+      - pydeseq2==0.5.2
+      - GEOparse>=2.0

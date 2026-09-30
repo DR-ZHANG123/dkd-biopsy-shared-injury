@@ -1,0 +1,48 @@
+{
+  "stage": "20_repair_state/figdata",
+  "time": "2026-09-29T16:48:28",
+  "seed": 20260928,
+  "config_sha": "8efb02bebfeb6666",
+  "git_commit": "48b7aa7f472619b3b1fde5690161e86c8cc3cc82",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/20_repair_state/programs/PROVENANCE.json": "444ef04afbf6844ac247647cef4c7051",
+    "results/20_repair_state/concord/PROVENANCE.json": "c18393f51e330e439dd90688bba0353a",
+    "results/20_repair_state/decomp/PROVENANCE.json": "774d3cd452051a47f78dedb523df3195",
+    "results/20_repair_state/donors/PROVENANCE.json": "148acf97fd1d495a24b83093d88677a4",
+    "results/20_repair_state/bulk/PROVENANCE.json": "b0fe15ee4be91758fbf953696a829bd7",
+    "results/20_repair_state/clinical/PROVENANCE.json": "92caea89c46be7edc48186cb255ae778",
+    "results/20_repair_state/genes/PROVENANCE.json": "671cd62271e21c3906e9094697e9b936"
+  },
+  "outputs": {
+    "results/20_repair_state/figdata/panel_a_program_summary.tsv": "42f25d4772b8abbdfc9750d1e92eb183",
+    "results/20_repair_state/figdata/panel_a_key_gene_state_expression.tsv": "5905eef2978333bab963cb261f0801c4",
+    "results/20_repair_state/figdata/panel_b_concordance_scatter.tsv.gz": "cfc9b16e37d9eb4d6fef48a452e10423",
+    "results/20_repair_state/figdata/panel_b_concordance_stats.tsv": "3f04f8ab172e3458063ac21944de7006",
+    "results/20_repair_state/figdata/panel_b_bulk_overlap.tsv": "16ff858745cb52a8d7d2b43afca9a3b3",
+    "results/20_repair_state/figdata/panel_c_shapley_blocks.tsv": "f70228601c5bd0dd52c48fe7aad51129",
+    "results/20_repair_state/figdata/panel_c_shapley_factors.tsv": "23b524b69d1e67240099538a6574220b",
+    "results/20_repair_state/figdata/panel_d_donor_table.tsv": "c2c0147b8777427406bee5600cb0986d",
+    "results/20_repair_state/figdata/panel_d_category_tests.tsv": "13e08ca77eafce3a74aa21e9d8b8b7d2",
+    "results/20_repair_state/figdata/panel_e_correlations.tsv": "7869da56ed3f55f5c942727fccc9d82d",
+    "results/20_repair_state/figdata/panel_e_regression.tsv": "3ff60af4958fd286fbcfc80d1113ff4e",
+    "results/20_repair_state/figdata/panel_f_bulk_meta.tsv": "a995a60d53ba418b9a1a4a6a9eb2bd9d",
+    "results/20_repair_state/figdata/panel_f_bulk_unit.tsv": "94f5c0586f181d8797394ea07072eb7a",
+    "results/20_repair_state/figdata/panel_f_bulk_scp_relation.tsv": "f52ac70bdbaa714d94bc4ec45d4e83e5",
+    "results/20_repair_state/figdata/panel_f_bulk_resolvability.tsv": "2165b47ebbc30e34ca35d26b9da3ad01",
+    "results/20_repair_state/figdata/panel_g_clinical_tests.tsv": "df898d409bb8f5cade6241e059d41908",
+    "results/20_repair_state/figdata/panel_g_clinical_scores.tsv.gz": "f7428841887800ee133284990ed6e68a",
+    "results/20_repair_state/figdata/panel_h_key_genes.tsv": "1a915c769213d60e389b1a8b2e6acd7b",
+    "results/20_repair_state/figdata/key_numbers.tsv": "731c4d63d7c9f4674309d387b5818ea9"
+  },
+  "extra": {}
+}

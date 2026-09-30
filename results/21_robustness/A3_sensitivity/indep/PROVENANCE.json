@@ -1,0 +1,33 @@
+{
+  "stage": "21_robustness/A3_sensitivity/indep",
+  "time": "2026-09-29T22:56:22",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/kpmp/core_procurement.tsv": "0fe483b7c3b1b9e6edd380ac2883dac8",
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716"
+  },
+  "outputs": {
+    "results/21_robustness/A3_sensitivity/indep/auroc.tsv": "be033259906d8a5242d5968693abef9e",
+    "results/21_robustness/A3_sensitivity/indep/clinical.tsv": "a544b8df2c62adb0864b32b47d0341f7"
+  },
+  "extra": {
+    "variants": [
+      "full",
+      "no_proc",
+      "no_ieg",
+      "no_proc_ieg"
+    ]
+  }
+}

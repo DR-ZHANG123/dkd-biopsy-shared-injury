@@ -1,0 +1,58 @@
+# dataset registry
+# 所有数据均为 NCBI GEO 公开人源肾组织数据
+# compartment: glomerulus | tubulointerstitium
+# role: discovery | validation | specificity (其他CKD) | scrna
+
+bulk:
+  GSE30528:
+    title: "Human diabetic kidney disease, glomeruli (microdissected)"
+    platform: GPL571      # Affymetrix HG-U133A_2
+    compartment: glomerulus
+    role: primary
+    expect_n: 22          # 9 DKD / 13 control (待核查)
+  GSE30529:
+    title: "Human diabetic kidney disease, tubulointerstitium (microdissected)"
+    platform: GPL571
+    compartment: tubulointerstitium
+    role: primary
+    expect_n: 22          # 10 DKD / 12 control (待核查)
+  GSE96804:
+    title: "Exon-level expression profiling of diabetic nephropathy, glomeruli"
+    platform: GPL17586    # Affymetrix HTA-2_0
+    compartment: glomerulus
+    role: primary
+    expect_n: 61          # 41 DKD / 20 control (待核查)
+  GSE1009:
+    title: "Early human DKD glomeruli"
+    platform: GPL8300     # Affymetrix HG_U95Av2
+    compartment: glomerulus
+    role: external_direction_only
+    expect_n: 6
+  GSE30122:
+    title: "DKD glomeruli + tubulointerstitium (combined SuperSeries reprocessing)"
+    platform: GPL571
+    compartment: mixed
+    role: overlap_check   # 与 GSE30528/30529 患者重叠，需去重
+    expect_n: 69
+  GSE104954:
+    title: "ERCB tubulointerstitium across CKD aetiologies"
+    platform: multiple
+    compartment: tubulointerstitium
+    role: validation_and_specificity
+  GSE99339:
+    title: "ERCB glomeruli across CKD aetiologies"
+    platform: multiple
+    compartment: glomerulus
+    role: specificity
+
+scrna:
+  GSE131882:
+    title: "Single-cell transcriptomic landscape of early human diabetic nephropathy"
+    assay: snRNA-seq (10x)
+    groups: "3 early DKD / 3 control"
+    role: discovery
+  GSE209781:
+    title: "Single-cell transcriptomic atlas of the kidney in DKD"
+    assay: scRNA-seq (10x)
+    groups: "3 DKD / 3 control"
+    role: replication

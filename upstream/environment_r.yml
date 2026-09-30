@@ -1,0 +1,9 @@
+# Minimal R environment: CEL parsing and zUMIs RDS conversion only.
+name: dkd_r
+channels: [conda-forge, bioconda]
+dependencies:
+  - r-base=4.3
+  - r-matrix
+  - bioconductor-affy
+  - bioconductor-affyio
+  - bioconductor-hgu133a2cdf

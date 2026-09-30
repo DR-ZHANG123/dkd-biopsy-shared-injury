@@ -1,0 +1,10 @@
+cohort	compartment	technology	role	n_specimens	n_DKD	n_CONTROL	n_other_CKD	n_excluded_dx	n_technical_outlier	other_CKD_breakdown	excluded_dx_breakdown	series_versions	T1_n_DKD	T1_n_CONTROL	T2_n_DKD	T2_n_other	T1_adequate	T2_adequate	T1_descriptive_only
+ERCB_GLOM_H1	GLOM	array	evaluation	148	5	27	113	3	0	LN=32;IgAN=27;MN=21;HT=15;MCD=9;FSGS=9	TMD=3	GSE47183-GPL14663=51;GSE37460-GPL14663=51;GSE32591-GPL14663=46	5	27	5	113	True	True	False
+ERCB_GLOM_H7	GLOM	array	evaluation	70	7	19	44	0	0	RPGN=23;FSGS=10;FSGS_MCD=6;MCD=5		GSE47183-GPL11670=52;GSE37460-GPL11670=18	7	19	7	44	True	True	False
+GSE30528-GPL571CEL	GLOM	array	evaluation	22	9	13	0	0	0			GSE30528-GPL571CEL=22	9	13	9	0	True	False	False
+GSE96804-GPL17586	GLOM	array	evaluation	61	41	20	0	0	0			GSE96804-GPL17586=61	41	20	41	0	True	False	False
+ERCB_TUB_H1	TUB	array	evaluation	147	10	17	114	6	0	LN=32;IgAN=25;HT=20;MN=18;FSGS=10;MCD=9	TMD=6	GSE104954-GPL24120=135;GSE32591-GPL14663=12	10	17	10	114	True	True	False
+ERCB_TUB_H7	TUB	array	evaluation	60	7	21	32	0	0	RPGN=21;FSGS_MCD=4;MCD=4;FSGS=3		GSE104954-GPL22945=60	7	21	7	32	True	True	False
+GSE30529-GPL571CEL	TUB	array	evaluation	22	10	12	0	0	0			GSE30529-GPL571CEL=22	10	12	10	0	True	False	False
+GSE175759-RNAseq	TUB	rnaseq	external_test	90	3	22	65	0	3	IgAN=46;MCD=9;MN=4;LN=3;FSGS=3		GSE175759-RNAseq=90	3	22	3	62	False	False	True
+GSE142025-RNAseq	WHOLE	rnaseq	external_test	36	27	9	0	0	0			GSE142025-RNAseq=36	27	9	27	0	True	False	False

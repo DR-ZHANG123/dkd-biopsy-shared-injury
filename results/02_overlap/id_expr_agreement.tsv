@@ -1,0 +1,6 @@
+metric	n	n_agree	rate
+ID-matched pairs confirmed by expression	1030	949.0	0.9213592233009709
+ID-matched pairs contradicted by expression (different partner)	1030	12.0	0.011650485436893204
+ID-matched pairs without expression call (unconfirmed)	1030	69.0	0.06699029126213592
+expression-called pairs carrying identical IDs	974	949.0	0.9743326488706365
+expression-called pairs where >=1 sample has no ID	2		

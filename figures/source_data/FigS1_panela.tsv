@@ -1,0 +1,26 @@
+series	technology	gpl	sd_row_mean	median_col_sd	ratio	scale	deposited	action_class	action
+GSE104948-GPL22945	array	GPL22945	1.98349	2.01517	0.984283	log2	log2	No change	none
+GSE104948-GPL24120	array	GPL24120	1.97628	2.01473	0.980914	log2	log2	No change	none
+GSE104954-GPL22945	array	GPL22945	1.81766	1.85149	0.981729	log2	log2	No change	none
+GSE104954-GPL24120	array	GPL24120	1.81771	1.84044	0.987647	log2	log2	No change	none
+GSE108109-GPL19983	array	GPL19983	2.17738	2.25478	0.965671	log2	log2	No change	none
+GSE108112-GPL19983	array	GPL19983	2.15015	2.21359	0.971341	log2	log2	No change	none
+GSE115857-GPL14951	array	GPL14951	1479.09	1601.17	0.923757	linear	gene_scaled	Replaced by non-normalized table	deposited matrix gene_scaled; replaced by GEO non-normalized AVG_Signal, log2(max(x,1))
+GSE116626-GPL14951	array	GPL14951	1484.73	1605.34	0.924871	nonnorm_misaligned	probe_centred	Excluded	excluded: deposited matrix probe_centred; non-normalized table rows disagree with deposited matrix (median per-probe r = 0.64)
+GSE133288-GPL19983	array	GPL19983	2.17651	2.23941	0.971911	log2	log2	No change	none
+GSE200818-GPL19983	array	GPL19983	2.10174	2.16663	0.970054	log2	log2	No change	none
+GSE32591-GPL14663	array	GPL14663	1.82861	1.93174	0.946612	log2	log2	No change	none
+GSE37460-GPL11670	array	GPL11670	1.97689	1.96952	1.00374	log2	log2	No change	none
+GSE37460-GPL14663	array	GPL14663	1.98957	2.03023	0.979973	log2	log2	No change	none
+GSE47183-GPL11670	array	GPL11670	2.00174	2.07023	0.966915	log2	log2	No change	none
+GSE47183-GPL14663	array	GPL14663	1.98047	2.03581	0.972817	log2	log2	No change	none
+GSE69438-GPL11670	array	GPL11670	2.24122	2.28515	0.980773	log2	log2	No change	none
+GSE93798-GPL22945	array	GPL22945	2.07479	2.10042	0.9878	log2	log2	No change	none
+GSE96804-GPL17586	array	GPL17586	2.50391	2.54398	0.984248	log2	log2	No change	none
+GSE99339-GPL19109	array	GPL19109	1.80123	1.87751	0.959375	log2	log2	No change	none
+GSE99339-GPL19184	array	GPL19184	1.7949	1.84586	0.972392	log2	log2	No change	none
+GSE142025-RNAseq	rnaseq	GPL20301	2.3203	2.35502	0.98526	log2cpm	counts	RNA-seq log2(CPM+1)	log2(CPM+1)
+GSE175759-RNAseq	rnaseq	GPL16791	2.2555	2.30145	0.980038	log2cpm	counts	RNA-seq log2(CPM+1)	log2(CPM+1)
+GSE182380-RNAseq	rnaseq	GPL18573	2.60076	2.65093	0.981074	log2cpm	counts	RNA-seq log2(CPM+1)	log2(CPM+1)
+GSE30528-GPL571CEL	array	GPL571	1.98769	2.07763	0.956711	log2_rma_from_cel	probe_centred	Reprocessed from CEL (RMA)	deposited matrix probe-centred; CEL RMA used
+GSE30529-GPL571CEL	array	GPL571	1.98009	2.08459	0.949869	log2_rma_from_cel	probe_centred	Reprocessed from CEL (RMA)	deposited matrix probe-centred; CEL RMA used

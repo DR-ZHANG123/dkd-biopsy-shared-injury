@@ -1,0 +1,42 @@
+{
+  "stage": "21_robustness/A2_transplant",
+  "time": "2026-09-29T22:57:49",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/21_robustness/A2_transplant/genesets/IRRAT394.tsv": "e36436bca1cc07c987c3e50e0c292d15",
+    "results/21_robustness/A2_transplant/genesets/IRRAT30.tsv": "caa4cc923f1706d10061d8d34bfcedf8",
+    "results/21_robustness/A2_transplant/genesets/IRITD3.tsv": "7ad249a268c25c9c5769c2e4e9014a87",
+    "results/21_robustness/A2_transplant/genesets/IRITD5.tsv": "d187e25b02c719a13db70492b7a3a2ea",
+    "results/21_robustness/A2_transplant/genesets/KT1.tsv": "2545e6a91616a7eff9a00b919b02b0e1",
+    "results/21_robustness/A2_transplant/genesets/KT2.tsv": "68d0a73eb42e051065da14922d9bff22",
+    "results/21_robustness/A2_transplant/genesets/ENDAT.tsv": "54ee5f696b78a6cccfb2b49809034edd",
+    "results/21_robustness/A2_transplant/genesets/sources.tsv": "6b9e9729132121ff0c58f32aac28d3f7"
+  },
+  "outputs": {
+    "results/21_robustness/A2_transplant/overlap.tsv": "67e02c48c4011681e4aa20eb232dab62",
+    "results/21_robustness/A2_transplant/cohort_scores.tsv": "315bc35fec54413d258e611d8f2b0dc5"
+  },
+  "extra": {
+    "sets": {
+      "IRRAT394": "up",
+      "IRRAT30": "up",
+      "IRITD3": "up",
+      "IRITD5": "up",
+      "KT1": "down",
+      "KT2": "down",
+      "ENDAT": "up"
+    }
+  }
+}

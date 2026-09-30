@@ -1,0 +1,49 @@
+compartment	unit	group_mode	gene_mode	effect_mode	min_delta_signature_detected_80pct	min_delta_gene_power_80pct
+GLOM	ERCB_GLOM_H1	random	random_noncore	constant	0.25	1.5
+GLOM	ERCB_GLOM_H1	random	random_noncore	severity_scaled	0.25	1.5
+GLOM	ERCB_GLOM_H1	random	response_up	constant	0.25	1.5
+GLOM	ERCB_GLOM_H1	random	response_up	severity_scaled	0.25	1.5
+GLOM	ERCB_GLOM_H1	random	score_corr_noncore	constant	0.25	1.5
+GLOM	ERCB_GLOM_H1	random	score_corr_noncore	severity_scaled	0.25	1.5
+GLOM	ERCB_GLOM_H1	real_DKD	random_noncore	constant	0.25	
+GLOM	ERCB_GLOM_H1	real_DKD	random_noncore	severity_scaled	0.25	
+GLOM	ERCB_GLOM_H1	real_DKD	response_up	constant	0.5	
+GLOM	ERCB_GLOM_H1	real_DKD	response_up	severity_scaled	0.5	
+GLOM	ERCB_GLOM_H1	real_DKD	score_corr_noncore	constant	1.0	
+GLOM	ERCB_GLOM_H1	real_DKD	score_corr_noncore	severity_scaled	1.0	
+GLOM	ERCB_GLOM_H1	sev_dkd	random_noncore	constant	0.25	1.5
+GLOM	ERCB_GLOM_H1	sev_dkd	random_noncore	severity_scaled	0.25	1.5
+GLOM	ERCB_GLOM_H1	sev_dkd	response_up	constant	0.25	1.5
+GLOM	ERCB_GLOM_H1	sev_dkd	response_up	severity_scaled	0.25	1.5
+GLOM	ERCB_GLOM_H1	sev_dkd	score_corr_noncore	constant	0.25	1.5
+GLOM	ERCB_GLOM_H1	sev_dkd	score_corr_noncore	severity_scaled	0.25	1.5
+GLOM	ERCB_GLOM_H1	sev_strong	random_noncore	constant	0.25	1.5
+GLOM	ERCB_GLOM_H1	sev_strong	random_noncore	severity_scaled	0.25	
+GLOM	ERCB_GLOM_H1	sev_strong	response_up	constant	0.25	1.5
+GLOM	ERCB_GLOM_H1	sev_strong	response_up	severity_scaled	0.25	
+GLOM	ERCB_GLOM_H1	sev_strong	score_corr_noncore	constant	0.25	1.5
+GLOM	ERCB_GLOM_H1	sev_strong	score_corr_noncore	severity_scaled	0.25	1.5
+TUB	ERCB_TUB_H1	random	random_noncore	constant	0.25	1.5
+TUB	ERCB_TUB_H1	random	random_noncore	severity_scaled	0.25	1.5
+TUB	ERCB_TUB_H1	random	response_up	constant	0.25	1.5
+TUB	ERCB_TUB_H1	random	response_up	severity_scaled	0.25	1.5
+TUB	ERCB_TUB_H1	random	score_corr_noncore	constant	0.25	1.0
+TUB	ERCB_TUB_H1	random	score_corr_noncore	severity_scaled	0.25	1.5
+TUB	ERCB_TUB_H1	real_DKD	random_noncore	constant	0.25	
+TUB	ERCB_TUB_H1	real_DKD	random_noncore	severity_scaled	0.25	
+TUB	ERCB_TUB_H1	real_DKD	response_up	constant	0.25	
+TUB	ERCB_TUB_H1	real_DKD	response_up	severity_scaled	0.25	
+TUB	ERCB_TUB_H1	real_DKD	score_corr_noncore	constant	0.25	
+TUB	ERCB_TUB_H1	real_DKD	score_corr_noncore	severity_scaled	0.25	
+TUB	ERCB_TUB_H1	sev_dkd	random_noncore	constant	0.25	1.5
+TUB	ERCB_TUB_H1	sev_dkd	random_noncore	severity_scaled	0.25	
+TUB	ERCB_TUB_H1	sev_dkd	response_up	constant	0.25	1.5
+TUB	ERCB_TUB_H1	sev_dkd	response_up	severity_scaled	0.25	
+TUB	ERCB_TUB_H1	sev_dkd	score_corr_noncore	constant	0.25	1.5
+TUB	ERCB_TUB_H1	sev_dkd	score_corr_noncore	severity_scaled	0.25	1.5
+TUB	ERCB_TUB_H1	sev_strong	random_noncore	constant	0.25	1.5
+TUB	ERCB_TUB_H1	sev_strong	random_noncore	severity_scaled	0.25	
+TUB	ERCB_TUB_H1	sev_strong	response_up	constant	0.25	
+TUB	ERCB_TUB_H1	sev_strong	response_up	severity_scaled	0.25	
+TUB	ERCB_TUB_H1	sev_strong	score_corr_noncore	constant	0.25	1.5
+TUB	ERCB_TUB_H1	sev_strong	score_corr_noncore	severity_scaled	0.25	1.5

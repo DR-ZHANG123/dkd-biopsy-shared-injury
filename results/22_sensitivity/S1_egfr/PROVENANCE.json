@@ -1,0 +1,73 @@
+{
+  "stage": "22_sensitivity/S1_egfr",
+  "time": "2026-09-30T11:38:30",
+  "seed": 20260928,
+  "config_sha": "091814e9f10ccba1",
+  "git_commit": "c26a1c7ac0e08269dc36561a2c099aff34dcf2ec",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/20_repair_state/donors/donor_table.tsv": "c2c0147b8777427406bee5600cb0986d"
+  },
+  "outputs": {
+    "results/22_sensitivity/S1_egfr/partial_egfr.tsv": "200793acfbdeb9992f53597b95cf9b1e",
+    "results/22_sensitivity/S1_egfr/subset_egfr.tsv": "e1670af2b669fc14e1bc2ef3d8ddfe25"
+  },
+  "extra": {
+    "s1": {
+      "dataset": "snRNA",
+      "states": [
+        "PT:frPT",
+        "TAL:frTAL",
+        "PT:aPT",
+        "TAL:aTAL",
+        "PT:rfPT",
+        "TAL:rfTAL"
+      ],
+      "subsets": {
+        "all_categorised": [
+          "REF",
+          "DKD",
+          "HKD",
+          "OTHER",
+          "AKI",
+          "DM_R",
+          "CKD_unadj"
+        ],
+        "all_categorised_noAKI": [
+          "REF",
+          "DKD",
+          "HKD",
+          "OTHER",
+          "DM_R",
+          "CKD_unadj"
+        ],
+        "REF+CKD": [
+          "REF",
+          "DKD",
+          "HKD",
+          "OTHER"
+        ],
+        "CKD": [
+          "DKD",
+          "HKD",
+          "OTHER"
+        ],
+        "AKI": [
+          "AKI"
+        ]
+      },
+      "min_donors": 10
+    },
+    "n_perm": 1000,
+    "n_boot": 2000
+  }
+}

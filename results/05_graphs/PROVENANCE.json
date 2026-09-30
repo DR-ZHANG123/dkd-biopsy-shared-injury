@@ -1,0 +1,161 @@
+{
+  "stage": "05_graphs",
+  "time": "2026-09-28T15:56:50",
+  "seed": 20260928,
+  "config_sha": "c1b41e338fcc58cb",
+  "git_commit": "297ce7a714d6b669b190c032d5be52033c346a3a",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/raw/string/9606.protein.links.v12.0.txt.gz": "5b7c91d02926e723ad30e81ab9d009a4",
+    "data/raw/string/9606.protein.info.v12.0.txt.gz": "1ca9efcefcc68b5cc3b037a335cb870b",
+    "upstream/data_processed/scrna/GSE131882_annotated.h5ad": "1e5e7906c173c4ef1a6938b5b738a9a8",
+    "upstream/data_processed/scrna/GSE209781_annotated.h5ad": "c752fd99a2fbe5aa17437d95993d2ded",
+    "data/processed/genes.txt": "f68ab2e489f4dd000242a6774a673ee1"
+  },
+  "outputs": {
+    "results/05_graphs/edges_ppi.tsv": "43ea48e8663ccad6fe0b5a4d4ac81dd7",
+    "results/05_graphs/edges_coexpr.tsv": "053644e3950e788d92b2d76558e43a35",
+    "results/05_graphs/edges_ppi_rewired_seed0.tsv": "9b175d16271d0e2e437099403b20b121",
+    "results/05_graphs/edges_ppi_rewired_seed1.tsv": "3d257f410658cfdc9d066255921a145a",
+    "results/05_graphs/edges_ppi_rewired_seed2.tsv": "2aa9e5b01010f24184f37d785aa12e52",
+    "results/05_graphs/edges_ppi_rewired_seed3.tsv": "97b1347f2767a87d153963ad9b1bbaf2",
+    "results/05_graphs/edges_ppi_rewired_seed4.tsv": "5348a1c4ebbe74c506eaff754e4b789c",
+    "results/05_graphs/edges_coexpr_rewired_seed0.tsv": "fd0beb3604db52ce26be6a037a98ba61",
+    "results/05_graphs/edges_coexpr_rewired_seed1.tsv": "410275a4b617fc40abe8387ddb8b019d",
+    "results/05_graphs/edges_coexpr_rewired_seed2.tsv": "d9d07432b28c38a8a8b340f3184e76de",
+    "results/05_graphs/edges_coexpr_rewired_seed3.tsv": "f7a5d3134999a9fa0ebdbc712ae6756f",
+    "results/05_graphs/edges_coexpr_rewired_seed4.tsv": "663a89bf1c89e152aa48ea31ae40561e",
+    "results/05_graphs/graph_summary.tsv": "d98a259f3fa971239ea1809da3e2090b",
+    "results/05_graphs/metacells_GSE131882.tsv": "f813a65c76270ebb8fd5f0bc2116bfcc",
+    "results/05_graphs/metacells_GSE209781.tsv": "71c632df9e743656445e49b2a6fd80dc"
+  },
+  "extra": {
+    "ppi": {
+      "string_links_total": 13715404,
+      "string_links_ge_threshold": 473860,
+      "string_unmapped_links": 0,
+      "ppi_edges": 236930
+    },
+    "coexpr": {
+      "GSE131882": {
+        "control_donors": [
+          "control.s1",
+          "control.s2",
+          "control.s3"
+        ],
+        "n_control_donors": 3,
+        "n_metacells": 329,
+        "n_cells_used": 10179,
+        "cells_per_metacell_median": 28.0,
+        "metacells_per_celltype": {
+          "BCELL": 2,
+          "CNT_PC": 55,
+          "DCT": 61,
+          "ENDO_PT": 8,
+          "IC": 39,
+          "LOH": 55,
+          "PEC": 9,
+          "PODO": 10,
+          "PT": 72,
+          "PT_injured": 15,
+          "STROMA": 3
+        }
+      },
+      "GSE209781": {
+        "control_donors": [
+          "NM01",
+          "NM02",
+          "NM03"
+        ],
+        "n_control_donors": 3,
+        "n_metacells": 514,
+        "n_cells_used": 19490,
+        "cells_per_metacell_median": 31.0,
+        "metacells_per_celltype": {
+          "BCELL": 4,
+          "CNT_PC": 10,
+          "ENDO": 67,
+          "ENDO_PT": 31,
+          "IC": 7,
+          "LOH": 72,
+          "MAC": 46,
+          "MAST": 4,
+          "NEUTRO": 10,
+          "NK": 75,
+          "PERI": 47,
+          "PT": 61,
+          "PT_injured": 26,
+          "TCELL": 54
+        }
+      },
+      "n_genes_common": 19093,
+      "n_genes_expressed": 15485,
+      "coexpr_edges": 146351,
+      "coexpr_weight_min": 0.1252806931734085,
+      "coexpr_weight_median": 0.3237054944038391
+    },
+    "rewire": {
+      "ppi_seed0": {
+        "swaps_done": 2369300,
+        "swaps_target": 2369300,
+        "tries": 2472898
+      },
+      "ppi_seed1": {
+        "swaps_done": 2369300,
+        "swaps_target": 2369300,
+        "tries": 2473497
+      },
+      "ppi_seed2": {
+        "swaps_done": 2369300,
+        "swaps_target": 2369300,
+        "tries": 2473388
+      },
+      "ppi_seed3": {
+        "swaps_done": 2369300,
+        "swaps_target": 2369300,
+        "tries": 2473224
+      },
+      "ppi_seed4": {
+        "swaps_done": 2369300,
+        "swaps_target": 2369300,
+        "tries": 2473280
+      },
+      "coexpr_seed0": {
+        "swaps_done": 1463510,
+        "swaps_target": 1463510,
+        "tries": 1476585
+      },
+      "coexpr_seed1": {
+        "swaps_done": 1463510,
+        "swaps_target": 1463510,
+        "tries": 1477026
+      },
+      "coexpr_seed2": {
+        "swaps_done": 1463510,
+        "swaps_target": 1463510,
+        "tries": 1476812
+      },
+      "coexpr_seed3": {
+        "swaps_done": 1463510,
+        "swaps_target": 1463510,
+        "tries": 1476829
+      },
+      "coexpr_seed4": {
+        "swaps_done": 1463510,
+        "swaps_target": 1463510,
+        "tries": 1476829
+      }
+    },
+    "node_genes_available": true,
+    "jaccard_ppi_vs_coexpr": 0.008085069449010671
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "stage": "18_interpret/weights",
+  "time": "2026-09-29T11:24:25",
+  "seed": 20260928,
+  "config_sha": "1e52510fef6ec804",
+  "git_commit": "1c66716a574febb809630b8f0eebb8726652aca7",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "models/18_interpret/E1_GLOM_ERCB_GLOM_H1.npz": "2810492477f6077d3d822fdefcc1767e",
+    "models/18_interpret/E1_GLOM_ERCB_GLOM_H7.npz": "60c41d6df55b5937cbcf596945e3cc94",
+    "models/18_interpret/E1_GLOM_GSE108109-GPL19983.npz": "abac6773d770f2f51bdb5d9c7cf6e652",
+    "models/18_interpret/E1_GLOM_GSE30528-GPL571CEL.npz": "990d06c16e7242ee98905b4ead1c8ae5",
+    "models/18_interpret/E1_GLOM_GSE93798-GPL22945.npz": "fd6b1346113512166f4fc9124204fa62",
+    "models/18_interpret/E1_GLOM_GSE96804-GPL17586.npz": "4000f7e3512e45b6c984482992d4b251",
+    "models/18_interpret/E1_TUB_ERCB_TUB_H1.npz": "fd2057d8cd40d7a82214179173545142",
+    "models/18_interpret/E1_TUB_ERCB_TUB_H7.npz": "bfdd79b4552723aa90eb8973495dc5f5",
+    "models/18_interpret/E1_TUB_GSE108112-GPL19983.npz": "c5a1d2816a8874bfe71c547391861b99",
+    "models/18_interpret/E1_TUB_GSE115857-GPL14951.npz": "c6fa0393a02d59584d61235d82bb2c68",
+    "models/18_interpret/E1_TUB_GSE133288-GPL19983.npz": "3aa4951c3f841256dd93409baf2984b1",
+    "models/18_interpret/E1_TUB_GSE182380-RNAseq.npz": "aa5b1138fe9bfc0cc48ea5541ad3edc1",
+    "models/18_interpret/E1_TUB_GSE200818-GPL19983.npz": "21aa414b232ea06acd8f293eb5852bbd",
+    "models/18_interpret/E1_TUB_GSE30529-GPL571CEL.npz": "1f7af293b725a4303e36b16fa17a7263",
+    "models/18_interpret/E1_TUB_GSE69438-GPL11670.npz": "e6b515ee4ffb67f8ed5d661ea2134ff5",
+    "models/18_interpret/FULL_GLOM.npz": "d5b928f03b5faaa52d2da703504356ec",
+    "models/18_interpret/FULL_TUB.npz": "71773d2ecac228208e63695471e28574",
+    "models/18_interpret/E1_GLOM_ERCB_GLOM_H1.reproduction.tsv": "87c12f0f273fe6c80af8a7a7656de860",
+    "models/18_interpret/E1_GLOM_ERCB_GLOM_H7.reproduction.tsv": "c5be3bbb638e9b586bc8c996a896a1f2",
+    "models/18_interpret/E1_TUB_ERCB_TUB_H1.reproduction.tsv": "d083a26bdd9aeed67fbd93be9b172299",
+    "models/18_interpret/E1_TUB_ERCB_TUB_H7.reproduction.tsv": "7022735dfa769faaae48bde22173e8bd"
+  },
+  "outputs": {
+    "results/18_interpret/weights/program_weights.tsv": "32aefc69b4579eb92c0f426a7e6bb468",
+    "results/18_interpret/weights/gene_effects.tsv.gz": "4382fe2b8395ba8a4bdf3ffa18bf06fd",
+    "results/18_interpret/weights/stability_summary.tsv": "df6b738d3085fdb9faf1363ac87fefaa",
+    "results/18_interpret/weights/linear_equivalence_check.tsv": "3719899bf9c28d03a6026a46247dfe3c",
+    "results/18_interpret/weights/key_genes.tsv": "4d1901055d4ef0595fc37a121f40f053",
+    "results/18_interpret/weights/key_programs.tsv": "8a455065960301daa819588be492c4c6",
+    "results/18_interpret/weights/program_total_effects.tsv": "e328b6554d498e64e1b9249ba91cb6f4",
+    "results/18_interpret/weights/program_path_share.tsv": "8184d4d6d573bd19a5f4195387672a69"
+  },
+  "extra": {
+    "definitions": "see scripts/lib/interp.py",
+    "n_models": 17,
+    "final_dkd_reproduction_max_abs_diff": 9.536743217353205e-08,
+    "linear_equivalence_min_r": 0.9999999999998722
+  }
+}

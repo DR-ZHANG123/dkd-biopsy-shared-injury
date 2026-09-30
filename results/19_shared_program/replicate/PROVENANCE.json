@@ -1,0 +1,35 @@
+{
+  "stage": "19_shared_program/replicate",
+  "time": "2026-09-29T14:48:25",
+  "seed": 20260928,
+  "config_sha": "b049df3edc9f381b",
+  "git_commit": "2dc61f83f207acb2a5b9e1b97c3f6966542bde80",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/19_shared_program/kpmp/core_procurement.tsv": "0fe483b7c3b1b9e6edd380ac2883dac8",
+    "results/17_independent/test_samples.tsv": "52ad89de0d5a9a4809f5a513e61a0826",
+    "data/interim/indep/GSE162830_expr.parquet": "4de9d3ad63de580aceb4920aa4ec0bfb",
+    "data/interim/indep/GSE166239_expr.parquet": "adda50ebdb9ca342c4e2194895a2caec",
+    "data/interim/indep/GSE45980_expr.parquet": "2af2e6a28ed43f56074795371ba68d42",
+    "data/interim/indep/KPMP_expr.parquet": "ff308d6848f47e722bc95dc6c92e5091"
+  },
+  "outputs": {
+    "results/19_shared_program/replicate/auroc.tsv": "9be38499a50f20727b08dbb4b7e47608",
+    "results/19_shared_program/replicate/clinical.tsv": "1c491f955154ed66454e8bb059cf0873",
+    "results/19_shared_program/replicate/scores.tsv": "689352cb36355162a3576f0a2b3ff921"
+  },
+  "extra": {
+    "n_random_sets": 1000,
+    "n_boot": 2000
+  }
+}

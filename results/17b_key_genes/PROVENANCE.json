@@ -1,0 +1,26 @@
+{
+  "stage": "17b_key_genes",
+  "time": "2026-09-29T11:46:05",
+  "seed": 20260928,
+  "config_sha": "401c0bcc46949688",
+  "git_commit": "414ce5d237f0cb345876b03f2b50511eb5c3a889",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/18_interpret/summary/dkd_key_gene_evidence.tsv": "12109259934dbbed6651f16d16462c02",
+    "results/17_independent/test_samples.tsv": "52ad89de0d5a9a4809f5a513e61a0826"
+  },
+  "outputs": {
+    "results/17b_key_genes/replication.tsv": "0c9e2c60c52f77283e97ce9289d6fce7",
+    "results/17b_key_genes/published_in_independent.tsv": "bef687c87c0f1093185c7844c0fea470"
+  },
+  "extra": {}
+}

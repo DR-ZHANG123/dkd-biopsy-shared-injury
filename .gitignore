@@ -1,0 +1,10 @@
+data/
+logs/
+models/
+__pycache__/
+*.pyc
+*.h5ad
+*.parquet
+*.npz
+*.pt
+.ipynb_checkpoints/

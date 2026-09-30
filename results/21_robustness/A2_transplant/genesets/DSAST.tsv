@@ -1,0 +1,22 @@
+gene_symbol	probe_set	direction	source_rank_or_stat	symbol_raw	gene_title
+DARC	208335_s_at	up (DSA+ vs DSA- biopsies)	file_row=1	DARC	Duffy blood group
+ICAM2	213620_s_at	up (DSA+ vs DSA- biopsies)	file_row=2	ICAM2	intercellular adhesion molecule 2
+ROBO4	226028_at	up (DSA+ vs DSA- biopsies)	file_row=3	ROBO4	roundabout homolog 4, magic roundabout (Drosophila)
+CDH5	204677_at	up (DSA+ vs DSA- biopsies)	file_row=4	CDH5	cadherin 5, type 2, VE-cadherin (vascular epithelium)
+GNG11	204115_at	up (DSA+ vs DSA- biopsies)	file_row=5	GNG11	guanine nucleotide binding protein (G protein), gamma 11
+MALL	209373_at	up (DSA+ vs DSA- biopsies)	file_row=6	MALL	T-cell differentiation protein-like
+COL13A1	211343_s_at	up (DSA+ vs DSA- biopsies)	file_row=7	COL13A1	collagen, type XIII, alpha 1
+PLAT	201860_s_at	up (DSA+ vs DSA- biopsies)	file_row=8	PLAT	plasminogen activator, tissue
+CDH13	204726_at	up (DSA+ vs DSA- biopsies)	file_row=9	CDH13	cadherin 13, H-cadherin (heart)
+TEK	206702_at	up (DSA+ vs DSA- biopsies)	file_row=10	TEK	TEK tyrosine kinase, endothelial (venous malformations, multiple cutaneous and mucosal)
+SOX7	228698_at	up (DSA+ vs DSA- biopsies)	file_row=11	SOX7	SRY (sex determining region Y)-box 7
+PLA1A	219584_at	up (DSA+ vs DSA- biopsies)	file_row=12	PLA1A	phospholipase A1 member A
+HLA-DRB3	221491_x_at	up (DSA+ vs DSA- biopsies)	file_row=13	HLA-DRB3	major histocompatibility complex, class II, DR beta 3
+FGFBP2	223836_at	up (DSA+ vs DSA- biopsies)	file_row=14	FGFBP2	fibroblast growth factor binding protein 2
+SH2D1B	1553177_at	up (DSA+ vs DSA- biopsies)	file_row=15	SH2D1B	SH2 domain-containing molecule EAT2
+MYBL1	213906_at	up (DSA+ vs DSA- biopsies)	file_row=16	MYBL1	v-myb myeloblastosis viral oncogene homolog (avian)-like 1
+CX3CR1	205898_at	up (DSA+ vs DSA- biopsies)	file_row=17	CX3CR1	chemokine (C-X3-C motif) receptor 1
+KLRF1	220646_s_at	up (DSA+ vs DSA- biopsies)	file_row=18	KLRF1	killer cell lectin-like receptor subfamily F, member 1
+GNLY	205495_s_at	up (DSA+ vs DSA- biopsies)	file_row=19	GNLY	granulysin
+PGM5	226303_at	up (DSA+ vs DSA- biopsies)	file_row=20	PGM5	phosphoglucomutase 5
+TM4SF18	228489_at	up (DSA+ vs DSA- biopsies)	file_row=21	TM4SF18	transmembrane 4 L six family member 19

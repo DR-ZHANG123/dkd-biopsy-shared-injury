@@ -1,0 +1,33 @@
+{
+  "stage": "21_robustness/A1_share",
+  "time": "2026-09-29T22:47:53",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/processed/samples.tsv": "3316ca923606450d6136e3bd0351e28d",
+    "results/11_injury/shift_decomposition.tsv": "612edfcf6268183f2a3584e24ea81f66",
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/19_shared_program/kpmp/procurement.tsv.gz": "81267eb0dbf528e4eccc5dd9832e2b8b"
+  },
+  "outputs": {
+    "results/21_robustness/A1_share/share.tsv": "8986dffa89fdcdaee897cdbb3f1281c3",
+    "results/21_robustness/A1_share/replicable_share.tsv": "b95a4ef2a55e03ff711607fd305207f3",
+    "results/21_robustness/A1_share/dkd_auroc.tsv": "d325b00754eaa72d924737ab9f3776ef"
+  },
+  "extra": {
+    "n_perm": 1000,
+    "n_rot": 1000,
+    "de_fdr": 0.05
+  }
+}

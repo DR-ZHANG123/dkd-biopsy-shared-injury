@@ -1,0 +1,73 @@
+claim	unit	reference	z	supported
+DKD GLOM: Podocyte	ERCB_GLOM_H1	scRNA	-6.59099	True
+DKD GLOM: Podocyte	ERCB_GLOM_H1	snRNA	-9.36304	True
+DKD GLOM: Podocyte	ERCB_GLOM_H7	scRNA	-4.94804	True
+DKD GLOM: Podocyte	ERCB_GLOM_H7	snRNA	-5.43903	True
+DKD GLOM: Endothelial	ERCB_GLOM_H1	scRNA	-1.56541	False
+DKD GLOM: Endothelial	ERCB_GLOM_H1	snRNA	-2.22893	False
+DKD GLOM: Endothelial	ERCB_GLOM_H7	scRNA	-3.12667	False
+DKD GLOM: Endothelial	ERCB_GLOM_H7	snRNA	-4.02176	False
+DKD TUB: Endothelial	ERCB_TUB_H1	scRNA	1.86833	False
+DKD TUB: Endothelial	ERCB_TUB_H1	snRNA	1.78163	False
+DKD TUB: Endothelial	ERCB_TUB_H7	scRNA	3.99484	True
+DKD TUB: Endothelial	ERCB_TUB_H7	snRNA	2.30582	True
+DKD TUB: Peritub. endo.	ERCB_TUB_H1	scRNA	3.51276	True
+DKD TUB: Peritub. endo.	ERCB_TUB_H1	snRNA	3.20088	True
+DKD TUB: Peritub. endo.	ERCB_TUB_H7	scRNA	4.00848	True
+DKD TUB: Peritub. endo.	ERCB_TUB_H7	snRNA	3.88826	True
+DKD TUB: Mast	ERCB_TUB_H1	scRNA		
+DKD TUB: Mast	ERCB_TUB_H1	snRNA	2.95937	True
+DKD TUB: Mast	ERCB_TUB_H7	scRNA		
+DKD TUB: Mast	ERCB_TUB_H7	snRNA	6.58176	True
+DKD GLOM: Glom.-capillary endo.	ERCB_GLOM_H1	scRNA	-2.20188	False
+DKD GLOM: Glom.-capillary endo.	ERCB_GLOM_H1	snRNA	-1.57215	False
+DKD GLOM: Glom.-capillary endo.	ERCB_GLOM_H7	scRNA	-5.53823	False
+DKD GLOM: Glom.-capillary endo.	ERCB_GLOM_H7	snRNA	-4.87649	False
+DKD GLOM: Arteriolar endo.	ERCB_GLOM_H1	scRNA	1.98163	False
+DKD GLOM: Arteriolar endo.	ERCB_GLOM_H1	snRNA	1.90126	False
+DKD GLOM: Arteriolar endo.	ERCB_GLOM_H7	scRNA	6.85292	True
+DKD GLOM: Arteriolar endo.	ERCB_GLOM_H7	snRNA	5.92617	True
+DKD TUB: Glom.-capillary endo.	ERCB_TUB_H1	scRNA	0.30745	False
+DKD TUB: Glom.-capillary endo.	ERCB_TUB_H1	snRNA	0.813193	False
+DKD TUB: Glom.-capillary endo.	ERCB_TUB_H7	scRNA	1.99305	False
+DKD TUB: Glom.-capillary endo.	ERCB_TUB_H7	snRNA	1.30242	False
+RPGN GLOM: Macrophage	ERCB_GLOM_H1	scRNA		
+RPGN GLOM: Macrophage	ERCB_GLOM_H1	snRNA		
+RPGN GLOM: Macrophage	ERCB_GLOM_H7	scRNA	11.1704	True
+RPGN GLOM: Macrophage	ERCB_GLOM_H7	snRNA	8.7086	True
+RPGN TUB: Macrophage	ERCB_TUB_H1	scRNA		
+RPGN TUB: Macrophage	ERCB_TUB_H1	snRNA		
+RPGN TUB: Macrophage	ERCB_TUB_H7	scRNA	6.77209	True
+RPGN TUB: Macrophage	ERCB_TUB_H7	snRNA	4.92186	True
+MN GLOM: Macrophage	ERCB_GLOM_H1	scRNA	-8.82532	True
+MN GLOM: Macrophage	ERCB_GLOM_H1	snRNA	-8.61655	True
+MN GLOM: Macrophage	ERCB_GLOM_H7	scRNA		
+MN GLOM: Macrophage	ERCB_GLOM_H7	snRNA		
+MN GLOM: T cell	ERCB_GLOM_H1	scRNA	-4.69149	True
+MN GLOM: T cell	ERCB_GLOM_H1	snRNA	-4.74742	True
+MN GLOM: T cell	ERCB_GLOM_H7	scRNA		
+MN GLOM: T cell	ERCB_GLOM_H7	snRNA		
+MCD GLOM: Macrophage	ERCB_GLOM_H1	scRNA	-3.09237	True
+MCD GLOM: Macrophage	ERCB_GLOM_H1	snRNA	-4.43557	True
+MCD GLOM: Macrophage	ERCB_GLOM_H7	scRNA	-9.43713	True
+MCD GLOM: Macrophage	ERCB_GLOM_H7	snRNA	-5.11593	True
+MCD GLOM: T cell	ERCB_GLOM_H1	scRNA	-3.92078	True
+MCD GLOM: T cell	ERCB_GLOM_H1	snRNA	-3.99645	True
+MCD GLOM: T cell	ERCB_GLOM_H7	scRNA	-2.86411	True
+MCD GLOM: T cell	ERCB_GLOM_H7	snRNA	-2.25263	True
+MN TUB: Macrophage	ERCB_TUB_H1	scRNA	-7.43093	True
+MN TUB: Macrophage	ERCB_TUB_H1	snRNA	-5.94051	True
+MN TUB: Macrophage	ERCB_TUB_H7	scRNA		
+MN TUB: Macrophage	ERCB_TUB_H7	snRNA		
+MN TUB: T cell	ERCB_TUB_H1	scRNA	-1.84856	True
+MN TUB: T cell	ERCB_TUB_H1	snRNA	-1.18472	True
+MN TUB: T cell	ERCB_TUB_H7	scRNA		
+MN TUB: T cell	ERCB_TUB_H7	snRNA		
+MCD TUB: Macrophage	ERCB_TUB_H1	scRNA	-1.10712	True
+MCD TUB: Macrophage	ERCB_TUB_H1	snRNA	-0.505541	True
+MCD TUB: Macrophage	ERCB_TUB_H7	scRNA		
+MCD TUB: Macrophage	ERCB_TUB_H7	snRNA		
+MCD TUB: T cell	ERCB_TUB_H1	scRNA	-1.63676	True
+MCD TUB: T cell	ERCB_TUB_H1	snRNA	-2.0152	True
+MCD TUB: T cell	ERCB_TUB_H7	scRNA		
+MCD TUB: T cell	ERCB_TUB_H7	snRNA		

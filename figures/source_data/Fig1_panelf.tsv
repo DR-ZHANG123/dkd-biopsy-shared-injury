@@ -1,0 +1,6 @@
+box	x_mm	y_mm	w_mm	h_mm	text
+f_title	0	60	55	6	Disease-specific signals
+f1	1	47.6	53	10	Genes regressed on a score of the response | within patients; each diagnosis | vs other patients
+f2	1	35.2	53	10	Cell-type marker enrichment patterns | replicated in ≥ 2 non-overlapping cohorts
+f3	1	22.8	53	10	Adjusted signatures (50 up, 50 down genes) | tested within patients, independent cohorts
+f4	1	10.4	53	10	DKD: loss of podocyte markers (z −9.4) | replicated adjusted signature: MCD only

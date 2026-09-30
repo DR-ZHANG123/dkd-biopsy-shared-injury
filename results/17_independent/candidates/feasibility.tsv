@@ -1,0 +1,7 @@
+cohort	compartment	n_dkd	n_other_ckd	n_ckd_undetermined	n_control	n_aki	primary_ok	secondary_ok
+GSE162830	GLOM	18	5	0	9	0	True	True
+GSE166239	WHOLE	6	6	0	6	0	True	True
+GSE45980	WHOLE	5	38	0	0	0	True	False
+KPMP	GLOM	4	1	4	9	5	False	False
+KPMP	TUB	3	1	4	6	8	False	False
+KPMP	WHOLE	9	7	5	9	10	True	True

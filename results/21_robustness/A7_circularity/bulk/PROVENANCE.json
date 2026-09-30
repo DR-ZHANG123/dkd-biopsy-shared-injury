@@ -1,0 +1,38 @@
+{
+  "stage": "21_robustness/A7_circularity/bulk",
+  "time": "2026-09-29T22:55:34",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/20_repair_state/genes/driver_calls.tsv": "4517c89b869376fba16717b5cdde57ba",
+    "results/20_repair_state/programs/program_sets.tsv": "bdcb5315e28f07943de62b55f6a0169f",
+    "results/20_repair_state/programs/programs.tsv.gz": "7bafffb0991f8ddeb4cd541aee90f153"
+  },
+  "outputs": {
+    "results/21_robustness/A7_circularity/bulk/unit_relation.tsv": "dc128886d2f9e3cc804445ac5350c8ee",
+    "results/21_robustness/A7_circularity/bulk/clinical.tsv": "cb1be665eac4be6c9f560fd89918de3e"
+  },
+  "extra": {
+    "programs": [
+      "prog_noSCP_PT:aPT",
+      "prog_noSCP_PT:frPT",
+      "prog_noSCP_PT:rfPT",
+      "prog_noSCP_TAL:rfTAL",
+      "prog_REF_noSCP_PT:aPT",
+      "prog_REF_noSCP_PT:frPT",
+      "prog_REF_noSCP_PT:rfPT",
+      "prog_REF_noSCP_TAL:rfTAL"
+    ]
+  }
+}

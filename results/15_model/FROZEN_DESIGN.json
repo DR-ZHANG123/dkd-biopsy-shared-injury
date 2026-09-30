@@ -1,0 +1,65 @@
+{
+  "frozen_at": "2026-09-29T01:06:51",
+  "config_sha": "7f8b333a83db1fa2",
+  "primary_method": "RRG-ID",
+  "design": {
+    "marker_source": "kpmp",
+    "graph": "none",
+    "rewire_seed": 0,
+    "diffuse_hops": 2,
+    "diffuse_beta": 0.5,
+    "program_size": 100,
+    "use_programs": true,
+    "learn_gates": false,
+    "gate_l2": 0.001,
+    "n_free": 0,
+    "free_l1": 0.0001,
+    "z_dim": 16,
+    "z_mlp": false,
+    "gene_resid": true,
+    "resid_l2": 0.001,
+    "resid_standardize": false,
+    "lambda_supcon": 0.0,
+    "lambda_hsic": 1.0,
+    "hsic_mode": "conditional",
+    "hsic_on": "z",
+    "gamma": 0.0,
+    "match_bw": 0.5,
+    "use_controls": true,
+    "control_weight": 1.0,
+    "compare_level": "mixed",
+    "pool_weight": 1.0,
+    "pos_scope": "any",
+    "supcon_center": "stratum",
+    "tau": 0.2,
+    "wd": 0.001,
+    "lr": 0.01,
+    "epochs": 300,
+    "n_seeds": 5
+  },
+  "comparators": [
+    "B-L2",
+    "B-rankLASSO",
+    "B2-PCA",
+    "B-cPCA",
+    "B-L2-unitcenter",
+    "B-injury"
+  ],
+  "protocol": "E1 leave-one-unit-out; test units ERCB_GLOM_H1, ERCB_GLOM_H7, ERCB_TUB_H1, ERCB_TUB_H7; positive class DKD vs all other patients in test unit (controls excluded); run exactly once",
+  "primary_metric": "shared-axis-adjusted AUROC (Janes-Pepe location model, leave-unit-out external axis); raw AUROC secondary",
+  "dev_evidence": {
+    "n_cells": 107,
+    "RRG-ID_minus_B-L2_adj": [
+      0.017,
+      0.006,
+      0.027
+    ],
+    "RRG-ID_minus_B-L2_raw": [
+      0.001,
+      -0.012,
+      0.012
+    ],
+    "graph_ablation": "coexpr/STRING/rewired graph: delta ~0",
+    "source": "results/15_model/dev/ablation_summary.tsv"
+  }
+}

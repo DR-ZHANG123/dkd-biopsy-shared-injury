@@ -1,0 +1,4 @@
+dataset	donors	variable	target	n	spearman	p_perm	partial_spearman_given_scp	p_perm_partial
+snRNA	REF+CKD	PT:rfPT	scp_full	106	0.722327	0.000999001		
+snRNA	CKD	PT:rfPT	scp_full	55	0.461616	0.000999001		
+snRNA	CKD	PT:rfPT	egfr_mid	55	-0.121697	0.403596	0.174387	0.235764

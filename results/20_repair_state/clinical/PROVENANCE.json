@@ -1,0 +1,35 @@
+{
+  "stage": "20_repair_state/clinical",
+  "time": "2026-09-29T15:57:51",
+  "seed": 20260928,
+  "config_sha": "8efb02bebfeb6666",
+  "git_commit": "e0ae2e2f585882a8f14e15bcf21e42cec1daaf18",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/20_repair_state/programs/program_sets.tsv": "bdcb5315e28f07943de62b55f6a0169f",
+    "results/17_independent/test_samples.tsv": "52ad89de0d5a9a4809f5a513e61a0826"
+  },
+  "outputs": {
+    "results/20_repair_state/clinical/tests.tsv": "0a56587c030d08e175af50eed3fcaf91",
+    "results/20_repair_state/clinical/scores.tsv.gz": "f66026a3b2f600595580bb449ab8f216"
+  },
+  "extra": {
+    "cohorts": [
+      "GSE175759-RNAseq",
+      "GSE142025-RNAseq",
+      "GSE115857-GPL14951",
+      "KPMP",
+      "GSE166239"
+    ],
+    "n_perm": 1000
+  }
+}

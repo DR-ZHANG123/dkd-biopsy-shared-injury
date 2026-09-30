@@ -1,0 +1,28 @@
+{
+  "stage": "13_celltype",
+  "time": "2026-09-28T16:34:30",
+  "seed": 20260928,
+  "config_sha": "a92af9a831887e2f",
+  "git_commit": "c2e544149aa57cfe18f1aebad181b2ff1d3a6323",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "upstream/data_processed/scrna/pseudobulk_GSE131882.tsv.gz": "9164241fba8fe1e0028e26792d75da15",
+    "upstream/data_processed/scrna/pseudobulk_GSE209781.tsv.gz": "13a79d9b6b134dc590ee3eeedebed394"
+  },
+  "outputs": {
+    "results/13_celltype/celltype_markers.tsv": "f68050176ce0798dd773e5ee271b4f86",
+    "results/13_celltype/gene_effects_meta.tsv.gz": "63fdbf4923c1178be3e518635b46b4c2",
+    "results/13_celltype/celltype_enrichment.tsv": "f82e619768825263787921ea9d3a43bf",
+    "results/13_celltype/sc_validation.tsv": "af964a29b9ef1313dac44a92eab00c7f"
+  },
+  "extra": {}
+}

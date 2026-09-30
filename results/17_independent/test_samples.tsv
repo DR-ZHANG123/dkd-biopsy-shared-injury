@@ -1,0 +1,75 @@
+sample_uid	cohort	participant	column	region	file	strategy	redcap_id	enrollment_category	primary_adjudicated_category	sample_type	age_binned	sex	race	baseline_egfr	proteinuria	albuminuria	a1c	diabetes_history	diabetes_duration	hypertension_history	hypertension_duration	on_raas_blockade	kdigo_stage	diagnosis	compartment	library_reads	tissue	age	gender	egfr (ml/min/m2)	proteinuria (g/d)	diabetes	hypertension	diagnosis_raw
+GSE162830|GSM4962549	GSE162830	DIA1	GSM4962549	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962558	GSE162830	DIA10	GSM4962558	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962559	GSE162830	DIA11	GSM4962559	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962560	GSE162830	DIA12	GSM4962560	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962561	GSE162830	DIA13	GSM4962561	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962562	GSE162830	DIA14	GSM4962562	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962563	GSE162830	DIA15	GSM4962563	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962564	GSE162830	DIA16	GSM4962564	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962565	GSE162830	DIA17	GSM4962565	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962550	GSE162830	DIA2	GSM4962550	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962551	GSE162830	DIA3	GSM4962551	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962552	GSE162830	DIA4	GSM4962552	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962553	GSE162830	DIA5	GSM4962553	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962554	GSE162830	DIA6	GSM4962554	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962555	GSE162830	DIA7	GSM4962555	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962556	GSE162830	DIA8	GSM4962556	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962557	GSE162830	DIA9	GSM4962557	GLOM																				DKD	GLOM		Biopsy							
+GSE162830|GSM4962576	GSE162830	ING1	GSM4962576	GLOM																				ING	GLOM		Biopsy							
+GSE162830|GSM4962577	GSE162830	ING2	GSM4962577	GLOM																				ING	GLOM		Biopsy							
+GSE162830|GSM4962578	GSE162830	ING3	GSM4962578	GLOM																				ING	GLOM		Biopsy							
+GSE162830|GSM4962579	GSE162830	ING4	GSM4962579	GLOM																				ING	GLOM		Biopsy							
+GSE162830|GSM4962580	GSE162830	ING5	GSM4962580	GLOM																				ING	GLOM		Biopsy							
+GSE162830|GSM4962567	GSE162830	REF1	GSM4962567	GLOM																				CONTROL	GLOM		Nephrectomy							
+GSE162830|GSM4962568	GSE162830	REF2	GSM4962568	GLOM																				CONTROL	GLOM		Nephrectomy							
+GSE162830|GSM4962569	GSE162830	REF3	GSM4962569	GLOM																				CONTROL	GLOM		Nephrectomy							
+GSE162830|GSM4962570	GSE162830	REF4	GSM4962570	GLOM																				CONTROL	GLOM		Nephrectomy							
+GSE162830|GSM4962571	GSE162830	REF5	GSM4962571	GLOM																				CONTROL	GLOM		Nephrectomy							
+GSE162830|GSM4962572	GSE162830	REF6	GSM4962572	GLOM																				CONTROL	GLOM		Nephrectomy							
+GSE162830|GSM4962573	GSE162830	REF7	GSM4962573	GLOM																				CONTROL	GLOM		Nephrectomy							
+GSE162830|GSM4962574	GSE162830	REF8	GSM4962574	GLOM																				CONTROL	GLOM		Nephrectomy							
+GSE162830|GSM4962575	GSE162830	REF9	GSM4962575	GLOM																				CONTROL	GLOM		Nephrectomy							
+KPMP|17-0001|Bulk_IU1700001	KPMP	17-0001	Bulk_IU1700001	Bulk	Pilot Sub-segmental RNAseq raw counts 4-14-2020.csv	regional_pilot		Healthy Reference		Nephrectomy (pilot reference)														CONTROL	WHOLE	31715112.0								
+KPMP|17-0002|Bulk_IU1700002	KPMP	17-0002	Bulk_IU1700002	Bulk	Pilot Sub-segmental RNAseq raw counts 4-14-2020.csv	regional_pilot		Healthy Reference		Nephrectomy (pilot reference)														CONTROL	WHOLE	40414643.0								
+KPMP|17-1606|Bulk_17-1606_18-0003v3_S26	KPMP	17-1606	Bulk_17-1606_18-0003v3_S26	Bulk	Pilot Sub-segmental RNAseq raw counts 4-14-2020.csv	regional_pilot		Healthy Reference		Nephrectomy (pilot reference)														CONTROL	WHOLE	37900164.0								
+KPMP|18-0004|Bulk_18-139_18-0004_v2	KPMP	18-0004	Bulk_18-139_18-0004_v2	Bulk	Pilot Sub-segmental RNAseq raw counts 4-14-2020.csv	regional_pilot		Healthy Reference		Nephrectomy (pilot reference)														CONTROL	WHOLE	36161654.0								
+KPMP|18-0006|Bulk_IU1800006	KPMP	18-0006	Bulk_IU1800006	Bulk	Pilot Sub-segmental RNAseq raw counts 4-14-2020.csv	regional_pilot		Healthy Reference		Nephrectomy (pilot reference)														CONTROL	WHOLE	33014149.0								
+KPMP|18-0007|Bulk_18-142_18-0007	KPMP	18-0007	Bulk_18-142_18-0007	Bulk	Pilot Sub-segmental RNAseq raw counts 4-14-2020.csv	regional_pilot		Healthy Reference		Nephrectomy (pilot reference)														CONTROL	WHOLE	2293962.0								
+KPMP|18-0008|Bulk_18-162_18-0008	KPMP	18-0008	Bulk_18-162_18-0008	Bulk	Pilot Sub-segmental RNAseq raw counts 4-14-2020.csv	regional_pilot		Healthy Reference		Nephrectomy (pilot reference)														CONTROL	WHOLE	32784148.0								
+KPMP|18-0009|Bulk_18-312_18-0009	KPMP	18-0009	Bulk_18-312_18-0009	Bulk	Pilot Sub-segmental RNAseq raw counts 4-14-2020.csv	regional_pilot		Healthy Reference		Nephrectomy (pilot reference)														CONTROL	WHOLE	3123890.0								
+KPMP|18-0010|Bulk_18-342_18-0010	KPMP	18-0010	Bulk_18-342_18-0010	Bulk	Pilot Sub-segmental RNAseq raw counts 4-14-2020.csv	regional_pilot		Healthy Reference		Nephrectomy (pilot reference)														CONTROL	WHOLE	1884347.0								
+KPMP|28-12265|21-0063_Bulk	KPMP	28-12265	21-0063_Bulk	Bulk	403959b9-7e59-46cc-b615-e99452342976_21-0063_counts.csv	bulk	28-12265	CKD	Diabetic Kidney Disease	Percutaneous Needle Biopsy	60-69 Years	Female	White	50-59 ml/min/1.73m2 (eGFR)		>=1000 mg/g cr (alb)	>=8.5% (a1c)	Yes (dh)	30-34 Years (dd)	Yes (hh)	0-4 Years (hd)	Yes (rb)		DKD	WHOLE	48548138.0								
+KPMP|28-12442|21-0062_Bulk	KPMP	28-12442	21-0062_Bulk	Bulk	d8cf8a25-1f16-42e2-a798-c4f385071930_21-0062_counts.csv	bulk	28-12442	CKD	Diabetic Kidney Disease	Percutaneous Needle Biopsy	40-49 Years	Female	White	70-79 ml/min/1.73m2 (eGFR)	>=1000 mg/g cr (prot)		>=8.5% (a1c)	Yes (dh)	20-24 Years (dd)	Yes (hh)	0-4 Years (hd)	Yes (rb)		DKD	WHOLE	93105323.0								
+KPMP|29-10007|19-0002_Bulk	KPMP	29-10007	19-0002_Bulk	Bulk	5c0fbe56-932a-4a28-9590-730776183054_19-0002_Bulk_Glom_Glom-noBC_PT_TAL_INT_Ti_Seq-03-2020_raw-reads.csv	regional	29-10007	CKD	Hypertensive Kidney Disease	Percutaneous Needle Biopsy	60-69 Years	Female	Black or African-American	20-29 ml/min/1.73m2 (eGFR)		300 to <500 mg/g cr (alb)	>=8.5% (a1c)	Yes (dh)	35-39 Years (dd)	Yes (hh)	35-39 Years (hd)	Yes (rb)		HT	WHOLE	32388269.0								
+KPMP|29-10008|11-14_20-0012_29-10008-Bulk_S29_9	KPMP	29-10008	11-14_20-0012_29-10008-Bulk_S29_9	Bulk	ccc0971e-db7c-4d5c-a7f7-73e0776c0582_Counts.csv	bulk	29-10008	CKD	Hypertensive Kidney Disease	Percutaneous Needle Biopsy	60-69 Years	Female	White	40-49 ml/min/1.73m2 (eGFR)		30 to <300 mg/g cr (alb)		No (dh)		Yes (hh)	0-4 Years (hd)	No (rb)		HT	WHOLE	9899980.0								
+KPMP|29-10011|08-13_20-0009_29-10011-Bulk_S24_4	KPMP	29-10011	08-13_20-0009_29-10011-Bulk_S24_4	Bulk	03bac984-c2bd-41ec-8c0d-1cb7a6101424_Counts.csv	bulk	29-10011	CKD	Other	Percutaneous Needle Biopsy	30-39 Years	Female	White	40-49 ml/min/1.73m2 (eGFR)	>=1000 mg/g cr (prot)		6.5 to <7.5% (a1c)	Yes (dh)	20-24 Years (dd)	Yes (hh)	5-9 Years (hd)	Yes (rb)		OTHER	WHOLE	11346685.0								
+KPMP|29-10012|21-0072_Bulk	KPMP	29-10012	21-0072_Bulk	Bulk	ece799f3-3b87-427b-aa16-32d1cd22bc54_21-0072_counts.csv	bulk	29-10012	CKD	Other	Percutaneous Needle Biopsy	50-59 Years	Female	Black or African-American	30-39 ml/min/1.73m2 (eGFR)	>=1000 mg/g cr (prot)			Yes (dh)	10-14 Years (dd)	Yes (hh)	10-14 Years (hd)	Yes (rb)		OTHER	WHOLE	46625128.0								
+KPMP|29-10013|21-0073_Bulk	KPMP	29-10013	21-0073_Bulk	Bulk	457b432e-4f9d-4a93-bb16-3dca4f6ba82b_21-0073_counts.csv	bulk	29-10013	CKD	Hypertensive Kidney Disease	Percutaneous Needle Biopsy	60-69 Years	Female	Black or African-American	100-109 ml/min/1.73m2 (eGFR)	<150 mg/g cr (prot)	30 to <300 mg/g cr (alb)	6.5 to <7.5% (a1c)	Yes (dh)	5-9 Years (dd)	Yes (hh)	20-24 Years (hd)	Yes (rb)		HT	WHOLE	57616969.0								
+KPMP|29-10280|21-0068_Bulk	KPMP	29-10280	21-0068_Bulk	Bulk	166ad471-c0a1-4f74-b614-47ce9a3afa44_21-0068_counts.csv	bulk	29-10280	CKD	Diabetic Kidney Disease	Percutaneous Needle Biopsy	60-69 Years	Male	White	30-39 ml/min/1.73m2 (eGFR)	>=1000 mg/g cr (prot)		6.5 to <7.5% (a1c)	Yes (dh)	10-14 Years (dd)	Yes (hh)	15-19 Years (hd)	No (rb)		DKD	WHOLE	61438409.0								
+KPMP|29-10282|21-0055_Bulk	KPMP	29-10282	21-0055_Bulk	Bulk	a48ab4c9-4754-4281-8fa8-76d74781bf8f_21-0055_counts.csv	bulk	29-10282	CKD	Diabetic Kidney Disease	Percutaneous Needle Biopsy	50-59 Years	Male	White	60-69 ml/min/1.73m2 (eGFR)	>=1000 mg/g cr (prot)		<6.5% (a1c)	Yes (dh)	15-19 Years (dd)	Yes (hh)	15-19 Years (hd)	Yes (rb)		DKD	WHOLE	61843791.0								
+KPMP|29-10404|21-0061_Bulk	KPMP	29-10404	21-0061_Bulk	Bulk	fc44e209-0d00-4214-895b-9dbb498450d4_21-0061_counts.csv	bulk	29-10404	CKD	Diabetic Kidney Disease	Percutaneous Needle Biopsy	60-69 Years	Male	Black or African-American	50-59 ml/min/1.73m2 (eGFR)	>=1000 mg/g cr (prot)	500 to <1000 mg/g cr (alb)	7.5 to <8.5% (a1c)	Yes (dh)	10-14 Years (dd)	Yes (hh)	35-39 Years (hd)	Yes (rb)		DKD	WHOLE	58298809.0								
+KPMP|31-10001|11-13_20-0011_31-10001_31-10001-Bulk_S28_8	KPMP	31-10001	11-13_20-0011_31-10001_31-10001-Bulk_S28_8	Bulk	d11a8956-8904-4221-9c07-17ed6e66bd40_Counts.csv	bulk	31-10001	CKD	Diabetic Kidney Disease	Percutaneous Needle Biopsy	70-79 Years	Male	White	40-49 ml/min/1.73m2 (eGFR)	150 to <500 mg/g cr (prot)	<30 mg/g cr (alb)	6.5 to <7.5% (a1c)	Yes (dh)	25-29 Years (dd)	Yes (hh)	25-29 Years (hd)	Yes (rb)		DKD	WHOLE	9563987.0								
+KPMP|31-10035|21-02-07_20-0044-Bulk_S45_L004	KPMP	31-10035	21-02-07_20-0044-Bulk_S45_L004	Bulk	b486bf2e-7c2b-4e97-8904-8830c4c452e3_20-0044_counts.csv	bulk	31-10035	CKD	Other	Percutaneous Needle Biopsy	70-79 Years	Female	White	60-69 ml/min/1.73m2 (eGFR)	>=1000 mg/g cr (prot)		6.5 to <7.5% (a1c)	Yes (dh)	10-14 Years (dd)	Yes (hh)	10-14 Years (hd)	Yes (rb)		OTHER	WHOLE	16070729.0								
+KPMP|31-10042|11-04_20-0039_31-10042-Bulk_S2_2	KPMP	31-10042	11-04_20-0039_31-10042-Bulk_S2_2	Bulk	510e8fba-46ec-4bd0-9218-cf61e2a0c4b9_Counts.csv	bulk	31-10042	CKD	Diabetic Kidney Disease	Percutaneous Needle Biopsy	60-69 Years	Female	White, Other	20-29 ml/min/1.73m2 (eGFR)	>=1000 mg/g cr (prot)	>=1000 mg/g cr (alb)	<6.5% (a1c)	Yes (dh)	20-24 Years (dd)	Yes (hh)	0-4 Years (hd)	No (rb)		DKD	WHOLE	9501768.0								
+KPMP|31-10221|21-0064_Bulk	KPMP	31-10221	21-0064_Bulk	Bulk	d1246cd7-593c-489f-94cb-82fd7f6c7056_21-0064_counts.csv	bulk	31-10221	CKD	Hypertensive Kidney Disease	Percutaneous Needle Biopsy	60-69 Years	Male	Black or African-American	40-49 ml/min/1.73m2 (eGFR)	<150 mg/g cr (prot)		<6.5% (a1c)	Yes (dh)	0-4 Years (dd)	Yes (hh)	35-39 Years (hd)	Yes (rb)		HT	WHOLE	48845122.0								
+KPMP|32-10034|02-01_20-0043_32-10034-Bulk_S31_11	KPMP	32-10034	02-01_20-0043_32-10034-Bulk_S31_11	Bulk	2f21bda2-49de-4257-a346-ab895451dcf3_Counts.csv	bulk	32-10034	AKI	Diabetic Kidney Disease	Percutaneous Needle Biopsy	60-69 Years	Male	White	60-69 ml/min/1.73m2 (eGFR)	<150 mg/g cr (prot)		>=8.5% (a1c)	Yes (dh)	10-14 Years (dd)	No (hh)		No (rb)	Stage 2 (ks)	DKD	WHOLE	8271867.0								
+KPMP|34-10209|21-0060_Bulk	KPMP	34-10209	21-0060_Bulk	Bulk	986c079d-20d4-419b-a3b8-7bfd2c9b8f43_21-0060_counts.csv	bulk	34-10209	AKI	Diabetic Kidney Disease	Percutaneous Needle Biopsy	50-59 Years	Male	White	90-99 ml/min/1.73m2 (eGFR)	>=1000 mg/g cr (prot)		<6.5% (a1c)	Yes (dh)	5-9 Years (dd)	Yes (hh)		No (rb)	Stage 3 (ks)	DKD	WHOLE	34661805.0								
+GSE166239|GSM5066699	GSE166239	Ctrl_1	Ctrl_1	Bulk																				CONTROL	WHOLE	2835088.0		34.0	Male	89.17	0.0	no	no	
+GSE166239|GSM5066700	GSE166239	Ctrl_2	Ctrl_2	Bulk																				CONTROL	WHOLE	4712555.0		37.0	Female	104.75	1.0	no	no	
+GSE166239|GSM5066701	GSE166239	Ctrl_3	Ctrl_3	Bulk																				CONTROL	WHOLE	5726650.0		22.0	Female	71.15	0.03	no	no	
+GSE166239|GSM5066702	GSE166239	Ctrl_4	Ctrl_4	Bulk																				CONTROL	WHOLE	5578020.0		39.0	Male	113.69	0.29	no	yes	
+GSE166239|GSM5066703	GSE166239	Ctrl_5	Ctrl_5	Bulk																				CONTROL	WHOLE	5662753.0		48.0	Male	92.37	0.0	no	yes	
+GSE166239|GSM5066704	GSE166239	Ctrl_6	Ctrl_6	Bulk																				CONTROL	WHOLE	4320718.0		33.0	Male	95.68	0.05	no	no	
+GSE166239|GSM5066705	GSE166239	HN_1	HN_1	Bulk																				HT	WHOLE	3910957.0		59.0	Male	55.56	0.2	no	yes	
+GSE166239|GSM5066706	GSE166239	HN_2	HN_2	Bulk																				HT	WHOLE	2280260.0		58.0	Male	53.89	0.24	no	yes	
+GSE166239|GSM5066707	GSE166239	HN_3	HN_3	Bulk																				HT	WHOLE	6718674.0		57.0	Male	46.73	1.1	no	yes	
+GSE166239|GSM5066708	GSE166239	HN_4	HN_4	Bulk																				HT	WHOLE	6824487.0		60.0	Male	49.94	0.0	no	yes	
+GSE166239|GSM5066709	GSE166239	HN_5	HN_5	Bulk																				HT	WHOLE	8083217.0		50.0	Male	89.75	2.0	no	yes	
+GSE166239|GSM5066710	GSE166239	HN_6	HN_6	Bulk																				HT	WHOLE	1993438.0		55.0	Male	65.4	0.5	no	yes	
+GSE166239|GSM5066711	GSE166239	T2DN_1	T2DN_1	Bulk																				DKD	WHOLE	2220434.0		53.0	Male	44.07	4.7	yes	yes	
+GSE166239|GSM5066712	GSE166239	T2DN_2	T2DN_2	Bulk																				DKD	WHOLE	5317992.0		42.0	Male	80.59	2.43	yes	yes	
+GSE166239|GSM5066713	GSE166239	T2DN_3	T2DN_3	Bulk																				DKD	WHOLE	312842.0		81.0	Female	47.2	10.6	yes	yes	
+GSE166239|GSM5066714	GSE166239	T2DN_4	T2DN_4	Bulk																				DKD	WHOLE	578630.0		57.0	Male	48.97	21.0	yes	yes	
+GSE166239|GSM5066715	GSE166239	T2DN_5	T2DN_5	Bulk																				DKD	WHOLE	2420707.0		59.0	Male	32.93	0.0	yes	yes	
+GSE166239|GSM5066716	GSE166239	T2DN_6	T2DN_6	Bulk																				DKD	WHOLE	6515013.0		65.0	Female	33.02	1.75	yes	yes	

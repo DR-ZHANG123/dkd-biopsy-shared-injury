@@ -1,0 +1,1147 @@
+dataset	compartment	scenario	donor	score	group	egfr_mid	TissueCollection
+snRNA	GLOM	full	164-1	-0.2465556172364603	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-10	-0.3226546421391763	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-11	-0.3235786505588073	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-12	-0.3165862630000258	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-13	-0.2989824909847405	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-14	-0.2880612321381635	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-17	-0.252761870954882	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-18	-0.2958500529136032	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-20	-0.3119961771943046	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-3	-0.2926213937637955	REF	125.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-5	-0.2602909511467588	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-6	-0.267479759016809	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-7	-0.2398023771755361	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	164-8	-0.2749001970716253	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	165-11	-0.2672139646878962	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	165-13	-0.2826251845326963	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	165-15	-0.2976604378523194	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	165-7	-0.2990440843679933	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	full	18-142	-0.2835850888968177	other		Nephrectomy
+snRNA	GLOM	full	18-162	-0.1593233496403641	other		Nephrectomy
+snRNA	GLOM	full	18-312	-0.1685642831139945	other		Nephrectomy
+snRNA	GLOM	full	21-015	-0.2742270854933613	other		Nephrectomy
+snRNA	GLOM	full	21-016	-0.2633562260413506	other		Nephrectomy
+snRNA	GLOM	full	21-019	-0.2582529984249079	other		Nephrectomy
+snRNA	GLOM	full	21-020	-0.1946576857102747	other		Nephrectomy
+snRNA	GLOM	full	21-021	-0.1915544101897565	other		Nephrectomy
+snRNA	GLOM	full	27-10039	-0.1709233574833336	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10041	-0.1739943313762166	DKD	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10043	-0.2070827437882993	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10066	-0.2748532986791931	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10067	-0.0352642604917857	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10074	-0.1487786659425141	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10088	-0.2156869251794246	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10089	-0.1701009117490561	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10094	-0.1699914958931701	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10104	-0.2085550328671822	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10154	-0.1771024037267858	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10163	-0.2925000275788451	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10165	-0.2820053122144351	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10166	-0.2550274247055978	other	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10171	-0.2956004987464105	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10185	-0.2585005427365558	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10201	-0.2653007983055566	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10206	-0.283814678247062	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10207	-0.2793864047023972	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	27-10231	-0.2637639550844124	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-10051	-0.25337501932408	other	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-10109	-0.1526341246119496	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-11515	-0.2481852757378255	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-12178	-0.2001718131813584	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-12265	-0.3050579337083149	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-12372	-0.2409089711489018	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-12412	-0.2429371870273347	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-12510	-0.1665162263345182	OTHER_CKD	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-12546	-0.1033643425331826	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-12558	-0.2715905071197994	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	28-12579	-0.1716250834354505	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10006	-0.2124961083605299	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10008	-0.2104477527472694	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10010	-0.1676896721834939	other	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10011	-0.2055525561357937	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10012	-0.1827975485353662	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10013	-0.2139085604130088	OTHER_CKD	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10016	-0.2068162939895801	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10276	-0.1741774050377256	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10277	-0.1855125301648336	DKD	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10280	-0.117765720659395	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10380	-0.1962581911058299	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10395	-0.2360067785778419	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10399	-0.2540572897233978	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10400	-0.2126668758125381	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10401	-0.2030558172397548	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10402	-0.1266718786905598	other	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10404	-0.2413266315984652	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10410	-0.1502705851142832	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10422	-0.1939958474571022	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10439	-0.1427355467585327	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	29-10662	-0.1865388628992905	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-10018	-0.1264684915097191	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-10034	-0.1243160370907504	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-10125	-0.1367604407839895	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-10631	-0.2489689221930511	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-10868	-0.1237225777500536	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-10929	-0.2019977559887269	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-11051	-0.1510728518233246	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-11080	-0.1099238200523438	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-11081	-0.1601836996635084	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	30-11084	-0.2636398087252226	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10000	-0.1787951286239549	other	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10001	-0.1472728205874494	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10035	-0.1952366861803989	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10061	-0.1409204057913456	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10063	-0.1514534727508157	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10078	-0.1779429102043388	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10081	-0.1782525035168699	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10090	-0.2060829184795031	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10091	-0.1976003189927878	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10100	-0.222421342867604	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10105	-0.1964015599199137	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10169	-0.2135894165087126	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10177	-0.1246049832932654	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10210	-0.2034993787581837	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10221	-0.266162335352406	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10236	-0.1510668037448586	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10322	-0.2534051195554259	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	31-10340	-0.2149127828475003	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	32-10003	-0.1786397973914499	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	32-10034	-0.16860734691361	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	32-10074	-0.1442619451533099	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	32-10205	-0.1426441772898118	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	32-10333	-0.2063337382512226	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	32-10346	-0.1070015705585475	other	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	32-10419	-0.1641299017996672	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	32-10458	-0.0106516533479739	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	32-2	-0.1938632933281411	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	33-10005	-0.1531160430145359	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	33-10006	-0.141373297648575	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	33-10331	-0.1228693812259254	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	33-10376	-0.2651567018633178	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	34-10050	-0.138751053474096	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	34-10184	-0.1366248382481856	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	34-10187	-0.2004709711123305	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	34-10209	-0.1069647739569869	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	34-10306	-0.1121605297314308	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	34-10331	-0.1322790220496267	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	34-10393	-0.2327865884001706	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	34-10579	-0.076762378481187	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3477	-0.1349980940373629	other	25.0	Nephrectomy
+snRNA	GLOM	full	3479	-0.2283923271271112	other	45.0	Nephrectomy
+snRNA	GLOM	full	3487	-0.1111183085599738	other	55.0	Nephrectomy
+snRNA	GLOM	full	3510	-0.2606485180488818	REF	75.0	Nephrectomy
+snRNA	GLOM	full	3535	-0.2248647404996934	other	55.0	Nephrectomy
+snRNA	GLOM	full	3579	-0.2595186052176753	REF	75.0	Nephrectomy
+snRNA	GLOM	full	3609	-0.2542471462695801	other	65.0	Nephrectomy
+snRNA	GLOM	full	3612	-0.2674185037577496	other	75.0	Deceased Donor Nephrectomy
+snRNA	GLOM	full	3619	-0.2759142897102498	REF	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3621	-0.274366273656793	REF	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3622	-0.2452505507835335	REF	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3623	-0.0825548898349814	REF	155.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3625	-0.2312323489725782	REF	175.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3626	-0.2846626378129991	REF	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3627	-0.2664006739967469	REF	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3630	-0.2933294813620657	REF	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3631	-0.3096838028763904	REF	135.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3673	-0.2463504226967976	other	85.0	Deceased Donor Nephrectomy
+snRNA	GLOM	full	3691	-0.1956793553531894	REF		Nephrectomy
+snRNA	GLOM	full	3704	-0.248582818364519	REF	95.0	Deceased Donor Nephrectomy
+snRNA	GLOM	full	3711	-0.2054848942732874	REF	85.0	Deceased Donor Nephrectomy
+snRNA	GLOM	full	3712	-0.2609966843428158	REF	75.0	Nephrectomy
+snRNA	GLOM	full	3716	-0.1281801513617675	other	25.0	Deceased Donor Nephrectomy
+snRNA	GLOM	full	3723	-0.2721965552587128	REF	65.0	Nephrectomy
+snRNA	GLOM	full	3728	-0.229798582628713	REF	95.0	Nephrectomy
+snRNA	GLOM	full	3775	-0.2532774601047469	REF	85.0	Nephrectomy
+snRNA	GLOM	full	3778	-0.267899300116918	REF	105.0	Deceased Donor Nephrectomy
+snRNA	GLOM	full	3781	-0.3049709704323053	REF	105.0	Nephrectomy
+snRNA	GLOM	full	3782	-0.1536401347600598	other	115.0	Deceased Donor Nephrectomy
+snRNA	GLOM	full	3785	-0.1175313964370555	other	95.0	Nephrectomy
+snRNA	GLOM	full	3800	-0.2804541763513749	REF	95.0	Nephrectomy
+snRNA	GLOM	full	3804	-0.1255634044444404	other	5.0	Nephrectomy
+snRNA	GLOM	full	3814	-0.087364406153424	other	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	3825	-0.2145114109170821	REF	85.0	Nephrectomy
+snRNA	GLOM	full	3830	-0.2388615902400206	REF	85.0	Deceased Donor Nephrectomy
+snRNA	GLOM	full	3893	-0.2100579684652151	REF	85.0	Nephrectomy
+snRNA	GLOM	full	3898	-0.3003870392425053	REF	85.0	Nephrectomy
+snRNA	GLOM	full	3900	-0.2842948191364233	REF	75.0	Nephrectomy
+snRNA	GLOM	full	3903	-0.2581054032472924	other	55.0	Nephrectomy
+snRNA	GLOM	full	3904	-0.178779622512861	other	35.0	Nephrectomy
+snRNA	GLOM	full	3907	-0.2496117053533644	REF	55.0	Nephrectomy
+snRNA	GLOM	full	3916	-0.2236943970818717	other	25.0	Nephrectomy
+snRNA	GLOM	full	3918	-0.2505314390520374	REF	95.0	Nephrectomy
+snRNA	GLOM	full	3948	-0.241419395498921	REF	105.0	Deceased Donor Nephrectomy
+snRNA	GLOM	full	933-10003	-0.1791395336167983	DKD	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	933-10010	-0.1665777981836039	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	934-10016	-0.2135204973531108	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	934-10022	-0.1625542736555852	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	934-10023	-0.1812448890355733	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	934-10032	-0.2154222215371589	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	936-10002	-0.2073769941960508	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	936-10006	-0.1574969534821209	other	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	full	COV-02-0002	-0.2061834664144824	other		Percutaneous Needle Biopsy
+snRNA	GLOM	full	COV-02-0010	-0.1978326503602405	other		Percutaneous Needle Biopsy
+snRNA	GLOM	full	COV-02-0094	-0.1660430077352245	other		Percutaneous Needle Biopsy
+snRNA	GLOM	full	COV-02-0096	-0.226143652007264	other		Percutaneous Needle Biopsy
+snRNA	GLOM	full	D_080	-0.2960885388969766	other	115.0	Nephrectomy
+snRNA	GLOM	full	IU-KRP-430	-0.2752129222831175	REF	65.0	Intra-operative Biopsy
+snRNA	GLOM	full	KPMP_101	-0.2926853974625346	other	125.0	Nephrectomy
+snRNA	GLOM	full	KPMP_104	-0.205444166741848	other	65.0	Nephrectomy
+snRNA	GLOM	full	KRP446	-0.2934146652358901	REF		Intra-operative Biopsy
+snRNA	GLOM	full	KRP460	-0.2297033917899066	REF		Intra-operative Biopsy
+snRNA	GLOM	full	KRP461	-0.2933738224777711	REF		Intra-operative Biopsy
+snRNA	GLOM	full	KRP462	-0.2236661552113207	REF		Intra-operative Biopsy
+snRNA	GLOM	comp_only	164-1	-0.2880751099640326	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-10	-0.2975736759396563	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-11	-0.3109659395976451	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-12	-0.2978189145843131	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-13	-0.2869424211143027	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-14	-0.2759617362794497	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-17	-0.2729316387682099	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-18	-0.3030305017491032	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-20	-0.2971021237826203	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-3	-0.2980104477731478	REF	125.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-5	-0.286790101264985	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-6	-0.2909730254718204	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-7	-0.2839164710079851	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	164-8	-0.2832263818172452	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	165-11	-0.2918341458136604	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	165-13	-0.2765910643635835	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	165-15	-0.2895676944282128	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	165-7	-0.3027130579105875	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	comp_only	18-142	-0.2960351821435372	other		Nephrectomy
+snRNA	GLOM	comp_only	18-162	-0.2395675969577736	other		Nephrectomy
+snRNA	GLOM	comp_only	18-312	-0.2513976376792606	other		Nephrectomy
+snRNA	GLOM	comp_only	21-015	-0.2839780292565451	other		Nephrectomy
+snRNA	GLOM	comp_only	21-016	-0.2871058125475734	other		Nephrectomy
+snRNA	GLOM	comp_only	21-019	-0.2669001809021112	other		Nephrectomy
+snRNA	GLOM	comp_only	21-020	-0.235489113458763	other		Nephrectomy
+snRNA	GLOM	comp_only	21-021	-0.2498901153037506	other		Nephrectomy
+snRNA	GLOM	comp_only	27-10039	-0.2662659044931754	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10041	-0.2505354141836257	DKD	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10043	-0.2658789581875996	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10066	-0.3034020651039065	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10067	-0.1482494588879509	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10074	-0.2301838345353926	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10088	-0.2726050886217852	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10089	-0.2584235894478655	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10094	-0.2322695810176542	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10104	-0.2839661371075096	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10154	-0.240116338901539	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10163	-0.2910671184459252	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10165	-0.2815016688601292	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10166	-0.2554046164115129	other	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10171	-0.2754521638512823	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10185	-0.265891996558765	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10201	-0.2721672551916602	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10206	-0.2866085478400778	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10207	-0.2726805224294587	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	27-10231	-0.2722427358455916	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-10051	-0.2821482174772506	other	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-10109	-0.2259028716906705	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-11515	-0.278020676880057	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-12178	-0.2718660889163107	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-12265	-0.2918446680874684	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-12372	-0.2571408958606199	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-12412	-0.268450561558173	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-12510	-0.2476303485769526	OTHER_CKD	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-12546	-0.1795802205128883	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-12558	-0.2834035815625833	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	28-12579	-0.2300934348597518	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10006	-0.2729753886388157	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10008	-0.2693985250380405	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10010	-0.2575422761024706	other	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10011	-0.2702024302327012	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10012	-0.2657009046314473	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10013	-0.263148462135606	OTHER_CKD	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10016	-0.2656335835376813	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10276	-0.2399343948392949	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10277	-0.2586214861718165	DKD	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10280	-0.2341250645458317	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10380	-0.2625504522855001	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10395	-0.2732408421989874	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10399	-0.2885739545993268	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10400	-0.2629014992464554	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10401	-0.2816565146294068	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10402	-0.2185969266437487	other	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10404	-0.2747527016312021	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10410	-0.2178838646530032	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10422	-0.2513921808458943	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10439	-0.203076739760428	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	29-10662	-0.2525837116168594	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-10018	-0.261144772161718	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-10034	-0.2210654803380966	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-10125	-0.2294593601919551	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-10631	-0.2840042329371197	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-10868	-0.2134068267992631	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-10929	-0.2645423574033933	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-11051	-0.2302670319768009	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-11080	-0.1918757211112356	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-11081	-0.2146566592483345	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	30-11084	-0.2648130925012602	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10000	-0.2534489294950227	other	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10001	-0.2266818697882586	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10035	-0.2979900477393584	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10061	-0.2411532959137519	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10063	-0.2198067493669327	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10078	-0.2440214141796965	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10081	-0.278669406114887	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10090	-0.2575185333615616	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10091	-0.2566712266208842	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10100	-0.252037739646939	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10105	-0.2523609614423564	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10169	-0.2377985009499966	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10177	-0.2515926102900676	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10210	-0.2433080786672574	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10221	-0.2903859587562536	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10236	-0.2096618720278133	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10322	-0.2628381774629912	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	31-10340	-0.2547561878994308	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	32-10003	-0.2541674649419986	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	32-10034	-0.2592878431998357	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	32-10074	-0.2294134145919437	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	32-10205	-0.2609276118035041	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	32-10333	-0.2800735463568649	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	32-10346	-0.2196759168379198	other	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	32-10419	-0.255048207065293	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	32-10458	-0.1396677565221696	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	32-2	-0.2694380995470875	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	33-10005	-0.2406064399096251	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	33-10006	-0.2674303180815524	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	33-10331	-0.2420963873828818	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	33-10376	-0.2656838820616768	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	34-10050	-0.2628760594621054	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	34-10184	-0.2305412578764047	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	34-10187	-0.2847031178904191	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	34-10209	-0.2304118881595473	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	34-10306	-0.2251395519775093	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	34-10331	-0.2158144758258963	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	34-10393	-0.2884319379042288	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	34-10579	-0.2024110846706807	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3477	-0.2193814337100531	other	25.0	Nephrectomy
+snRNA	GLOM	comp_only	3479	-0.2510468143714046	other	45.0	Nephrectomy
+snRNA	GLOM	comp_only	3487	-0.2279469537163514	other	55.0	Nephrectomy
+snRNA	GLOM	comp_only	3510	-0.2762584770946737	REF	75.0	Nephrectomy
+snRNA	GLOM	comp_only	3535	-0.2668152244593066	other	55.0	Nephrectomy
+snRNA	GLOM	comp_only	3579	-0.2851959390037552	REF	75.0	Nephrectomy
+snRNA	GLOM	comp_only	3609	-0.2880276456385914	other	65.0	Nephrectomy
+snRNA	GLOM	comp_only	3612	-0.2904891451933241	other	75.0	Deceased Donor Nephrectomy
+snRNA	GLOM	comp_only	3619	-0.2756789450706478	REF	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3621	-0.2951979730380138	REF	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3622	-0.2630732769153289	REF	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3623	-0.1871235922133056	REF	155.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3625	-0.2694404433711101	REF	175.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3626	-0.2900888862393055	REF	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3627	-0.2786926660371139	REF	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3630	-0.2939417075400256	REF	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3631	-0.3008839329578667	REF	135.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3673	-0.3015606127853107	other	85.0	Deceased Donor Nephrectomy
+snRNA	GLOM	comp_only	3691	-0.2386043646204372	REF		Nephrectomy
+snRNA	GLOM	comp_only	3704	-0.2774900757715542	REF	95.0	Deceased Donor Nephrectomy
+snRNA	GLOM	comp_only	3711	-0.257029616354844	REF	85.0	Deceased Donor Nephrectomy
+snRNA	GLOM	comp_only	3712	-0.2625650652953706	REF	75.0	Nephrectomy
+snRNA	GLOM	comp_only	3716	-0.1922153579862511	other	25.0	Deceased Donor Nephrectomy
+snRNA	GLOM	comp_only	3723	-0.2685664455976683	REF	65.0	Nephrectomy
+snRNA	GLOM	comp_only	3728	-0.2531321392373512	REF	95.0	Nephrectomy
+snRNA	GLOM	comp_only	3775	-0.2754421198626469	REF	85.0	Nephrectomy
+snRNA	GLOM	comp_only	3778	-0.2888844175899538	REF	105.0	Deceased Donor Nephrectomy
+snRNA	GLOM	comp_only	3781	-0.3029835587771677	REF	105.0	Nephrectomy
+snRNA	GLOM	comp_only	3782	-0.2321354669838908	other	115.0	Deceased Donor Nephrectomy
+snRNA	GLOM	comp_only	3785	-0.2241041597814008	other	95.0	Nephrectomy
+snRNA	GLOM	comp_only	3800	-0.2680304911709157	REF	95.0	Nephrectomy
+snRNA	GLOM	comp_only	3804	-0.2228093375470783	other	5.0	Nephrectomy
+snRNA	GLOM	comp_only	3814	-0.1970715429993487	other	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	3825	-0.2633065433189607	REF	85.0	Nephrectomy
+snRNA	GLOM	comp_only	3830	-0.2814067009188357	REF	85.0	Deceased Donor Nephrectomy
+snRNA	GLOM	comp_only	3893	-0.2448017315283323	REF	85.0	Nephrectomy
+snRNA	GLOM	comp_only	3898	-0.3177101980221521	REF	85.0	Nephrectomy
+snRNA	GLOM	comp_only	3900	-0.2715062499707216	REF	75.0	Nephrectomy
+snRNA	GLOM	comp_only	3903	-0.2698248297554126	other	55.0	Nephrectomy
+snRNA	GLOM	comp_only	3904	-0.252215861205723	other	35.0	Nephrectomy
+snRNA	GLOM	comp_only	3907	-0.2609176766190787	REF	55.0	Nephrectomy
+snRNA	GLOM	comp_only	3916	-0.2489110746214027	other	25.0	Nephrectomy
+snRNA	GLOM	comp_only	3918	-0.2610086067152439	REF	95.0	Nephrectomy
+snRNA	GLOM	comp_only	3948	-0.2628192772650123	REF	105.0	Deceased Donor Nephrectomy
+snRNA	GLOM	comp_only	933-10003	-0.2290014478515785	DKD	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	933-10010	-0.198786412953383	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	934-10016	-0.2454620469003564	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	934-10022	-0.2136159651137436	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	934-10023	-0.227590727977234	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	934-10032	-0.2468159324422562	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	936-10002	-0.2701464980684994	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	936-10006	-0.2240449257116589	other	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	COV-02-0002	-0.2838680123329578	other		Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	COV-02-0010	-0.2631782631553734	other		Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	COV-02-0094	-0.2647385925963875	other		Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	COV-02-0096	-0.2755292471005572	other		Percutaneous Needle Biopsy
+snRNA	GLOM	comp_only	D_080	-0.2788478865764457	other	115.0	Nephrectomy
+snRNA	GLOM	comp_only	IU-KRP-430	-0.2698776662887232	REF	65.0	Intra-operative Biopsy
+snRNA	GLOM	comp_only	KPMP_101	-0.2663468903378976	other	125.0	Nephrectomy
+snRNA	GLOM	comp_only	KPMP_104	-0.2382870628318618	other	65.0	Nephrectomy
+snRNA	GLOM	comp_only	KRP446	-0.2990660820858242	REF		Intra-operative Biopsy
+snRNA	GLOM	comp_only	KRP460	-0.2649974551904219	REF		Intra-operative Biopsy
+snRNA	GLOM	comp_only	KRP461	-0.3028133912594861	REF		Intra-operative Biopsy
+snRNA	GLOM	comp_only	KRP462	-0.2629388485582909	REF		Intra-operative Biopsy
+snRNA	GLOM	state_only	164-1	-0.2348047036211092	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-10	-0.3038042489101822	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-11	-0.2976802281291829	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-12	-0.3015012876676026	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-13	-0.2915152225401219	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-14	-0.2895803160943642	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-17	-0.2624539890419039	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-18	-0.2750798354668785	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-20	-0.2908431408239296	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-3	-0.2744248428119173	REF	125.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-5	-0.2517523337369666	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-6	-0.2534152001899237	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-7	-0.2310766592150888	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	164-8	-0.2677701260965237	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	165-11	-0.2549578413909656	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	165-13	-0.2869661483657219	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	165-15	-0.2842237016068722	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	165-7	-0.2770093969058199	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	GLOM	state_only	18-142	-0.2690103444847073	other		Nephrectomy
+snRNA	GLOM	state_only	18-162	-0.2063389140070465	other		Nephrectomy
+snRNA	GLOM	state_only	18-312	-0.2021840269072817	other		Nephrectomy
+snRNA	GLOM	state_only	21-015	-0.2686713876360037	other		Nephrectomy
+snRNA	GLOM	state_only	21-016	-0.2548072408748407	other		Nephrectomy
+snRNA	GLOM	state_only	21-019	-0.2714971066391575	other		Nephrectomy
+snRNA	GLOM	state_only	21-020	-0.2435721438403736	other		Nephrectomy
+snRNA	GLOM	state_only	21-021	-0.2287426861281128	other		Nephrectomy
+snRNA	GLOM	state_only	27-10039	-0.1842845990965317	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10041	-0.2007444516275376	DKD	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10043	-0.2238851259506961	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10066	-0.2713912839667483	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10067	-0.2419198616191791	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10074	-0.1885083705949981	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10088	-0.2204122984420902	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10089	-0.1853930876987628	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10094	-0.2213049024910275	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10104	-0.2152487766704421	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10154	-0.2097570364211506	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10163	-0.2825794425627871	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10165	-0.2780726652694402	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10166	-0.2830864713147519	other	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10171	-0.2988290166018609	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10185	-0.2741085795746391	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10201	-0.2688160450999494	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10206	-0.2792384385326479	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10207	-0.2909517040023788	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	27-10231	-0.2717941738670116	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-10051	-0.253332570570486	other	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-10109	-0.1982301306511886	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-11515	-0.2586997783567574	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-12178	-0.2167362140910219	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-12265	-0.2927289244356277	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-12372	-0.2648913710856748	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-12412	-0.2534108381989215	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-12510	-0.2535275065354311	OTHER_CKD	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-12546	-0.2363057003885669	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-12558	-0.2696907893911658	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	28-12579	-0.2162289529967326	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10006	-0.2288978783330179	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10008	-0.2242367426225842	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10010	-0.2077636707578564	other	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10011	-0.2184130392174195	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10012	-0.2032988333317458	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10013	-0.2437569141675317	OTHER_CKD	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10016	-0.2200735697799936	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10276	-0.2079025952221947	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10277	-0.2071232238657199	DKD	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10280	-0.1676403540307642	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10380	-0.21349547691832	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10395	-0.2499492991271033	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10399	-0.2505403092396984	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10400	-0.2342655402257482	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10401	-0.2281528558611686	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10402	-0.1782840839388207	other	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10404	-0.2470853804014297	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10410	-0.2289493313905731	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10422	-0.2224081809583263	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10439	-0.2482344000830542	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	29-10662	-0.2123188632801051	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-10018	-0.1520464054489145	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-10034	-0.1895339488780398	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-10125	-0.1971741714370519	other	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-10631	-0.2411599492156361	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-10868	-0.1983669647902013	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-10929	-0.217746831039605	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-11051	-0.2274290384987067	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-11080	-0.2112834265044945	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-11081	-0.2282037286296059	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	30-11084	-0.276393196351855	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10000	-0.2235455287438806	other	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10001	-0.2054699261385641	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10035	-0.1910262526424695	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10061	-0.1801436147569331	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10063	-0.2052019859488429	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10078	-0.2201858776366703	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10081	-0.2014314380093305	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10090	-0.2399242088007189	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10091	-0.2532539410169358	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10100	-0.2530070548196406	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10105	-0.2225205284832032	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10169	-0.2880891253063324	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10177	-0.1479269556536702	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10210	-0.2434087750746479	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10221	-0.2535636756238221	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10236	-0.2164928606304197	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10322	-0.2728794123696171	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	31-10340	-0.2697179575757268	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	32-10003	-0.2060939458617453	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	32-10034	-0.1917603278240622	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	32-10074	-0.2049959394873295	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	32-10205	-0.162092036725653	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	32-10333	-0.2066798074195704	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	32-10346	-0.2533235976232935	other	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	32-10419	-0.1985988174946892	other	125.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	32-10458	-0.1232298699744357	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	32-2	-0.2036663509077821	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	33-10005	-0.1975476275317568	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	33-10006	-0.1596907202551583	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	33-10331	-0.1483260740524465	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	33-10376	-0.2776050723767109	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	34-10050	-0.1692952962882205	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	34-10184	-0.2121860450742595	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	34-10187	-0.1963120076326152	other	65.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	34-10209	-0.1516816091115054	other	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	34-10306	-0.1718269156227886	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	34-10331	-0.2069020936650114	other	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	34-10393	-0.2247270744618231	other	85.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	34-10579	-0.1878619130258442	other	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3477	-0.1980693176510199	other	25.0	Nephrectomy
+snRNA	GLOM	state_only	3479	-0.2520674549078323	other	45.0	Nephrectomy
+snRNA	GLOM	state_only	3487	-0.1523021633450401	other	55.0	Nephrectomy
+snRNA	GLOM	state_only	3510	-0.2646181588030685	REF	75.0	Nephrectomy
+snRNA	GLOM	state_only	3535	-0.2370136194914284	other	55.0	Nephrectomy
+snRNA	GLOM	state_only	3579	-0.2510229443144594	REF	75.0	Nephrectomy
+snRNA	GLOM	state_only	3609	-0.245120147426683	other	65.0	Nephrectomy
+snRNA	GLOM	state_only	3612	-0.2583760284075699	other	75.0	Deceased Donor Nephrectomy
+snRNA	GLOM	state_only	3619	-0.2773064074648145	REF	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3621	-0.2628163199061383	REF	115.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3622	-0.2646535851516101	REF	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3623	-0.2504436113870255	REF	155.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3625	-0.241053972026136	REF	175.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3626	-0.2733347424989701	REF	75.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3627	-0.2681064191310441	REF	95.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3630	-0.2793977411188179	REF	105.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3631	-0.286724519149616	REF	135.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3673	-0.2260324605271169	other	85.0	Deceased Donor Nephrectomy
+snRNA	GLOM	state_only	3691	-0.2457503557670989	REF		Nephrectomy
+snRNA	GLOM	state_only	3704	-0.2526127532739111	REF	95.0	Deceased Donor Nephrectomy
+snRNA	GLOM	state_only	3711	-0.2338022885454408	REF	85.0	Deceased Donor Nephrectomy
+snRNA	GLOM	state_only	3712	-0.280226786130667	REF	75.0	Nephrectomy
+snRNA	GLOM	state_only	3716	-0.2061250597100881	other	25.0	Deceased Donor Nephrectomy
+snRNA	GLOM	state_only	3723	-0.2809299257819279	REF	65.0	Nephrectomy
+snRNA	GLOM	state_only	3728	-0.2621155849034767	REF	95.0	Nephrectomy
+snRNA	GLOM	state_only	3775	-0.2575183066861239	REF	85.0	Nephrectomy
+snRNA	GLOM	state_only	3778	-0.2599503697907526	REF	105.0	Deceased Donor Nephrectomy
+snRNA	GLOM	state_only	3781	-0.2855366710989276	REF	105.0	Nephrectomy
+snRNA	GLOM	state_only	3782	-0.2036134996405673	other	115.0	Deceased Donor Nephrectomy
+snRNA	GLOM	state_only	3785	-0.1796228105608385	other	95.0	Nephrectomy
+snRNA	GLOM	state_only	3800	-0.292454400457825	REF	95.0	Nephrectomy
+snRNA	GLOM	state_only	3804	-0.2493891452084361	other	5.0	Nephrectomy
+snRNA	GLOM	state_only	3814	-0.2323146070709739	other	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	3825	-0.2287816391686694	REF	85.0	Nephrectomy
+snRNA	GLOM	state_only	3830	-0.2490620748418822	REF	85.0	Deceased Donor Nephrectomy
+snRNA	GLOM	state_only	3893	-0.2455194550994494	REF	85.0	Nephrectomy
+snRNA	GLOM	state_only	3898	-0.2630022576117993	REF	85.0	Nephrectomy
+snRNA	GLOM	state_only	3900	-0.2920654665864535	REF	75.0	Nephrectomy
+snRNA	GLOM	state_only	3903	-0.2687089462448268	other	55.0	Nephrectomy
+snRNA	GLOM	state_only	3904	-0.2162914557262823	other	35.0	Nephrectomy
+snRNA	GLOM	state_only	3907	-0.2683659428617718	REF	55.0	Nephrectomy
+snRNA	GLOM	state_only	3916	-0.2679360868958776	other	25.0	Nephrectomy
+snRNA	GLOM	state_only	3918	-0.2718665887356516	REF	95.0	Nephrectomy
+snRNA	GLOM	state_only	3948	-0.2633130534375255	REF	105.0	Deceased Donor Nephrectomy
+snRNA	GLOM	state_only	933-10003	-0.2446088598210385	DKD	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	933-10010	-0.2670116213474469	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	934-10016	-0.2486440127990022	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	934-10022	-0.2370181564003098	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	934-10023	-0.2338523864616732	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	934-10032	-0.2539198809621495	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	936-10002	-0.2199671762632741	other	35.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	936-10006	-0.2225705969316303	other	25.0	Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	COV-02-0002	-0.1997765531763191	other		Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	COV-02-0010	-0.2096704618935167	other		Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	COV-02-0094	-0.1836851755472821	other		Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	COV-02-0096	-0.2453104849025838	other		Percutaneous Needle Biopsy
+snRNA	GLOM	state_only	D_080	-0.2975357799622238	other	115.0	Nephrectomy
+snRNA	GLOM	state_only	IU-KRP-430	-0.2846219250154638	REF	65.0	Intra-operative Biopsy
+snRNA	GLOM	state_only	KPMP_101	-0.3089804486390483	other	125.0	Nephrectomy
+snRNA	GLOM	state_only	KPMP_104	-0.2571042352643215	other	65.0	Nephrectomy
+snRNA	GLOM	state_only	KRP446	-0.2749631905534974	REF		Intra-operative Biopsy
+snRNA	GLOM	state_only	KRP460	-0.240461592793897	REF		Intra-operative Biopsy
+snRNA	GLOM	state_only	KRP461	-0.268403261572423	REF		Intra-operative Biopsy
+snRNA	GLOM	state_only	KRP462	-0.2467580244238248	REF		Intra-operative Biopsy
+snRNA	TUB	full	164-1	-0.0850163390862323	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-10	-0.091514134944422	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-11	-0.0885992636770436	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-12	-0.0981794248381338	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-13	-0.0758174485021312	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-14	-0.0723690342115204	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-17	0.025466936933183	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-18	-0.0761660703144676	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-20	-0.076804667970285	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-3	-0.0928101625681394	REF	125.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-5	-0.0536566024772376	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-6	-0.0831635249550017	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-7	-0.0676509462234083	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	164-8	-0.0649964472227702	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	165-11	-0.0915612309505655	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	165-13	-0.0969722514473261	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	165-15	-0.1228145860951011	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	165-7	-0.1112745593969815	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	full	18-142	-0.0903762700304194	other		Nephrectomy
+snRNA	TUB	full	18-162	-0.0033466093085513	other		Nephrectomy
+snRNA	TUB	full	18-312	0.0036700430666133	other		Nephrectomy
+snRNA	TUB	full	21-015	-0.0958916578173511	other		Nephrectomy
+snRNA	TUB	full	21-016	-0.0737223983732917	other		Nephrectomy
+snRNA	TUB	full	21-019	-0.0927410542036838	other		Nephrectomy
+snRNA	TUB	full	21-020	-0.0428823056798604	other		Nephrectomy
+snRNA	TUB	full	21-021	-0.0601517664230211	other		Nephrectomy
+snRNA	TUB	full	27-10039	0.0326954604322375	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10041	0.0064053178516675	DKD	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10043	-0.009653176066605	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10066	-0.0127082651863781	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10067	0.1166461186087121	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10074	0.0501724942340673	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10088	-0.0106496442054652	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10089	0.0164055713853129	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10094	0.028862347553108	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10104	0.0145600309029151	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10154	0.0316262949574572	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10163	-0.0512000363404022	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10165	-0.0146580903038467	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10166	-0.0135158446695237	other	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10171	-0.0429425133950857	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10185	-0.02832153523131	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10201	-0.050910921850072	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10206	-0.0319634320611095	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10207	-0.022740293080717	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	27-10231	-0.020428338567402	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-10051	-0.0285299261404459	other	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-10109	0.0221696727195602	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-11515	-0.0148290471530454	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-12178	0.0178392284517027	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-12265	-0.0836939488357621	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-12372	0.010913731601453	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-12412	-0.0283942717196461	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-12510	0.0597257011318965	OTHER_CKD	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-12546	0.0879006975707644	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-12558	-0.0380635394292149	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	28-12579	0.0398889294681933	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10006	-0.0048711130307972	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10008	0.0115568448359126	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10010	0.0001850038659958	other	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10011	0.0313779903353743	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10012	0.0382572960353151	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10013	0.0311971366254706	OTHER_CKD	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10016	0.0001819630283557	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10276	0.0030667391386586	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10277	0.0096927722099563	DKD	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10280	0.0474450281808656	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10380	0.0057999953991564	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10395	0.0044697311628076	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10399	-0.0069172704926264	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10400	0.0216452478589798	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10401	0.0013487006740016	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10402	0.0723133594760104	other	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10404	0.0231078472613097	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10410	0.0755052732387949	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10422	0.015832984702821	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10439	0.1068770296394933	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	29-10662	0.0252492495003886	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-10018	0.081320742542797	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-10034	0.047909945719438	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-10125	0.0682095424425933	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-10631	0.0224091549972455	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-10868	0.0966627428985437	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-10929	0.0686147655976174	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-11051	0.082164533660446	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-11080	0.1130228452781085	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-11081	0.0862575620281292	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	30-11084	-0.0209122232763785	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10000	0.0379986812770257	other	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10001	0.0284738642310456	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10035	-0.0001629132028523	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10061	0.030037355059062	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10063	0.0089349423967038	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10078	0.0607849436443605	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10081	0.0314659875654014	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10090	0.0290403735885242	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10091	0.0005944598322134	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10100	0.0363354213925802	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10105	0.0328539755136959	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10169	0.0159815681214284	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10177	0.0497312030033972	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10210	0.0216985777998008	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10221	-0.0114739635215714	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10236	0.0881397752734841	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10322	0.0012938785911079	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	31-10340	0.0393651223457316	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	32-10003	0.0277159256610814	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	32-10034	0.0451708426981568	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	32-10074	0.084961134179715	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	32-10205	0.0505539170704513	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	32-10333	0.0216383222316223	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	32-10346	0.0788575030941713	other	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	32-10419	0.0721264545427048	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	32-10458	0.1222066708825995	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	32-2	0.0694501911490551	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	33-10005	0.0612593186665255	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	33-10006	0.053834719868292	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	33-10331	0.0746274151689819	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	33-10376	-0.0293265081449731	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	34-10050	0.0468369389576247	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	34-10184	0.0285640583466358	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	34-10187	0.0066761177118604	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	34-10209	0.0942354410175114	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	34-10306	0.0839543602549173	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	34-10331	0.0707752437638106	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	34-10393	0.0073913192446583	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	34-10579	0.117309799912361	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3477	0.0161010699955058	other	25.0	Nephrectomy
+snRNA	TUB	full	3479	-0.034739303551257	other	45.0	Nephrectomy
+snRNA	TUB	full	3487	0.006347885607708	other	55.0	Nephrectomy
+snRNA	TUB	full	3510	-0.0797226061769148	REF	75.0	Nephrectomy
+snRNA	TUB	full	3535	-0.0541952701166942	other	55.0	Nephrectomy
+snRNA	TUB	full	3579	-0.0449609161442595	REF	75.0	Nephrectomy
+snRNA	TUB	full	3609	-0.0829411305317532	other	65.0	Nephrectomy
+snRNA	TUB	full	3612	-0.0390261450785293	other	75.0	Deceased Donor Nephrectomy
+snRNA	TUB	full	3619	-0.0672686620338738	REF	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3621	-0.0436142774974995	REF	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3622	-0.0809756313970917	REF	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3623	0.0361000022656202	REF	155.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3625	-0.0916258846401375	REF	175.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3626	-0.0896893974457104	REF	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3627	-0.0897657620579263	REF	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3630	-0.1018802721555779	REF	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3631	-0.1032646754826772	REF	135.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3673	-0.0238325019274294	other	85.0	Deceased Donor Nephrectomy
+snRNA	TUB	full	3691	-0.0401264410742735	REF		Nephrectomy
+snRNA	TUB	full	3704	-0.0125925697971865	REF	95.0	Deceased Donor Nephrectomy
+snRNA	TUB	full	3711	0.0304384846114822	REF	85.0	Deceased Donor Nephrectomy
+snRNA	TUB	full	3712	-0.0426378945480318	REF	75.0	Nephrectomy
+snRNA	TUB	full	3716	0.072261865348472	other	25.0	Deceased Donor Nephrectomy
+snRNA	TUB	full	3723	-0.0761720214816944	REF	65.0	Nephrectomy
+snRNA	TUB	full	3728	-0.023367688795299	REF	95.0	Nephrectomy
+snRNA	TUB	full	3775	-0.1021134421937549	REF	85.0	Nephrectomy
+snRNA	TUB	full	3778	-0.0302892095001925	REF	105.0	Deceased Donor Nephrectomy
+snRNA	TUB	full	3781	-0.0886343137898743	REF	105.0	Nephrectomy
+snRNA	TUB	full	3782	0.0332214905418724	other	115.0	Deceased Donor Nephrectomy
+snRNA	TUB	full	3785	0.0528348585200481	other	95.0	Nephrectomy
+snRNA	TUB	full	3800	-0.0943160427911894	REF	95.0	Nephrectomy
+snRNA	TUB	full	3804	-4.914498257968525e-05	other	5.0	Nephrectomy
+snRNA	TUB	full	3814	0.0801654200015379	other	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	3825	-0.0023705091265322	REF	85.0	Nephrectomy
+snRNA	TUB	full	3830	0.0112135521024162	REF	85.0	Deceased Donor Nephrectomy
+snRNA	TUB	full	3893	-0.0211813961361752	REF	85.0	Nephrectomy
+snRNA	TUB	full	3898	-0.12562846153035	REF	85.0	Nephrectomy
+snRNA	TUB	full	3900	-0.0661010760858822	REF	75.0	Nephrectomy
+snRNA	TUB	full	3903	-0.0565023305780126	other	55.0	Nephrectomy
+snRNA	TUB	full	3904	0.0340342163925844	other	35.0	Nephrectomy
+snRNA	TUB	full	3907	-0.0373130311177482	REF	55.0	Nephrectomy
+snRNA	TUB	full	3916	0.0130348702901333	other	25.0	Nephrectomy
+snRNA	TUB	full	3918	-0.0434349811836969	REF	95.0	Nephrectomy
+snRNA	TUB	full	3948	-0.0171363468791292	REF	105.0	Deceased Donor Nephrectomy
+snRNA	TUB	full	933-10003	0.0573779874119936	DKD	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	933-10010	0.0521388373208063	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	934-10016	0.0068619611796649	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	934-10022	0.0623881654740488	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	934-10023	0.0446874582700492	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	934-10032	0.0212785724326136	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	936-10002	0.0219985331590857	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	936-10006	0.0628007492832757	other	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	full	COV-02-0002	-0.0185314953692783	other		Percutaneous Needle Biopsy
+snRNA	TUB	full	COV-02-0010	-0.0432771229927733	other		Percutaneous Needle Biopsy
+snRNA	TUB	full	COV-02-0094	0.0285932660489486	other		Percutaneous Needle Biopsy
+snRNA	TUB	full	COV-02-0096	-0.016052921224399	other		Percutaneous Needle Biopsy
+snRNA	TUB	full	D_080	-0.0823740947917924	other	115.0	Nephrectomy
+snRNA	TUB	full	IU-KRP-430	-0.0964982853503944	REF	65.0	Intra-operative Biopsy
+snRNA	TUB	full	KPMP_101	-0.0547259158611452	other	125.0	Nephrectomy
+snRNA	TUB	full	KPMP_104	-0.0062454541869919	other	65.0	Nephrectomy
+snRNA	TUB	full	KRP446	-0.1109105767867791	REF		Intra-operative Biopsy
+snRNA	TUB	full	KRP460	-0.0506771123224349	REF		Intra-operative Biopsy
+snRNA	TUB	full	KRP461	-0.0928463698523749	REF		Intra-operative Biopsy
+snRNA	TUB	full	KRP462	-0.0656985848994385	REF		Intra-operative Biopsy
+snRNA	TUB	comp_only	164-1	-0.0837865704011421	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-10	-0.0834178068459239	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-11	-0.0895353022369874	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-12	-0.0850769905288391	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-13	-0.0766473013596949	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-14	-0.073717256355995	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-17	-0.0658366841711033	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-18	-0.0872060206044723	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-20	-0.0827036145754045	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-3	-0.0870006879340505	REF	125.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-5	-0.0798543801582657	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-6	-0.0839355670952516	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-7	-0.0808298756529703	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	164-8	-0.0781173440713268	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	165-11	-0.0838629350133577	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	165-13	-0.0744534783858997	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	165-15	-0.0796762975693587	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	165-7	-0.0839182443263186	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	comp_only	18-142	-0.0813788795302433	other		Nephrectomy
+snRNA	TUB	comp_only	18-162	-0.0592760530355492	other		Nephrectomy
+snRNA	TUB	comp_only	18-312	-0.0586613079015938	other		Nephrectomy
+snRNA	TUB	comp_only	21-015	-0.0839989766080497	other		Nephrectomy
+snRNA	TUB	comp_only	21-016	-0.0830896573968713	other		Nephrectomy
+snRNA	TUB	comp_only	21-019	-0.0737094867765579	other		Nephrectomy
+snRNA	TUB	comp_only	21-020	-0.0606290822266502	other		Nephrectomy
+snRNA	TUB	comp_only	21-021	-0.0601504743932933	other		Nephrectomy
+snRNA	TUB	comp_only	27-10039	-0.0643944657764208	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10041	-0.0643270279150457	DKD	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10043	-0.0701229775645513	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10066	-0.0821905439154556	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10067	-0.011621724739444	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10074	-0.0528675507873821	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10088	-0.0746598986234327	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10089	-0.0669791255675064	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10094	-0.0496341528647437	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10104	-0.0763263385541076	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10154	-0.0515767565365999	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10163	-0.0836619178092306	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10165	-0.077507445136416	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10166	-0.0675172624742119	other	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10171	-0.0773915887872908	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10185	-0.0741395021114288	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10201	-0.073061888415336	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10206	-0.0801240881010796	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10207	-0.0752896173813609	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	27-10231	-0.0759251916006141	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-10051	-0.0774602534243659	other	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-10109	-0.0520285232136755	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-11515	-0.0749600149426498	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-12178	-0.0718238455196709	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-12265	-0.0807393987699321	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-12372	-0.0657708124063677	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-12412	-0.0752442092793733	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-12510	-0.0545592657777017	OTHER_CKD	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-12546	-0.0231649532351354	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-12558	-0.0782189402405014	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	28-12579	-0.0503760476446966	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10006	-0.0721105891137007	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10008	-0.0706760793946967	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10010	-0.0713070162277887	other	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10011	-0.0639367479321175	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10012	-0.0650731250543134	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10013	-0.0657360885636695	OTHER_CKD	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10016	-0.0707322152586601	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10276	-0.0595810764575684	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10277	-0.0673021765019449	DKD	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10280	-0.0570278430057029	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10380	-0.0685913959555516	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10395	-0.0733647193020605	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10399	-0.0775584041809354	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10400	-0.065193148960605	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10401	-0.074735166968001	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10402	-0.0375623232507685	other	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10404	-0.0696129520925123	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10410	-0.0382794128000696	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10422	-0.0593813991361202	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10439	-0.0228089359664503	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	29-10662	-0.0589996543798723	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-10018	-0.0557889387568868	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-10034	-0.0450376940319773	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-10125	-0.0469146434525212	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-10631	-0.0716425872348027	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-10868	-0.0361047397079515	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-10929	-0.0578893614672505	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-11051	-0.0414311648846054	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-11080	-0.0210723436068918	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-11081	-0.0410846138000462	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	30-11084	-0.0677755901147842	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10000	-0.0570616010888064	other	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10001	-0.0524080232314079	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10035	-0.0770128805184148	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10061	-0.0584101930060982	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10063	-0.0546049522968704	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10078	-0.0539941137039758	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10081	-0.0682345608363983	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10090	-0.0655278586144658	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10091	-0.0580405854988008	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10100	-0.05650934321074	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10105	-0.0552336791935954	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10169	-0.0545668700469366	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10177	-0.0631809583947639	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10210	-0.0599050235473071	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10221	-0.0775762402815435	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10236	-0.0362964647386903	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10322	-0.0680921417481727	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	31-10340	-0.0590728171945161	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	32-10003	-0.0638532401791215	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	32-10034	-0.0612757409298905	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	32-10074	-0.0445162621560853	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	32-10205	-0.0620618257366681	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	32-10333	-0.0738162162624943	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	32-10346	-0.0374575861877788	other	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	32-10419	-0.0577669710149271	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	32-10458	0.000833720246208	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	32-2	-0.064071762863456	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	33-10005	-0.0596385435036759	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	33-10006	-0.0635887612589728	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	33-10331	-0.0540871485448576	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	33-10376	-0.0679986718804459	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	34-10050	-0.0637519485287376	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	34-10184	-0.0532829231186801	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	34-10187	-0.0759954397354006	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	34-10209	-0.0444941453913309	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	34-10306	-0.0506085259901913	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	34-10331	-0.0381346358663496	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	34-10393	-0.0774495778656114	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	34-10579	-0.0257751317008978	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3477	-0.0486329211819409	other	25.0	Nephrectomy
+snRNA	TUB	comp_only	3479	-0.0627140527835126	other	45.0	Nephrectomy
+snRNA	TUB	comp_only	3487	-0.0469531433282244	other	55.0	Nephrectomy
+snRNA	TUB	comp_only	3510	-0.0740742741864214	REF	75.0	Nephrectomy
+snRNA	TUB	comp_only	3535	-0.0675987081999668	other	55.0	Nephrectomy
+snRNA	TUB	comp_only	3579	-0.0793141725237809	REF	75.0	Nephrectomy
+snRNA	TUB	comp_only	3609	-0.0789675083322427	other	65.0	Nephrectomy
+snRNA	TUB	comp_only	3612	-0.0794922638132247	other	75.0	Deceased Donor Nephrectomy
+snRNA	TUB	comp_only	3619	-0.075578292494579	REF	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3621	-0.0737713997970123	REF	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3622	-0.0700340928797622	REF	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3623	-0.0418204747576719	REF	155.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3625	-0.0737916633474117	REF	175.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3626	-0.0808583351091116	REF	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3627	-0.0768807889674684	REF	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3630	-0.0814423499467988	REF	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3631	-0.0850672459275313	REF	135.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3673	-0.0822044560739304	other	85.0	Deceased Donor Nephrectomy
+snRNA	TUB	comp_only	3691	-0.0536759872734112	REF		Nephrectomy
+snRNA	TUB	comp_only	3704	-0.0749729787426048	REF	95.0	Deceased Donor Nephrectomy
+snRNA	TUB	comp_only	3711	-0.0653258669502074	REF	85.0	Deceased Donor Nephrectomy
+snRNA	TUB	comp_only	3712	-0.070028550637768	REF	75.0	Nephrectomy
+snRNA	TUB	comp_only	3716	-0.0232426838316416	other	25.0	Deceased Donor Nephrectomy
+snRNA	TUB	comp_only	3723	-0.0724363459151096	REF	65.0	Nephrectomy
+snRNA	TUB	comp_only	3728	-0.0662452352814844	REF	95.0	Nephrectomy
+snRNA	TUB	comp_only	3775	-0.0767222042817154	REF	85.0	Nephrectomy
+snRNA	TUB	comp_only	3778	-0.0812341460992068	REF	105.0	Deceased Donor Nephrectomy
+snRNA	TUB	comp_only	3781	-0.0877787595463599	REF	105.0	Nephrectomy
+snRNA	TUB	comp_only	3782	-0.0577792387719317	other	115.0	Deceased Donor Nephrectomy
+snRNA	TUB	comp_only	3785	-0.0400536349816434	other	95.0	Nephrectomy
+snRNA	TUB	comp_only	3800	-0.0731126734491179	REF	95.0	Nephrectomy
+snRNA	TUB	comp_only	3804	-0.0530051932808601	other	5.0	Nephrectomy
+snRNA	TUB	comp_only	3814	-0.0395696937191758	other	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	3825	-0.0691467773263584	REF	85.0	Nephrectomy
+snRNA	TUB	comp_only	3830	-0.0773033131400828	REF	85.0	Deceased Donor Nephrectomy
+snRNA	TUB	comp_only	3893	-0.057539991408741	REF	85.0	Nephrectomy
+snRNA	TUB	comp_only	3898	-0.0938390924101069	REF	85.0	Nephrectomy
+snRNA	TUB	comp_only	3900	-0.0745014531462697	REF	75.0	Nephrectomy
+snRNA	TUB	comp_only	3903	-0.0726745318127997	other	55.0	Nephrectomy
+snRNA	TUB	comp_only	3904	-0.0555307677259784	other	35.0	Nephrectomy
+snRNA	TUB	comp_only	3907	-0.0667241389330963	REF	55.0	Nephrectomy
+snRNA	TUB	comp_only	3916	-0.0584624919332978	other	25.0	Nephrectomy
+snRNA	TUB	comp_only	3918	-0.0676035543990096	REF	95.0	Nephrectomy
+snRNA	TUB	comp_only	3948	-0.0662731205021918	REF	105.0	Deceased Donor Nephrectomy
+snRNA	TUB	comp_only	933-10003	-0.0472025181163442	DKD	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	933-10010	-0.0244491176768136	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	934-10016	-0.0562803885826831	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	934-10022	-0.043878408396171	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	934-10023	-0.0408401983179491	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	934-10032	-0.0599921594241835	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	936-10002	-0.0697536919771202	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	936-10006	-0.0469366297092219	other	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	COV-02-0002	-0.0797369229103547	other		Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	COV-02-0010	-0.0708204474031834	other		Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	COV-02-0094	-0.0649090851319348	other		Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	COV-02-0096	-0.0682754272581344	other		Percutaneous Needle Biopsy
+snRNA	TUB	comp_only	D_080	-0.079395992372623	other	115.0	Nephrectomy
+snRNA	TUB	comp_only	IU-KRP-430	-0.0743888159957908	REF	65.0	Intra-operative Biopsy
+snRNA	TUB	comp_only	KPMP_101	-0.0714348010129801	other	125.0	Nephrectomy
+snRNA	TUB	comp_only	KPMP_104	-0.0545542455679205	other	65.0	Nephrectomy
+snRNA	TUB	comp_only	KRP446	-0.0876857508070869	REF		Intra-operative Biopsy
+snRNA	TUB	comp_only	KRP460	-0.0652931964342138	REF		Intra-operative Biopsy
+snRNA	TUB	comp_only	KRP461	-0.0886556692576513	REF		Intra-operative Biopsy
+snRNA	TUB	comp_only	KRP462	-0.0709635886359711	REF		Intra-operative Biopsy
+snRNA	TUB	state_only	164-1	-0.074335729670004	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-10	-0.0841083293058548	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-11	-0.0760005861029666	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-12	-0.0884317826923284	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-13	-0.0741908526801077	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-14	-0.0768206160543905	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-17	0.0052216620120537	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-18	-0.0676684604041525	REF	85.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-20	-0.0763916273828729	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-3	-0.0835525868627671	REF	125.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-5	-0.0499108995418961	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-6	-0.0729149276468578	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-7	-0.0584750337572138	REF	95.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	164-8	-0.0627977345472461	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	165-11	-0.0849983898786441	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	165-13	-0.1000171304870675	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	165-15	-0.1159493578638361	REF	115.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	165-7	-0.1017282563751709	REF	105.0	Transplant Pre-perfusion Biopsy
+snRNA	TUB	state_only	18-142	-0.0904192811344973	other		Nephrectomy
+snRNA	TUB	state_only	18-162	-0.0195920038098612	other		Nephrectomy
+snRNA	TUB	state_only	18-312	-0.0105771948348457	other		Nephrectomy
+snRNA	TUB	state_only	21-015	-0.0874047669684744	other		Nephrectomy
+snRNA	TUB	state_only	21-016	-0.0667170131933898	other		Nephrectomy
+snRNA	TUB	state_only	21-019	-0.0968316464210403	other		Nephrectomy
+snRNA	TUB	state_only	21-020	-0.0630600470337098	other		Nephrectomy
+snRNA	TUB	state_only	21-021	-0.0768002350467436	other		Nephrectomy
+snRNA	TUB	state_only	27-10039	0.0229603731611542	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10041	-0.001189881073753	DKD	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10043	-0.0180746997818842	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10066	-0.0463827100286114	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10067	-0.0126779351148067	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10074	0.0309841213809813	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10088	-0.0099387711897656	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10089	0.0083296460458022	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10094	-0.0002329438242174	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10104	0.0050764587520246	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10154	0.0093478655268686	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10163	-0.0455069661892612	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10165	-0.0155409598829028	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10166	-0.0283179941127992	other	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10171	-0.0435411581855393	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10185	-0.0373174553407533	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10201	-0.0520874606505173	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10206	-0.0336715258121091	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10207	-0.0415508842721052	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	27-10231	-0.0273805808680277	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-10051	-0.0290763329074592	other	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-10109	0.003586513562275	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-11515	-0.0368134593407726	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-12178	-0.0031802028401404	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-12265	-0.0821928843598759	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-12372	-0.0044445953117541	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-12412	-0.0282773974077064	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-12510	-0.0392683462739903	OTHER_CKD	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-12546	0.0022409407312813	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-12558	-0.0380119278444293	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	28-12579	0.0165790557404768	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10006	-0.0265700258012683	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10008	0.0023190846032901	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10010	-0.0113376609107745	other	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10011	0.015188657743466	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10012	0.0232483261298109	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10013	0.0046019010185849	OTHER_CKD	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10016	-0.0052313239582613	DKD	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10276	-0.0068342543199639	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10277	-0.0012846560220117	DKD	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10280	0.0284001663333836	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10380	-0.0018938589139735	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10395	-0.0100275384173083	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10399	-0.0124950976824942	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10400	0.0041787982602687	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10401	-0.0361669876990767	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10402	0.0350658390507179	other	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10404	0.0136996217598193	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10410	0.0256735398819911	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10422	-0.0056120986046458	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10439	-0.0005220800658902	DKD	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	29-10662	0.0104169309454736	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-10018	0.0599727050237145	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-10034	0.0160179537666693	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-10125	0.0300574750506016	other	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-10631	0.020779805455299	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-10868	0.0532523363812705	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-10929	0.0511606751115469	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-11051	0.0243404001182018	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-11080	0.0488985703242993	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-11081	0.0481033847559427	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	30-11084	-0.0274653675999458	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10000	0.0005008246542864	other	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10001	0.005228635492364	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10035	0.0004158943635111	OTHER_CKD	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10061	0.0139728795216823	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10063	-0.0085038612460657	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10078	0.0271143226880866	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10081	0.0019748739631527	DKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10090	0.0098875076264547	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10091	-0.0431696887633505	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10100	0.0061035049277582	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10105	8.975038820868697e-05	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10169	-0.0520613285879911	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10177	0.0461713870385463	OTHER_CKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10210	0.003912522679255	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10221	-0.0087971084914142	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10236	0.0511164328815006	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10322	-0.0121453709019724	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	31-10340	-0.0408588696700993	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	32-10003	0.0149076086508253	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	32-10034	0.029712011533153	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	32-10074	0.0360672360437209	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	32-10205	0.0389506809718814	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	32-10333	0.0168546147943444	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	32-10346	-0.0472989418163425	other	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	32-10419	0.0437673329920641	other	125.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	32-10458	0.077161281225748	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	32-2	0.0441264433016121	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	33-10005	0.0447990209042241	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	33-10006	0.0388904863074606	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	33-10331	0.0620280720038333	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	33-10376	-0.0399138869582388	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	34-10050	0.0258900831941861	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	34-10184	-0.0125128424274646	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	34-10187	0.0057725452052918	other	65.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	34-10209	0.0703178521896414	other	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	34-10306	0.0527355070893895	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	34-10331	0.0127395349159328	other	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	34-10393	0.0091407492463853	other	85.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	34-10579	0.043510936870679	other	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3477	-0.0110204784884622	other	25.0	Nephrectomy
+snRNA	TUB	state_only	3479	-0.0469432029648369	other	45.0	Nephrectomy
+snRNA	TUB	state_only	3487	-0.0113597211220394	other	55.0	Nephrectomy
+snRNA	TUB	state_only	3510	-0.0826370989709389	REF	75.0	Nephrectomy
+snRNA	TUB	state_only	3535	-0.0605501074533716	other	55.0	Nephrectomy
+snRNA	TUB	state_only	3579	-0.0397187991699963	REF	75.0	Nephrectomy
+snRNA	TUB	state_only	3609	-0.0808031476036685	other	65.0	Nephrectomy
+snRNA	TUB	state_only	3612	-0.0378803670262319	other	75.0	Deceased Donor Nephrectomy
+snRNA	TUB	state_only	3619	-0.0691543859458627	REF	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3621	-0.0473404129253924	REF	115.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3622	-0.0885148945708957	REF	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3623	-0.0398556716659598	REF	155.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3625	-0.0921804960134309	REF	175.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3626	-0.0851380552469481	REF	75.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3627	-0.08880963395832	REF	95.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3630	-0.0966799264588863	REF	105.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3631	-0.0936096592525208	REF	135.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3673	-0.0229962019720358	other	85.0	Deceased Donor Nephrectomy
+snRNA	TUB	state_only	3691	-0.0685366956801726	REF		Nephrectomy
+snRNA	TUB	state_only	3704	-0.0139502494252516	REF	95.0	Deceased Donor Nephrectomy
+snRNA	TUB	state_only	3711	0.0158703578589989	REF	85.0	Deceased Donor Nephrectomy
+snRNA	TUB	state_only	3712	-0.0535389973202006	REF	75.0	Nephrectomy
+snRNA	TUB	state_only	3716	0.0314571652210017	other	25.0	Deceased Donor Nephrectomy
+snRNA	TUB	state_only	3723	-0.0787671784705284	REF	65.0	Nephrectomy
+snRNA	TUB	state_only	3728	-0.0405299415229956	REF	95.0	Nephrectomy
+snRNA	TUB	state_only	3775	-0.0984286212652459	REF	85.0	Nephrectomy
+snRNA	TUB	state_only	3778	-0.0271380403516284	REF	105.0	Deceased Donor Nephrectomy
+snRNA	TUB	state_only	3781	-0.0782067855904767	REF	105.0	Nephrectomy
+snRNA	TUB	state_only	3782	0.0189933242172594	other	115.0	Deceased Donor Nephrectomy
+snRNA	TUB	state_only	3785	0.0269913536500612	other	95.0	Nephrectomy
+snRNA	TUB	state_only	3800	-0.0979829710655997	REF	95.0	Nephrectomy
+snRNA	TUB	state_only	3804	-0.050208871178773	other	5.0	Nephrectomy
+snRNA	TUB	state_only	3814	-0.0080332405055654	other	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	3825	-0.0090889157979099	REF	85.0	Nephrectomy
+snRNA	TUB	state_only	3830	-0.0006135009571804	REF	85.0	Deceased Donor Nephrectomy
+snRNA	TUB	state_only	3893	-0.0344098055189874	REF	85.0	Nephrectomy
+snRNA	TUB	state_only	3898	-0.1055026797827604	REF	85.0	Nephrectomy
+snRNA	TUB	state_only	3900	-0.070400646498613	REF	75.0	Nephrectomy
+snRNA	TUB	state_only	3903	-0.0602090725091954	other	55.0	Nephrectomy
+snRNA	TUB	state_only	3904	0.0146259853227516	other	35.0	Nephrectomy
+snRNA	TUB	state_only	3907	-0.0482038020023696	REF	55.0	Nephrectomy
+snRNA	TUB	state_only	3916	-0.0212547460123614	other	25.0	Nephrectomy
+snRNA	TUB	state_only	3918	-0.0551537734628674	REF	95.0	Nephrectomy
+snRNA	TUB	state_only	3948	-0.0319223220243406	REF	105.0	Deceased Donor Nephrectomy
+snRNA	TUB	state_only	933-10003	0.0115413448294564	DKD	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	933-10010	-0.0338693542694702	DKD	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	934-10016	-0.0181042555056728	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	934-10022	0.0185695732689439	OTHER_CKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	934-10023	0.0057226911289568	DKD	45.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	934-10032	-0.0027121835601681	OTHER_CKD	55.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	936-10002	0.0091104800785719	other	35.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	936-10006	0.0277136591712244	other	25.0	Percutaneous Needle Biopsy
+snRNA	TUB	state_only	COV-02-0002	-0.0168503689323461	other		Percutaneous Needle Biopsy
+snRNA	TUB	state_only	COV-02-0010	-0.0435240572802968	other		Percutaneous Needle Biopsy
+snRNA	TUB	state_only	COV-02-0094	0.0168675655434942	other		Percutaneous Needle Biopsy
+snRNA	TUB	state_only	COV-02-0096	-0.0343124552118113	other		Percutaneous Needle Biopsy
+snRNA	TUB	state_only	D_080	-0.0816139375849241	other	115.0	Nephrectomy
+snRNA	TUB	state_only	IU-KRP-430	-0.0980229717839153	REF	65.0	Intra-operative Biopsy
+snRNA	TUB	state_only	KPMP_101	-0.0628374742494556	other	125.0	Nephrectomy
+snRNA	TUB	state_only	KPMP_104	-0.0360978706340833	other	65.0	Nephrectomy
+snRNA	TUB	state_only	KRP446	-0.1028862195293711	REF		Intra-operative Biopsy
+snRNA	TUB	state_only	KRP460	-0.0572919478027649	REF		Intra-operative Biopsy
+snRNA	TUB	state_only	KRP461	-0.0823536224285086	REF		Intra-operative Biopsy
+snRNA	TUB	state_only	KRP462	-0.0708875459436195	REF		Intra-operative Biopsy

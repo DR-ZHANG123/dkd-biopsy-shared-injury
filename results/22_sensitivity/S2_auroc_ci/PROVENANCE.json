@@ -1,0 +1,29 @@
+{
+  "stage": "22_sensitivity/S2_auroc_ci",
+  "time": "2026-09-30T11:39:23",
+  "seed": 20260928,
+  "config_sha": "091814e9f10ccba1",
+  "git_commit": "c26a1c7ac0e08269dc36561a2c099aff34dcf2ec",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/replicate/scores.tsv": "689352cb36355162a3576f0a2b3ff921",
+    "results/19_shared_program/replicate/auroc.tsv": "9be38499a50f20727b08dbb4b7e47608",
+    "results/17_independent/test_samples.tsv": "52ad89de0d5a9a4809f5a513e61a0826"
+  },
+  "outputs": {
+    "results/22_sensitivity/S2_auroc_ci/auroc_ci.tsv": "e98ea94d39009c7f640c71bb581548a0"
+  },
+  "extra": {
+    "n_boot": 2000,
+    "gene_set": "full"
+  }
+}

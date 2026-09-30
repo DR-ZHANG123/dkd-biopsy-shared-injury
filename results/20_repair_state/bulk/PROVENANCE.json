@@ -1,0 +1,64 @@
+{
+  "stage": "20_repair_state/bulk",
+  "time": "2026-09-29T15:56:40",
+  "seed": 20260928,
+  "config_sha": "8efb02bebfeb6666",
+  "git_commit": "e0ae2e2f585882a8f14e15bcf21e42cec1daaf18",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/16_deconv/run/all/theta_state.tsv": "0f3f336b3fdbcf363daa9aa97129485b",
+    "results/20_repair_state/programs/program_sets.tsv": "bdcb5315e28f07943de62b55f6a0169f"
+  },
+  "outputs": {
+    "results/20_repair_state/bulk/sample_measures.tsv.gz": "2121ceaadf741cb55e97bc81503792d6",
+    "results/20_repair_state/bulk/unit_contrasts.tsv": "377103a74d02857c0ac2a28c94e87a3c",
+    "results/20_repair_state/bulk/meta_contrasts.tsv": "6d8928b7b9719368e6fdd58ecae699d9",
+    "results/20_repair_state/bulk/scp_relation.tsv": "77bf4539b3f51f84952402978b32dfff",
+    "results/20_repair_state/bulk/resolvability.tsv": "62a4166ee9c3593ccd45067b4496474d"
+  },
+  "extra": {
+    "bulk": {
+      "theta_run": "all",
+      "reference": "scRNA",
+      "units": [
+        "ERCB_TUB_H1",
+        "ERCB_TUB_H7",
+        "GSE108112-GPL19983",
+        "GSE30529-GPL571CEL",
+        "GSE133288-GPL19983",
+        "GSE182380-RNAseq",
+        "GSE175759-RNAseq",
+        "GSE142025-RNAseq",
+        "GSE115857-GPL14951"
+      ],
+      "diseases": [
+        "DKD",
+        "LN",
+        "RPGN",
+        "MN",
+        "FSGS",
+        "MCD",
+        "IgAN",
+        "HT"
+      ],
+      "min_group": 5,
+      "eps": 0.001,
+      "clinical_cohorts": [
+        "GSE175759-RNAseq",
+        "GSE142025-RNAseq",
+        "GSE115857-GPL14951",
+        "KPMP",
+        "GSE166239"
+      ]
+    }
+  }
+}

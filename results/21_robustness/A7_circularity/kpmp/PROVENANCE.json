@@ -1,0 +1,33 @@
+{
+  "stage": "21_robustness/A7_circularity/kpmp",
+  "time": "2026-09-29T22:56:23",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/core_genes.tsv": "30126b9174cb46ab25443d97a3165716",
+    "results/19_shared_program/kpmp/core_procurement.tsv": "0fe483b7c3b1b9e6edd380ac2883dac8",
+    "results/20_repair_state/genes/driver_calls.tsv": "4517c89b869376fba16717b5cdde57ba",
+    "results/20_repair_state/programs/program_sets.tsv": "bdcb5315e28f07943de62b55f6a0169f",
+    "results/20_repair_state/donors/donor_table.tsv": "c2c0147b8777427406bee5600cb0986d"
+  },
+  "outputs": {
+    "results/21_robustness/A7_circularity/kpmp/fraction_score.tsv": "13b61def228922a79a3df7243b19f75d",
+    "results/21_robustness/A7_circularity/kpmp/program_vs_score.tsv": "9db0e189d0a3d0ebbda4d077abd9d9fb",
+    "results/21_robustness/A7_circularity/kpmp/score_gene_counts.tsv": "c287c4916b4e6a3aac1e1624ae287dd0"
+  },
+  "extra": {
+    "n_boot": 1000,
+    "n_perm": 1000
+  }
+}

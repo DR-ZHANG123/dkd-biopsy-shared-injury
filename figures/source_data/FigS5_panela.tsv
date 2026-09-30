@@ -1,0 +1,8 @@
+compartment	kind	a	b	spearman_g	n_core_loo	n_core_full	frac_full_core_retained	y
+GLOM	leave_one_out	ERCB_GLOM_H1		0.960353	1719	1378	0.735123	0
+GLOM	leave_one_out	ERCB_GLOM_H7		0.960941	1000	1378	0.592163	-1
+GLOM	leave_one_out	GSE108109-GPL19983		0.953694	1414	1378	0.7627	-2
+GLOM	leave_one_out	GSE93798-GPL22945		0.947322	1113	1378	0.666909	-3
+TUB	leave_one_out	ERCB_TUB_H1		0.751276	1341	907	0.68247	-4.6
+TUB	leave_one_out	ERCB_TUB_H7		0.933466	1049	907	0.644983	-5.6
+TUB	leave_one_out	GSE108112-GPL19983		0.957079	1975	907	0.804851	-6.6

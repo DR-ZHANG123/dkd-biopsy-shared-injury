@@ -1,0 +1,8 @@
+box	x_mm	y_mm	w_mm	h_mm	text
+a_title	0	60	55	6	Unique biopsy specimens
+a1	1	49.6	53	8	25 series–platform versions (GEO) | scale check: 24 kept, GSE116626 excluded
+a2	1	39.2	53	8	2,179 samples, 19 GEO series, 13 platforms | 3 RNA-seq series, 21 array versions
+a3	1	25.8	53	11	Copies of a specimen across series: | specimen identifiers + residual correlation | (10 PCs removed; r ≥ 0.5, 0.8 within series)
+a4	1	16.9	53	6.5	1,462 unique specimens (1,045 duplicate links)
+a5	1	3.5	21.42	11	9 cohorts sharing | no specimen
+a6	24.42	3.5	29.58	11	sc/snRNA references | GSE131882, GSE209781 | KPMP atlas v2

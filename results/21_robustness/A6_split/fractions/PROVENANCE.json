@@ -1,0 +1,26 @@
+{
+  "stage": "21_robustness/A6_split/fractions",
+  "time": "2026-09-29T22:59:19",
+  "seed": 20260928,
+  "config_sha": "ce58b7b80e8761ca",
+  "git_commit": "c3b85889a633a1bab47620626780fa4bfd422335",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/20_repair_state/donors/category_tests.tsv": "d256e56ef65590b6fcab3e7ed79df3a1",
+    "results/20_repair_state/donors/correlations.tsv": "df4ddb711e6aee0dd98e76633dc78522"
+  },
+  "outputs": {
+    "results/21_robustness/A6_split/fractions/category_tests.tsv": "22c74c14bfb42dbf53c642af5fa9b869",
+    "results/21_robustness/A6_split/fractions/egfr_correlations.tsv": "63d8a981fc1a482f709053478ce4ae6e"
+  },
+  "extra": {}
+}

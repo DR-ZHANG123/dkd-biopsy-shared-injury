@@ -1,0 +1,103 @@
+{
+  "stage": "22_sensitivity/S3_deconv",
+  "time": "2026-09-30T11:42:34",
+  "seed": 20260928,
+  "config_sha": "091814e9f10ccba1",
+  "git_commit": "c26a1c7ac0e08269dc36561a2c099aff34dcf2ec",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/processed/deconv/reference/scRNA_TUB/counts_triplet.parquet": "e07ff411a48e071de0d973913f7a433f",
+    "data/processed/deconv/reference/scRNA_TUB/rows.tsv": "0901d98c5e43824faf827e2c6d22a86d",
+    "data/processed/deconv/reference/scRNA_TUB/markers.txt": "5e8d6572fdf0c64acac8c6b0c00c50fe",
+    "results/20_repair_state/bulk/resolvability.tsv": "62a4166ee9c3593ccd45067b4496474d",
+    "results/16_deconv/run/all/theta_type.tsv": "2d71a89eff5b522ae7cb7e8a7cfc6331"
+  },
+  "outputs": {
+    "results/22_sensitivity/S3_deconv/profile_similarity.tsv": "df59393f885c50128b94594f6b674f23",
+    "results/22_sensitivity/S3_deconv/marker_coverage.tsv": "c21af8712f109ec9b608b59f87a8490f",
+    "results/22_sensitivity/S3_deconv/bulk_platform_shares.tsv": "92a77b0f46748d253ba352b5cb77573e",
+    "results/22_sensitivity/S3_deconv/sim_truth.tsv": "c09a2375c4b259651cfc1ca2951eca1e",
+    "results/22_sensitivity/S3_deconv/sim_recovery.tsv": "aeb4691d19ed4eefe0a0c3e3075cb33f",
+    "results/22_sensitivity/S3_deconv/sim_summary.tsv": "0b4cdd4b500e9bf1a2d3c606df433116"
+  },
+  "extra": {
+    "holdout_donors": [
+      "21-020",
+      "28-12490",
+      "29-10280",
+      "29-10404",
+      "29-10410",
+      "30-10034",
+      "31-10042",
+      "32-10034",
+      "33-10005",
+      "Sample1158-EO2"
+    ],
+    "s3": {
+      "reference": "scRNA",
+      "normal_pt": [
+        "PT-S1/S2",
+        "PT-S2/S3",
+        "PT-S1",
+        "PT-S2",
+        "PT-S3"
+      ],
+      "injured_pt": [
+        "aPT",
+        "frPT"
+      ],
+      "n_holdout": 10,
+      "min_cells_state": 20,
+      "min_cells_normal": 50,
+      "shares": [
+        0.0,
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "apt_to_frpt": [
+        2,
+        1
+      ],
+      "depth": 20000000,
+      "ercb_genes_from": "GSE104954-GPL22945",
+      "modes": {
+        "seq_all": {
+          "kind": "seq",
+          "genes": "all"
+        },
+        "seq_ercb": {
+          "kind": "seq",
+          "genes": "ercb"
+        },
+        "array_ercb": {
+          "kind": "array",
+          "genes": "ercb",
+          "bias_sd": 0.5,
+          "floor_log2": 3.0,
+          "noise_sd": 0.1
+        },
+        "array_ercb_strong": {
+          "kind": "array",
+          "genes": "ercb",
+          "bias_sd": 1.0,
+          "floor_log2": 5.0,
+          "noise_sd": 0.2
+        }
+      },
+      "n_cores": 32,
+      "out_dir": "data/processed/deconv/sensitivity22"
+    }
+  }
+}

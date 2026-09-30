@@ -1,0 +1,5 @@
+gene_symbol	probe_set	direction	source_rank_or_stat	symbol_raw	gene_title
+MYBL1	213906_at	cell_type_associated (NK cell burden)	file_row=1	MYBL1	v-myb myeloblastosis viral oncogene homolog (avian)-like 1
+CX3CR1	205898_at	cell_type_associated (NK cell burden)	file_row=2	CX3CR1	chemokine (C-X3-C motif) receptor 1
+KLRF1	220646_s_at	cell_type_associated (NK cell burden)	file_row=3	KLRF1	killer cell lectin-like receptor subfamily F, member 1
+SH2D1B	1553177_at	cell_type_associated (NK cell burden)	file_row=4	SH2D1B	SH2 domain-containing molecule EAT2

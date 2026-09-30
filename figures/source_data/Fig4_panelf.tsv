@@ -1,0 +1,6 @@
+cohort	test	n	rho_program	p_program	partial_rho_given_scp	p_partial	rho_scp	p_scp	auroc_program	auroc_program_given_scp_resid	auroc_scp
+GSE175759-RNAseq	egfr_patients	65	-0.377482	0.000999001	-0.363418	0.002997	-0.215414	0.0899101			
+GSE115857-GPL14951	iga_grade_G1_G3	55	0.439339	0.000999001	0.370924	0.004995	0.295687	0.027972			
+KPMP	egfr_bin_patients	16	0.0297865	0.923077	0.114706	0.686314	0.0163825	0.948052			
+KPMP	proteinuria_cat_patients	13	0.345099	0.224775	0.0549451	0.863137	0.669898	0.015984			
+GSE142025-RNAseq	advanced_vs_early_DN	27							0.952381	0.468254	0.992063

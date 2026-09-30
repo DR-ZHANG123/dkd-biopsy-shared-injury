@@ -1,0 +1,81 @@
+{
+  "stage": "20_repair_state/programs",
+  "time": "2026-09-29T15:47:30",
+  "seed": 20260928,
+  "config_sha": "8efb02bebfeb6666",
+  "git_commit": "e0ae2e2f585882a8f14e15bcf21e42cec1daaf18",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "data/processed/kpmp/snRNA/source.json": "2e4c8e2bd82a425d9d957fd4d7b1b2e7",
+    "data/processed/kpmp/scRNA/source.json": "7c7ccedbaf00add45c8bd6353e3006ae"
+  },
+  "outputs": {
+    "results/20_repair_state/programs/programs.tsv.gz": "7bafffb0991f8ddeb4cd541aee90f153",
+    "results/20_repair_state/programs/program_summary.tsv": "2c0ba3911c7bc9195f7bd90c86c64410",
+    "results/20_repair_state/programs/program_sets.tsv": "bdcb5315e28f07943de62b55f6a0169f",
+    "results/20_repair_state/programs/fractions.tsv.gz": "9cc337f098ac27cb92304396997c7706"
+  },
+  "extra": {
+    "program": {
+      "min_log2cpm": 1.0,
+      "fdr": 0.05,
+      "lfc": 1.0,
+      "rep_lfc": 0.5,
+      "n_top": 100
+    },
+    "min_cells": 20,
+    "lineages": {
+      "PT": {
+        "normal": [
+          "PT-S1",
+          "PT-S2",
+          "PT-S3",
+          "PT-S1/S2",
+          "PT-S2/S3"
+        ],
+        "aPT": [
+          "aPT"
+        ],
+        "frPT": [
+          "frPT"
+        ],
+        "dPT": [
+          "dPT"
+        ],
+        "cycPT": [
+          "cycPT"
+        ]
+      },
+      "TAL": {
+        "normal": [
+          "C-TAL",
+          "M-TAL",
+          "C/M-TAL"
+        ],
+        "aTAL": [
+          "aTAL"
+        ],
+        "frTAL": [
+          "frTAL"
+        ],
+        "dTAL": [
+          "dC-TAL",
+          "dM-TAL",
+          "dTAL"
+        ],
+        "cycTAL": [
+          "cycTAL"
+        ]
+      }
+    }
+  }
+}

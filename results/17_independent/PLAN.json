@@ -1,0 +1,15 @@
+{
+  "registered_at": "2026-09-29",
+  "frozen_design": "results/15_model/FROZEN_DESIGN.json (commit f3b8611); section-wise check scripts/lib/freeze.py",
+  "training": "stage 15 E1 protocol: all labelled units of the compartment, minus any sample duplicated in the test cohort",
+  "tests": [
+    {"cohort": "GSE162830", "compartment_model": "GLOM", "primary": "DKD vs ING (idiopathic nodular glomerulosclerosis)", "secondary": "DKD vs healthy reference",
+     "notes": "DIA1 and DIA18 are the same patient: keep DIA1 only; ING is a morphological mimic of DKD without diabetes"},
+    {"cohort": "KPMP biopsy-section bulk (open tier)", "compartment_model": "TUB (WHOLE sections, as for GSE142025)", "primary": "DKD vs other CKD (HKD + Other)", "secondary": "DKD vs healthy reference",
+     "notes": "reference tissue is pilot nephrectomy: secondary contrast confounded by procurement; CKD-unclassified excluded"},
+    {"cohort": "GSE166239", "compartment_model": "TUB (WHOLE FFPE sections)", "primary": "DKD vs HKD", "secondary": "DKD vs healthy reference"}
+  ],
+  "excluded": {"KPMP LMD": "DKD < 5 and other CKD = 1 per compartment", "GSE45980": "filtered matrix, gene overlap too low", "GSE163603": "no other CKD; overlaps KPMP AKI"},
+  "metrics": "raw AUROC and shared-axis-adjusted AUROC (axis from training sources only); paired patient bootstrap vs B-L2 and B-cPCA; all comparators of FROZEN_DESIGN.json",
+  "reporting": "every cohort and contrast reported regardless of outcome; each scored exactly once"
+}

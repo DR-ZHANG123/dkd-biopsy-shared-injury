@@ -1,0 +1,6 @@
+subset	categories	n_donors	n_with_egfr	median_egfr	n_AKI
+all_categorised	REF,DKD,HKD,OTHER,AKI,DM_R,CKD_unadj	178	169	75.0	37
+all_categorised_noAKI	REF,DKD,HKD,OTHER,DM_R,CKD_unadj	141	136	65.0	0
+REF+CKD	REF,DKD,HKD,OTHER	108	103	65.0	0
+CKD	DKD,HKD,OTHER	56	56	45.0	0
+AKI	AKI	37	33	75.0	37

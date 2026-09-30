@@ -1,0 +1,67 @@
+dataset	contrast	component	source_components	share_of_full	n_A	n_B	share_of_PT_TAL_within_cell
+snRNA	CKD_vs_REF	composition	composition	0.214502	56	52	
+snRNA	CKD_vs_REF	adaptive_fraction	adaptive_fraction	0.0312522	56	52	
+snRNA	CKD_vs_REF	adaptive_cell_profile	adaptive_cell_profile	0.0852668	56	52	
+snRNA	CKD_vs_REF	failed_repair_fraction	failed_repair_fraction	0.0512194	56	52	
+snRNA	CKD_vs_REF	failed_repair_cell_profile	failed_repair_cell_profile	0.0412546	56	52	
+snRNA	CKD_vs_REF	PT_TAL_normal_cell_profile	PT_TAL_normal_cell_profile	0.216389	56	52	
+snRNA	CKD_vs_REF	PT_TAL_other	PT_TAL_other_altered_profile;PT_TAL_other_state_mix	0.0727817	56	52	
+snRNA	CKD_vs_REF	other_lineage_state_mix	other_lineage_state_mix	0.0362018	56	52	
+snRNA	CKD_vs_REF	other_lineage_profile	other_lineage_profile	0.251132	56	52	
+snRNA	CKD_vs_REF	adaptive_share_of_PT_TAL_within_cell					0.233897
+snRNA	CKD_vs_REF	failed_repair_share_of_PT_TAL_within_cell					0.18563
+scRNA	CKD_vs_REF	composition	composition	0.210872	41	38	
+scRNA	CKD_vs_REF	adaptive_fraction	adaptive_fraction	0.044987	41	38	
+scRNA	CKD_vs_REF	adaptive_cell_profile	adaptive_cell_profile	0.169997	41	38	
+scRNA	CKD_vs_REF	failed_repair_fraction	failed_repair_fraction	0.0368699	41	38	
+scRNA	CKD_vs_REF	failed_repair_cell_profile	failed_repair_cell_profile	0.0336624	41	38	
+scRNA	CKD_vs_REF	PT_TAL_normal_cell_profile	PT_TAL_normal_cell_profile	0.131906	41	38	
+scRNA	CKD_vs_REF	PT_TAL_other	PT_TAL_other_altered_profile;PT_TAL_other_state_mix	0.022341	41	38	
+scRNA	CKD_vs_REF	other_lineage_state_mix	other_lineage_state_mix	0.100886	41	38	
+scRNA	CKD_vs_REF	other_lineage_profile	other_lineage_profile	0.248478	41	38	
+scRNA	CKD_vs_REF	adaptive_share_of_PT_TAL_within_cell					0.488863
+scRNA	CKD_vs_REF	failed_repair_share_of_PT_TAL_within_cell					0.160387
+snRNA	CKD_perc_vs_REF_perc	composition	composition	0.158009	56	9	
+snRNA	CKD_perc_vs_REF_perc	adaptive_fraction	adaptive_fraction	0.0320309	56	9	
+snRNA	CKD_perc_vs_REF_perc	adaptive_cell_profile	adaptive_cell_profile	0.0906035	56	9	
+snRNA	CKD_perc_vs_REF_perc	failed_repair_fraction	failed_repair_fraction	0.0541064	56	9	
+snRNA	CKD_perc_vs_REF_perc	failed_repair_cell_profile	failed_repair_cell_profile	0.0406701	56	9	
+snRNA	CKD_perc_vs_REF_perc	PT_TAL_normal_cell_profile	PT_TAL_normal_cell_profile	0.257046	56	9	
+snRNA	CKD_perc_vs_REF_perc	PT_TAL_other	PT_TAL_other_altered_profile;PT_TAL_other_state_mix	0.0506819	56	9	
+snRNA	CKD_perc_vs_REF_perc	other_lineage_state_mix	other_lineage_state_mix	0.00220196	56	9	
+snRNA	CKD_perc_vs_REF_perc	other_lineage_profile	other_lineage_profile	0.31465	56	9	
+snRNA	CKD_perc_vs_REF_perc	adaptive_share_of_PT_TAL_within_cell					0.233528
+snRNA	CKD_perc_vs_REF_perc	failed_repair_share_of_PT_TAL_within_cell					0.180479
+snRNA	DKD_vs_REF	composition	composition	0.245685	29	52	
+snRNA	DKD_vs_REF	adaptive_fraction	adaptive_fraction	0.0394262	29	52	
+snRNA	DKD_vs_REF	adaptive_cell_profile	adaptive_cell_profile	0.0901967	29	52	
+snRNA	DKD_vs_REF	failed_repair_fraction	failed_repair_fraction	0.0595726	29	52	
+snRNA	DKD_vs_REF	failed_repair_cell_profile	failed_repair_cell_profile	0.0431151	29	52	
+snRNA	DKD_vs_REF	PT_TAL_normal_cell_profile	PT_TAL_normal_cell_profile	0.183898	29	52	
+snRNA	DKD_vs_REF	PT_TAL_other	PT_TAL_other_altered_profile;PT_TAL_other_state_mix	0.0655194	29	52	
+snRNA	DKD_vs_REF	other_lineage_state_mix	other_lineage_state_mix	0.0384544	29	52	
+snRNA	DKD_vs_REF	other_lineage_profile	other_lineage_profile	0.234133	29	52	
+snRNA	DKD_vs_REF	adaptive_share_of_PT_TAL_within_cell					0.269079
+snRNA	DKD_vs_REF	failed_repair_share_of_PT_TAL_within_cell					0.213166
+snRNA	HKD_vs_REF	composition	composition	0.20369	23	52	
+snRNA	HKD_vs_REF	adaptive_fraction	adaptive_fraction	0.0201963	23	52	
+snRNA	HKD_vs_REF	adaptive_cell_profile	adaptive_cell_profile	0.0790803	23	52	
+snRNA	HKD_vs_REF	failed_repair_fraction	failed_repair_fraction	0.0363114	23	52	
+snRNA	HKD_vs_REF	failed_repair_cell_profile	failed_repair_cell_profile	0.0344457	23	52	
+snRNA	HKD_vs_REF	PT_TAL_normal_cell_profile	PT_TAL_normal_cell_profile	0.246497	23	52	
+snRNA	HKD_vs_REF	PT_TAL_other	PT_TAL_other_altered_profile;PT_TAL_other_state_mix	0.0767552	23	52	
+snRNA	HKD_vs_REF	other_lineage_state_mix	other_lineage_state_mix	0.0347752	23	52	
+snRNA	HKD_vs_REF	other_lineage_profile	other_lineage_profile	0.268249	23	52	
+snRNA	HKD_vs_REF	adaptive_share_of_PT_TAL_within_cell					0.201256
+snRNA	HKD_vs_REF	failed_repair_share_of_PT_TAL_within_cell					0.14344
+snRNA	AKI_vs_REF	composition	composition	0.181054	37	52	
+snRNA	AKI_vs_REF	adaptive_fraction	adaptive_fraction	0.0664552	37	52	
+snRNA	AKI_vs_REF	adaptive_cell_profile	adaptive_cell_profile	0.104248	37	52	
+snRNA	AKI_vs_REF	failed_repair_fraction	failed_repair_fraction	0.0242501	37	52	
+snRNA	AKI_vs_REF	failed_repair_cell_profile	failed_repair_cell_profile	0.0242502	37	52	
+snRNA	AKI_vs_REF	PT_TAL_normal_cell_profile	PT_TAL_normal_cell_profile	0.223584	37	52	
+snRNA	AKI_vs_REF	PT_TAL_other	PT_TAL_other_altered_profile;PT_TAL_other_state_mix	0.0868049	37	52	
+snRNA	AKI_vs_REF	other_lineage_state_mix	other_lineage_state_mix	0.0447525	37	52	
+snRNA	AKI_vs_REF	other_lineage_profile	other_lineage_profile	0.244601	37	52	
+snRNA	AKI_vs_REF	adaptive_share_of_PT_TAL_within_cell					0.322329
+snRNA	AKI_vs_REF	failed_repair_share_of_PT_TAL_within_cell					0.0915805

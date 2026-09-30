@@ -1,0 +1,28 @@
+{
+  "stage": "18_interpret/programs",
+  "time": "2026-09-29T11:25:09",
+  "seed": 20260928,
+  "config_sha": "b03749c0404aa7a0",
+  "git_commit": "1c66716a574febb809630b8f0eebb8726652aca7",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/18_interpret/weights/program_weights.tsv": "32aefc69b4579eb92c0f426a7e6bb468",
+    "results/13_celltype/celltype_enrichment.tsv": "f82e619768825263787921ea9d3a43bf",
+    "results/14_kpmp/celltype_enrichment_kpmp.tsv": "a68ff628933acbdf0de23fa3847a440e",
+    "results/14_kpmp/abundance_tests.tsv": "4c1d928f19b167a9ea6e755eb5855009"
+  },
+  "outputs": {
+    "results/18_interpret/programs/program_atlas.tsv": "38183f5c47ddc4e4a091789eb3f80a43",
+    "results/18_interpret/programs/program_concordance.tsv": "e4c0f3f33acc0dd40bba35e6cfb54f1d"
+  },
+  "extra": {}
+}

@@ -1,0 +1,31 @@
+accession	technology	compartment	role	source_url
+GSE30528	HG-U133A_2 (CEL)	glomerulus	eval_T1	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30528
+GSE30529	HG-U133A_2 (CEL)	tubulointerstitium	eval_T1	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30529
+GSE96804	HTA-2.0	glomerulus	eval_T1	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE96804
+GSE99339	ERCB arrays (GPL19184/GPL19109)	glomerulus	eval_T1_T2	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE99339
+GSE104948	ERCB arrays (GPL24120/GPL22945)	glomerulus	eval_T1_T2	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE104948
+GSE104954	ERCB arrays (GPL24120/GPL22945)	tubulointerstitium	eval_T1_T2	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE104954
+GSE175759	RNA-seq	tubulointerstitium	external_T1	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE175759
+GSE142025	RNA-seq	kidney biopsy	external_T1_T3	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142025
+GSE47183	array	mixed	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47183
+GSE37460	array	glomerulus	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37460
+GSE32591	array	mixed	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE32591
+GSE93798	array	glomerulus	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE93798
+GSE69438	array	tubulointerstitium	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE69438
+GSE116626	array	mixed	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116626
+GSE115857	array	mixed	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115857
+GSE108109	array	glomerulus	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE108109
+GSE108112	array	tubulointerstitium	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE108112
+GSE133288	array	tubulointerstitium	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133288
+GSE200818	array	tubulointerstitium	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200818
+GSE182380	RNA-seq	tubulointerstitium	pretrain	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE182380
+GSE131882	snRNA-seq	kidney cortex	prior_graph_controls_only	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131882
+GSE209781	scRNA-seq	kidney	prior_graph_controls_only	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209781
+STRING_v12	PPI	-	prior_graph	https://stringdb-downloads.org/download/protein.links.v12.0/9606.protein.links.v12.0.txt.gz
+KPMP_snRNA_v2.0	snRNA-seq (10x 3p v3 / multiome); CELLxGENE dataset 7ff0197b-d175-49bf-b4fa-150fe0995d93, version 06b8d9c2-0bde-48bd-88d9-730993fc95e2	kidney (biopsy/nephrectomy)	celltype_reference_healthy_and_donor_level_validation	https://datasets.cellxgene.cziscience.com/06b8d9c2-0bde-48bd-88d9-730993fc95e2.h5ad
+KPMP_scRNA_v2.0	scRNA-seq (10x 3p v3); CELLxGENE dataset 91f31e05-56d8-46fc-b408-d90c9228a81b, version 255ce81a-eb4e-48ff-9f18-e50455ccb24d	kidney (biopsy/nephrectomy)	celltype_reference_healthy_and_donor_level_validation	https://datasets.cellxgene.cziscience.com/255ce81a-eb4e-48ff-9f18-e50455ccb24d.h5ad
+KPMP_RegionalTranscriptomics_open	RNA-seq, laser microdissection (Glom/Ti/PT/TAL/DCT/CD/INT/Vessel/section Bulk); KPMP atlas repository open tier, per-participant non-normalized counts + pilot sub-segmental counts (March 2020 FTF 1.zip)	glomerulus / tubulointerstitium / section bulk	independent_test_candidate (stage 17a; LMD GLOM/TI below min_test_pos, not evaluated)	https://atlas.kpmp.org/repository (experimental_strategy = Regional Transcriptomics; file list + md5 in results/00_download/kpmp_lmd_checksums.tsv)
+KPMP_BulkTotalmRNA_open	RNA-seq, biopsy section bulk total/mRNA; KPMP atlas repository open tier	kidney biopsy (whole section)	independent_test_candidate (stage 17a)	https://atlas.kpmp.org/repository (experimental_strategy = Bulk Total/mRNA)
+GSE162830	RNA-seq, laser microdissected glomeruli (author quantile-normalized table)	glomerulus	independent_test_candidate (stage 17a)	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE162830
+GSE166239	RNA-seq, FFPE whole biopsy section (author counts)	kidney biopsy (whole section)	independent_test_candidate (stage 17a)	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE166239
+GSE45980	Agilent GPL13497, cryo-cut biopsy section (expression-filtered deposited matrix)	kidney biopsy (whole section)	independent_test_candidate (stage 17a)	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45980

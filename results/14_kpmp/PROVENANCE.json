@@ -1,0 +1,86 @@
+{
+  "stage": "14_kpmp",
+  "time": "2026-09-28T18:38:02",
+  "seed": 20260928,
+  "config_sha": "5b6819fab2217988",
+  "git_commit": "1f54b34d503363d5dadcbe8527ec2944ffb4993d",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/13_celltype/gene_effects_by_unit.tsv.gz": "3919b1c191b7e36ec827327c38a713c1",
+    "results/13_celltype/gene_effects_meta.tsv.gz": "63fdbf4923c1178be3e518635b46b4c2",
+    "results/13_celltype/celltype_enrichment.tsv": "f82e619768825263787921ea9d3a43bf",
+    "results/13_celltype/celltype_markers.tsv": "f68050176ce0798dd773e5ee271b4f86",
+    "data/processed/kpmp/snRNA/source.json": "2e4c8e2bd82a425d9d957fd4d7b1b2e7",
+    "data/processed/kpmp/scRNA/source.json": "7c7ccedbaf00add45c8bd6353e3006ae"
+  },
+  "outputs": {
+    "results/14_kpmp/markers_kpmp.tsv": "c35e8573b2c932f9d0a337877981afeb",
+    "results/14_kpmp/celltype_enrichment_kpmp.tsv": "a68ff628933acbdf0de23fa3847a440e",
+    "results/14_kpmp/de_kpmp.tsv.gz": "082d9e1ce2c99a240a53fde026109c79",
+    "results/14_kpmp/direction_validation.tsv": "fff24e14cf2bd55d5ee4df37aaa972e5",
+    "results/14_kpmp/abundance_by_donor.tsv": "98f555e5d564e69872bc436360eb8610",
+    "results/14_kpmp/abundance_tests.tsv": "4c1d928f19b167a9ea6e755eb5855009",
+    "results/14_kpmp/marker_expression.tsv": "2a2ba3e4a5836e3476cd3001f5e16b8b",
+    "results/14_kpmp/tissue_effects.tsv.gz": "5288ea27e3b0795f012cffd4fb5e0851",
+    "results/14_kpmp/tissue_enrichment.tsv": "b31c3d037e19430cb05fe98ead6bb21d",
+    "results/14_kpmp/tissue_replication.tsv": "44af4da990de6018fa8700e25f8e05d3",
+    "results/14_kpmp/tissue_shared_score.tsv": "dc24e273db5f7d19fc6faefbb68152d8",
+    "results/14_kpmp/old_marker_profile.tsv": "22e3f50452a9017ff5c4cfed429e80d7",
+    "results/14_kpmp/donor_composition.tsv": "0c68318000aa5db87bf08faaa6642b52",
+    "results/14_kpmp/unmapped_fine_types.tsv": "99a16261d7a5e2f31acfbe0e88ee9a55",
+    "results/14_kpmp/marker_overlap.tsv": "6f1e63b2092c50effca7ec630407ef13",
+    "results/14_kpmp/enrichment_old_vs_new.tsv": "8607dee4659904e5b8e35b8be45e1c54",
+    "results/14_kpmp/enrichment_concordance.tsv": "d661589d56e5976c7a5d8eba02ce30e1",
+    "results/14_kpmp/claims.tsv": "84ce84100af83ed9b022f233ac1d1746"
+  },
+  "extra": {
+    "datasets": {
+      "snRNA": {
+        "file": "data/raw/kpmp/06b8d9c2-0bde-48bd-88d9-730993fc95e2.h5ad",
+        "dataset_id": "7ff0197b-d175-49bf-b4fa-150fe0995d93",
+        "md5": "3961a24fb7a0bd08c5838c39b1531433",
+        "n_cells_kept": 1007136,
+        "cell_filter": {
+          "region": [
+            "Cortex",
+            "Cortex/Medulla"
+          ]
+        },
+        "n_donors_by_group": {
+          "REF": 52,
+          "DKD": 29,
+          "OTHER_CKD": 27,
+          "HKD": 23,
+          "AKI": 25,
+          "REF_BIOPSY": 32
+        }
+      },
+      "scRNA": {
+        "file": "data/raw/kpmp/255ce81a-eb4e-48ff-9f18-e50455ccb24d.h5ad",
+        "dataset_id": "91f31e05-56d8-46fc-b408-d90c9228a81b",
+        "md5": "08f946d7df127cb73e1ec9c1d7705bc6",
+        "n_cells_kept": 348984,
+        "cell_filter": {},
+        "n_donors_by_group": {
+          "REF": 38,
+          "DKD": 19,
+          "OTHER_CKD": 22,
+          "HKD": 17,
+          "AKI": 12,
+          "REF_BIOPSY": 33
+        }
+      }
+    },
+    "stage13_enrichment_reproduction_max_abs_dz": 3.552713678800501e-15,
+    "note_dissociation_bias": "Cell proportions are relative capture, not absolute abundance: scRNA-seq of dissociated biopsies under-recovers podocytes and other glomerular cells and over-represents immune cells; snRNA-seq favours epithelial nuclei. Glomerular proportions use the four glomerular types as denominator to offset the number of glomeruli sampled per biopsy."
+  }
+}

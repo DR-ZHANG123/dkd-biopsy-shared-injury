@@ -1,0 +1,55 @@
+compartment	contrast	cell_type	expected	unit	reference	z	supported	claim	y
+GLOM	DKD_vs_PAT_adj	PODO	-	META	old	-8.19651	True	DKD GLOM: Podocyte	17
+GLOM	DKD_vs_PAT_adj	PODO	-	META	scRNA	-7.20003	True	DKD GLOM: Podocyte	17
+GLOM	DKD_vs_PAT_adj	PODO	-	META	snRNA	-9.44995	True	DKD GLOM: Podocyte	17
+GLOM	DKD_vs_PAT_adj	ENDO	+	META	old	3.1069	True	DKD GLOM: Endothelial	16
+GLOM	DKD_vs_PAT_adj	ENDO	+	META	scRNA	-2.93563	False	DKD GLOM: Endothelial	16
+GLOM	DKD_vs_PAT_adj	ENDO	+	META	snRNA	-3.89682	False	DKD GLOM: Endothelial	16
+TUB	DKD_vs_PAT_adj	ENDO	+	META	old	5.06958	True	DKD TUB: Endothelial	15
+TUB	DKD_vs_PAT_adj	ENDO	+	META	scRNA	4.09656	True	DKD TUB: Endothelial	15
+TUB	DKD_vs_PAT_adj	ENDO	+	META	snRNA	2.93076	True	DKD TUB: Endothelial	15
+TUB	DKD_vs_PAT_adj	ENDO_PT	+	META	old	2.39498	True	DKD TUB: Peritub. endo.	14
+TUB	DKD_vs_PAT_adj	ENDO_PT	+	META	scRNA	4.81804	True	DKD TUB: Peritub. endo.	14
+TUB	DKD_vs_PAT_adj	ENDO_PT	+	META	snRNA	4.66328	True	DKD TUB: Peritub. endo.	14
+TUB	DKD_vs_PAT_adj	MAST	+	META	old	7.10209	True	DKD TUB: Mast	13
+TUB	DKD_vs_PAT_adj	MAST	+	META	scRNA			DKD TUB: Mast	13
+TUB	DKD_vs_PAT_adj	MAST	+	META	snRNA	7.18399	True	DKD TUB: Mast	13
+GLOM	DKD_vs_PAT_adj	ENDO_GC	+	META	old			DKD GLOM: Glom.-capillary endo.	12
+GLOM	DKD_vs_PAT_adj	ENDO_GC	+	META	scRNA	-4.70062	False	DKD GLOM: Glom.-capillary endo.	12
+GLOM	DKD_vs_PAT_adj	ENDO_GC	+	META	snRNA	-3.98471	False	DKD GLOM: Glom.-capillary endo.	12
+GLOM	DKD_vs_PAT_adj	ENDO_ART	+	META	old			DKD GLOM: Arteriolar endo.	11
+GLOM	DKD_vs_PAT_adj	ENDO_ART	+	META	scRNA	5.48457	True	DKD GLOM: Arteriolar endo.	11
+GLOM	DKD_vs_PAT_adj	ENDO_ART	+	META	snRNA	4.93047	True	DKD GLOM: Arteriolar endo.	11
+TUB	DKD_vs_PAT_adj	ENDO_GC	+	META	old			DKD TUB: Glom.-capillary endo.	10
+TUB	DKD_vs_PAT_adj	ENDO_GC	+	META	scRNA	1.61631	False	DKD TUB: Glom.-capillary endo.	10
+TUB	DKD_vs_PAT_adj	ENDO_GC	+	META	snRNA	1.34213	False	DKD TUB: Glom.-capillary endo.	10
+GLOM	RPGN_vs_PAT_adj	MAC	+	META	old	12.9219	True	RPGN GLOM: Macrophage	9
+GLOM	RPGN_vs_PAT_adj	MAC	+	META	scRNA	11.4095	True	RPGN GLOM: Macrophage	9
+GLOM	RPGN_vs_PAT_adj	MAC	+	META	snRNA	10.7895	True	RPGN GLOM: Macrophage	9
+TUB	RPGN_vs_PAT_adj	MAC	+	META	old	7.91514	True	RPGN TUB: Macrophage	8
+TUB	RPGN_vs_PAT_adj	MAC	+	META	scRNA	8.74957	True	RPGN TUB: Macrophage	8
+TUB	RPGN_vs_PAT_adj	MAC	+	META	snRNA	6.23553	True	RPGN TUB: Macrophage	8
+GLOM	MN_vs_PAT_adj	MAC	<=0	META	old	-7.11839	True	MN GLOM: Macrophage	7
+GLOM	MN_vs_PAT_adj	MAC	<=0	META	scRNA	-6.74604	True	MN GLOM: Macrophage	7
+GLOM	MN_vs_PAT_adj	MAC	<=0	META	snRNA	-6.56856	True	MN GLOM: Macrophage	7
+GLOM	MN_vs_PAT_adj	TCELL	<=0	META	old	-3.29068	True	MN GLOM: T cell	6
+GLOM	MN_vs_PAT_adj	TCELL	<=0	META	scRNA	-5.02541	True	MN GLOM: T cell	6
+GLOM	MN_vs_PAT_adj	TCELL	<=0	META	snRNA	-5.22581	True	MN GLOM: T cell	6
+GLOM	MCD_vs_PAT_adj	MAC	<=0	META	old	-7.87442	True	MCD GLOM: Macrophage	5
+GLOM	MCD_vs_PAT_adj	MAC	<=0	META	scRNA	-7.24665	True	MCD GLOM: Macrophage	5
+GLOM	MCD_vs_PAT_adj	MAC	<=0	META	snRNA	-6.5302	True	MCD GLOM: Macrophage	5
+GLOM	MCD_vs_PAT_adj	TCELL	<=0	META	old	-2.67737	True	MCD GLOM: T cell	4
+GLOM	MCD_vs_PAT_adj	TCELL	<=0	META	scRNA	-2.74775	True	MCD GLOM: T cell	4
+GLOM	MCD_vs_PAT_adj	TCELL	<=0	META	snRNA	-2.90176	True	MCD GLOM: T cell	4
+TUB	MN_vs_PAT_adj	MAC	<=0	META	old	-2.55428	True	MN TUB: Macrophage	3
+TUB	MN_vs_PAT_adj	MAC	<=0	META	scRNA	-3.43968	True	MN TUB: Macrophage	3
+TUB	MN_vs_PAT_adj	MAC	<=0	META	snRNA	-0.728105	True	MN TUB: Macrophage	3
+TUB	MN_vs_PAT_adj	TCELL	<=0	META	old	-2.94697	True	MN TUB: T cell	2
+TUB	MN_vs_PAT_adj	TCELL	<=0	META	scRNA	-3.94775	True	MN TUB: T cell	2
+TUB	MN_vs_PAT_adj	TCELL	<=0	META	snRNA	-3.40319	True	MN TUB: T cell	2
+TUB	MCD_vs_PAT_adj	MAC	<=0	META	old	-3.16673	True	MCD TUB: Macrophage	1
+TUB	MCD_vs_PAT_adj	MAC	<=0	META	scRNA	-2.46365	True	MCD TUB: Macrophage	1
+TUB	MCD_vs_PAT_adj	MAC	<=0	META	snRNA	-3.44976	True	MCD TUB: Macrophage	1
+TUB	MCD_vs_PAT_adj	TCELL	<=0	META	old	-6.05544	True	MCD TUB: T cell	0
+TUB	MCD_vs_PAT_adj	TCELL	<=0	META	scRNA	-5.25264	True	MCD TUB: T cell	0
+TUB	MCD_vs_PAT_adj	TCELL	<=0	META	snRNA	-5.61935	True	MCD TUB: T cell	0
