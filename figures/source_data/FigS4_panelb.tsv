@@ -1,0 +1,12 @@
+test	n	value	p	label
+patients_vs_controls_auroc	87	0.894406		
+rho_injury_egfr_all	87	-0.0818992	0.450775	
+rho_injury_egfr_patients	65	-0.014948	0.905923	"External
+score"
+rho_EGF_egfr_patients	65	0.234759	0.0597865	EGF
+rho_LCN2_egfr_patients	65	-0.404908	0.000820874	LCN2
+rho_HAVCR1_egfr_patients	65	-0.295049	0.0170334	HAVCR1
+rho_VCAM1_egfr_patients	65	-0.161369	0.199076	VCAM1
+rho_COL1A1_egfr_patients	65	-0.19743	0.114932	COL1A1
+rho_UMOD_egfr_patients	65	0.00590033	0.962794	UMOD
+egfr_median_patients	65	89.5		

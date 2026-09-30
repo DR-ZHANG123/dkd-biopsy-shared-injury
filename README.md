@@ -1,10 +1,10 @@
-# kidney-injury-repair
+# dkd-biopsy-shared-injury
 
 Code, configuration and result tables for the study
 
-> **A tubular injury–repair response is the largest shared source of variation in biopsy transcriptomes across chronic kidney diseases**
+> **Much of the diabetic kidney disease biopsy transcriptome is an injury–repair response shared with other chronic kidney diseases**
 
-The study combines 1,462 unique kidney biopsy specimens from public microarray and RNA-sequencing series with the Kidney Precision Medicine Project (KPMP) single-cell and single-nucleus atlases. It defines the injury–repair response shared by native biopsies of different chronic kidney diseases, separates changes in cell proportions from changes within cell lineages, quantifies the contribution of adaptive and failed-repair tubular states, tests the response in independent cohorts and against clinical measures, and compares diseases after adjustment for the response.
+The study combines 1,462 unique kidney biopsy specimens from public microarray and RNA-sequencing series with the Kidney Precision Medicine Project (KPMP) single-cell and single-nucleus atlases. It defines an injury–repair response from kidney diseases other than diabetic kidney disease (DKD), measures how much of the DKD biopsy transcriptome lies along it, separates changes in cell proportions from within-lineage changes and the contributions of adaptive and failed-repair tubular states, tests the response in independent cohorts and against clinical measures, and evaluates published DKD signatures and the DKD-associated signal that remains after adjustment for the response.
 
 ## Data
 
@@ -14,6 +14,7 @@ All data are public. Accessions, platforms and roles are listed in `metadata/dat
 - Independent test cohorts: GSE162830, GSE166239 and KPMP biopsy-section bulk RNA-sequencing (open-access tier of the KPMP atlas repository).
 - Single-cell references: KPMP atlas v2.0 single-nucleus and single-cell data from CZ CELLxGENE Discover; GSE131882 and GSE209781.
 - Protein interactions: STRING v12.0.
+- Pathway gene sets: MSigDB 2024.1.Hs Hallmark, Reactome and Gene Ontology biological process (downloaded by `scripts/stages/00_download.sh`).
 - Curated published DKD gene signatures: `metadata/published_dkd_signatures.tsv`.
 
 Raw and intermediate data are written to `data/` (not tracked).
@@ -21,10 +22,10 @@ Raw and intermediate data are written to `data/` (not tracked).
 ## Environments
 
 ```bash
-conda env create -f environment.yml          # Python analysis environment, named "kir"
+conda env create -f environment.yml          # Python analysis environment, named "dkd-shared-injury"
 ```
 
-BayesPrism (stage 16) runs in a separate R environment (R 4.3 with BayesPrism 2.2.3), referred to as `kir_bayesprism` in `scripts/stages/16_deconv_run.py`.
+BayesPrism (stage 16) runs in a separate R environment (R 4.3 with BayesPrism 2.2.3), referred to as `dkd-shared-injury-bayesprism` in `scripts/stages/16_deconv_run.py`.
 The upstream single-cell and CEL processing uses the environments in `upstream/`.
 
 ## Upstream processing
@@ -51,12 +52,13 @@ All parameters are in `config/run.yaml`; scripts read them and contain no hard-c
 | 11, 11b | Injury–repair score estimated without the evaluated cohort and without DKD; split-control and cross-cohort tests |
 | 12 | Scoring of published DKD signatures |
 | 13, 14 | Cell-type enrichment; KPMP marker reference and donor-level tests |
-| 15 | Disease-specific classifier: development on non-DKD tasks, frozen design (`results/15_model/FROZEN_DESIGN.json`), single evaluation on DKD |
+| 15 | Classifier of the adjusted diagnosis-associated signal: development on non-DKD tasks, frozen design (`results/15_model/FROZEN_DESIGN.json`), single evaluation on DKD |
 | 16, 16b | BayesPrism deconvolution; simulation-trained composition estimates |
 | 17, 17a, 17b | Independent cohorts: candidate screening, planned tests (`results/17_independent/PLAN*.json`) and gene-set replication |
 | 18 | Gene- and program-level interpretation of the classifier |
 | 19 | Injury–repair response genes, composition versus within-lineage change, replication and clinical association, disease-specific signals after adjustment |
 | 20 | Adaptive and failed-repair tubular states: programs, Shapley decomposition, donor, bulk and clinical analyses |
+| 24 | Pathway enrichment of the response (preranked GSEA, MSigDB 2024.1); external score with 100–500 genes per direction; duplicate calls over correlation thresholds |
 | 21, 22 | Robustness and sensitivity analyses (variance share, transplant gene sets, procurement-sensitive genes, signal injection, empirical nulls, state-level decomposition, interaction terms, eGFR sensitivity, bootstrap intervals, deconvolution recovery) |
 
 Stages 06–09 contain an exploratory graph-encoder pretraining that is not used in the reported analyses.

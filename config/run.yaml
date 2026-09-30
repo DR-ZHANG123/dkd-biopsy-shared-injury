@@ -762,3 +762,19 @@ sensitivity22:
       array_ercb_strong: {kind: array, genes: ercb, bias_sd: 1.0, floor_log2: 5.0, noise_sd: 0.2}
     n_cores: 32
     out_dir: data/processed/deconv/sensitivity22
+# ---- stage 24：反应的通路注释与两项参数敏感性（只读已有结果表；只写 results/24_pathways_sensitivity） ----
+pathways_sensitivity:
+  gsea:
+    rank_by: z                            # 反应 meta 分析的 g_re / se（Hartung–Knapp 前的随机效应 z）
+    libraries:                            # MSigDB 2024.1.Hs（data/external/msigdb；下载地址与 md5 见 metadata/data_sources.tsv）
+      Hallmark: data/external/msigdb/h.all.v2024.1.Hs.symbols.gmt
+      Reactome: data/external/msigdb/c2.cp.reactome.v2024.1.Hs.symbols.gmt
+      GO_BP: data/external/msigdb/c5.go.bp.v2024.1.Hs.symbols.gmt
+    min_size: 15
+    max_size: 500
+    permutations: 1000
+    fdr: 0.05
+  topk: [100, 200, 300, 500]              # 外部分数每方向基因数（主分析 200）
+  duplicates:
+    resid_min: [0.40, 0.45, 0.50, 0.55, 0.60]      # 跨 series 残差相关阈值（主分析 0.5）
+    resid_min_within: [0.70, 0.80, 0.90]           # series 内阈值（主分析 0.8）

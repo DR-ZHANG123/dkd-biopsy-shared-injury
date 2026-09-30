@@ -29,3 +29,6 @@ KPMP_BulkTotalmRNA_open	RNA-seq, biopsy section bulk total/mRNA; KPMP atlas repo
 GSE162830	RNA-seq, laser microdissected glomeruli (author quantile-normalized table)	glomerulus	independent_test_candidate (stage 17a)	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE162830
 GSE166239	RNA-seq, FFPE whole biopsy section (author counts)	kidney biopsy (whole section)	independent_test_candidate (stage 17a)	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE166239
 GSE45980	Agilent GPL13497, cryo-cut biopsy section (expression-filtered deposited matrix)	kidney biopsy (whole section)	independent_test_candidate (stage 17a)	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45980
+MSigDB_h.all_2024.1	gene_sets	-	pathway_annotation	https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2024.1.Hs/h.all.v2024.1.Hs.symbols.gmt
+MSigDB_c2.cp.reactome_2024.1	gene_sets	-	pathway_annotation	https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2024.1.Hs/c2.cp.reactome.v2024.1.Hs.symbols.gmt
+MSigDB_c5.go.bp_2024.1	gene_sets	-	pathway_annotation	https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2024.1.Hs/c5.go.bp.v2024.1.Hs.symbols.gmt

@@ -33,4 +33,9 @@ fetch https://stringdb-downloads.org/download/protein.info.v12.0/9606.protein.in
 for gpl in GPL11670 GPL14663 GPL14951 GPL19983 GPL22945 GPL24120 GPL19184 GPL19109 GPL17586 GPL571; do
   fetch "https://ftp.ncbi.nlm.nih.gov/geo/platforms/${gpl:0:${#gpl}-3}nnn/$gpl/soft/${gpl}_family.soft.gz" "$RAW/series/${gpl}_family.soft.gz"
 done
+# MSigDB 2024.1.Hs 基因集（stage 24a 通路注释；落在 data/external/msigdb，与 config pathways_sensitivity.gsea 一致）
+mkdir -p data/external/msigdb
+for f in h.all c2.cp.reactome c5.go.bp; do
+  fetch "https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2024.1.Hs/$f.v2024.1.Hs.symbols.gmt" "data/external/msigdb/$f.v2024.1.Hs.symbols.gmt"
+done
 mv "$MAN.tmp" "$MAN"; echo "done: $(wc -l < "$MAN") files"

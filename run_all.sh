@@ -4,7 +4,7 @@
 #        bash run_all.sh --force
 set -euo pipefail
 cd "$(dirname "$0")"
-source "$(conda info --base)/etc/profile.d/conda.sh"; conda activate kir
+source "$(conda info --base)/etc/profile.d/conda.sh"; conda activate dkd-shared-injury
 FORCE=0; [[ "${1:-}" == "--force" ]] && FORCE=1
 mkdir -p logs
 run() { local tag=$1; shift
@@ -30,13 +30,13 @@ run 12_signature_audit python scripts/stages/12_signature_audit.py
 run 13_celltype      python scripts/stages/13_celltype_decomposition.py
 run 14_kpmp          python scripts/stages/14_kpmp_validation.py
 
-# Disease-specific classifier (developed on non-DKD tasks, evaluated once on DKD)
+# Classifier of the adjusted diagnosis-associated signal (developed on non-DKD tasks, evaluated once on DKD)
 run 15_model/dev     python scripts/stages/15_dev.py --families E1,E2,E4
 python scripts/stages/15_summarize.py
 [[ -f results/15_model/final_dkd/predictions.tsv ]] || python scripts/stages/15_final_dkd.py cuda:0
 python scripts/stages/15_final_bootstrap.py
 
-# Deconvolution (BayesPrism in the kir_bayesprism environment) and a simulation-trained alternative
+# Deconvolution (BayesPrism in the dkd-shared-injury-bayesprism environment) and a simulation-trained alternative
 for s in prepare run plausibility eval summarize; do python scripts/stages/16_deconv_$s.py; done
 python scripts/stages/16b_deconv_fast.py; python scripts/stages/16b_deconv_fast_eval.py
 
@@ -54,6 +54,9 @@ bash scripts/stages/20_repair_state_all.sh
 for s in a1_share a1_pca a2_genesets a2_transplant kpmp shapley a3_indep a4_injection a5_ratio a6_fractions a7_bulk; do
   python scripts/stages/21_robustness_$s.py; done
 for s in s1_egfr s2_auroc_ci s3_deconv; do python scripts/stages/22_sensitivity_$s.py; done
+
+# Pathways of the response; external-score gene number and duplicate-threshold sensitivity
+for s in 24a_response_pathways 24b_external_score_topk 24c_duplicate_thresholds; do python scripts/stages/$s.py; done
 
 # Figures (read result tables only; write figures/ and figures/source_data/)
 for f in scripts/figures/Fig*.py scripts/figures/graphical_abstract.py; do python "$f"; done

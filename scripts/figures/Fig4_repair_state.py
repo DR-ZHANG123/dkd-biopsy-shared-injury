@@ -1,10 +1,12 @@
-"""Fig. 4 - failed-repair tubular states in the cell-state component of the shared program (panels a-g).
+"""Fig. 4 - adaptive and failed-repair tubular states in within-lineage tubular change (panels a-e).
 
 Inputs (read only): results/20_repair_state/figdata/ (panel_a_*, panel_b_*, panel_c_shapley_blocks.tsv,
 panel_d_*, panel_e_correlations.tsv, panel_g_clinical_tests.tsv, panel_h_key_genes.tsv) and, for panel c, the
 17-factor Shapley decomposition that separates adaptive from failed-repair states
 (results/21_robustness/A6_split/shapley_contrast.tsv, pt_tal_shares.tsv).
-Panels e-g are drawn by fig4_repair_panels.py; the bulk forest plot (figdata panel_f_*) is Fig. S8.
+Panels d-e are drawn by fig4_repair_panels.py. Program reproducibility with contributing-gene expression
+(panel_a1/panel_a2) and the reduced program in independent cohorts (fig4_repair_panels.panel_f) are drawn into
+Fig. S8 (panels d-e); the bulk forest plot (figdata panel_f_*) is Fig. S8a-c.
 """
 from __future__ import annotations
 
@@ -49,7 +51,7 @@ CATS = [("REF", "Healthy"), ("DKD", "DKD"), ("HKD", "HKD"), ("AKI", "AKI")]
 CAT_COL = {"REF": "#8C8C8C", "DKD": "#C44E52", "HKD": "#937860", "AKI": "#DD8452", "OTHER": "#6A6A6A"}
 
 
-def panel_a1(ax, ps):
+def panel_a1(ax, ps, name=NAME):
     ps = ps.set_index(["lineage", "state"]).reindex(PROGRAMS).reset_index()
     y = np.arange(len(ps))
     rho = ps.lfc_spearman_sn_vs_sc
@@ -63,10 +65,10 @@ def panel_a1(ax, ps):
     ax.set_xlim(-0.45, 2.3)
     ax.set_xticks([0, 0.8], ["0", "0.8"])
     ax.set_xlabel("snRNA vs scRNA\nprogram log$_2$FC (ρ)")
-    fl.save_source(NAME, "a_programs", ps)
+    fl.save_source(name, "d_programs", ps)
 
 
-def panel_a2(ax, se, genes):
+def panel_a2(ax, se, genes, name=NAME):
     se = se[se.dataset == "snRNA"].set_index("gene").reindex(genes)
     m = se[[t for t, _ in TYPES]].T
     z = (m - m.mean(0)) / m.std(0).replace(0, np.nan)
@@ -85,7 +87,7 @@ def panel_a2(ax, se, genes):
     cb.set_label("z (mean log$_2$CPM)", fontsize=5, fontweight="bold")
     cb.ax.tick_params(labelsize=5, width=0.5, length=2)
     cb.outline.set_linewidth(0.4)
-    fl.save_source(NAME, "a_heatmap", z.T.reset_index().rename(columns={"index": "gene"}).assign(
+    fl.save_source(name, "d_heatmap", z.T.reset_index().rename(columns={"index": "gene"}).assign(
         reference_marker_outside_core=lambda t: t.gene.isin(REFERENCE_GENES)))
 
 
@@ -119,7 +121,7 @@ def panel_b(ax, ax_n, sc, st):
     h = [Line2D([], [], marker="o", ls="", ms=2.5, color=c, label=l) for c, l in
          (("#C44E52", "Response gene, up"), ("#4C72B0", "Response gene, down"), ("#D0D0D0", "Other genes"))]
     ax.legend(handles=h, loc="lower right", fontsize=4.8, handletextpad=0.1, borderpad=0.25)
-    fl.save_source(NAME, "b", pd.concat(rows)[["lineage_cells", "gene", "program_log2fc", "log2fc", "p_perm",
+    fl.save_source(NAME, "a", pd.concat(rows)[["lineage_cells", "gene", "program_log2fc", "log2fc", "p_perm",
                                               "scp_core", "core_spearman", "core_p_perm", "all_spearman"]])
 
 
@@ -149,7 +151,7 @@ def panel_c(ax, blk, sh):
     ax.set_xlim(0, 1.36)
     ax.set_xticks([0, 0.25, 0.5, 0.75, 1.0], ["0", "25", "50", "75", "100"])
     ax.set_xlabel("% of injury–repair score difference (Shapley)")
-    fl.save_source(NAME, "c", pd.DataFrame(rows))
+    fl.save_source(NAME, "b", pd.DataFrame(rows))
 
 
 def panel_c_key(ax):
@@ -182,12 +184,10 @@ def panel_d(ax, dt, ct):
     ax.set_xlim(-0.7, 2 * len(CATS) + 0.7)
     ax.set_ylim(0, 92)
     ax.set_ylabel("Adaptive + failed-repair\ncells (% of lineage)")
-    fl.save_source(NAME, "d", pd.concat(rows))
+    fl.save_source(NAME, "c", pd.concat(rows))
 
 
 def build():
-    ps = fl.read(FD + "panel_a_program_summary.tsv")
-    se = fl.read(FD + "panel_a_key_gene_state_expression.tsv")
     kg = fl.read(FD + "panel_h_key_genes.tsv")
     sc = fl.read(FD + "panel_b_concordance_scatter.tsv.gz")
     st = fl.read(FD + "panel_b_concordance_stats.tsv")
@@ -196,34 +196,25 @@ def build():
     dt = fl.read(FD + "panel_d_donor_table.tsv", dtype={"donor": str})
     ct = fl.read(FD + "panel_d_category_tests.tsv")
     cor = fl.read(FD + "panel_e_correlations.tsv")
-    clin = fl.read(FD + "panel_g_clinical_tests.tsv")
-    drivers = [g for g in kg.gene[kg.is_driver] if g in set(se.gene)]
-    genes = drivers[:30] + [g for g in REFERENCE_GENES if g in set(se.gene)]
 
-    fig = fl.new_fig(fl.FULL_W, 186 * fl.MM)
-    gs = fig.add_gridspec(3, 1, height_ratios=[1.05, 1.0, 1.05])
-    r1 = gs[0].subgridspec(1, 2, width_ratios=[0.8, 4.2])
-    a1, a2 = fig.add_subplot(r1[0]), fig.add_subplot(r1[1])
-    r2 = gs[1].subgridspec(1, 5, width_ratios=[1.25, 0.62, 1.55, 0.75, 1.3])
+    fig = fl.new_fig(fl.FULL_W, 140 * fl.MM)
+    gs = fig.add_gridspec(2, 1, height_ratios=[1.0, 1.05])
+    r2 = gs[0].subgridspec(1, 5, width_ratios=[1.25, 0.62, 1.55, 0.75, 1.3])
     b, bn = fig.add_subplot(r2[0]), fig.add_subplot(r2[1])
     c, ckey = fig.add_subplot(r2[2]), fig.add_subplot(r2[3])
     d = fig.add_subplot(r2[4])
-    r3 = gs[2].subgridspec(1, 5, width_ratios=[1.25, 0.65, 1.3, 0.45, 1.75])
+    r3 = gs[1].subgridspec(1, 3, width_ratios=[1.25, 0.65, 2.2])
     e, en = fig.add_subplot(r3[0]), fig.add_subplot(r3[1])
-    f1, f2 = fig.add_subplot(r3[2]), fig.add_subplot(r3[3])
-    g = fig.add_subplot(r3[4])
-    for ax in (a1, a2, b, c, d, e, f1, g):
+    g = fig.add_subplot(r3[2])
+    for ax in (b, c, d, e, g):
         fl.reserve_label(ax)
-    panel_a1(a1, ps)
-    panel_a2(a2, se, genes)
     panel_b(b, bn, sc, st)
     panel_c(c, blk, sh)
     panel_c_key(ckey)
     panel_d(d, dt, ct)
     p2.panel_e(e, en, dt, cor, NAME)
-    p2.panel_f(f1, f2, clin, NAME)
     p2.panel_g(g, kg, NAME)
-    return fl.finalize(fig, {"a": a1, "b": b, "c": c, "d": d, "e": e, "f": f1, "g": g})
+    return fl.finalize(fig, {"a": b, "b": c, "c": d, "d": e, "e": g})
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-name: kir
+name: dkd-shared-injury
 channels: [conda-forge]
 dependencies:
   - python=3.11
@@ -20,3 +20,4 @@ dependencies:
       - torch==2.8.0
       - torch_geometric==2.6.1
       - GEOparse==2.0.4
+      - gseapy==1.1.4

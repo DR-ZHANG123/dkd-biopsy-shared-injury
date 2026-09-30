@@ -57,10 +57,10 @@ def panel_e(ax, ax_n, dt, cor, name):
     ax_n.set_ylim(0, 150)
     ax_n.tick_params(labelsize=5)
     stats = pd.DataFrame([r_all, r_ckd, r_e])
-    fl.save_source(name, "e", dt[["donor", "category", "PT:rfPT", "scp_full", "egfr_mid"]].assign(
+    fl.save_source(name, "d", dt[["donor", "category", "PT:rfPT", "scp_full", "egfr_mid"]].assign(
         rho_all_scp=r_all.spearman, p_all_scp=r_all.p_perm, rho_ckd_scp=r_ckd.spearman, p_ckd_scp=r_ckd.p_perm,
         rho_ckd_egfr=r_e.spearman, p_ckd_egfr=r_e.p_perm, n_ckd_egfr=r_e.n))
-    fl.save_source(name, "e_stats", stats)
+    fl.save_source(name, "d_stats", stats)
 
 
 def panel_f(ax, ax2, clin, name):
@@ -103,7 +103,7 @@ def panel_f(ax, ax2, clin, name):
     ax2.tick_params(labelsize=5)
     rows.append(dict(cohort="GSE142025-RNAseq", test="advanced_vs_early_DN", n=p.n, auroc_program=p.auroc,
                      auroc_program_given_scp_resid=p.auroc_given_scp_resid, auroc_scp=s.auroc))
-    fl.save_source(name, "f", pd.DataFrame(rows))
+    fl.save_source(name, "e", pd.DataFrame(rows))
 
 
 def panel_g(ax, kg, name):
@@ -152,6 +152,6 @@ def panel_g(ax, kg, name):
     keep = ["gene", "in_scp_core_TUB", "scp_direction", "driver_of", "tissue_delta_full",
             "tissue_delta_repair_attributable", "tissue_share_repair_attributable", "tissue_share_normal_cell_profile",
             "n_indep_cohorts_concordant", "n_indep_cohorts_tested", "bulk_meta_g_re", "bulk_meta_fdr"]
-    fl.save_source(name, "g", t[keep].merge(pd.concat(rows).pivot_table(
+    fl.save_source(name, "e", t[keep].merge(pd.concat(rows).pivot_table(
         index="gene", columns="state", values="snRNA_log2fc").add_prefix("snRNA_log2fc_").reset_index(), on="gene"))
-    fl.save_source(name, "g_dots", pd.concat(rows))
+    fl.save_source(name, "e_dots", pd.concat(rows))

@@ -27,7 +27,7 @@ GAP = 2.4         # vertical gap between boxes (mm), arrows live here
 ACCENT = {"a": fl.PALETTE[0], "b": fl.PALETTE[3], "c": fl.PALETTE[2], "d": fl.PALETTE[4],
           "e": fl.PALETTE[1], "f": fl.PALETTE[5]}
 TITLES = {"a": "Unique biopsy specimens", "b": "Injury–repair response",
-          "c": "Compositional and cell-intrinsic change", "d": "Adaptive and failed-repair states",
+          "c": "Compositional and within-lineage change", "d": "Adaptive and failed-repair states",
           "e": "Replication and kidney function", "f": "Disease-specific signals"}
 RECORDS: dict[str, list] = {}
 
@@ -188,10 +188,10 @@ def panel_c(ax, w, h, N):
     half = (w - 2 - 2) / 2
     b4 = box(ax, "c4", 1, ys[3], half, hs[3], "Compositional only\ndonor fractions ×\nreference profiles",
              c, panel=k)
-    b5 = box(ax, "c5", 1 + half + 2, ys[3], half, hs[3], "Cell-intrinsic only\nreference fractions ×\ndonor "
+    b5 = box(ax, "c5", 1 + half + 2, ys[3], half, hs[3], "Within-lineage only\nreference fractions ×\ndonor "
              "profiles", c, panel=k)
     b6 = box(ax, "c6", 1, ys[4], w - 2, hs[4], "Share of the response: compositional,\n"
-             "cell-intrinsic and their interaction", c, weight="bold", fill=0.3, panel=k)
+             "within-lineage and their interaction", c, weight="bold", fill=0.3, panel=k)
     down(ax, b1, b2)
     down(ax, b2, b3)
     fq = (half / 2) / (w - 2)

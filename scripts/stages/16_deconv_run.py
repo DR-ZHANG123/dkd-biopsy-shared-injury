@@ -1,4 +1,4 @@
-"""Stage 16b：批量运行 BayesPrism（R，env kir_bayesprism）并汇总 θ；同参照、同标志基因的线性 NNLS 作对照。
+"""Stage 16b：批量运行 BayesPrism（R，env dkd-shared-injury-bayesprism）并汇总 θ；同参照、同标志基因的线性 NNLS 作对照。
 
 每个 (参照, series, 区室) 一个 R 进程；输出在 <deconv.out_dir>/bp/<参照>/<series>__<区室>/（DONE 标记存在则跳过）。
 汇总（results/16_deconv/run/）：
@@ -47,7 +47,7 @@ def r_args(ref: str, comp_ref: str, mix: str, out: str, n_cores: int) -> list[st
 
 
 def run_r(args: list[str], log: Path) -> int:
-    cmd = f"source {CONDA} && conda activate kir_bayesprism && Rscript {R_SCRIPT} " + " ".join(
+    cmd = f"source {CONDA} && conda activate dkd-shared-injury-bayesprism && Rscript {R_SCRIPT} " + " ".join(
         f"'{a}'" for a in args)
     log.parent.mkdir(parents=True, exist_ok=True)
     with open(log, "w") as fh:

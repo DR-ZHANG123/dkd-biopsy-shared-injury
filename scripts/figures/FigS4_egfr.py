@@ -1,4 +1,5 @@
-"""Fig. S4 - the external axis and eGFR in GSE175759 (single panel).
+"""Fig. S4 - the external score: number of genes per direction (panel a, fig_extra_panels.topk) and eGFR in
+GSE175759 (panel b).
 
 Input (read only): results/11b_shared_axis/egfr_check.tsv (Spearman correlations with eGFR and the
 patient-versus-control AUROC). Per-sample eGFR values are not stored in results/, so the panel shows the
@@ -13,6 +14,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figlib as fl  # noqa: E402
+import fig_extra_panels as xp  # noqa: E402
 
 NAME = "FigS4"
 
@@ -25,8 +27,12 @@ def build():
     r["variable"] = r.test.str.replace("rho_", "").str.replace("_egfr_patients", "")
     r["label"] = np.where(r.variable == "injury", "External\nscore", r.variable)
     r = r.sort_values("value").reset_index(drop=True)
-    fig = fl.new_fig(fl.HALF_W, 75 * fl.MM)
-    ax = fig.add_subplot()
+    fig = fl.new_fig(fl.FULL_W, 78 * fl.MM)
+    gs = fig.add_gridspec(1, 2, width_ratios=[0.85, 1])
+    a, ax = fig.add_subplot(gs[0]), fig.add_subplot(gs[1])
+    fl.reserve_label(a)
+    fl.reserve_label(ax)
+    xp.topk(a, NAME, "a")
     y = np.arange(len(r))
     col = ["#C44E52" if v == "injury" else ("#4C72B0" if p < 0.05 else "#BBBBBB")
            for v, p in zip(r.variable, r.p)]
@@ -45,10 +51,8 @@ def build():
     ax.set_xlabel(f"Spearman ρ with eGFR (patients, n = {int(r.n.iloc[0])})")
     ax.text(0.74, len(r) + 1.3, f"External score, patients vs controls:\nAUROC {auc.value:.3f} (n = {int(auc.n)})\n"
             f"patient median eGFR {egfr_med.value:.1f} mL/min/1.73 m²", ha="right", va="top", fontsize=5.5)
-    fl.save_source(NAME, "a", e.merge(r[["test", "label"]], on="test", how="left"))
-    fig.canvas.draw()
-    fig.set_layout_engine("none")
-    return fig
+    fl.save_source(NAME, "b", e.merge(r[["test", "label"]], on="test", how="left"))
+    return fl.finalize(fig, {"a": a, "b": ax})
 
 
 if __name__ == "__main__":

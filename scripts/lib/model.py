@@ -1,4 +1,4 @@
-"""kidney-injury-repair 编码器：样本内秩 → 基因图（多关系 GATv2）→ attention pooling → 样本表示。
+"""dkd-biopsy-shared-injury 编码器：样本内秩 → 基因图（多关系 GATv2）→ attention pooling → 样本表示。
 
 同一张基因图被一个 batch 内的所有样本共享；用 PyG 的 batch 偏移方式堆叠（按 batch 大小缓存）。
 缺失基因（平台测不到或被遮蔽）以可学习的 mask token 表示，不以 0 表示。
@@ -72,7 +72,7 @@ class RelGATLayer(nn.Module):
         return self.norm(x + self.drop(F.gelu(out)))
 
 
-class kidney-injury-repair(nn.Module):
+class dkd-biopsy-shared-injury(nn.Module):
     def __init__(self, n_genes: int, n_rel: int, d: int = 64, layers: int = 3, heads: int = 4,
                  dropout: float = 0.1, embed_dim: int = 64, proj_dim: int = 256,
                  readout: str = "attention", readout_channels: int = 2, global_context: bool = False):
@@ -150,7 +150,7 @@ class kidney-injury-repair(nn.Module):
 class SupervisedHead(nn.Module):
     """编码器 + 线性 logit 头（B5 从随机初始化训练；RRG-full-ft 从预训练权重小学习率微调）。"""
 
-    def __init__(self, encoder: kidney-injury-repair, embed_dim: int):
+    def __init__(self, encoder: dkd-biopsy-shared-injury, embed_dim: int):
         super().__init__()
         self.encoder = encoder
         self.head = nn.Linear(embed_dim, 1)
@@ -178,7 +178,7 @@ def vicreg(z1: torch.Tensor, z2: torch.Tensor, sim_w=25.0, var_w=25.0, cov_w=1.0
     return loss, {"inv": inv.detach(), "var": (v1 + v2).detach(), "cov": (c1 + c2).detach()}
 
 
-def pretrain_loss(model: kidney-injury-repair, ranks, observed, edges, mask_frac: float,
+def pretrain_loss(model: dkd-biopsy-shared-injury, ranks, observed, edges, mask_frac: float,
                   drop_lo: float, drop_hi: float, recon_w: float = 10.0, vic_w: float = 0.04,
                   gen: torch.Generator | None = None) -> tuple[torch.Tensor, dict]:
     """(a) 遮蔽秩重建 + (b) 平台缺失增强下的 VICReg。返回的 dict 值为 0 维张量（调用方再同步）。"""
@@ -217,9 +217,9 @@ def gene_mean_recon_baseline(ranks_tr: torch.Tensor, obs_tr: torch.Tensor,
     return float(err.mean()) if err.numel() else float("nan")
 
 
-def build_encoder(cfg: dict, n_genes: int, n_rel: int) -> kidney-injury-repair:
+def build_encoder(cfg: dict, n_genes: int, n_rel: int) -> dkd-biopsy-shared-injury:
     m = cfg["model"]
-    return kidney-injury-repair(n_genes, n_rel, d=m["hidden"], layers=m["layers"], heads=m["heads"],
+    return dkd-biopsy-shared-injury(n_genes, n_rel, d=m["hidden"], layers=m["layers"], heads=m["heads"],
                         dropout=m["dropout"], embed_dim=m["embed_dim"],
                         proj_dim=cfg["pretrain_run"]["proj_dim"],
                         readout=cfg.get("model_ext", {}).get("readout", "attention"),

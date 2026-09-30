@@ -12,7 +12,7 @@ import torch
 import torch.nn.functional as F
 from sklearn.metrics import roc_auc_score
 
-from lib.model import kidney-injury-repair, SupervisedHead, build_encoder
+from lib.model import dkd-biopsy-shared-injury, SupervisedHead, build_encoder
 
 VARIANT_MODEL = {"full": "RRG-full", "noedge": "B3-noedge", "rewired": "B4-rewired",
                  "ppi_only": "B6-ppi", "coexpr_only": "B6-coexpr"}
@@ -58,7 +58,7 @@ def cosine_lr(epoch: int, total: int, warmup: int) -> float:
 
 
 @torch.no_grad()
-def embed(model: kidney-injury-repair, R: torch.Tensor, O: torch.Tensor, edges: list[torch.Tensor], bs: int,
+def embed(model: dkd-biopsy-shared-injury, R: torch.Tensor, O: torch.Tensor, edges: list[torch.Tensor], bs: int,
           device: torch.device, cfg: dict) -> np.ndarray:
     model.eval()
     zs = []
@@ -69,12 +69,12 @@ def embed(model: kidney-injury-repair, R: torch.Tensor, O: torch.Tensor, edges: 
     return np.concatenate(zs) if zs else np.zeros((0, model.out[0].out_features), np.float32)
 
 
-def save_encoder(path: Path, model: kidney-injury-repair, meta: dict) -> None:
+def save_encoder(path: Path, model: dkd-biopsy-shared-injury, meta: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     torch.save({"state_dict": model.state_dict(), "meta": meta}, path)
 
 
-def load_encoder(path: Path, cfg: dict, device: torch.device) -> tuple[kidney-injury-repair, dict]:
+def load_encoder(path: Path, cfg: dict, device: torch.device) -> tuple[dkd-biopsy-shared-injury, dict]:
     ck = torch.load(path, map_location="cpu", weights_only=False)
     meta = ck["meta"]
     model = build_encoder(cfg, meta["n_genes"], meta["n_rel"])
@@ -94,7 +94,7 @@ def predict_logits(net, R, O, edges, bs, device, cfg) -> np.ndarray:
     return np.concatenate(out) if out else np.zeros(0)
 
 
-def train_supervised(encoder: kidney-injury-repair, cfg: dict, R: torch.Tensor, O: torch.Tensor, y: np.ndarray,
+def train_supervised(encoder: dkd-biopsy-shared-injury, cfg: dict, R: torch.Tensor, O: torch.Tensor, y: np.ndarray,
                      tr_idx: np.ndarray, va_idx: np.ndarray, edges: list[torch.Tensor],
                      finetune: bool, seed: int, device: torch.device) -> tuple[SupervisedHead, dict]:
     """监督训练（B5：随机初始化；finetune：预训练权重 + 小学习率）。早停看留出集 BCE。

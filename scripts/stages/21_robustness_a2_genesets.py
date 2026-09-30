@@ -7,7 +7,7 @@ Inputs
   raw/jasn2012_sdc1.pdf                     JASN 2012 Supplemental Table 1 (394 IRRATs, FC, P)
   raw/converted_xlsx/*.xlsx                 LibreOffice xls->xlsx conversions of raw/atagc_genelists_wayback/*.xls
   raw/atagc_genelists_wayback/cIRIT_HT.xlsx native xlsx
-Run:  conda activate kir; python scripts/stages/21_robustness_a2_genesets.py
+Run:  conda activate dkd-shared-injury; python scripts/stages/21_robustness_a2_genesets.py
 Re-create the .xlsx conversions (pandas here has no xlrd):
   libreoffice --headless --convert-to xlsx --outdir raw/converted_xlsx raw/atagc_genelists_wayback/*.xls
 """

@@ -28,7 +28,7 @@ CT_LABEL = {"PODO": "Podocyte", "PEC": "PEC", "MES": "Mesangial", "ENDO": "Endot
 CT_ORDER = ["PODO", "PEC", "MES", "ENDO", "ENDO_PT", "PT", "PT_injured", "LOH", "DCT", "CNT_PC", "IC",
             "STROMA", "PERI", "MAC", "DC", "TCELL", "NK", "BCELL", "MAST"]
 KIND_COL = {"full": "#8C8C8C", "comp_only": "#55A868", "state_only": "#8172B3"}
-KIND_LAB = {"full": "Full", "comp_only": "Compositional only", "state_only": "Cell-intrinsic only"}
+KIND_LAB = {"full": "Full", "comp_only": "Compositional only", "state_only": "Within-lineage only"}
 
 
 def unit_order(d):
@@ -199,7 +199,7 @@ def build():
     panel_b(b, d)
     panel_c(c, k)
     panel_d([d1, d2], k)
-    h = [Patch(color=KIND_COL["state_only"], label="Cell-intrinsic"), Patch(color=KIND_COL["comp_only"], label="Compositional")]
+    h = [Patch(color=KIND_COL["state_only"], label="Within-lineage"), Patch(color=KIND_COL["comp_only"], label="Compositional")]
     d2.legend(handles=h, loc="lower right", fontsize=5.5)
     panel_e(e, lo)
     return fl.finalize(fig, {"a": a, "b": b, "c": c, "d": d1, "e": e})

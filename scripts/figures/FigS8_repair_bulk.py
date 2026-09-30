@@ -1,4 +1,6 @@
-"""Fig. S8 - failed-repair programs in bulk biopsy cohorts (panels a-c).
+"""Fig. S8 - adaptive and failed-repair programs in bulk biopsy cohorts (panels a-c), program reproducibility with
+contributing-gene expression (panel d; Fig4_repair_state.panel_a1/a2) and the reduced program in independent cohorts
+(panel e; fig4_repair_panels.panel_f).
 
 Inputs (read only): results/20_repair_state/figdata/panel_f_bulk_meta.tsv, panel_f_bulk_scp_relation.tsv,
 panel_f_bulk_resolvability.tsv.
@@ -13,6 +15,8 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figlib as fl  # noqa: E402
+import Fig4_repair_state as f4  # noqa: E402
+import fig4_repair_panels as p2  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 
 NAME = "FigS8"
@@ -85,15 +89,30 @@ def build():
     m = fl.read(FD + "panel_f_bulk_meta.tsv")
     s = fl.read(FD + "panel_f_bulk_scp_relation.tsv")
     rv = fl.read(FD + "panel_f_bulk_resolvability.tsv")
-    fig = fl.new_fig(fl.FULL_W, 80 * fl.MM)
-    gs = fig.add_gridspec(1, 3, width_ratios=[1.3, 1.0, 0.75])
+    ps = fl.read(FD + "panel_a_program_summary.tsv")
+    se = fl.read(FD + "panel_a_key_gene_state_expression.tsv")
+    kg = fl.read(FD + "panel_h_key_genes.tsv")
+    clin = fl.read(FD + "panel_g_clinical_tests.tsv")
+    drivers = [g for g in kg.gene[kg.is_driver] if g in set(se.gene)]
+    genes = drivers[:30] + [g for g in f4.REFERENCE_GENES if g in set(se.gene)]
+    fig = fl.new_fig(fl.FULL_W, 182 * fl.MM)
+    gs0 = fig.add_gridspec(3, 1, height_ratios=[1, 1.1, 0.55])
+    gs = gs0[0].subgridspec(1, 3, width_ratios=[1.3, 1.0, 0.75])
     a, b, c = (fig.add_subplot(gs[i]) for i in range(3))
-    for ax in (a, b, c):
+    r2 = gs0[1].subgridspec(1, 2, width_ratios=[0.8, 4.2])
+    d1, d2 = fig.add_subplot(r2[0]), fig.add_subplot(r2[1])
+    r3 = gs0[2].subgridspec(1, 3, width_ratios=[1.5, 0.6, 1.3])
+    e1, e2 = fig.add_subplot(r3[0]), fig.add_subplot(r3[1])
+    fl.hide(fig.add_subplot(r3[2]))
+    for ax in (a, b, c, d1, e1):
         fl.reserve_label(ax)
     panel_a(a, m)
     panel_b(b, s)
     panel_c(c, rv)
-    return fl.finalize(fig, {"a": a, "b": b, "c": c})
+    f4.panel_a1(d1, ps, NAME)
+    f4.panel_a2(d2, se, genes, NAME)
+    p2.panel_f(e1, e2, clin, NAME)
+    return fl.finalize(fig, {"a": a, "b": b, "c": c, "d": d1, "e": e1})
 
 
 if __name__ == "__main__":

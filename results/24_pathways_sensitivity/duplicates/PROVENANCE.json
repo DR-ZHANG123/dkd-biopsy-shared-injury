@@ -1,0 +1,26 @@
+{
+  "stage": "24_pathways_sensitivity/duplicates",
+  "time": "2026-09-30T23:34:56",
+  "seed": 20260928,
+  "config_sha": "c722ceae0f0c6995",
+  "git_commit": "5d2b8cdb373933e1012accad0ae9f717817dde36",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/02_overlap/pair_evidence.tsv": "57395f21c816aa2feb95adad6a682a38",
+    "results/02_overlap/sample_table.tsv": "31492d55a87ec29ff4eef365f26efb7b",
+    "data/processed/cohorts.tsv": "728162c74b2d65874dbcb087c13a56bc"
+  },
+  "outputs": {
+    "results/24_pathways_sensitivity/duplicates/threshold_grid.tsv": "867bb202627c8048e8154c3ab3c85907"
+  },
+  "extra": {}
+}

@@ -73,15 +73,15 @@ def columns(N: dict) -> list[tuple[str, list[str]]]:
                        "counted once", f"{N['n_cohorts']} cohorts"]),
         ("Injury–repair response", ["learned without DKD", "DKD vs control", f"AUROC {N['auc_lo']:.3f}\u2013{N['auc_hi']:.3f}",
                             f"{N['core_g']:,} + {N['core_t']:,}", "response genes"]),
-        ("Key cells", ["KPMP tubular signal:", f"cell-intrinsic {N['state'] * 100:.0f}%", f"compositional {N['comp'] * 100:.0f}%",
+        ("Key cells", ["KPMP tubular signal:", f"within-lineage {N['state'] * 100:.0f}%", f"compositional {N['comp'] * 100:.0f}%",
                        "adaptive / failed-repair:", f"{N['adaptive'] * 100:.0f}% / {N['failed'] * 100:.0f}% of PT/TAL"]),
         ("Replication", [f"{N['n_rep']} independent cohorts", "disease vs healthy", f"AUROC {N['rep_lo']:.2f}\u2013{N['rep_hi']:.2f}",
                          f"{N['n_rep_above']} of {N['n_rep']} above", "random gene sets"]),
         ("Kidney function", ["KPMP donor eGFR", f"CKD \u03c1 = {N['egfr_rho']:.2f}".replace("-", m),
                              f"DKD \u03c1 = {N['egfr_rho_dkd']:.2f}".replace("-", m),
                              f"proteinuria \u03c1 = {N['prot_rho']:.2f}", f"DKD stage AUROC {N['stage_auc']:.2f}"]),
-        ("Disease-specific", ["small after", "adjustment", "DKD: podocyte loss", f"(z {N['podo_z']:.1f})".replace("-", m),
-                               "replicated signature:", " ".join(N["rep_dx"]) + " only"]),
+        ("Specific to DKD", ["after adjustment:", "podocyte loss", f"(z {N['podo_z']:.1f})".replace("-", m),
+                              "glomerular-capillary loss", "published signatures", "near random vs CKD"]),
     ]
 
 
@@ -97,7 +97,7 @@ def build():
     rows = []
     ax.add_patch(FancyBboxPatch((10, 262), W - 20, 30, boxstyle="round,pad=0,rounding_size=6", lw=0,
                                 fc="#3A3A3A", gid="box:title"))
-    title = "A shared injury–repair response involving adaptive and failed-repair tubular states"
+    title = "Much of the DKD biopsy transcriptome is an injury–repair response shared with other kidney diseases"
     ax.text(W / 2, 277, title, ha="center", va="center", fontsize=10.5, fontweight="bold", color="white",
             gid="in:title")
     rows.append(dict(element="title", text=title))
@@ -120,7 +120,7 @@ def build():
             ya = (bot + top) / 2
             ax.add_patch(FancyArrowPatch((x + cw + 1.5, ya), (x + cw + gap - 1.5, ya), arrowstyle="-|>",
                                          mutation_scale=9, lw=1.0, color="#555555", zorder=2))
-    msg = "Disease-specific signals are small beside the injury–repair response: compare patients with patients"
+    msg = "Derive and test DKD biomarkers against other kidney diseases, not against healthy tissue alone"
     ax.add_patch(FancyBboxPatch((10, 10), W - 20, 32, boxstyle="round,pad=0,rounding_size=6", lw=0.8,
                                 ec="#3A3A3A", fc="#F2F2F2", gid="box:msg"))
     ax.text(W / 2, 26, msg, ha="center", va="center", fontsize=9.5, fontweight="bold", color="#3A3A3A",

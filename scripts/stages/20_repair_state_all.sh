@@ -3,7 +3,7 @@
 # 顺序依赖：programs → concord → decomp → donors → bulk → clinical → genes → summary
 set -euo pipefail
 cd "$(dirname "$0")/../.."
-source "$(conda info --base)/etc/profile.d/conda.sh"; conda activate kir
+source "$(conda info --base)/etc/profile.d/conda.sh"; conda activate dkd-shared-injury
 mkdir -p logs
 for s in programs concord decomp donors bulk clinical genes summary; do
   echo ">> 20_repair_state_$s"

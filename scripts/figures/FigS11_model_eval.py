@@ -99,7 +99,7 @@ def panel_b(ax, axd):
     axd.set_ylim(-0.6, len(rows) - 0.4)
     axd.set_xlim(-0.65, 0.4)
     ax.set_xlabel("AUROC (raw)")
-    axd.set_xlabel("Δ AUROC vs B-L2")
+    axd.set_xlabel(f"Δ AUROC vs {fl.METHOD_LABEL['B-L2']}")
     h = [Line2D([], [], marker="o", ls="", ms=3, color=fl.METHOD_COLORS["RRG-ID"], label="Classifier (95% CI)"),
          Line2D([], [], marker="s", ls="", ms=3, color=fl.METHOD_COLORS["B-L2"], label=fl.METHOD_LABEL["B-L2"]),
          Line2D([], [], marker="^", ls="", ms=3, color=fl.METHOD_COLORS["B2-PCA"], label=fl.METHOD_LABEL["B2-PCA"])]

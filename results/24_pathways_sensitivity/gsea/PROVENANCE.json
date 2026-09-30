@@ -1,0 +1,42 @@
+{
+  "stage": "24_pathways_sensitivity/gsea",
+  "time": "2026-09-30T23:33:36",
+  "seed": 20260928,
+  "config_sha": "c722ceae0f0c6995",
+  "git_commit": "5d2b8cdb373933e1012accad0ae9f717817dde36",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/19_shared_program/core/meta_GLOM.tsv.gz": "6c13c7cd8f67153eb9c715da4b3fe744",
+    "results/19_shared_program/core/meta_TUB.tsv.gz": "926a1a27510b2770f4d3ee2037072fe3",
+    "data/external/msigdb/h.all.v2024.1.Hs.symbols.gmt": "d3606c325b9862bf3ea7991c2c2bf7d7",
+    "data/external/msigdb/c2.cp.reactome.v2024.1.Hs.symbols.gmt": "dccd81fc2421f7ad64a123409c94a565",
+    "data/external/msigdb/c5.go.bp.v2024.1.Hs.symbols.gmt": "fd535c44825f9be3ea7c5d31e3d45f1d"
+  },
+  "outputs": {
+    "results/24_pathways_sensitivity/gsea/gsea_GLOM_Hallmark.tsv": "f89811ca2ca47200b800e8c771e49bf3",
+    "results/24_pathways_sensitivity/gsea/gsea_GLOM_Reactome.tsv": "b069530b351557658ffceb13f0a6e70f",
+    "results/24_pathways_sensitivity/gsea/gsea_GLOM_GO_BP.tsv": "2a4736da81409afa9f3b3d924b2f7206",
+    "results/24_pathways_sensitivity/gsea/gsea_TUB_Hallmark.tsv": "b79ef0de17bcb13fbdc54ad4474c7339",
+    "results/24_pathways_sensitivity/gsea/gsea_TUB_Reactome.tsv": "c90c1affcc1da51d454429cb6f925d99",
+    "results/24_pathways_sensitivity/gsea/gsea_TUB_GO_BP.tsv": "6b64824b85d65d65f89641bee75eda5d",
+    "results/24_pathways_sensitivity/gsea/gsea_GLOM_Hallmark_no_proc_ieg.tsv": "3e7b3c146efe20b52a99749f1af0893c",
+    "results/24_pathways_sensitivity/gsea/gsea_GLOM_Reactome_no_proc_ieg.tsv": "abc154bc951805e1bb8c60ef6ff6feb7",
+    "results/24_pathways_sensitivity/gsea/gsea_GLOM_GO_BP_no_proc_ieg.tsv": "b6866102c205f1c6a9b0787c1abd9e75",
+    "results/24_pathways_sensitivity/gsea/gsea_TUB_Hallmark_no_proc_ieg.tsv": "2d2f9f2bade31f53373202741faf02f5",
+    "results/24_pathways_sensitivity/gsea/gsea_TUB_Reactome_no_proc_ieg.tsv": "e8de2f2eaa13b08fbe08a90e85c27b10",
+    "results/24_pathways_sensitivity/gsea/gsea_TUB_GO_BP_no_proc_ieg.tsv": "8db271b3bd76f1be0d2d7d0d5b4d9377",
+    "results/24_pathways_sensitivity/gsea/gsea_summary.tsv": "fc1e437d6a6a87f9c6ec527cf7915aa7"
+  },
+  "extra": {
+    "gseapy": "1.1.4"
+  }
+}

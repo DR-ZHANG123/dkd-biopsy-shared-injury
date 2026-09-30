@@ -1,4 +1,4 @@
-"""Fig. S5 - stability of the core genes (panels a-c).
+"""Fig. S5 - stability of the core genes (panels a-c) and pathway annotation of the response (panel d).
 
 Inputs (read only): results/19_shared_program/core/stability.tsv,
 results/19_shared_program/figdata/fig1_core_forest.tsv (representative core genes, per-source effects).
@@ -13,6 +13,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figlib as fl  # noqa: E402
+import fig_extra_panels as xp  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 
 NAME = "FigS5"
@@ -104,18 +105,21 @@ def panel_c(axs, fo):
 def build():
     st = fl.read("results/19_shared_program/core/stability.tsv")
     fo = fl.read("results/19_shared_program/figdata/fig1_core_forest.tsv")
-    fig = fl.new_fig(fl.FULL_W, 150 * fl.MM)
-    gs = fig.add_gridspec(2, 1, height_ratios=[0.8, 1.6])
+    fig = fl.new_fig(fl.FULL_W, 222 * fl.MM)
+    gs = fig.add_gridspec(3, 1, height_ratios=[0.75, 1.45, 1.75])
     r1 = gs[0].subgridspec(1, 2, width_ratios=[1, 1])
     a, b = fig.add_subplot(r1[0]), fig.add_subplot(r1[1])
     r2 = gs[1].subgridspec(1, 2)
     c1, c2 = fig.add_subplot(r2[0]), fig.add_subplot(r2[1])
-    for ax in (a, b):
+    r3 = gs[2].subgridspec(1, 3, width_ratios=[0.35, 1, 0.35])
+    d = fig.add_subplot(r3[1])
+    for ax in (a, b, d):
         fl.reserve_label(ax)
     panel_a(a, st)
     panel_b(b, st)
     panel_c([c1, c2], fo)
-    return fl.finalize(fig, {"a": a, "b": b, "c": c1})
+    xp.pathways(d, NAME, "d")
+    return fl.finalize(fig, {"a": a, "b": b, "c": c1, "d": d})
 
 
 if __name__ == "__main__":
