@@ -41,7 +41,7 @@ def panel_a(ax, axd):
         ax.bar(x, d.adj_auroc - 0.5, bottom=0.5, width=w * 0.92, color=fl.METHOD_COLORS[meth], edgecolor="white",
                lw=0.3, label=mlabel(meth))
     ax.axhline(0.5, color="black", lw=0.6)
-    ax.text(-0.45, 0.37, "200-gene score: 0.5 by construction", ha="left", va="bottom", fontsize=5.5)
+    ax.text(-0.45, 0.37, "External score: 0.5 by construction", ha="left", va="bottom", fontsize=5.5)
     lab = [f"{fl.unit_label(u).replace('ERCB-', '')}\n{int(m[m.test_unit == u].n_dkd.iloc[0])}/{int(m[m.test_unit == u].n_other.iloc[0])}"
            for u in ERCB]
     ax.set_xticks(range(len(ERCB)), lab, fontsize=5.5)
@@ -101,8 +101,8 @@ def panel_b(ax, axd):
     ax.set_xlabel("AUROC (raw)")
     axd.set_xlabel("Δ AUROC vs B-L2")
     h = [Line2D([], [], marker="o", ls="", ms=3, color=fl.METHOD_COLORS["RRG-ID"], label="Classifier (95% CI)"),
-         Line2D([], [], marker="s", ls="", ms=3, color=fl.METHOD_COLORS["B-L2"], label="B-L2"),
-         Line2D([], [], marker="^", ls="", ms=3, color=fl.METHOD_COLORS["B2-PCA"], label="B2-PCA")]
+         Line2D([], [], marker="s", ls="", ms=3, color=fl.METHOD_COLORS["B-L2"], label=fl.METHOD_LABEL["B-L2"]),
+         Line2D([], [], marker="^", ls="", ms=3, color=fl.METHOD_COLORS["B2-PCA"], label=fl.METHOD_LABEL["B2-PCA"])]
     leg = ax.legend(handles=h, loc="lower center", bbox_to_anchor=(0.5, 1.0), ncol=3, fontsize=5.3,
                     frameon=False, columnspacing=0.6, handletextpad=0.2)
     leg.set_gid("free")

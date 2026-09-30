@@ -23,7 +23,7 @@ def build():
     egfr_med = e[e.test == "egfr_median_patients"].iloc[0]
     r = e[e.test.str.startswith("rho_") & e.test.str.endswith("_patients")].copy()
     r["variable"] = r.test.str.replace("rho_", "").str.replace("_egfr_patients", "")
-    r["label"] = np.where(r.variable == "injury", "200-gene\nscore", r.variable)
+    r["label"] = np.where(r.variable == "injury", "External\nscore", r.variable)
     r = r.sort_values("value").reset_index(drop=True)
     fig = fl.new_fig(fl.HALF_W, 75 * fl.MM)
     ax = fig.add_subplot()
@@ -39,11 +39,11 @@ def build():
     ax.vlines(0, -0.7, len(r) - 0.3, color="black", lw=0.6)
     ax.set_yticks(y, r.label)
     for t, l in zip(ax.get_yticklabels(), r.label):
-        t.set_fontstyle("normal" if l == "200-gene\nscore" else "italic")
+        t.set_fontstyle("normal" if l == "External\nscore" else "italic")
     ax.set_xlim(-0.95, 0.75)
     ax.set_ylim(-0.7, len(r) + 1.6)
     ax.set_xlabel(f"Spearman ρ with eGFR (patients, n = {int(r.n.iloc[0])})")
-    ax.text(0.74, len(r) + 1.3, f"200-gene score, patients vs controls:\nAUROC {auc.value:.3f} (n = {int(auc.n)})\n"
+    ax.text(0.74, len(r) + 1.3, f"External score, patients vs controls:\nAUROC {auc.value:.3f} (n = {int(auc.n)})\n"
             f"patient median eGFR {egfr_med.value:.1f} mL/min/1.73 m²", ha="right", va="top", fontsize=5.5)
     fl.save_source(NAME, "a", e.merge(r[["test", "label"]], on="test", how="left"))
     fig.canvas.draw()

@@ -52,7 +52,7 @@ def panel_a(ax):
         if s > 0:
             ax.vlines(s - 0.6, ylo - 0.04, yhi + 0.03 * (yhi - ylo), color="#DDDDDD", lw=0.5, zorder=0)
     ax.set_xticks([])
-    ax.set_ylabel("Score from non-DKD\npatients of other cohorts")
+    ax.set_ylabel("External score (non-DKD\npatients of other cohorts)")
     present = [x for x in DX_ORDER if x in set(sc.diagnosis)]
     handles = [Line2D([], [], marker="o", ls="", ms=3, color=fl.DX_COLORS[x], label=fl.dx_label(x)) for x in present]
     leg = ax.legend(handles=handles, ncol=len(present), loc="upper center", bbox_to_anchor=(0.5, -0.02),

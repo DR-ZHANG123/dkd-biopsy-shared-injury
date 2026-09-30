@@ -27,7 +27,7 @@ GAP = 2.4         # vertical gap between boxes (mm), arrows live here
 ACCENT = {"a": fl.PALETTE[0], "b": fl.PALETTE[3], "c": fl.PALETTE[2], "d": fl.PALETTE[4],
           "e": fl.PALETTE[1], "f": fl.PALETTE[5]}
 TITLES = {"a": "Unique biopsy specimens", "b": "Injury–repair response",
-          "c": "Cell proportions and lineages", "d": "Adaptive and failed-repair states",
+          "c": "Compositional and cell-intrinsic change", "d": "Adaptive and failed-repair states",
           "e": "Replication and kidney function", "f": "Disease-specific signals"}
 RECORDS: dict[str, list] = {}
 
@@ -126,12 +126,12 @@ def panel_a(ax, w, h, N):
     top = header(ax, k, w, h)
     hs = [8, 8, 11, 6.5, 11]
     ys = stack(top, hs)
-    b1 = box(ax, "a1", 1, ys[0], w - 2, hs[0], f"{r['n_series_versions_ingested']} series–platform versions (GEO)\n"
-             f"scale check: {r['n_series_versions_kept']} kept, {r['excluded_series'].split('-')[0]} excluded", c,
+    b1 = box(ax, "a1", 1, ys[0], w - 2, hs[0], f"{r['n_series_versions_ingested']} GEO datasets\n"
+             f"{r['n_series_versions_kept']} kept, {r['excluded_series'].split('-')[0]} excluded", c,
              panel=k)
     b2 = box(ax, "a2", 1, ys[1], w - 2, hs[1], f"{i(r['n_samples_kept'])} samples, {r['n_gse_kept']} GEO series, "
              f"{r['n_platforms_kept']} platforms\n{r['n_rnaseq_series']} RNA-seq series, "
-             f"{r['n_array_series_versions']} array versions", c, panel=k)
+             f"{r['n_array_series_versions']} array datasets", c, panel=k)
     b3 = box(ax, "a3", 1, ys[2], w - 2, hs[2], "Copies of a specimen across series:\nspecimen identifiers + residual "
              f"correlation\n({ov['resid_pcs']} PCs removed; r ≥ {ov['resid_min']}, "
              f"{ov['resid_min_within']} within series)", c, panel=k)
@@ -155,7 +155,7 @@ def panel_b(ax, w, h, N):
     ys = stack(top, hs)
     b1 = box(ax, "b1", 1, ys[0], w - 2, hs[0], "Non-DKD patients vs controls in source\ncohorts "
              "(DKD samples excluded)", c, panel=k)
-    b2 = box(ax, "b2", 1, ys[1], w - 2, hs[1], "Score from non-DKD patients of other cohorts:\n"
+    b2 = box(ax, "b2", 1, ys[1], w - 2, hs[1], "External score (non-DKD patients, other cohorts):\n"
              f"top {inj['top_k']} up − top {inj['top_k']} down genes", c, panel=k)
     b3 = box(ax, "b3", 1, ys[2], w - 2, hs[2], "Diagnosis shifts vs injury–repair response:\ncosine, "
              "cross-cohort similarity, split controls", c, panel=k)
@@ -186,12 +186,12 @@ def panel_c(ax, w, h, N):
     b3 = box(ax, "c3", 1, ys[2], w - 2, hs[2], f"KPMP donors: snRNA {sn_a} CKD, {sn_b} reference\n"
              f"scRNA {sc_a} CKD, {sc_b} reference", c, panel=k)
     half = (w - 2 - 2) / 2
-    b4 = box(ax, "c4", 1, ys[3], half, hs[3], "Cell proportions only\ndonor fractions ×\nreference profiles",
+    b4 = box(ax, "c4", 1, ys[3], half, hs[3], "Compositional only\ndonor fractions ×\nreference profiles",
              c, panel=k)
-    b5 = box(ax, "c5", 1 + half + 2, ys[3], half, hs[3], "Within lineages only\nreference fractions ×\ndonor "
+    b5 = box(ax, "c5", 1 + half + 2, ys[3], half, hs[3], "Cell-intrinsic only\nreference fractions ×\ndonor "
              "profiles", c, panel=k)
-    b6 = box(ax, "c6", 1, ys[4], w - 2, hs[4], "Share of the response: cell proportions,\n"
-             "within lineages and their interaction", c, weight="bold", fill=0.3, panel=k)
+    b6 = box(ax, "c6", 1, ys[4], w - 2, hs[4], "Share of the response: compositional,\n"
+             "cell-intrinsic and their interaction", c, weight="bold", fill=0.3, panel=k)
     down(ax, b1, b2)
     down(ax, b2, b3)
     fq = (half / 2) / (w - 2)

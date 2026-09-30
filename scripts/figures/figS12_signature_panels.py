@@ -44,10 +44,10 @@ def panel_auc(ax, sm, kvs, name, pan):
     ax.set_ylabel("AUROC (DKD vs control)")
     frac = float(kvs["frac_pairs_auc_dkd_ctrl_le_injury"])
     n_pairs = int(float(kvs["n_signature_cohort_pairs"]))
-    ax.text(0.02, 0.99, f"{frac * 100:.1f}% of {n_pairs:,} comparisons ≤ 200-gene score", transform=ax.transAxes,
+    ax.text(0.02, 0.99, f"{frac * 100:.1f}% of {n_pairs:,} comparisons ≤ external score", transform=ax.transAxes,
             ha="left", va="top", fontsize=6)
     h = [Line2D([], [], marker="o", ls="", ms=2.5, color=SIG_COL, label="Published signature"),
-         Line2D([], [], color=AXIS_COL, lw=1.4, label="200-gene score"),
+         Line2D([], [], color=AXIS_COL, lw=1.4, label="External score"),
          Line2D([], [], color="black", lw=0.9, label="Median")]
     ax.legend(handles=h, loc="upper left", bbox_to_anchor=(0, 0.935), fontsize=5.5, ncol=3, columnspacing=0.8)
     fl.save_source(name, pan, p[["sig_id", "compartment", "eval_unit", "n_genes_used", "auc_dkd_ctrl"]]

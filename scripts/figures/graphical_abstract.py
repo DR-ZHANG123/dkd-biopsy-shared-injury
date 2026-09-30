@@ -73,7 +73,7 @@ def columns(N: dict) -> list[tuple[str, list[str]]]:
                        "counted once", f"{N['n_cohorts']} cohorts"]),
         ("Injury–repair response", ["learned without DKD", "DKD vs control", f"AUROC {N['auc_lo']:.3f}\u2013{N['auc_hi']:.3f}",
                             f"{N['core_g']:,} + {N['core_t']:,}", "response genes"]),
-        ("Key cells", ["KPMP tubular signal:", f"within lineages {N['state'] * 100:.0f}%", f"cell proportions {N['comp'] * 100:.0f}%",
+        ("Key cells", ["KPMP tubular signal:", f"cell-intrinsic {N['state'] * 100:.0f}%", f"compositional {N['comp'] * 100:.0f}%",
                        "adaptive / failed-repair:", f"{N['adaptive'] * 100:.0f}% / {N['failed'] * 100:.0f}% of PT/TAL"]),
         ("Replication", [f"{N['n_rep']} independent cohorts", "disease vs healthy", f"AUROC {N['rep_lo']:.2f}\u2013{N['rep_hi']:.2f}",
                          f"{N['n_rep_above']} of {N['n_rep']} above", "random gene sets"]),

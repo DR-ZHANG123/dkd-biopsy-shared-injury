@@ -34,8 +34,8 @@ def build():
     ax.set_xlim(0.1, 1.0)
     ax.set_ylim(0.1, 1.0)
     ax.set_aspect("equal")
-    ax.set_xlabel("AUROC adjusted for 200-gene score")
-    ax.set_ylabel("AUROC stratified by 200-gene score")
+    ax.set_xlabel("AUROC adjusted for external score")
+    ax.set_ylabel("AUROC stratified by external score")
     rho = spearmanr(d.adj_auc_dkd_other, d.strat_auc_dkd_other).correlation
     m_adj, m_str = sl.adj_auc_dkd_other.median(), sl.strat_auc_dkd_other.median()
     ax.text(0.97, 0.03, f"{len(d)} signature–cohort pairs\nSpearman ρ = {rho:.2f}\n"

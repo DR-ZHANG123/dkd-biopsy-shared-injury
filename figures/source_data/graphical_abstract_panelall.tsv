@@ -2,7 +2,7 @@ element	text
 title	A shared injury–repair response involving adaptive and failed-repair tubular states
 column1	Specimens: 2,179 samples | → 1,462 unique | biopsy specimens | counted once | 9 cohorts
 column2	Injury–repair response: learned without DKD | DKD vs control | AUROC 0.971–1.000 | 1,378 + 907 | response genes
-column3	Key cells: KPMP tubular signal: | within lineages 71% | cell proportions 19% | adaptive / failed-repair: | 23% / 19% of PT/TAL
+column3	Key cells: KPMP tubular signal: | cell-intrinsic 71% | compositional 19% | adaptive / failed-repair: | 23% / 19% of PT/TAL
 column4	Replication: 6 independent cohorts | disease vs healthy | AUROC 0.69–1.00 | 4 of 6 above | random gene sets
 column5	Kidney function: KPMP donor eGFR | CKD ρ = −0.49 | DKD ρ = −0.68 | proteinuria ρ = 0.67 | DKD stage AUROC 0.99
 column6	Disease-specific: small after | adjustment | DKD: podocyte loss | (z −9.4) | replicated signature: | MCD only

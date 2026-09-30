@@ -45,7 +45,8 @@ COMP_COLORS = {"GLOM": "#4C72B0", "TUB": "#DD8452", "WHOLE": "#55A868"}
 COMP_LABEL = {"GLOM": "Glomerulus", "TUB": "Tubulointerstitium", "WHOLE": "Whole biopsy"}
 METHOD_COLORS = {"RRG-ID": "#C44E52", "B-L2": "#4C72B0", "B2-PCA": "#55A868", "B-cPCA": "#8172B3",
                  "B-rankLASSO": "#DD8452", "B-L2-unitcenter": "#64B5CD", "B-injury": "#8C8C8C"}
-METHOD_LABEL = {"B-rankLASSO": "rank-LASSO", "B-L2-unitcenter": "B-L2 (cohort-centred)", "B-injury": "200-gene score", "RRG-ID": "Classifier"}
+METHOD_LABEL = {"B-L2": "L2 logistic", "B2-PCA": "PCA logistic", "B-cPCA": "Contrastive PCA", "B-rankLASSO": "Rank LASSO",
+                "B-L2-unitcenter": "L2 logistic (cohort-centred)", "B-injury": "External score", "RRG-ID": "Classifier"}
 UNIT_LABEL = {"ERCB_GLOM_H1": "ERCB-GLOM-H1", "ERCB_GLOM_H7": "ERCB-GLOM-H7", "ERCB_TUB_H1": "ERCB-TUB-H1",
               "ERCB_TUB_H7": "ERCB-TUB-H7"}
 

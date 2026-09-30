@@ -77,9 +77,9 @@ def panel_b(axs):
         lim = x.delta.abs().max() * 1.15
         ax.set_xlim(-0.25 * lim, lim)
         out.append(x.assign(y=x.cell_type.map(ypos)))
-    hs = [Patch(color="#C44E52", label="Within lineages, all donors"), Patch(color="#C44E52", alpha=0.45,
-          label="Within lineages, percutaneous"), Patch(color="#4C72B0", label="Cell proportions, all donors"),
-          Patch(color="#4C72B0", alpha=0.45, label="Cell proportions, percutaneous")]
+    hs = [Patch(color="#C44E52", label="Cell-intrinsic, all donors"), Patch(color="#C44E52", alpha=0.45,
+          label="Cell-intrinsic, percutaneous"), Patch(color="#4C72B0", label="Compositional, all donors"),
+          Patch(color="#4C72B0", alpha=0.45, label="Compositional, percutaneous")]
     axs[1].legend(handles=hs, loc="lower right", fontsize=5)
     fl.save_source(NAME, "b", pd.concat(out)[["compartment", "contrast", "kind", "cell_type", "n_A", "n_B",
                                                "delta", "p_perm", "y"]])
@@ -92,8 +92,8 @@ def panel_c(ax):
     classes = ["state", "state+composition", "composition", "opposite_state", "unresolved"]
     cols = {"state": "#C44E52", "state+composition": "#8172B3", "composition": "#4C72B0",
             "opposite_state": "#CCB974", "unresolved": "#CCCCCC"}
-    labs = {"state": "Within lineage", "state+composition": "Both", "composition": "Cell proportions",
-            "opposite_state": "Opposite, within lineage", "unresolved": "Unresolved"}
+    labs = {"state": "Cell-intrinsic", "state+composition": "Both", "composition": "Compositional",
+            "opposite_state": "Opposite, cell-intrinsic", "unresolved": "Unresolved"}
     idx = [("GLOM", "snRNA"), ("GLOM", "scRNA"), ("TUB", "snRNA"), ("TUB", "scRNA")]
     t = t.reindex(idx)
     left = np.zeros(len(idx))

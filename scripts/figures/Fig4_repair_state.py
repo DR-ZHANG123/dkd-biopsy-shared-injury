@@ -31,7 +31,7 @@ TYPES = [("PT_normal", "PT normal"), ("PT_repair", "PT aPT+frPT"), ("PT_other_al
          ("PEC", "PEC"), ("ENDO", "Endothelial"), ("ENDO_PT", "Peritubular EC"), ("STROMA", "Stromal"),
          ("MAC", "Macrophage"), ("TCELL", "T cell")]
 REFERENCE_GENES = ["HAVCR1", "LCN2", "CDH6", "CD24", "SPP1"]   # canonical injury markers outside the SCP core
-BLOCKS = [("composition", "Cell proportions", "#55A868"),
+BLOCKS = [("composition", "Composition", "#55A868"),
           ("adaptive_fraction", "Adaptive fraction", "#DD8452"),
           ("adaptive_cell_profile", "Adaptive profile", "#F2C29E"),
           ("failed_repair_fraction", "Failed-repair fraction", "#C44E52"),

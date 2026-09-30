@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-tex = (ROOT / "manuscript/humgenomics/main.tex").read_text() if len(sys.argv) < 2 else Path(sys.argv[1]).read_text()
+tex = (ROOT / "manuscript/humgenomics_tpl/main.tex").read_text() if len(sys.argv) < 2 else Path(sys.argv[1]).read_text()
 envs = re.findall(r"\\begin\{figure\*?\}(.*?)\\end\{figure\*?\}", tex, flags=re.S)
 errs, seen, n_main, n_supp = [], set(), 0, 0
 for body in envs:

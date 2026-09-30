@@ -23,8 +23,8 @@ METH_COLORS = {"BayesPrism": "#4C72B0", "NNLS": "#C44E52"}
 KEY_Q = [("GLOM", "PODO", "Podocyte"), ("GLOM", "EC(all)", "Endothelial"), ("GLOM", "MES_VSMC", "Mesangial/VSMC"),
          ("GLOM", "PEC", "Parietal epithelial"), ("GLOM", "immune", "Immune"), ("TUB", "PT", "Proximal tubule"),
          ("TUB", "distal(TAL..IC)", "Distal nephron"), ("TUB", "immune", "Immune"), ("TUB", "FIB", "Fibroblast")]
-FEAT_LABEL = {"B-L2+COMP": "B-L2 + composition", "B-L2+COMP+SF": "B-L2 + composition + state share",
-              "B-L2|uc": "B-L2, cohort-centred", "D-COMP": "Composition", "D-COMP+RESID": "Composition + residual ranks",
+FEAT_LABEL = {"B-L2+COMP": "L2 logistic + composition", "B-L2+COMP+SF": "L2 logistic + composition + state share",
+              "B-L2|uc": "L2 logistic, cohort-centred", "D-COMP": "Composition", "D-COMP+RESID": "Composition + residual ranks",
               "D-COMP+SF": "Composition + state share", "D-COMP+SF+Z": "Composition + state share + cell-type ranks",
               "D-COMP+Z": "Composition + cell-type ranks", "D-COMP+Z|uc": "Composition + cell-type ranks, centred",
               "D-COMP|uc": "Composition, centred", "D-RANK_Z": "Bulk ranks, cell-type genes",
@@ -99,7 +99,7 @@ def panel_c(ax):
     ax.set_yticks(list(ypos.values()), list(ypos.keys()), fontsize=5.5)
     ax.set_ylim(-0.7, len(ypos) - 0.3)
     ax.set_xlim(-0.19, 0.05)
-    ax.set_xlabel("Δ adjusted AUROC vs B-L2 (95% CI)")
+    ax.set_xlabel("Δ adjusted AUROC vs L2 logistic (95% CI)")
     n = int(d.n_cells.iloc[0])
     ax.legend(loc="lower left", fontsize=5.5, title=f"{n} development cells", title_fontsize=5.5)
     fl.save_source(NAME, "c", d)

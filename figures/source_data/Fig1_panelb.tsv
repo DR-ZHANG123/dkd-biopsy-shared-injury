@@ -1,7 +1,7 @@
 box	x_mm	y_mm	w_mm	h_mm	text
 b_title	0	60	55	6	Injury–repair response
 b1	1	49.6	53	8	Non-DKD patients vs controls in source | cohorts (DKD samples excluded)
-b2	1	39.2	53	8	Score from non-DKD patients of other cohorts: | top 200 up − top 200 down genes
+b2	1	39.2	53	8	External score (non-DKD patients, other cohorts): | top 200 up − top 200 down genes
 b3	1	28.8	53	8	Diagnosis shifts vs injury–repair response: | cosine, cross-cohort similarity, split controls
 b4	1	15.4	53	11	Random-effects meta-analysis (Hartung–Knapp) | FDR < 0.01, |g| ≥ 0.8, same sign in all sources | leave-one-out P < 0.05 and |g| ≥ 0.5
 b5	1	5	53	8	Glomerulus: 1,378 genes (776 up, 602 down) | Tubulointerstitium: 907 genes (600 up, 307 down)
