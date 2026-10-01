@@ -39,8 +39,8 @@ def panel_a(ax):
     ax.plot([0.4, 1.0], [0.4, 1.0], ls="--", color="black", lw=0.6)
     ax.set_xlim(0.55, 1.0)
     ax.set_ylim(0.45, 1.0)
-    ax.set_xlabel("Split-half reliability of\nother-CKD shift (r)")
-    ax.set_ylabel("DKD vs other-CKD shift,\nsplit controls (r)")
+    ax.set_xlabel("Split-half reliability of\nother-CKD change (r)")
+    ax.set_ylabel("DKD vs other-CKD change,\nsplit controls (r)")
     h = [Line2D([], [], marker="o", ls="", ms=3, color=COLS[u], label=fl.unit_label(u)) for u in UNITS]
     h.append(Line2D([], [], marker="D", ls="", ms=4, color="white", markeredgecolor="black", label="Median"))
     ax.legend(handles=h, loc="lower right", fontsize=5)
@@ -66,7 +66,7 @@ def panel_b(ax):
     ax.set_ylabel("Gene-wise R² with\nresponse direction")
     ax.scatter([], [], marker="D", s=14, color=fl.DX_COLORS["DKD"], edgecolor="black", lw=0.4, label="DKD")
     ax.scatter([], [], marker="o", s=6, color="#8C8C8C", label="Other")
-    ax.plot([], [], color="#9A9A9A", lw=1.1, label="Null 95th pct.")
+    ax.plot([], [], color="#9A9A9A", lw=1.1, label="Control split, 95th pct.")
     ax.legend(loc="upper left", ncol=3, fontsize=5, columnspacing=0.6, handletextpad=0.2)
     fl.save_source(NAME, "b", s[["compartment", "unit", "diagnosis", "n", "n_ctrl", "r2_ctrlsplit",
                                  "r2_ctrlsplit_null_q95", "r2_ctrlsplit_p", "r2_disatt", "x"]])

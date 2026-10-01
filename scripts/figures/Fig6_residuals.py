@@ -95,7 +95,7 @@ def panel_b(ax):
     ax.set_xlim(0, 1.02)
     ax.set_ylim(-0.7, len(t) - 0.3)
     ax.set_xlabel("Within-patient AUROC")
-    ax.plot([], [], color="#CCCCCC", lw=2.5, label="Random null")
+    ax.plot([], [], color="#CCCCCC", lw=2.5, label="Random signatures")
     ax.legend(loc="center left", bbox_to_anchor=(0, 0.44), fontsize=5.3, frameon=False, handlelength=1.0)
     fl.save_source(NAME, "b", t.drop(columns="o"))
 

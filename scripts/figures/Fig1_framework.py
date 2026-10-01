@@ -157,7 +157,7 @@ def panel_b(ax, w, h, N):
              "(DKD samples excluded)", c, panel=k)
     b2 = box(ax, "b2", 1, ys[1], w - 2, hs[1], "External score (non-DKD patients, other cohorts):\n"
              f"top {inj['top_k']} up − top {inj['top_k']} down genes", c, panel=k)
-    b3 = box(ax, "b3", 1, ys[2], w - 2, hs[2], "Diagnosis shifts vs injury–repair response:\ncosine, "
+    b3 = box(ax, "b3", 1, ys[2], w - 2, hs[2], "Diagnosis changes vs injury–repair response:\ncosine, "
              "cross-cohort similarity, split controls", c, panel=k)
     b4 = box(ax, "b4", 1, ys[3], w - 2, hs[3], "Random-effects meta-analysis (Hartung–Knapp)\n"
              f"FDR < {core['fdr']}, |g| ≥ {core['min_abs_g']}, same sign in all sources\n"

@@ -63,7 +63,7 @@ def panel_pct(ax, sm, kvs, name, pan):
     ax.set_xlim(-0.6, len(UNITS) - 0.4)
     ax.set_ylim(0, 1.2)
     ax.set_yticks(np.arange(0, 1.01, 0.2))
-    ax.set_ylabel("Percentile in random null")
+    ax.set_ylabel("Percentile among\nrandom gene sets")
     frac = float(kvs["frac_pairs_auc_dkd_ctrl_not_above_random95"])
     ax.text(0.02, 0.99, f"{frac * 100:.1f}% not above 95th percentile", transform=ax.transAxes, ha="left",
             va="top", fontsize=6)

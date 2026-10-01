@@ -89,7 +89,7 @@ def panel_b(ax):
     ax.set_ylabel("Cosine with\ninjury–repair response")
     ax.scatter([], [], marker="D", s=16, color=fl.DX_COLORS["DKD"], edgecolor="black", lw=0.4, label="DKD")
     ax.scatter([], [], marker="o", s=7, color="#8C8C8C", label="Other diagnoses")
-    ax.plot([], [], color="#9A9A9A", lw=1.1, label="Null 95th percentile")
+    ax.plot([], [], color="#9A9A9A", lw=1.1, label="Control split, 95th pct.")
     ax.legend(loc="upper right", ncol=3, fontsize=5.5, columnspacing=0.8)
     n_above = int((cs.cosine > cs.cosine_ctrlsplit_null_q95).sum())
     fl.save_source(NAME, "b", cs.assign(n_contrasts_above_null_q95=n_above, n_contrasts=len(cs)))
@@ -112,10 +112,10 @@ def panel_c(ax):
     ax.set_xlim(0, 1.9)
     ax.set_xlabel("Cross-cohort similarity of\nDKD and non-DKD changes")
     ax.set_ylim(-0.6, len(sr) + 0.5)
-    ax.text(1.88, len(sr) - 0.05, f"informative pairs: median {med:.2f}; bars, 95% bootstrap interval", ha="right",
+    ax.text(1.88, len(sr) - 0.05, f"pairs with DKD–DKD r ≥ 0.2: median {med:.2f}; bars, 95% bootstrap interval", ha="right",
             va="center", fontsize=5.5, zorder=5, bbox=dict(boxstyle="square,pad=0.1", fc="white", ec="none"))
     from matplotlib.patches import Patch
-    ax.legend(handles=[Patch(color="#4C72B0", label="Informative"), Patch(color="#CCCCCC", label="Uninformative")],
+    ax.legend(handles=[Patch(color="#4C72B0", label="DKD–DKD r ≥ 0.2"), Patch(color="#CCCCCC", label="DKD–DKD r < 0.2")],
               loc="lower right", fontsize=5.5, ncol=2, columnspacing=0.8, borderaxespad=0.15)
     fl.save_source(NAME, "c", sr.assign(median_informative=med))
 
