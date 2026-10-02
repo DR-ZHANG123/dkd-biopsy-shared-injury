@@ -1,5 +1,5 @@
 box	x_mm	y_mm	w_mm	h_mm	text
-e_title	0	60	55	6	Replication and DKD severity
+e_title	0	60	55	6	Independent replication and DKD severity
 e1	1	51.6	53	6	6 cohorts never used to define the response genes
 e_chip0	1	43.6	16.6	5.6	GSE162830
 e_chip1	19.2	43.6	16.6	5.6	KPMP sections
@@ -8,5 +8,5 @@ e_chip3	1	35.8	16.6	5.6	GSE175759
 e_chip4	19.2	35.8	16.6	5.6	GSE142025
 e_chip5	37.4	35.8	16.6	5.6	GSE115857
 e3	1	25.4	53	8	Injury–repair score: disease vs healthy AUROC | vs 1,000 random gene sets (matched sizes)
-e4	1	15	53	8	Clinical: eGFR, proteinuria, DKD stage, | IgAN grade; KPMP donor-level eGFR
+e4	1	15	53	8	DKD: donor eGFR and disease stage | Also: proteinuria, IgAN grade
 e5	1	4.6	53	8	Sensitivity: without procurement-sensitive | or immediate-early genes

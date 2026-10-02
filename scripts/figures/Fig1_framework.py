@@ -28,7 +28,7 @@ ACCENT = {"a": fl.PALETTE[0], "b": fl.PALETTE[3], "c": fl.PALETTE[2], "d": fl.PA
           "e": fl.PALETTE[1], "f": fl.PALETTE[5]}
 TITLES = {"a": "Unique biopsy specimens", "b": "Shared response defined without DKD",
           "c": "DKD: compositional vs within-lineage", "d": "Tubular states carrying the response",
-          "e": "Replication and DKD severity", "f": "What remains in DKD"}
+          "e": "Independent replication and DKD severity", "f": "What remains in DKD"}
 RECORDS: dict[str, list] = {}
 
 
@@ -251,8 +251,8 @@ def panel_e(ax, w, h, N):
         chips.append(box(ax, f"e_chip{j}", x, y, cw, ch, name, c, fs=5.9, fill=0.08, panel=k))
     b3 = box(ax, "e3", 1, ys[2], w - 2, hs[2], "Injury–repair score: disease vs healthy AUROC\n"
              f"vs {rep['n_random_sets']:,} random gene sets (matched sizes)", c, panel=k)
-    b4 = box(ax, "e4", 1, ys[3], w - 2, hs[3], "Clinical: eGFR, proteinuria, DKD stage,\n"
-             "IgAN grade; KPMP donor-level eGFR", c, panel=k)
+    b4 = box(ax, "e4", 1, ys[3], w - 2, hs[3], "DKD: donor eGFR and disease stage\n"
+             "Also: proteinuria, IgAN grade", c, panel=k)
     b5 = box(ax, "e5", 1, ys[4], w - 2, hs[4], "Sensitivity: without procurement-sensitive\n"
              "or immediate-early genes", c, panel=k)
     down(ax, b1, (1, ys[1], w - 2, hs[1]))

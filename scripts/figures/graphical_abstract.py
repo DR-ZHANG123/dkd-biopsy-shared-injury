@@ -29,9 +29,8 @@ def numbers() -> dict:
     sig = fl.kv("manuscript/numbers/signature_audit.tsv")  # INJURY rows: shared-program score AUROC range
     key = fl.kv("results/19_shared_program/figdata/key_numbers.tsv")
     R = "results/19_shared_program/figdata/"
-    dec = fl.read(R + "fig2_kpmp_decomposition.tsv")
-    t = dec[(dec.dataset == "snRNA") & (dec.compartment == "TUB") & (dec.contrast == "CKD_vs_REF")]
-    d = t.set_index("kind")["delta"]
+    dec = fl.read("results/19_shared_program/kpmp/decomp_tests.tsv")
+    d = dec[(dec.dataset == "snRNA") & (dec.compartment == "TUB") & (dec.contrast == "DKD_vs_REF")].set_index("scenario")["delta"]
     rep = fl.read(R + "fig3_replication_auroc.tsv")
     import yaml
     cfg = yaml.safe_load((fl.ROOT / "config" / "run.yaml").read_text())
@@ -47,7 +46,7 @@ def numbers() -> dict:
     cla = fl.read("results/14_kpmp/claims.tsv")
     podo = cla[(cla.contrast == "DKD_vs_PAT_adj") & (cla.cell_type == "PODO") & (cla.unit == "META")].iloc[0]
     sh = fl.read("results/21_robustness/A6_split/pt_tal_shares.tsv")
-    sh = sh[(sh.dataset == "snRNA") & (sh.contrast == "CKD_vs_REF") & (sh.variant == "full")].set_index("component")
+    sh = sh[(sh.dataset == "snRNA") & (sh.contrast == "DKD_vs_REF") & (sh.variant == "full")].set_index("component")
     rt = fl.read(R + "fig4_residual_tests.tsv")
     r2 = [float(v) for k, v in key.items() if k.startswith("composition_r2cv_median_")]
     return dict(
@@ -72,14 +71,13 @@ def columns(N: dict) -> list[tuple[str, list[str]]]:
         ("Specimens", [f"{N['n_samples']} samples", f"\u2192 {N['n_spec']} unique", "biopsy specimens",
                        "counted once", f"{N['n_cohorts']} cohorts"]),
         ("Injury–repair response", ["learned without DKD", "DKD vs control", f"AUROC {N['auc_lo']:.3f}\u2013{N['auc_hi']:.3f}",
-                            f"{N['core_g']:,} + {N['core_t']:,}", "response genes"]),
-        ("Key cells", ["KPMP tubular signal:", f"within-lineage {N['state'] * 100:.0f}%", f"compositional {N['comp'] * 100:.0f}%",
+                            "response genes:", f"{N['core_g']:,} glomerular,", f"{N['core_t']:,} tubulointerstitial"]),
+        ("Key cells", ["KPMP, DKD donors:", f"within-lineage {N['state'] * 100:.0f}%", f"compositional {N['comp'] * 100:.0f}%",
                        "adaptive / failed-repair:", f"{N['adaptive'] * 100:.0f}% / {N['failed'] * 100:.0f}% of PT/TAL"]),
         ("Replication", [f"{N['n_rep']} independent cohorts", "disease vs healthy", f"AUROC {N['rep_lo']:.2f}\u2013{N['rep_hi']:.2f}",
                          f"{N['n_rep_above']} of {N['n_rep']} above", "random gene sets"]),
-        ("Kidney function", ["KPMP donor eGFR", f"CKD \u03c1 = {N['egfr_rho']:.2f}".replace("-", m),
-                             f"DKD \u03c1 = {N['egfr_rho_dkd']:.2f}".replace("-", m),
-                             f"proteinuria \u03c1 = {N['prot_rho']:.2f}", f"DKD stage AUROC {N['stage_auc']:.2f}"]),
+        ("DKD severity", ["KPMP DKD donors:", f"eGFR \u03c1 = {N['egfr_rho_dkd']:.2f}".replace("-", m),
+                          "advanced vs early DKD:", f"AUROC {N['stage_auc']:.2f}"]),
         ("Residual DKD signal", ["after adjustment:", "podocyte loss", f"(z {N['podo_z']:.1f})".replace("-", m),
                               "glomerular-capillary loss", "published signatures", "near random vs CKD"]),
     ]
