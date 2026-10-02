@@ -1,5 +1,5 @@
 element	text
-title	Much of the DKD biopsy transcriptome is an injury–repair response shared with other kidney diseases
+title	Much of what distinguishes DKD biopsies from healthy tissue is an injury–repair response shared with other kidney diseases
 column1	Specimens: 2,179 samples | → 1,462 unique | biopsy specimens | counted once | 9 cohorts
 column2	Injury–repair response: learned without DKD | DKD vs control | AUROC 0.971–1.000 | 1,378 + 907 | response genes
 column3	Key cells: KPMP tubular signal: | within-lineage 71% | compositional 19% | adaptive / failed-repair: | 23% / 19% of PT/TAL

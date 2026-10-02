@@ -1,4 +1,4 @@
-"""Fig. S13 - program-stratified versus covariate-adjusted AUROC of published signatures (single panel).
+"""Fig. S10 - program-stratified versus covariate-adjusted AUROC of published signatures (single panel).
 
 DKD versus other CKD, one point per signature and ERCB cohort; signature-level medians (mean over cohorts,
 then median) printed from manuscript/numbers/signature_level.tsv.
@@ -15,7 +15,7 @@ from scipy.stats import spearmanr
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figlib as fl  # noqa: E402
 
-NAME = "FigS13"
+NAME = "FigS10"
 UNITS = ["ERCB_GLOM_H1", "ERCB_GLOM_H7", "ERCB_TUB_H1", "ERCB_TUB_H7"]
 
 

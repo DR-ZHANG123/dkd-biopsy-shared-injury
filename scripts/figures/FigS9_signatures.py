@@ -1,9 +1,9 @@
-"""Fig. S12 - published DKD signatures and the shared program (panels a-e).
+"""Fig. S9 - published DKD signatures and the shared program (panels a-e).
 
 a  DKD-versus-control AUROC per signature and cohort with the shared-program score; b  percentile in the
 size-matched random null; c  DKD-versus-other-CKD AUROC before and after adjustment for the shared-program
 score; d  ERCB cohorts in which the adjusted AUROC beats the random 95th percentile; e  GSE30122-validated
-records. Panels drawn by figS12_signature_panels.py.
+records. Panels drawn by figS9_signature_panels.py.
 Inputs (read only): results/12_signature_audit/signature_metrics.tsv, manuscript/numbers/signature_level.tsv,
 manuscript/numbers/signature_audit.tsv.
 """
@@ -14,9 +14,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figlib as fl  # noqa: E402
-import figS12_signature_panels as sp  # noqa: E402
+import figS9_signature_panels as sp  # noqa: E402
 
-NAME = "FigS12"
+NAME = "FigS9"
 
 
 def build():

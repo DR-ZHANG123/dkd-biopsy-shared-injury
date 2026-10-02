@@ -1,4 +1,4 @@
-"""Fig. S11 - one-time DKD evaluation of the classifier trained on the adjusted signal (panels a-b).
+"""Fig. S13 - one-time DKD evaluation of the classifier trained on the adjusted signal (panels a-b).
 
 a  leave-one-cohort-out DKD evaluation in ERCB: adjusted AUROC of the classifier and all comparators, with
    paired bootstrap differences; b  pre-specified independent cohorts (raw AUROC, paired bootstrap vs B-L2).
@@ -18,7 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figlib as fl  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 
-NAME = "FigS11"
+NAME = "FigS13"
 METHODS = ["RRG-ID", "B-L2", "B2-PCA", "B-cPCA", "B-rankLASSO", "B-L2-unitcenter"]
 ERCB = ["ERCB_GLOM_H1", "ERCB_GLOM_H7", "ERCB_TUB_H1", "ERCB_TUB_H7"]
 COHORTS = ["GSE162830", "KPMP", "GSE166239"]

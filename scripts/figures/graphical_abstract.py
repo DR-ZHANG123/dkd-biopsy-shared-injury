@@ -97,7 +97,7 @@ def build():
     rows = []
     ax.add_patch(FancyBboxPatch((10, 262), W - 20, 30, boxstyle="round,pad=0,rounding_size=6", lw=0,
                                 fc="#3A3A3A", gid="box:title"))
-    title = "Much of the DKD biopsy transcriptome is an injury–repair response shared with other kidney diseases"
+    title = "Much of what distinguishes DKD biopsies from healthy tissue is an injury–repair response shared with other kidney diseases"
     ax.text(W / 2, 277, title, ha="center", va="center", fontsize=10.5, fontweight="bold", color="white",
             gid="in:title")
     rows.append(dict(element="title", text=title))

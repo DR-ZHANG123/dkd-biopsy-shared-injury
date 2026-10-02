@@ -1,4 +1,4 @@
-"""Fig. S10 - single-cell directional agreement of the axis-adjusted DKD residual (panels a-b).
+"""Fig. S12 - single-cell directional agreement of the axis-adjusted DKD residual (panels a-b).
 
 Sign agreement of the top residual genes (versus background genes) with the DKD-versus-control direction
 inside each cell type, in GSE131882 and GSE209781; a glomerular residual, b tubulointerstitial residual.
@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figlib as fl  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 
-NAME = "FigS10"
+NAME = "FigS12"
 CT = {"PT": "PT", "PT_injured": "PT injured", "LOH": "LOH", "DCT": "DCT", "CNT_PC": "CNT/PC", "IC": "IC",
       "PODO": "Podocyte", "PEC": "PEC", "ENDO": "Endothelial", "ENDO_PT": "Peritub. endo.", "PERI": "Pericyte",
       "STROMA": "Stromal", "MAC": "Macrophage", "TCELL": "T cell", "BCELL": "B cell", "NK": "NK"}

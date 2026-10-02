@@ -1,4 +1,4 @@
-"""Published-signature panels of Fig. S12 (a-e). Plotting only; values are read by FigS12_signatures.py
+"""Published-signature panels of Fig. S9 (a-e). Plotting only; values are read by FigS9_signatures.py
 from results/12_signature_audit/signature_metrics.tsv and manuscript/numbers/signature_{level,audit}.tsv.
 """
 from __future__ import annotations

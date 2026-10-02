@@ -1,7 +1,7 @@
 """Fig. 6 - small disease-specific residuals after accounting for the shared program (panels a-b).
 
 a  program-adjusted cell-type enrichment patterns (diagnosis vs other patients); b  residual signatures in independent
-cohorts. Published-signature panels are in Fig. S12 (FigS12_signatures.py).
+cohorts. Published-signature panels are in Fig. S9 (FigS9_signatures.py).
 Inputs (read only): manuscript/numbers/celltype_meta_z.tsv, manuscript/numbers/celltype_replication.tsv,
 results/14_kpmp/claims.tsv, results/19_shared_program/figdata/fig4_residual_tests.tsv.
 """

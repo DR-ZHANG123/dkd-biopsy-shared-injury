@@ -1,4 +1,4 @@
-"""Fig. S9 - KPMP-marker validation of response-adjusted cell-type enrichment patterns (panels a-b).
+"""Fig. S11 - KPMP-marker validation of response-adjusted cell-type enrichment patterns (panels a-b).
 
 a  cross-cohort (meta) enrichment z of each enrichment pattern with the discovery markers and with KPMP scRNA and
    snRNA markers; glomerular endothelium split into glomerular-capillary (ENDO_GC) and arteriolar (ENDO_ART)
@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figlib as fl  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 
-NAME = "FigS9"
+NAME = "FigS11"
 CT = {"PODO": "Podocyte", "ENDO": "Endothelial", "ENDO_PT": "Peritub. endo.", "MAST": "Mast",
       "ENDO_GC": "Glom.-capillary endo.", "ENDO_ART": "Arteriolar endo.", "MAC": "Macrophage", "TCELL": "T cell"}
 REFS = [("old", "Discovery atlases", "#8C8C8C", "o"), ("scRNA", "KPMP scRNA", "#DD8452", "s"),
