@@ -1,5 +1,5 @@
 box	x_mm	y_mm	w_mm	h_mm	text
-e_title	0	60	55	6	Replication and kidney function
+e_title	0	60	55	6	Replication and DKD severity
 e1	1	51.6	53	6	6 cohorts never used to define the response genes
 e_chip0	1	43.6	16.6	5.6	GSE162830
 e_chip1	19.2	43.6	16.6	5.6	KPMP sections

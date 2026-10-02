@@ -1,8 +1,8 @@
 box	x_mm	y_mm	w_mm	h_mm	text
-c_title	0	60	55	6	Compositional and within-lineage change
+c_title	0	60	55	6	DKD: compositional vs within-lineage
 c1	1	49.6	53	8	BayesPrism deconvolution, KPMP atlas v2 | reference (scRNA primary; snRNA sensitivity)
 c2	1	39.2	53	8	Bulk cohorts: CLR composition → injury–repair score | 5-fold cross-validated R² per cohort
 c3	1	28.8	53	8	KPMP donors: snRNA 56 CKD, 52 reference | scRNA 41 CKD, 38 reference
 c4	1	15.4	25.5	11	Compositional only | donor fractions × | reference profiles
 c5	28.5	15.4	25.5	11	Within-lineage only | reference fractions × | donor profiles
-c6	1	5	53	8	Share of the response: compositional, | within-lineage and their interaction
+c6	1	5	53	8	DKD vs reference: within-lineage 68%, | compositional 22%

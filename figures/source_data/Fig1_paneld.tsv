@@ -1,7 +1,7 @@
 box	x_mm	y_mm	w_mm	h_mm	text
-d_title	0	60	55	6	Adaptive and failed-repair states
+d_title	0	60	55	6	Tubular states carrying the response
 d1	1	49.6	53	8	KPMP PT and TAL states: normal, adaptive, | failed-repair, degenerative, cycling
 d2	1	36.2	53	11	State programs within donors, no disease labels | (state vs normal cells; ≥ 20 cells per donor and state; | aPT+frPT: 181 snRNA donors, scRNA replication)
-d3	1	25.8	53	8	Shapley decomposition, 17 factors: adaptive | and failed-repair fraction and profile
+d3	1	25.8	53	8	Shapley decomposition (17 factors), DKD: | adaptive 27%, failed-repair 21% of PT/TAL change
 d4	1	15.4	53	8	State fractions vs injury–repair score and | eGFR (partial correlation given the score)
 d5	1	5	53	8	Contributing genes: program effect in the | response direction, replicated in scRNA

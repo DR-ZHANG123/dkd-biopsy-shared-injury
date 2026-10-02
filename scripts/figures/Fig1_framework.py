@@ -26,9 +26,9 @@ FS = 6.2          # body font size (pt)
 GAP = 2.4         # vertical gap between boxes (mm), arrows live here
 ACCENT = {"a": fl.PALETTE[0], "b": fl.PALETTE[3], "c": fl.PALETTE[2], "d": fl.PALETTE[4],
           "e": fl.PALETTE[1], "f": fl.PALETTE[5]}
-TITLES = {"a": "Unique biopsy specimens", "b": "Injury–repair response",
-          "c": "Compositional and within-lineage change", "d": "Adaptive and failed-repair states",
-          "e": "Replication and kidney function", "f": "Disease-specific signals"}
+TITLES = {"a": "Unique biopsy specimens", "b": "Shared response defined without DKD",
+          "c": "DKD: compositional vs within-lineage", "d": "Tubular states carrying the response",
+          "e": "Replication and DKD severity", "f": "What remains in DKD"}
 RECORDS: dict[str, list] = {}
 
 
@@ -107,9 +107,17 @@ def load_numbers() -> dict:
     podo = cla[(cla.contrast == "DKD_vs_PAT_adj") & (cla.cell_type == "PODO") & (cla.unit == "META")].iloc[0]
     rt = fl.read("results/19_shared_program/figdata/fig4_residual_tests.tsv")
     dk = rt[(rt.disease == "DKD") & (rt.status != "descriptive")]
+    dt = fl.read("results/19_shared_program/kpmp/decomp_tests.tsv")
+    dt = dt[(dt.dataset == "snRNA") & (dt.compartment == "TUB") & (dt.contrast == "DKD_vs_REF")].set_index("scenario").delta
+    sh = fl.read("results/21_robustness/A6_split/pt_tal_shares.tsv")
+    sh = sh[(sh.dataset == "snRNA") & (sh.contrast == "DKD_vs_REF") & (sh.variant == "full")].set_index("component")
+    sig = fl.kv("manuscript/numbers/signature_audit.tsv")
     ps = fl.read("results/20_repair_state/programs/program_summary.tsv")
     rf = ps[(ps.lineage == "PT") & (ps.state == "rfPT")].iloc[0]
     return dict(res=res, key=key, cfg=cfg, donors=donors, podo_z=podo.z_snRNA, rf_donors=int(rf.snRNA_n_donors),
+                dkd_state=dt["state_only"] / dt["full"], dkd_comp=dt["comp_only"] / dt["full"],
+                dkd_adapt=sh.loc["adaptive_total", "share_of_PT_TAL_state"],
+                dkd_failed=sh.loc["failed_repair_total", "share_of_PT_TAL_state"], n_sig=int(sig["n_signatures_evaluable"]),
                 rep_dx=sorted(set(rt[rt.status == "replicated"].disease)), n_dkd_tested=len(dk),
                 n_dkd_notrep=int((dk.status == "not_replicated").sum()))
 
@@ -190,8 +198,8 @@ def panel_c(ax, w, h, N):
              c, panel=k)
     b5 = box(ax, "c5", 1 + half + 2, ys[3], half, hs[3], "Within-lineage only\nreference fractions ×\ndonor "
              "profiles", c, panel=k)
-    b6 = box(ax, "c6", 1, ys[4], w - 2, hs[4], "Share of the response: compositional,\n"
-             "within-lineage and their interaction", c, weight="bold", fill=0.3, panel=k)
+    b6 = box(ax, "c6", 1, ys[4], w - 2, hs[4], f"DKD vs reference: within-lineage {N['dkd_state'] * 100:.0f}%,\n"
+             f"compositional {N['dkd_comp'] * 100:.0f}%", c, weight="bold", fill=0.3, panel=k)
     down(ax, b1, b2)
     down(ax, b2, b3)
     fq = (half / 2) / (w - 2)
@@ -212,8 +220,8 @@ def panel_d(ax, w, h, N):
     b2 = box(ax, "d2", 1, ys[1], w - 2, hs[1], "State programs within donors, no disease labels\n"
              f"(state vs normal cells; ≥ {rs['min_cells']} cells per donor and state;\n"
              f"aPT+frPT: {N['rf_donors']} snRNA donors, scRNA replication)", c, panel=k)
-    b3 = box(ax, "d3", 1, ys[2], w - 2, hs[2], "Shapley decomposition, 17 factors: adaptive\n"
-             "and failed-repair fraction and profile", c, panel=k)
+    b3 = box(ax, "d3", 1, ys[2], w - 2, hs[2], "Shapley decomposition (17 factors), DKD:\n"
+             f"adaptive {N['dkd_adapt'] * 100:.0f}%, failed-repair {N['dkd_failed'] * 100:.0f}% of PT/TAL change", c, panel=k)
     b4 = box(ax, "d4", 1, ys[3], w - 2, hs[3], "State fractions vs injury–repair score and\n"
              "eGFR (partial correlation given the score)", c, panel=k)
     b5 = box(ax, "d5", 1, ys[4], w - 2, hs[4], "Contributing genes: program effect in the\n"
@@ -260,13 +268,12 @@ def panel_f(ax, w, h, N):
     ys = stack(top, hs)
     b1 = box(ax, "f1", 1, ys[0], w - 2, hs[0], "Genes regressed on a score of the response\n"
              "within patients; each diagnosis\nvs other patients", c, panel=k)
-    b2 = box(ax, "f2", 1, ys[1], w - 2, hs[1], "Cell-type marker enrichment patterns\n"
+    b2 = box(ax, "f2", 1, ys[1], w - 2, hs[1], f"{N['n_sig']} published DKD signatures vs random\n"
+             "gene sets: DKD vs control and vs other CKD", c, panel=k)
+    b3 = box(ax, "f3", 1, ys[2], w - 2, hs[2], "Cell-type marker enrichment patterns\n"
              "replicated in ≥ 2 non-overlapping cohorts", c, panel=k)
-    b3 = box(ax, "f3", 1, ys[2], w - 2, hs[2], "Adjusted signatures (50 up, 50 down genes)\n"
-             "tested within patients, independent cohorts", c, panel=k)
-    b4 = box(ax, "f4", 1, ys[3], w - 2, hs[3], "DKD: loss of podocyte markers (z " + f"{N['podo_z']:.1f}".replace("-", "−") + ")\n"
-             + "replicated adjusted signature: " + ", ".join(N["rep_dx"]) + " only", c, weight="bold", fill=0.3,
-             panel=k)
+    b4 = box(ax, "f4", 1, ys[3], w - 2, hs[3], "DKD: loss of podocyte (z " + f"{N['podo_z']:.1f}".replace("-", "−") + ") and\n"
+             + "glomerular-capillary endothelial markers", c, weight="bold", fill=0.3, panel=k)
     for u, l in ((b1, b2), (b2, b3), (b3, b4)):
         down(ax, u, l)
 

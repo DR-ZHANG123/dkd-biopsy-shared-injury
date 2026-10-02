@@ -80,7 +80,7 @@ def columns(N: dict) -> list[tuple[str, list[str]]]:
         ("Kidney function", ["KPMP donor eGFR", f"CKD \u03c1 = {N['egfr_rho']:.2f}".replace("-", m),
                              f"DKD \u03c1 = {N['egfr_rho_dkd']:.2f}".replace("-", m),
                              f"proteinuria \u03c1 = {N['prot_rho']:.2f}", f"DKD stage AUROC {N['stage_auc']:.2f}"]),
-        ("Specific to DKD", ["after adjustment:", "podocyte loss", f"(z {N['podo_z']:.1f})".replace("-", m),
+        ("Residual DKD signal", ["after adjustment:", "podocyte loss", f"(z {N['podo_z']:.1f})".replace("-", m),
                               "glomerular-capillary loss", "published signatures", "near random vs CKD"]),
     ]
 
