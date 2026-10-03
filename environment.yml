@@ -21,3 +21,4 @@ dependencies:
       - torch_geometric==2.6.1
       - GEOparse==2.0.4
       - gseapy==1.1.4
+      - cairosvg==2.9.1
