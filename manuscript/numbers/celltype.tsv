@@ -1,0 +1,72 @@
+key	value	source
+n_shared_specimens_between_units	0	data/processed/samples.tsv via 11_injury_axis.load_samples
+GLOM_SHARED_down	PT:-7.7;DCT:-4.8;IC:-4.5;LOH:-3.3;PODO:-3.3;CNT_PC:-2.7	13_celltype/celltype_enrichment.tsv
+GLOM_SHARED_up	MAC:7.7;ENDO_PT:6.2;NK:5.8;STROMA:5.0;PERI:3.2;ENDO:2.7	13_celltype/celltype_enrichment.tsv
+GLOM_DKD_vs_CTRL_down	PT:-7.0;PODO:-6.0;NEUTRO:-5.0;IC:-2.4	13_celltype/celltype_enrichment.tsv
+GLOM_DKD_vs_CTRL_up	MAC:7.6;NK:4.5;PEC:4.0;TCELL:3.8;STROMA:3.3;ENDO_PT:3.3	13_celltype/celltype_enrichment.tsv
+GLOM_DKD_vs_PAT_down	PODO:-8.9;NEUTRO:-3.1	13_celltype/celltype_enrichment.tsv
+GLOM_DKD_vs_PAT_up	LOH:4.9;ENDO:3.9;TCELL:3.4;MAST:3.1;MAC:3.0;NK:2.9;PERI:2.8;ENDO_PT:2.2	13_celltype/celltype_enrichment.tsv
+GLOM_DKD_vs_PAT_adj_down	PODO:-8.2;NEUTRO:-3.7	13_celltype/celltype_enrichment.tsv
+GLOM_DKD_vs_PAT_adj_up	LOH:6.1;ENDO:3.1;TCELL:2.9;MAST:2.8;DCT:2.4;PERI:2.3;NK:2.0	13_celltype/celltype_enrichment.tsv
+TUB_SHARED_down	PODO:-7.1;DCT:-5.6;IC:-4.3;PERI:-2.9;PT:-2.9;CNT_PC:-2.2	13_celltype/celltype_enrichment.tsv
+TUB_SHARED_up	MAC:5.1;TCELL:5.1;NK:3.8;PEC:2.7	13_celltype/celltype_enrichment.tsv
+TUB_DKD_vs_CTRL_down	PODO:-9.2;DCT:-8.0;IC:-5.1;PT:-4.5;CNT_PC:-2.0	13_celltype/celltype_enrichment.tsv
+TUB_DKD_vs_CTRL_up	TCELL:6.1;MAC:5.8;NK:5.2;PEC:3.0;MAST:2.7;STROMA:2.0	13_celltype/celltype_enrichment.tsv
+TUB_DKD_vs_PAT_down	PODO:-4.8;DCT:-2.5	13_celltype/celltype_enrichment.tsv
+TUB_DKD_vs_PAT_up	MAST:6.7;ENDO:5.1;TCELL:3.9;STROMA:3.2;NK:3.0;MAC:2.5;LOH:2.2;PERI:2.1;ENDO_PT:2.1	13_celltype/celltype_enrichment.tsv
+TUB_DKD_vs_PAT_adj_down	PODO:-4.8	13_celltype/celltype_enrichment.tsv
+TUB_DKD_vs_PAT_adj_up	MAST:7.1;ENDO:5.1;PERI:3.9;STROMA:3.4;LOH:2.7;ENDO_PT:2.4;CNT_PC:2.0	13_celltype/celltype_enrichment.tsv
+n_markers_per_celltype_max	50	13_celltype/celltype_enrichment.tsv
+n_celltypes_with_markers	17	13_celltype/celltype_markers.tsv
+rep_GLOM_DKD_n_units	2	13_celltype/celltype_enrichment.tsv
+rep_GLOM_DKD_replicated	ENDO+;LOH+;NEUTRO-;PODO-	13_celltype/celltype_enrichment.tsv
+rep_GLOM_FSGS_n_units	3	13_celltype/celltype_enrichment.tsv
+rep_GLOM_FSGS_replicated	MAC-;MAST-;NEUTRO-;NK+	13_celltype/celltype_enrichment.tsv
+rep_GLOM_FSGS_MCD_n_units	1	13_celltype/celltype_enrichment.tsv
+rep_GLOM_FSGS_MCD_replicated		13_celltype/celltype_enrichment.tsv
+rep_GLOM_HT_n_units	1	13_celltype/celltype_enrichment.tsv
+rep_GLOM_HT_replicated		13_celltype/celltype_enrichment.tsv
+rep_GLOM_IgAN_n_units	1	13_celltype/celltype_enrichment.tsv
+rep_GLOM_IgAN_replicated		13_celltype/celltype_enrichment.tsv
+rep_GLOM_LN_n_units	1	13_celltype/celltype_enrichment.tsv
+rep_GLOM_LN_replicated		13_celltype/celltype_enrichment.tsv
+rep_GLOM_MCD_n_units	3	13_celltype/celltype_enrichment.tsv
+rep_GLOM_MCD_replicated	MAC-;NEUTRO-	13_celltype/celltype_enrichment.tsv
+rep_GLOM_MN_n_units	2	13_celltype/celltype_enrichment.tsv
+rep_GLOM_MN_replicated	ENDO-;NK-;PODO+;TCELL-	13_celltype/celltype_enrichment.tsv
+rep_GLOM_RPGN_n_units	2	13_celltype/celltype_enrichment.tsv
+rep_GLOM_RPGN_replicated	ENDO_PT-;MAC+;STROMA-;TCELL+	13_celltype/celltype_enrichment.tsv
+rep_TUB_DKD_n_units	2	13_celltype/celltype_enrichment.tsv
+rep_TUB_DKD_replicated	ENDO+	13_celltype/celltype_enrichment.tsv
+rep_TUB_FSGS_n_units	4	13_celltype/celltype_enrichment.tsv
+rep_TUB_FSGS_replicated	ENDO+;LOH-;MAST+;NK+;PEC+;PT-;STROMA+;TCELL+	13_celltype/celltype_enrichment.tsv
+rep_TUB_HT_n_units	1	13_celltype/celltype_enrichment.tsv
+rep_TUB_HT_replicated		13_celltype/celltype_enrichment.tsv
+rep_TUB_IgAN_n_units	2	13_celltype/celltype_enrichment.tsv
+rep_TUB_IgAN_replicated	PEC-	13_celltype/celltype_enrichment.tsv
+rep_TUB_LN_n_units	1	13_celltype/celltype_enrichment.tsv
+rep_TUB_LN_replicated		13_celltype/celltype_enrichment.tsv
+rep_TUB_MCD_n_units	5	13_celltype/celltype_enrichment.tsv
+rep_TUB_MCD_replicated	CNT_PC-;ENDO-;MAC-;MAST-;PEC-;PERI-;PT+;STROMA-;TCELL-	13_celltype/celltype_enrichment.tsv
+rep_TUB_MN_n_units	4	13_celltype/celltype_enrichment.tsv
+rep_TUB_MN_replicated	ENDO_PT-;LOH+;MAC-;MAST-;NK-;PT+;TCELL-	13_celltype/celltype_enrichment.tsv
+rep_TUB_RPGN_n_units	2	13_celltype/celltype_enrichment.tsv
+rep_TUB_RPGN_replicated	LOH-;MAC+;PERI-;PT-;TCELL+	13_celltype/celltype_enrichment.tsv
+n_compartment_dx_with_ge2_units	11	13_celltype/celltype_enrichment.tsv
+n_compartment_dx_with_replicated_celltype	11	13_celltype/celltype_enrichment.tsv
+sc_GLOM_GSE131882_n_celltypes	10	13_celltype/sc_validation.tsv
+sc_GLOM_GSE131882_n_top_above_background	7	13_celltype/sc_validation.tsv
+sc_GLOM_GSE131882_median_diff	0.017	13_celltype/sc_validation.tsv
+sc_GLOM_GSE209781_n_celltypes	12	13_celltype/sc_validation.tsv
+sc_GLOM_GSE209781_n_top_above_background	0	13_celltype/sc_validation.tsv
+sc_GLOM_GSE209781_median_diff	-0.066	13_celltype/sc_validation.tsv
+sc_TUB_GSE131882_n_celltypes	10	13_celltype/sc_validation.tsv
+sc_TUB_GSE131882_n_top_above_background	7	13_celltype/sc_validation.tsv
+sc_TUB_GSE131882_median_diff	0.023	13_celltype/sc_validation.tsv
+sc_TUB_GSE209781_n_celltypes	12	13_celltype/sc_validation.tsv
+sc_TUB_GSE209781_n_top_above_background	1	13_celltype/sc_validation.tsv
+sc_TUB_GSE209781_median_diff	-0.044	13_celltype/sc_validation.tsv
+sc_GLOM_GSE131882_PODO	0.56 vs 0.51	13_celltype/sc_validation.tsv
+sc_GLOM_GSE131882_PEC	0.64 vs 0.51	13_celltype/sc_validation.tsv
+sc_GLOM_GSE209781_ENDO	0.48 vs 0.54	13_celltype/sc_validation.tsv
+sc_TUB_GSE209781_ENDO	0.46 vs 0.49	13_celltype/sc_validation.tsv

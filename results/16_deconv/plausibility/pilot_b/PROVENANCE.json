@@ -1,0 +1,30 @@
+{
+  "stage": "16_deconv/plausibility/pilot_b",
+  "time": "2026-09-28T23:39:39",
+  "seed": 20260928,
+  "config_sha": "3f752bc9c2f69b33",
+  "git_commit": "730b779f6c890905288ff95d71a6e3dcb3b2356b",
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "torch": "2.8.0+cu128",
+    "torch_geometric": "2.6.1",
+    "scanpy": "1.10.4"
+  },
+  "inputs": {
+    "results/16_deconv/run/pilot_b/theta_type.tsv": "5c57912ae3ce3d38c7e32abba004f941",
+    "results/16_deconv/run/pilot_b/theta_state.tsv": "44c73d748c0471ecc6b899eeb1f9d910",
+    "results/16_deconv/run/pilot_b/theta_nnls.tsv": "68d0e7f195fcc042cca1a87b85275192"
+  },
+  "outputs": {
+    "results/16_deconv/plausibility/pilot_b/proportions_by_batch.tsv": "c08cc0197b2cd584f6e2c3e097f4cc05",
+    "results/16_deconv/plausibility/pilot_b/key_checks.tsv": "e58321974d18315f5ee9620a3f25a688",
+    "results/16_deconv/plausibility/pilot_b/marker_concordance.tsv": "943b43e6c40047c9d7fc838ecf36f8bf"
+  },
+  "extra": {
+    "tag": "pilot_b"
+  }
+}
