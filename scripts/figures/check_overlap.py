@@ -33,7 +33,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import figlib  # noqa: E402
 
-FIGURES = ["Fig1_framework", "Fig2_shared_program", "Fig3_cells", "Fig4_repair_state", "Fig5_replication",
+FIGURES = ["Fig2_shared_program", "Fig3_cells", "Fig4_repair_state", "Fig5_replication",
            "Fig6_residuals", "FigS1_scale_audit", "FigS2_resource", "FigS3_split_controls",
            "FigS4_egfr", "FigS5_core_stability", "FigS6_deconv", "FigS7_kpmp_decomposition", "FigS8_repair_bulk",
            "FigS9_signatures", "FigS10_stratified", "FigS11_kpmp_markers",

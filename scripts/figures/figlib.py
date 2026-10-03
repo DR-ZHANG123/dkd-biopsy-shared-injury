@@ -198,3 +198,10 @@ def fmt_p(p: float) -> str:
 
 def hide(ax) -> None:
     ax.set_axis_off()
+
+
+def tint(color: str, f: float) -> tuple:
+    """Mix a colour with white (f = share of the colour)."""
+    import matplotlib.colors as mcolors
+    c = mcolors.to_rgb(color)
+    return tuple(1 - f * (1 - x) for x in c)

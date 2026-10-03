@@ -17,7 +17,6 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import figlib as fl  # noqa: E402
-from Fig1_framework import tint  # noqa: E402
 
 NAME = "graphical_abstract"
 W, H = 920, 300
@@ -106,7 +105,7 @@ def build():
     for j, ((head, lines), c) in enumerate(zip(cols, COLS)):
         x = x0 + j * (cw + gap)
         ax.add_patch(FancyBboxPatch((x, bot), cw, top - bot, boxstyle="round,pad=0,rounding_size=8", lw=1.0,
-                                    ec=c, fc=tint(c, 0.12), gid=f"box:c{j}", zorder=1))
+                                    ec=c, fc=fl.tint(c, 0.12), gid=f"box:c{j}", zorder=1))
         ax.add_patch(FancyBboxPatch((x, top - 30), cw, 30, boxstyle="round,pad=0,rounding_size=8", lw=0,
                                     fc=c, gid=f"box:h{j}", zorder=2))
         ax.text(x + cw / 2, top - 15, head, ha="center", va="center", fontsize=8.8 if len(head) < 20 else 8.2, fontweight="bold",
