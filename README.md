@@ -2,9 +2,9 @@
 
 Code, configuration and result tables for the study
 
-> **Much of the diabetic kidney disease biopsy transcriptome is an injury–repair response shared with other chronic kidney diseases**
+> **Much of what distinguishes diabetic kidney disease biopsies from healthy tissue is an injury–repair response shared with other chronic kidney diseases**
 
-The study combines 1,462 unique kidney biopsy specimens from public microarray and RNA-sequencing series with the Kidney Precision Medicine Project (KPMP) single-cell and single-nucleus atlases. It defines an injury–repair response from kidney diseases other than diabetic kidney disease (DKD), measures how much of the DKD biopsy transcriptome lies along it, separates changes in cell proportions from within-lineage changes and the contributions of adaptive and failed-repair tubular states, tests the response in independent cohorts and against clinical measures, and evaluates published DKD signatures and the DKD-associated signal that remains after adjustment for the response.
+The study combines 1,462 unique kidney biopsy specimens from public microarray and RNA-sequencing series with the Kidney Precision Medicine Project (KPMP) single-cell and single-nucleus atlases. It defines an injury–repair response from kidney diseases other than diabetic kidney disease (DKD), measures how much of the difference between DKD biopsies and healthy tissue lies along it, separates changes in cell proportions from within-lineage changes and the contributions of adaptive and failed-repair tubular states, tests the response in independent cohorts and against clinical measures, and evaluates published DKD signatures and the DKD-associated signal that remains after adjustment for the response.
 
 ## Data
 
